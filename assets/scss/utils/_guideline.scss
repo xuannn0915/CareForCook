@@ -1,0 +1,50 @@
+// Buttons
+.btn-primary{
+  color: $white;
+  &:hover{
+    color: $white;
+  }
+}
+
+.btn-outline-primary{
+  &:hover{
+    background-color: #F4DEDB;
+    color: $primary;
+  }
+}
+
+.btn-outline-warning{
+  border-radius: 5px;
+  &:hover{
+    background-color: #FFF9F3;
+    color: $warning;
+  }
+}
+
+.btn-link{
+  color: $dark;
+  &:hover{
+    color: $dark;
+  }
+}
+
+.btn-outline-dark{
+  &:hover{
+    background-color: #E0E0E0;
+    color: $dark;
+  }
+}
+
+
+// Form
+.form-control, .form-select{
+  border-bottom: 1px solid $light;
+}
+
+
+// Nav Tab
+.tabs{
+  .nav-item{
+    border-bottom: 2px solid $light;
+  }
+}
