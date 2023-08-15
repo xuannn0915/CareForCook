@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/CareForCook/assets/logo-1af07373.ico" type="image/x-icon" />
+<!-- material icon -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+<!-- material font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+<title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/bootstrap.min-867f002e.js"></script>
+    <link rel="stylesheet" href="/CareForCook/assets/bootstrap-fa4a8b55.css">
+  </head>
+  <body>
+    <div class="container">
+      <!-- Buttons -->
+      <div class="buttons mb-5">
+        <h2>Buttons</h2>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-link">Link</button>
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+      </div>
+
+      <!-- Form -->
+      <form action="#" class="mb-5">
+        <h2>Form</h2>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Input</label>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="name@example.com"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Textarea</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Disabled</label
+          >
+          <input
+            class="form-control"
+            type="text"
+            placeholder="Disabled input"
+            aria-label="Disabled input example"
+            disabled
+          />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Select</label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="form-label"> Checkbox </label>
+          <div class="d-flex">
+            <div class="form-check me-3">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Default checkbox
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckChecked"
+                checked
+              />
+              <label class="form-check-label" for="flexCheckChecked">
+                Checked checkbox
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label"> Radio </label>
+          <div class="d-flex">
+            <div class="form-check me-3">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault1"
+              />
+              <label class="form-check-label" for="flexRadioDefault1">
+                Default radio
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault2"
+                checked
+              />
+              <label class="form-check-label" for="flexRadioDefault2">
+                Default checked radio
+              </label>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <!-- Modal -->
+      <div class="modaldialog mb-5">
+        <h2>Modal</h2>
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Open the Modal
+        </button>
+
+        <!-- Modal dialog -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Modal title</h4>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">...</div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-outline-dark"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-outline-primary">
+                  Save changes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Nav tab -->
+      <div class="tabs mb-5">
+        <h2>Tabs</h2>
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- icon -->
+      <div class="icons">
+        <h2>Icons</h2>
+        <!-- chat -->
+        <span class="material-symbols-rounded"> maps_ugc </span>
+        <!-- shopping bag -->
+        <span class="material-symbols-rounded"> local_mall </span>
+        <!-- user -->
+        <span class="material-symbols-rounded"> person </span>
+        <!-- deliver -->
+        <span class="material-symbols-rounded"> local_shipping </span>
+        <!-- cooking -->
+        <span class="material-symbols-rounded"> cooking </span>
+        <!-- form -->
+        <span class="material-symbols-rounded"> edit_document </span>
+        <!-- arrow right -->
+        <span class="material-symbols-rounded"> east </span>
+        <!-- thumb  -->
+        <span class="material-symbols-rounded"> thumb_up </span>
+        <!-- expand more -->
+        <span class="material-symbols-rounded"> thumb_up </span>
+        <!-- expand less -->
+        <span class="material-symbols-rounded"> expand_less </span>
+        <!-- select arrow -->
+        <span class="material-symbols-rounded"> arrow_drop_down </span>
+        <!-- shopping cart -->
+        <span class="material-symbols-rounded"> shopping_cart </span>
+        <!-- autorenew -->
+        <span class="material-symbols-rounded"> autorenew </span>
+        <!-- add -->
+        <span class="material-symbols-rounded"> add </span>
+        <!-- remove -->
+        <span class="material-symbols-rounded"> remove </span>
+        <!-- clock -->
+        <span class="material-symbols-rounded"> schedule </span>
+        <!-- phone -->
+        <span class="material-symbols-rounded"> call </span>
+        <!-- customize -->
+        <span class="material-symbols-rounded"> discover_tune </span>
+        <!-- calendar -->
+        <span class="material-symbols-rounded"> calendar_today </span>
+        <!-- warning -->
+        <span class="material-symbols-rounded"> error </span>
+        <!-- success -->
+        <span class="material-symbols-rounded"> check_circle </span>
+        <!-- failed -->
+        <span class="material-symbols-rounded"> cancel </span>
+        <!-- search -->
+        <span class="material-symbols-rounded"> search </span>
+        <!-- download -->
+        <span class="material-symbols-rounded"> download </span>
+        <!-- upload -->
+        <span class="material-symbols-rounded"> upload </span>
+        <!-- view -->
+        <span class="material-symbols-rounded"> visibility </span>
+        <!-- delete -->
+        <span class="material-symbols-rounded"> delete </span>
+        <!-- comment -->
+        <span class="material-symbols-rounded"> chat </span>
+        <!-- star -->
+        <span class="material-symbols-rounded"> star </span>
+        <!-- menu -->
+        <span class="material-symbols-rounded"> menu </span>
+        <!-- 訂單管理 -->
+        <span class="material-symbols-rounded"> space_dashboard </span>
+        <!-- 文章管理 -->
+        <span class="material-symbols-rounded"> newsmode </span>
+        <!-- 傷汆感裏 -->
+        <span class="material-symbols-rounded"> inventory_2 </span>
+        <!-- 問卷管理 -->
+        <span class="material-symbols-rounded"> description </span>
+        <!-- 留言管理 -->
+        <span class="material-symbols-rounded"> mark_chat_unread </span>
+        <!-- edit -->
+        <span class="material-symbols-rounded"> edit </span>
+        <!-- logout -->
+        <span class="material-symbols-rounded"> logout </span>
+        <!-- file -->
+        <span class="material-symbols-rounded"> create_new_folder </span>
+        <!-- sort -->
+        <span class="material-symbols-rounded"> sort </span>
+      </div>
+    </div>
+    
+  </body>
+</html>
