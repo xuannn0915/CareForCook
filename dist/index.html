@@ -13,22 +13,25 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
-<title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/bootstrap.min-f4345c72.js"></script>
-    <link rel="stylesheet" href="/CareForCook/assets/bootstrap-7dc28718.css">
+<title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/bootstrap.min-9e4ae0ba.js"></script>
+    <link rel="stylesheet" href="/CareForCook/assets/bootstrap-d9adeaf5.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="../pages/index.html">
+    <nav class="navbar px-lg-5 py-lg-6 px-4 py-3">
+  <div class="container-fluid align-items-center px-lg-3 px-0">
+    <a class="navbar-brand d-lg-inline-block d-none" href="../pages/index.html">
       <img src="/CareForCook/assets/log_wording-41c978e4.png" alt="logo" />
+    </a>
+    <a class="navbar-brand d-lg-none d-inline-block" href="../pages/index.html">
+      <img src="/CareForCook/assets/logo-8e766089.png" alt="logo" />
     </a>
 
     <!-- menu -->
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-      <ul class="navbar-nav">
+    <div class="d-lg-block d-none">
+      <ul class="d-flex">
         <li class="nav-item dropdown">
           <a
-            class="nav-link"
+            class="nav-link px-4"
             href="#"
             id="navbarDropdown"
             role="button"
@@ -52,7 +55,7 @@
         </li>
         <li class="nav-item dropdown">
           <a
-            class="nav-link"
+            class="nav-link px-4"
             href="#"
             id="navbarDropdown"
             role="button"
@@ -84,11 +87,11 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a href="../pages/shopping/mall.html" class="nav-link">線上買好料</a>
+          <a href="../pages/shopping/mall.html" class="nav-link px-4">線上買好料</a>
         </li>
         <li class="nav-item dropdown">
           <a
-            class="nav-link"
+            class="nav-link px-4"
             href="#"
             id="navbarDropdown"
             role="button"
@@ -98,7 +101,7 @@
             大家怎麼說
           </a>
           <ul
-            class="dropdown-menu mt-4 text-center"
+            class="dropdown-menu text-center mt-4"
             aria-labelledby="navbarDropdown"
           >
             <li>
@@ -114,37 +117,126 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a href="../pages/others/process.html" class="nav-link">料理怎麼買</a>
+          <a href="../pages/others/process.html" class="nav-link px-4">料理怎麼買</a>
         </li>
       </ul>
     </div>
 
     <!-- icon -->
-    <ul class="icons d-flex position-fixed end-0">
+    <ul class="icons d-flex align-items-end">
       <li>
-        <a href="../pages/others/contact.html">
-          <span class="material-symbols-rounded px-4"> maps_ugc </span>
+        <a href="../pages/others/contact.html" class="px-4">
+          <span class="material-symbols-rounded"> maps_ugc </span>
         </a>
       </li>
       <li>
-        <a href="../pages/shopping/shoppingBag.html">
-          <span class="material-symbols-rounded px-4"> local_mall </span>
+        <a href="../pages/shopping/shoppingBag.html" class="px-4">
+          <span class="material-symbols-rounded"> local_mall </span>
         </a>
       </li>
       <li>
-        <a href="../pages/member/membership.html">
-          <span class="material-symbols-rounded px-4"> person </span>
+        <a href="../pages/member/membership.html" class="px-4">
+          <span class="material-symbols-rounded"> person </span>
         </a>
       </li>
       <li>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-toggler border-0 d-lg-none d-inline-block" href="#" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="material-symbols-rounded"> menu </span>
-        </button>
+        </a>
       </li>
     </ul>
   </div>
+  <!-- mobile menu -->
+  <div class="container">    
+    <div class="collapse d-lg-none position-absolute top-100 end-0 start-0" id="navbarNav">
+      <ul class="navbar-nav mt-4 text-center">
+        <li class="mobile-nav-item nav-item dropdown border-bottom">
+          <a
+            class="nav-link fs-4 py-4"
+            href="#about"
+            data-bs-toggle="collapse"  
+            role="button" aria-expanded="false" aria-controls="collapseExample"
+          >
+            關於照料理
+          </a>
+          <div class="collapse" id="about">
+            <ul class=" d-flex justify-content-center mb-4">
+              <li class="rounded me-2">
+                <a class="dropdown-item py-1 px-3" href="../pages/about/team.html"
+                  >品牌秉初心</a
+                >
+              </li>
+              <li class="rounded">
+                <a class="dropdown-item py-1 px-3" href="../pages/about/food.html"
+                  >品質好安心</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="mobile-nav-item nav-item dropdown border-bottom">
+          <a
+            class="nav-link fs-4 py-4"
+            href="#product"
+            data-bs-toggle="collapse"  
+            role="button" aria-expanded="false" aria-controls="collapseExample"
+          >
+          好料報你知
+          </a>
+          <div class="collapse" id="product">
+            <ul class=" d-flex justify-content-center  mb-4">
+              <li class="me-2 rounded">
+                <a class="dropdown-item py-1 px-3" href="../pages/product info/customize.html"
+                  >客制照護餐</a
+                >
+              </li>
+              <li class="me-2 rounded">
+                <a class="dropdown-item py-1 px-3" href="../pages/product info/protien.html"
+                  >高蛋白燉飲</a
+                >
+              </li>
+              <li class="rounded">
+                <a class="dropdown-item py-1 px-3" href="../pages/product info/lunchbox.html"
+                  >機能調理餐</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item border-bottom">
+          <a href="../pages/shopping/mall.html" class="nav-link fs-4 py-4">線上買好料</a>
+        </li>
+        <li class="mobile-nav-item nav-item dropdown border-bottom">
+          <a
+            class="nav-link fs-4 py-4"
+            href="#article"
+            data-bs-toggle="collapse"  
+            role="button" aria-expanded="false" aria-controls="collapseExample"
+          >
+          大家怎麼說
+          </a>
+          <div class="collapse" id="article">            
+            <ul class="d-flex justify-content-center mb-4" >
+              <li class="me-2 rounded">
+                <a class="dropdown-item py-1 px-3" href="../pages/article/healthNews.html"
+                  >健康專欄</a
+                >
+              </li>
+              <li class="rounded">
+                <a class="dropdown-item py-1 px-3" href=".../pages/article/feedback.html"
+                  >成功案例</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item border-bottom">
+          <a href="../pages/others/process.html" class="nav-link fs-4 py-4">料理怎麼買</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
-
 
     
   </body>
