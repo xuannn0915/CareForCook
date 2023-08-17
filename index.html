@@ -16,8 +16,8 @@
 <!-- swiper -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-<title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/swiper-484a9bf1.js"></script>
-    <link rel="stylesheet" href="/CareForCook/assets/swiper-a606c1b0.css">
+<title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/swiper-4930718a.js"></script>
+    <link rel="stylesheet" href="/CareForCook/assets/swiper-38ab1eca.css">
   </head>
   <body>
     <nav class="navbar px-lg-5 py-lg-6 px-4 py-3 position-fixed top-0 start-0 end-0">
@@ -152,8 +152,9 @@
   </div>
   
   <!-- mobile menu -->
-  <div class="container">    
-    <div class="collapse d-lg-none position-absolute top-100 end-0 start-0" id="navbarNav">
+  
+  <div class="mobile-menu collapse d-lg-none position-absolute top-100 end-0 start-0" id="navbarNav">
+    <div class="container vh-100">    
       <ul class="navbar-nav mt-4 text-center">
         <li class="mobile-nav-item nav-item dropdown border-bottom">
           <a
@@ -235,31 +236,32 @@
             </ul>
           </div>
         </li>
-        <li class="nav-item border-bottom">
+        <li class="nav-item">
           <a href="../pages/others/process.html" class="nav-link fs-4 py-4">料理怎麼買</a>
         </li>
       </ul>
     </div>
   </div>
-</nav>    <main class="banner py-6">
+
+</nav>    <main class="banner py-6 d-flex flex-lg-row flex-column align-items-center">
       <!-- Swiper -->
-      <div class="swiper mySwiper ms-lg-0">
+      <div class="swiper mySwiper mx-lg-0">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <div class="swiper-slide" lazy="true">
             <img
               src="/CareForCook/assets/banner1-c4853191.png"
               alt="banner"
               class="rounded"
             />
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" lazy="true">
             <img
               src="/CareForCook/assets/banner2-e8afeca4.png"
               alt="banner"
               class="rounded"
             />
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" lazy="true">
             <img
               src="/CareForCook/assets/banner3-c687ca67.png"
               alt="banner"
@@ -303,7 +305,15 @@
           </div>
         </div>
       </div>
-      <h1 class="text-primary">全方位 <br>營養照護專家</h1>
+      <div class="banner-wording">
+        <h1 class="text-primary mb-2 position-relative fs-lg-1 fs-2">全方位 <br>營養照護專家
+        </h1>
+        <p class="fs-lg-4 fs-5 mb-6">以健康為主軸，營養專業為基礎，滿足你從日常餐飲到特殊照護各階段的營養餐點需求</p>
+        <a href="../pages/shopping/mall.html" class="btn btn-primary">
+          線上購物
+          <span class="material-symbols-rounded ms-2"> east </span>
+        </a>
+      </div>
     </main>
     <section></section>
 
