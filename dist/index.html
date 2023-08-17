@@ -16,8 +16,8 @@
 <!-- swiper -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-<title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/tabs-a5302693.js"></script>
-    <link rel="stylesheet" href="/CareForCook/assets/tabs-861d2727.css">
+<title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/tabs-06367a17.js"></script>
+    <link rel="stylesheet" href="/CareForCook/assets/tabs-142437e0.css">
   </head>
   <body>
     <nav
@@ -281,7 +281,7 @@
 </nav>
     <main class="banner py-lg-6 py-4 d-flex flex-lg-row flex-column align-items-center">
       <!-- Swiper -->
-      <div class="swiper mySwiper mx-lg-0">
+      <div class="swiper bannerSwiper mx-lg-0">
         <div class="swiper-wrapper">
           <div class="swiper-slide" lazy="true">
             <img
@@ -345,7 +345,7 @@
         <h1 class="text-primary fw-bold mb-2 position-relative fs-lg-1 fs-2">全方位 <br>營養照護專家
         </h1>
         <p class="fs-lg-4 fs-5 mb-6">以健康為主軸，營養專業為基礎，滿足你從日常餐飲到特殊照護各階段的營養餐點需求</p>
-        <a href="../pages/shopping/mall.html" class="btn btn-primary">
+        <a href="../pages/shopping/mall.html" class="btn btn-primary d-inline-flex align-items-center">
           線上購物
           <span class="material-symbols-rounded ms-2"> east </span>
         </a>
@@ -383,20 +383,123 @@
               </div>
               <ul class="nav nav-tabs">
                 <li class="nav-item">
-                  <a class="nav-link active d-flex align-items-center" aria-current="page" href="#product">
+                  <a class="nav-link active d-flex align-items-center px-6 py-3" aria-current="page" href="#product">
                     餐點介紹
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#company">公司介紹</a>
+                  <a class="nav-link d-flex align-items-center px-6 py-3" href="#company">公司介紹</a>
                 </li>
               </ul>
             </div>
-            <div class="row product" id="product">
+            <div class="swiper serviceSwiper product" id="product">
+              <div class="swiper-wrapper mb-6">
+                <div class="swiper-slide">
+                  <a href="../pages/product info/customize.html" class="item d-inline-block">
+                    <div class="pic-box mb-2 rounded overflow-hidden position-relative">
+                      <img src="/CareForCook/assets/客製照護餐-470c6f36.png" alt="customize">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between px-2">
+                      <div class="item-info">
+                        <div class="title fw-bold fs-lg-4 fs-5">
+                          客製照護餐
+                        </div>
+                        <p class="fs-lg-5 fs-6">悉心客製 x 完善修復</p>
+                      </div>
+                      <button class="btn btn-outline-primary d-flex align-items-center">瞭解更多
+                        <span class="material-symbols-rounded ms-lg-2 ms-1"> east </span>
+                      </button>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="../pages/product info/protien.html" class="item d-inline-block">
+                    <div class="pic-box mb-2 rounded overflow-hidden position-relative">
+                      <img src="/CareForCook/assets/高蛋白燉飲-bd5d969a.png" alt="protien">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between px-2">
+                      <div class="item-info">
+                        <div class="title fw-bold fs-lg-4 fs-5">
+                          高蛋白燉飲
+                        </div>
+                        <p class="fs-lg-5 fs-6">全民健康 x 專業營養</p>
+                      </div>
+                      <button class="btn btn-outline-primary d-flex align-items-center">瞭解更多
+                        <span class="material-symbols-rounded ms-lg-2 ms-1"> east </span>
+                      </button>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="../pages/product info/lunchbox.html" class="item d-inline-block">
+                    <div class="pic-box mb-2 rounded overflow-hidden position-relative">
+                      <img src="/CareForCook/assets/機能調理餐-77b4023d.png" alt="customize">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between px-2">
+                      <div class="item-info">
+                        <div class="title fw-bold fs-lg-4 fs-5">
+                          機能調理餐
+                        </div>
+                        <p class="fs-lg-5 fs-6">日常餐飲 x 營養元氣</p>
+                      </div>
+                      <button class="btn btn-outline-primary d-flex align-items-center">瞭解更多
+                        <span class="material-symbols-rounded ms-lg-2 ms-1"> east </span>
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper serviceSwiper company" id="company">
+              <div class="swiper-wrapper mb-6">
+                <div class="swiper-slide">
+                  <a href="../pages/about/team.html" class="item d-inline-block position-relative">
+                    <div class="pic-box rounded overflow-hidden">
+                      <img src="/CareForCook/assets/公司介紹-1-3ddb1078.png" alt="service">
+                    </div>
+                    <div class="item-info text-white position-absolute px-6 py-4 bottom-0 start-0 z-3" >
+                      <div class="title fw-bold fs-4">
+                        專業團隊分工
+                      </div>
+                      <p>團隊精細分工，因為有各個崗位的專業，才能成就今日的美味料理</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="../pages/about/food.html" class="item d-inline-block position-relative">
+                    <div class="pic-box">
+                      <img src="/CareForCook/assets/公司介紹-2-73abd790.png" alt="service">
+                    </div>
+                    <div class="item-info text-white position-absolute px-6 py-4 bottom-0 start-0 z-3" >
+                      <div class="title fw-bold fs-4">
+                        嚴選在地食材
+                      </div>
+                      <p>挑選具有安全認證的在地廠商，並選用無毒且友善環境的安心食材</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="../pages/about/food.html" class="item d-inline-block position-relative">
+                    <div class="pic-box">
+                      <img src="/CareForCook/assets/公司介紹-３-f1e896f5.png" alt="service">
+                    </div>
+                    <div class="item-info text-white position-absolute px-6 py-4 bottom-0 start-0 z-3" >
+                      <div class="title fw-bold fs-4">
+                        高規品管製程
+                      </div>
+                      <p>在HACCP、ISO22000國際認證廠房生產，並堅守嚴格品質控管</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-pagination position-relative"></div>
+            </div>
+            <!-- <div class="row product" id="product">
               <div class="col-lg-4">
                 <a href="../pages/product info/customize.html" class="item d-inline-block">
                   <div class="pic-box mb-2 rounded overflow-hidden position-relative">
-                    <img src="/CareForCook/assets/客製照護餐-470c6f36.png" alt="customize">
+                    <img src="../assets/images/home/客製照護餐.png" alt="customize">
                   </div>
                   <div class="d-flex align-items-center justify-content-between px-2">
                     <div class="item-info">
@@ -414,7 +517,7 @@
               <div class="col-lg-4">
                 <a href="../pages/product info/protien.html" class="item d-inline-block">
                   <div class="pic-box mb-2 rounded overflow-hidden position-relative">
-                    <img src="/CareForCook/assets/高蛋白燉飲-bd5d969a.png" alt="protien">
+                    <img src="../assets/images/home/高蛋白燉飲.png" alt="protien">
                   </div>
                   <div class="d-flex align-items-center justify-content-between px-2">
                     <div class="item-info">
@@ -432,7 +535,7 @@
               <div class="col-lg-4">
                 <a href="../pages/product info/lunchbox.html" class="item d-inline-block">
                   <div class="pic-box mb-2 rounded overflow-hidden position-relative">
-                    <img src="/CareForCook/assets/機能調理餐-77b4023d.png" alt="customize">
+                    <img src="../assets/images/home/機能調理餐.png" alt="customize">
                   </div>
                   <div class="d-flex align-items-center justify-content-between px-2">
                     <div class="item-info">
@@ -447,12 +550,12 @@
                   </div>
                 </a>
               </div>
-            </div>
-            <div class="row company" id="company">
+            </div> -->
+            <!-- <div class="row company" id="company">
               <div class="col-lg-4">
                 <a href="../pages/about/team.html" class="item d-inline-block position-relative">
                   <div class="pic-box rounded overflow-hidden">
-                    <img src="/CareForCook/assets/公司介紹-1-3ddb1078.png" alt="service">
+                    <img src="../assets/images/home/公司介紹-1.png" alt="service">
                   </div>
                   <div class="item-info text-white position-absolute px-6 py-4 bottom-0 start-0 z-3" >
                     <div class="title fw-bold fs-4">
@@ -465,7 +568,7 @@
               <div class="col-lg-4">
                 <a href="../pages/about/food.html" class="item d-inline-block position-relative">
                   <div class="pic-box">
-                    <img src="/CareForCook/assets/公司介紹-2-73abd790.png" alt="service">
+                    <img src="../assets/images/home/公司介紹-2.png" alt="service">
                   </div>
                   <div class="item-info text-white position-absolute px-6 py-4 bottom-0 start-0 z-3" >
                     <div class="title fw-bold fs-4">
@@ -478,7 +581,7 @@
               <div class="col-lg-4">
                 <a href="../pages/about/food.html" class="item d-inline-block position-relative">
                   <div class="pic-box">
-                    <img src="/CareForCook/assets/公司介紹-３-f1e896f5.png" alt="service">
+                    <img src="../assets/images/home/公司介紹-３.png" alt="service">
                   </div>
                   <div class="item-info text-white position-absolute px-6 py-4 bottom-0 start-0 z-3" >
                     <div class="title fw-bold fs-4">
@@ -488,7 +591,7 @@
                   </div>
                 </a>
               </div>
-            </div>
+            </div> -->
 
           </div>
       </div>
