@@ -71,21 +71,95 @@ main{
 .service{
   background: linear-gradient(0deg, rgba(254, 227, 197, 0.10) 0%, rgba(254, 227, 197, 0.10) 100%), #FFF;
 
-.item{
-  &::after{
+  h2::after{
     content: '';
-    display: none;
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
-    border-radius: 5px;
-    background: linear-gradient(to bottom, rgba(black, 0%), rgba(black, 100%));
+    left: 280px;
+    background-image: url("https://github.com/xuannn0915/CareForCook/blob/main/assets/images/home/comma.png?raw=true");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 13px;
+    height: 21px;
   }
-  &:hover{
-    .item::after{
-      display: block;
+
+.company{
+  .pic-box::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    background: linear-gradient(to bottom, rgba(black, 0%), rgba(black, 25%));
+    transition: height 0.5s, opacity 0.5s;
+  }
+
+  .item-info{
+    margin-bottom: -64px;
+    transition: margin-bottom 0.5s;
+    .title{
+      transition: margin-bottom 0.5s;
+      margin-bottom: 16px;
     }
+  }
+
+  .item:hover{
+    .pic-box::after{
+      height: 100%;
+      opacity: 1;
+    }
+    .item-info{
+      margin-bottom: 0;
+      .title{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.product{
+  .pic-box::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(black, 25%);
+    transition: opacity 0.5s;
+    display: flex;
+    align-items: center;
+  }
+
+  .item:hover{
+    .pic-box::after{
+      content: '餐點非完全符合每個客戶狀況，請評估自身狀況與餐點營養成分後再進行購買';
+      color: $white;
+      opacity: 1;
+      padding: 0 48px;
+    }
+  }
+}
+
+.active::after{
+  content: '';
+    background-image: url("https://raw.githubusercontent.com/xuannn0915/CareForCook/3ee479ba97444004513a11eb97cdddf7401af98f/assets/images/red_drop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 11px;
+    height: 16px;
+    margin-left: 8px;
+}
+
+@media (max-width:992px) {
+  h2::after{
+    width: 10px;
+    height: 18px;
+    left: 200px;
   }
 }
 }
