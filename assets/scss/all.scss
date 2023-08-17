@@ -4,7 +4,6 @@
 @import "../../node_modules/bootstrap/scss/bootstrap-utilities.scss";
 
 // custom utilities
-@import './utils/base';
 @import './utils/fontsize';
 
 // Layout & components
@@ -48,6 +47,7 @@
 // @import "../../node_modules/bootstrap";
 
 // layout
+@import './utils/base';
 @import './utils/guideline';
 @import './layout/header.scss';
 @import './layout/footer.scss';

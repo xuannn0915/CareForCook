@@ -1083,17 +1083,17 @@ $nav-link-padding-x:                1rem !default;
 $nav-link-font-size:                null !default;
 $nav-link-font-weight:              null !default;
 $nav-link-color:                    $light; //var(--#{$prefix}link-color) !default;
-$nav-link-hover-color:              $warning; //var(--#{$prefix}link-hover-color) !default;
+$nav-link-hover-color:              $primary; //var(--#{$prefix}link-hover-color) !default;
 $nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
 $nav-link-disabled-color:           $gray-600 !default;
 
-$nav-tabs-border-color:             transparent;//$gray-300 !default;
+$nav-tabs-border-color:             $light; //$gray-300 !default;
 $nav-tabs-border-width:             2px; //$border-width !default;
 $nav-tabs-border-radius:            0;//$border-radius !default;
-$nav-tabs-link-hover-border-color:  transparent transparent $warning transparent;//$gray-200 $gray-200 $nav-tabs-border-color !default;
-$nav-tabs-link-active-color:        $warning; //$gray-700 !default;
+$nav-tabs-link-hover-border-color:  transparent transparent $primary transparent;//$gray-200 $gray-200 $nav-tabs-border-color !default;
+$nav-tabs-link-active-color:        $primary; //$gray-700 !default;
 $nav-tabs-link-active-bg:           $body-bg !default;
-$nav-tabs-link-active-border-color: transparent transparent $warning transparent; //$nav-tabs-link-active-bg !default;
+$nav-tabs-link-active-border-color: transparent transparent $primary transparent; //$nav-tabs-link-active-bg !default;
 
 $nav-pills-border-radius:           $border-radius !default;
 $nav-pills-link-active-color:       $component-active-color !default;
