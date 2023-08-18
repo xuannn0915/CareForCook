@@ -1,21 +1,22 @@
-main{
+main {
   margin-top: 86px;
-  position: relative;
-  height: 100%;
-  background: rgba(254, 227, 197, 0.10);
-
+  @include secondary_bg;
 
   .swiper {
     z-index: 1;
     width: 70%;
-    &::after{
-      content: '';
+    &::after {
+      content: "";
       position: absolute;
       top: 0;
       z-index: 2;
       width: 100%;
       height: 100%;
-      background: linear-gradient(270deg, #FFFCF9 0%, rgba(255, 249, 243, 0.20) 100%);
+      background: linear-gradient(
+        270deg,
+        #fffcf9 0%,
+        rgba(255, 249, 243, 0.2) 100%
+      );
     }
   }
 
@@ -24,128 +25,110 @@ main{
     object-fit: cover;
   }
 
-  .banner-wording{
+  .banner-wording {
     z-index: 3;
-    max-width: 23%;
+    max-width: 30%;
     margin-left: -96px;
   }
 
-  h1::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 138px;
-    background-image: url("https://github.com/xuannn0915/CareForCook/blob/main/assets/images/home/comma.png?raw=true");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 13px;
-    height: 21px;
+  .comma::after {
+    @include red_comma;
   }
-  
-  @media (max-width:992px) {
+
+  @media (max-width: 992px) {
     margin-top: 62px;
     .swiper {
       width: 100%;
-      &::after{
-        background: linear-gradient(0deg, #FFFDFA 0%, rgba(255, 253, 250, 0.20) 100%);
+      &::after {
+        background: linear-gradient(
+          0deg,
+          #fffdfa 0%,
+          rgba(255, 253, 250, 0.2) 100%
+        );
       }
     }
-    .banner-wording{
+    .banner-wording {
       max-width: 80%;
       margin-left: 0px;
       margin-top: -96px;
     }
-    h1::after{
-      width: 10px;
-      height: 18px;
-      left: 110px;
+  }
+}
+
+.painPoint {
+  @include secondary_bg;
+}
+
+.service {
+  @include secondary_bg;
+
+  h2::after {
+    @include red_comma;
+  }
+
+  .company {
+    .pic-box::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 0%;
+      opacity: 0;
+      background: linear-gradient(to bottom, rgba(black, 0%), rgba(black, 25%));
+      transition: height 0.5s, opacity 0.5s;
     }
 
-  }
-}
-
-.painPoint{
-  background: linear-gradient(0deg, rgba(254, 227, 197, 0.10) 0%, rgba(254, 227, 197, 0.10) 100%), #FFF;
-}
-
-.service{
-  background: linear-gradient(0deg, rgba(254, 227, 197, 0.10) 0%, rgba(254, 227, 197, 0.10) 100%), #FFF;
-
-  h2::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 280px;
-    background-image: url("https://github.com/xuannn0915/CareForCook/blob/main/assets/images/home/comma.png?raw=true");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 13px;
-    height: 21px;
-  }
-
-.company{
-  .pic-box::after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0%;
-    opacity: 0;
-    background: linear-gradient(to bottom, rgba(black, 0%), rgba(black, 25%));
-    transition: height 0.5s, opacity 0.5s;
-  }
-
-  .item-info{
-    margin-bottom: -64px;
-    transition: margin-bottom 0.5s;
-    .title{
+    .item-info {
+      margin-bottom: -64px;
       transition: margin-bottom 0.5s;
-      margin-bottom: 16px;
+      .title {
+        transition: margin-bottom 0.5s;
+        margin-bottom: 16px;
+      }
     }
-  }
 
-  .item:hover{
-    .pic-box::after{
-      height: 100%;
-      opacity: 1;
-    }
-    .item-info{
-      margin-bottom: 0;
-      .title{
+    .item:hover {
+      .pic-box::after {
+        height: 100%;
+        opacity: 1;
+      }
+      .item-info {
         margin-bottom: 0;
+        .title {
+          margin-bottom: 0;
+        }
       }
     }
   }
-}
 
-.product{
-  .pic-box::after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    background: rgba(black, 25%);
-    transition: opacity 0.5s;
-    display: flex;
-    align-items: center;
-  }
+  .product {
+    .pic-box::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      background: rgba(black, 25%);
+      transition: opacity 0.5s;
+      display: flex;
+      align-items: center;
+    }
 
-  .item:hover{
-    .pic-box::after{
-      content: '餐點非完全符合每個客戶狀況，請評估自身狀況與餐點營養成分後再進行購買';
-      color: $white;
-      opacity: 1;
-      padding: 0 48px;
+    .item:hover {
+      .pic-box::after {
+        content: "餐點非完全符合每個客戶狀況，請評估自身狀況與餐點營養成分後再進行購買";
+        color: $white;
+        opacity: 1;
+        padding: 0 48px;
+      }
     }
   }
-}
 
-.active::after{
-  content: '';
+  .active::after {
+    content: "";
     background-image: url("https://raw.githubusercontent.com/xuannn0915/CareForCook/3ee479ba97444004513a11eb97cdddf7401af98f/assets/images/red_drop.svg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -153,20 +136,56 @@ main{
     width: 11px;
     height: 16px;
     margin-left: 8px;
-}
+  }
 
-.swiper-pagination{
-  position: relative;
-  &-bullet-active{
-    background-color: $warning;
+  .swiper-pagination {
+    position: relative;
+    &-bullet {
+      background-color: lighten($warning, 1%);
+    }
+    &-bullet-active {
+      background-color: $warning;
+    }
   }
 }
 
-@media (max-width:992px) {
-  h2::after{
-    width: 10px;
-    height: 18px;
-    left: 200px;
+.comment {
+  @include secondary_bg;
+
+  h2::after {
+    @include red_comma;
   }
-}
+
+  .item {
+    background: rgba(254, 227, 197, 0.2);
+    border: 1px solid transparent;
+    img {
+      width: 60px;
+      height: 60px;
+    }
+
+    .truncate {
+      color: $light;
+      @include multiline-ellipsis(2);
+    }
+
+    &:hover{
+      border: 1px solid $warning;
+      background: rgba(255, 180, 69, 0.3);
+      .badge{
+        background-color: $primary;
+        color: $white;
+        border: 0px solid transparent;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .item {
+      img {
+        width: 48px;
+        height: 48px;
+      }
+    }
+  }
 }

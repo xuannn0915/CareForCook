@@ -1,0 +1,29 @@
+@mixin red_comma{
+  content: '';
+    background-image: url("https://github.com/xuannn0915/CareForCook/blob/main/assets/images/home/comma.png?raw=true");
+    display: inline-block;
+    margin-left: 16px;
+    margin-bottom: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 13px;
+    height: 21px;
+
+    @media (max-width:992px) {
+      width: 10px;
+      height: 18px;
+      margin: 0 0 12px 12px;
+      left: 70%;
+    }
+}
+
+@mixin secondary_bg{
+  background: linear-gradient(0deg, rgba(254, 227, 197, 0.10) 0%, rgba(254, 227, 197, 0.10) 100%), #FFF;
+}
+
+@mixin multiline-ellipsis($line){
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+  overflow: hidden;
+}

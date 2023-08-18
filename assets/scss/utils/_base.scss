@@ -17,3 +17,74 @@ ul,ol,li{
   margin: 0;
   padding: 0;
 }
+
+// Buttons
+.btn-primary{
+  color: $white;
+  &:hover{
+    color: $white;
+  }
+}
+
+.btn-outline-primary{
+  &:hover{
+    background-color: #F4DEDB;
+    color: $primary;
+  }
+}
+
+.btn-outline-warning{
+  border-radius: 5px;
+  &:hover{
+    background-color: #FFF9F3;
+    color: $warning;
+  }
+}
+
+.btn-link{
+  padding: 4px 0;
+}
+
+.btn-outline-dark{
+  &:hover{
+    background-color: #E0E0E0;
+    color: $dark;
+  }
+}
+
+.badge{
+  padding: 4px 16px;
+  border: 1px solid $light ;
+  color: $light;
+}
+
+.badge-primary{
+  border: 0;
+  color: $white;
+  background-color: $primary;
+}
+
+.badge-secondary{
+  border: 0;
+  color: $dark;
+  background-color: $secondary;
+}
+
+.badge-outline-primary{
+  border: 1px solid $primary;
+  color: $primary;
+}
+
+
+// Form
+.form-control, .form-select{
+  border-bottom: 1px solid $light;
+}
+
+
+// Nav Tab
+.tabs{
+  .nav-item{
+    border-bottom: 2px solid $light;
+  }
+}
