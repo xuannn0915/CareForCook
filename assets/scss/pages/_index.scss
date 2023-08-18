@@ -156,7 +156,11 @@ main {
     @include red_comma;
   }
 
-  .item {
+  .swiper-wrapper{
+    max-height: 475px;
+  }
+
+  .swiper-slide {
     background: rgba(254, 227, 197, 0.2);
     border: 1px solid transparent;
     img {
@@ -180,8 +184,24 @@ main {
     }
   }
 
+  .swiper-button-prev::after, .swiper-button-next::after{
+    content: '';
+  }
+
+  .swiper-button-prev, .swiper-button-next{
+    img{
+      width: 64px;
+      height: 64px;
+    }
+  }
+
+  .illustration{
+    width: 286px;
+    bottom: -8px;
+  }
+
   @media (max-width: 992px) {
-    .item {
+    .swiper-slide {
       img {
         width: 48px;
         height: 48px;

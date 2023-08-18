@@ -46,3 +46,13 @@ var serviceSwiper = new Swiper(".serviceSwiper", {
     },
   },
 });
+
+// comment swiper
+var commentSwiper = new Swiper(".commentSwiper", {
+  direction: "vertical",
+  slidesPerView: 3.5,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
