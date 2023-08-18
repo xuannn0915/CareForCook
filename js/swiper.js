@@ -55,4 +55,7 @@ var commentSwiper = new Swiper(".commentSwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+    mousewheel: {
+    forceToAxis: true,
+  },
 });

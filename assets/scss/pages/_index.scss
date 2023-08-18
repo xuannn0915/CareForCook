@@ -156,8 +156,11 @@ main {
     @include red_comma;
   }
 
-  .swiper-wrapper{
+  .swiper{
     max-height: 475px;
+    .swiper-wrapper{
+      height: 100%;
+    }
   }
 
   .swiper-slide {
@@ -188,11 +191,16 @@ main {
     content: '';
   }
 
-  .swiper-button-prev, .swiper-button-next{
-    img{
-      width: 64px;
-      height: 64px;
-    }
+  .swiper-button-prev, .swiper-button-next {
+    border: 1px solid $primary;
+    border-radius: 50%;
+    color: $primary;
+  }
+
+  .swiper-button-disabled{
+    opacity: 1;
+    border: 1px solid $dark;
+    color: $dark;
   }
 
   .illustration{
