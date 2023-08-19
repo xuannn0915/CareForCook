@@ -16,8 +16,8 @@
 <!-- swiper -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-<title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/tabs-e41b156a.js"></script>
-    <link rel="stylesheet" href="/CareForCook/assets/tabs-8ab2f093.css">
+<title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/tabs-5e73e801.js"></script>
+    <link rel="stylesheet" href="/CareForCook/assets/tabs-fe4d5828.css">
   </head>
   <body>
     <nav
@@ -279,9 +279,11 @@
     </div>
   </div>
 </nav>
-    <main class="banner py-lg-6 py-4 d-flex flex-lg-row flex-column align-items-center">
+    <main
+      class="banner py-lg-6 py-4 d-flex flex-lg-row flex-column align-items-center position-relative h-100"
+    >
       <!-- Swiper -->
-      <div class="swiper mySwiper mx-lg-0">
+      <div class="swiper bannerSwiper mx-lg-0">
         <div class="swiper-wrapper">
           <div class="swiper-slide" lazy="true">
             <img
@@ -342,69 +344,510 @@
         </div>
       </div>
       <div class="banner-wording">
-        <h1 class="text-primary mb-2 position-relative fs-lg-1 fs-2">全方位 <br>營養照護專家
+        <h1 class="text-primary fw-bold mb-2 fs-lg-1 fs-2">
+          <p class="comma">全方位</p>
+          <p>營養照護專家</p>
         </h1>
-        <p class="fs-lg-4 fs-5 mb-6">以健康為主軸，營養專業為基礎，滿足你從日常餐飲到特殊照護各階段的營養餐點需求</p>
-        <a href="../pages/shopping/mall.html" class="btn btn-primary">
+        <p class="fs-lg-4 fs-5 mb-6">
+          以健康為主，營養專業為輔，從日常餐飲到特殊照護滿足你各階段需求
+        </p>
+        <a
+          href="../pages/shopping/mall.html"
+          class="btn btn-primary d-inline-flex align-items-center"
+        >
           線上購物
           <span class="material-symbols-rounded ms-2"> east </span>
         </a>
       </div>
     </main>
+
     <section class="painPoint py-lg-9 py-6">
       <div class="container">
         <div class="row flex-lg-row flex-column-reverse align-items-center">
           <div class="col-lg-7 col-10">
-            <img src="/CareForCook/assets/painpoint-c429f66b.svg" alt="painpoint">
+            <img src="/CareForCook/assets/painpoint-c429f66b.svg" alt="painpoint" />
           </div>
           <div class="col-lg-4 ms-auto text-lg-start text-center mb-lg-0 mb-6">
             <h2 class="text-dark fs-lg-2 fs-4 mb-lg-7 mb-4">你是否....</h2>
-            <p class="fw-bold fs-lg-3 fs-5 mb-lg-7 mb-4">
-              常煩惱三餐該怎麼辦？ <br>
-              不知道該怎麼吃才能補充營養？<br>
+            <p class="fs-lg-3 fs-5 mb-lg-7 mb-4">
+              常煩惱三餐該怎麼辦？ <br />
+              不知道該怎麼吃才能補充營養？<br />
               如果這正是你的心聲
             </p>
-            <h2 class="text-primary fs-lg-2 fs-4">那你絕對不能錯過照料理 !</h2>
+            <h2 class="text-primary fw-bold fs-lg-2 fs-4">
+              那你絕不能錯過照料理！
+            </h2>
           </div>
         </div>
       </div>
     </section>
+
     <section class="service py-lg-9 py-6">
-      <div class="container">
-        <div class="section-title d-flex justify-content-between align-items-center mb-7">
-          <div>
-            <h2 class="text-primary mb-1">我們提供哪些服務</h2>
-            <subtitle class="fw-bold fs-lg-4">專業的態度，健康的食物</subtitle>
-          </div>
-          <div id="tabs">
+      <div id="tabs">
+        <div class="container">
+          <div
+            class="section-title d-flex flex-lg-row flex-column justify-content-between align-items-center mb-lg-7 mb-6"
+          >
+            <div class="text-lg-start text-center mb-lg-0 mb-6">
+              <h2 class="fw-bold text-primary mb-1 fs-lg-2 fs-3">
+                我們提供哪些服務
+              </h2>
+              <subtitle class="fw-bold fs-lg-4 fs-5">
+                專業的態度，健康的食物
+              </subtitle>
+            </div>
             <ul class="nav nav-tabs">
               <li class="nav-item">
-                <a class="nav-link active d-flex align-items-center" aria-current="page" href="#tabs-1">
+                <a
+                  class="nav-link active d-flex align-items-center px-6 py-3"
+                  aria-current="page"
+                  href="#product"
+                >
                   餐點介紹
-                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="16" viewBox="0 0 11 16" fill="none" class="ms-2">
-                    <path d="M10.9804 10.633C10.9804 13.5971 8.52235 16 5.4902 16C2.45804 16 0 13.5971 0 10.633C0 7.66895 5.4902 0 5.4902 0C5.4902 0 10.9804 7.66895 10.9804 10.633Z" fill="#C7594D"/>
-                  </svg>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#tabs-2">公司介紹</a>
+                <a
+                  class="nav-link d-flex align-items-center px-6 py-3"
+                  href="#company"
+                  >公司介紹</a
+                >
               </li>
             </ul>
           </div>
-        </div>
-        <div class="row" id="tabs-1">
-          <div class="col-4">
-            <a href="../pages/about/team.html" class="item d-inline-block position-relative">
-              <img src="/CareForCook/assets/公司介紹-1-3ddb1078.png" alt="service">
-              <div class="item-info text-white position-absolute px-6 py-4 bottom-0 start-0 z-3" >
-                <div class="title fw-bold fs-4">
-                  專業團隊分工
-                </div>
-                <p>團隊精細分工，因為有各個崗位的專業，才能成就今日的美味料理</p>
+          <div class="swiper serviceSwiper product" id="product">
+            <div class="swiper-wrapper mb-6">
+              <div class="swiper-slide">
+                <a
+                  href="../pages/product info/customize.html"
+                  class="item d-inline-block"
+                >
+                  <div
+                    class="pic-box mb-2 rounded overflow-hidden position-relative"
+                  >
+                    <img
+                      src="/CareForCook/assets/客製照護餐-470c6f36.png"
+                      alt="customize"
+                    />
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between px-2"
+                  >
+                    <div class="item-info">
+                      <div class="title fw-bold fs-lg-4 fs-5">客製照護餐</div>
+                      <p class="fs-lg-5 fs-6">悉心客製 x 完善修復</p>
+                    </div>
+                    <button
+                      class="btn btn-outline-primary d-flex align-items-center"
+                    >
+                      瞭解更多
+                      <span class="material-symbols-rounded ms-lg-2 ms-1">
+                        east
+                      </span>
+                    </button>
+                  </div>
+                </a>
               </div>
-            </a>
+              <div class="swiper-slide">
+                <a
+                  href="../pages/product info/protien.html"
+                  class="item d-inline-block"
+                >
+                  <div
+                    class="pic-box mb-2 rounded overflow-hidden position-relative"
+                  >
+                    <img
+                      src="/CareForCook/assets/高蛋白燉飲-bd5d969a.png"
+                      alt="protien"
+                    />
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between px-2"
+                  >
+                    <div class="item-info">
+                      <div class="title fw-bold fs-lg-4 fs-5">高蛋白燉飲</div>
+                      <p class="fs-lg-5 fs-6">全民健康 x 專業營養</p>
+                    </div>
+                    <button
+                      class="btn btn-outline-primary d-flex align-items-center"
+                    >
+                      瞭解更多
+                      <span class="material-symbols-rounded ms-lg-2 ms-1">
+                        east
+                      </span>
+                    </button>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="../pages/product info/lunchbox.html"
+                  class="item d-inline-block"
+                >
+                  <div
+                    class="pic-box mb-2 rounded overflow-hidden position-relative"
+                  >
+                    <img
+                      src="/CareForCook/assets/機能調理餐-77b4023d.png"
+                      alt="customize"
+                    />
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between px-2"
+                  >
+                    <div class="item-info">
+                      <div class="title fw-bold fs-lg-4 fs-5">機能調理餐</div>
+                      <p class="fs-lg-5 fs-6">日常餐飲 x 營養元氣</p>
+                    </div>
+                    <button
+                      class="btn btn-outline-primary d-flex align-items-center"
+                    >
+                      瞭解更多
+                      <span class="material-symbols-rounded ms-lg-2 ms-1">
+                        east
+                      </span>
+                    </button>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper serviceSwiper company" id="company">
+            <div class="swiper-wrapper mb-6">
+              <div class="swiper-slide">
+                <a
+                  href="../pages/about/team.html"
+                  class="item d-inline-block position-relative"
+                >
+                  <div class="pic-box rounded overflow-hidden">
+                    <img
+                      src="/CareForCook/assets/公司介紹-1-3ddb1078.png"
+                      alt="service"
+                    />
+                  </div>
+                  <div
+                    class="item-info text-white position-absolute px-6 py-4 bottom-0 start-0 z-3"
+                  >
+                    <div class="title fw-bold fs-4">專業團隊分工</div>
+                    <p>
+                      團隊精細分工，因為有各個崗位的專業，才能成就今日的美味料理
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="../pages/about/food.html"
+                  class="item d-inline-block position-relative"
+                >
+                  <div class="pic-box">
+                    <img
+                      src="/CareForCook/assets/公司介紹-2-73abd790.png"
+                      alt="service"
+                    />
+                  </div>
+                  <div
+                    class="item-info text-white position-absolute px-6 py-4 bottom-0 start-0 z-3"
+                  >
+                    <div class="title fw-bold fs-4">嚴選在地食材</div>
+                    <p>
+                      挑選具有安全認證的在地廠商，並選用無毒且友善環境的安心食材
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="../pages/about/food.html"
+                  class="item d-inline-block position-relative"
+                >
+                  <div class="pic-box">
+                    <img
+                      src="/CareForCook/assets/公司介紹-３-f1e896f5.png"
+                      alt="service"
+                    />
+                  </div>
+                  <div
+                    class="item-info text-white position-absolute px-6 py-4 bottom-0 start-0 z-3"
+                  >
+                    <div class="title fw-bold fs-4">高規品管製程</div>
+                    <p>在HACCP、ISO22000國際認證廠房生產，並堅守嚴格品質控管</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination position-relative"></div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="comment pt-lg-9 pt-6">
+      <div class="container">
+        <div class="text-center mb-7">
+          <h2 class="fw-bold text-primary mb-1 fs-lg-2 fs-3">其他人怎麼說</h2>
+          <subtitle class="fw-bold fs-lg-4 fs-5">
+            他們這樣吃，熱情推薦你！
+          </subtitle>
+        </div>
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="swiper commentSwiper">
+              <ul class="swiper-wrapper">
+                  <li class="swiper-slide rounded mb-4">
+                    <a
+                      href="../pages/article/feedback.html"
+                      class="px-6 py-4 d-flex flex-lg-row flex-column justify-content-between"
+                    >
+                      <div
+                        class="user d-flex flex-lg-column flex-row me-lg-7 mb-lg-0 mb-2 align-items-lg-start align-items-center"
+                      >
+                        <img
+                          src="/CareForCook/assets/avatar-1-fc145b93.svg"
+                          alt="avatar-1"
+                          class="mb-lg-1 me-lg-0 me-2"
+                        />
+                        <p class="fw-bold text-nowrap fs-5">張先生 / 32歲</p>
+                        <span class="badge rounded-pill ms-auto d-lg-none d-block"
+                          >膽囊切除手術</span
+                        >
+                      </div>
+                      <div class="wording">
+                        <div
+                          class="d-lg-flex d-none justify-content-between align-items-center mb-4"
+                        >
+                          <span class="badge rounded-pill">膽囊切除手術</span>
+                          <button type="button" class="btn btn-link">瞭解更多</button>
+                        </div>
+                        <p class="truncate">
+                          管體中資程！子，強法娥縷回，蛇目作嘶黨何三台飾思中退反次三了這臺風向。想又長說跳資國，由盡美井鐵爛蜻肩怡情誰裡供機的芯啊音告國凶中；聽清比城亢，到找應？外先的向我藹徒外讓網話絕籲的用了友第了拾我的原
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="swiper-slide rounded mb-4">
+                    <a
+                      href="../pages/article/feedback.html"
+                      class="px-6 py-4 d-flex flex-lg-row flex-column justify-content-between"
+                    >
+                      <div
+                        class="user d-flex flex-lg-column flex-row me-lg-7 mb-lg-0 mb-2 align-items-lg-start align-items-center"
+                      >
+                        <img
+                          src="/CareForCook/assets/avatar-2-a26474e7.svg"
+                          alt="avatar-1"
+                          class="mb-lg-1 me-lg-0 me-2"
+                        />
+                        <p class="fw-bold text-nowrap fs-5">陳小姐 / 51歲</p>
+                        <span class="badge rounded-pill ms-auto d-lg-none d-block"
+                          >婦科手術</span
+                        >
+                      </div>
+                      <div class="wording">
+                        <div
+                          class="d-lg-flex d-none justify-content-between align-items-center mb-4"
+                        >
+                          <span class="badge rounded-pill">婦科手術</span>
+                          <button type="button" class="btn btn-link">瞭解更多</button>
+                        </div>
+                        <p class="truncate">
+                          管體中資程！子，強法娥縷回，蛇目作嘶黨何三台飾思中退反次三了這臺風向。想又長說跳資國，由盡美井鐵爛蜻肩怡情誰裡供機的芯啊音告國凶中；聽清比城亢，到找應？外先的向我藹徒外讓網話絕籲的用了友第了拾我的原
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="swiper-slide rounded mb-4">
+                    <a
+                      href="../pages/article/feedback.html"
+                      class="px-6 py-4 d-flex flex-lg-row flex-column justify-content-between"
+                    >
+                      <div
+                        class="user d-flex flex-lg-column flex-row me-lg-7 mb-lg-0 mb-2 align-items-lg-start align-items-center"
+                      >
+                        <img
+                          src="/CareForCook/assets/avatar-3-0e994705.svg"
+                          alt="avatar-1"
+                          class="mb-lg-1 me-lg-0 me-2"
+                        />
+                        <p class="fw-bold text-nowrap fs-5">張先生 / 81歲</p>
+                        <span class="badge rounded-pill ms-auto d-lg-none d-block"
+                          >人工關節手術</span
+                        >
+                      </div>
+                      <div class="wording">
+                        <div
+                          class="d-lg-flex d-none justify-content-between align-items-center mb-4"
+                        >
+                          <span class="badge rounded-pill">人工關節手術</span>
+                          <button type="button" class="btn btn-link">瞭解更多</button>
+                        </div>
+                        <p class="truncate">
+                          管體中資程！子，強法娥縷回，蛇目作嘶黨何三台飾思中退反次三了這臺風向。想又長說跳資國，由盡美井鐵爛蜻肩怡情誰裡供機的芯啊音告國凶中；聽清比城亢，到找應？外先的向我藹徒外讓網話絕籲的用了友第了拾我的原
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="swiper-slide rounded mb-4">
+                    <a
+                      href="../pages/article/feedback.html"
+                      class="px-6 py-4 d-flex flex-lg-row flex-column justify-content-between"
+                    >
+                      <div
+                        class="user d-flex flex-lg-column flex-row me-lg-7 mb-lg-0 mb-2 align-items-lg-start align-items-center"
+                      >
+                        <img
+                          src="/CareForCook/assets/avatar-4-9b08fd1d.svg"
+                          alt="avatar-1"
+                          class="mb-lg-1 me-lg-0 me-2"
+                        />
+                        <p class="fw-bold text-nowrap fs-5">吳小姐 / 65歲</p>
+                        <span class="badge rounded-pill ms-auto d-lg-none d-block"
+                          >肝臟移植手術</span
+                        >
+                      </div>
+                      <div class="wording">
+                        <div
+                          class="d-lg-flex d-none justify-content-between align-items-center mb-4"
+                        >
+                          <span class="badge rounded-pill">肝臟移植手術</span>
+                          <button type="button" class="btn btn-link">瞭解更多</button>
+                        </div>
+                        <p class="truncate">
+                          管體中資程！子，強法娥縷回，蛇目作嘶黨何三台飾思中退反次三了這臺風向。想又長說跳資國，由盡美井鐵爛蜻肩怡情誰裡供機的芯啊音告國凶中；聽清比城亢，到找應？外先的向我藹徒外讓網話絕籲的用了友第了拾我的原
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="swiper-slide rounded mb-4">
+                    <a
+                      href="../pages/article/feedback.html"
+                      class="px-6 py-4 d-flex flex-lg-row flex-column justify-content-between"
+                    >
+                      <div
+                        class="user d-flex flex-lg-column flex-row me-lg-7 mb-lg-0 mb-2 align-items-lg-start align-items-center"
+                      >
+                        <img
+                          src="/CareForCook/assets/avatar-5-2b2092db.svg"
+                          alt="avatar-1"
+                          class="mb-lg-1 me-lg-0 me-2"
+                        />
+                        <p class="fw-bold text-nowrap fs-5">陳小姐 / 78歲</p>
+                        <span class="badge rounded-pill ms-auto d-lg-none d-block"
+                          >老年營養流失問題</span
+                        >
+                      </div>
+                      <div class="wording">
+                        <div
+                          class="d-lg-flex d-none justify-content-between align-items-center mb-4"
+                        >
+                          <span class="badge rounded-pill">老年營養流失問題</span>
+                          <button type="button" class="btn btn-link">瞭解更多</button>
+                        </div>
+                        <p class="truncate">
+                          管體中資程！子，強法娥縷回，蛇目作嘶黨何三台飾思中退反次三了這臺風向。想又長說跳資國，由盡美井鐵爛蜻肩怡情誰裡供機的芯啊音告國凶中；聽清比城亢，到找應？外先的向我藹徒外讓網話絕籲的用了友第了拾我的原
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="swiper-slide rounded mb-4">
+                    <a
+                      href="../pages/article/feedback.html"
+                      class="px-6 py-4 d-flex flex-lg-row flex-column justify-content-between"
+                    >
+                      <div
+                        class="user d-flex flex-lg-column flex-row me-lg-7 mb-lg-0 mb-2 align-items-lg-start align-items-center"
+                      >
+                        <img
+                          src="/CareForCook/assets/avatar-6-87481e13.svg"
+                          alt="avatar-1"
+                          class="mb-lg-1 me-lg-0 me-2"
+                        />
+                        <p class="fw-bold text-nowrap fs-5">謝小姐 / 24歲</p>
+                        <span class="badge rounded-pill ms-auto d-lg-none d-block"
+                          >減重營養管理</span
+                        >
+                      </div>
+                      <div class="wording">
+                        <div
+                          class="d-lg-flex d-none justify-content-between align-items-center mb-4"
+                        >
+                          <span class="badge rounded-pill">減重營養管理</span>
+                          <button type="button" class="btn btn-link">瞭解更多</button>
+                        </div>
+                        <p class="truncate">
+                          管體中資程！子，強法娥縷回，蛇目作嘶黨何三台飾思中退反次三了這臺風向。想又長說跳資國，由盡美井鐵爛蜻肩怡情誰裡供機的芯啊音告國凶中；聽清比城亢，到找應？外先的向我藹徒外讓網話絕籲的用了友第了拾我的原
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="swiper-slide rounded mb-7">
+                    <a
+                      href="../pages/article/feedback.html"
+                      class="px-6 py-4 d-flex flex-lg-row flex-column justify-content-between"
+                    >
+                      <div
+                        class="user d-flex flex-lg-column flex-row me-lg-7 mb-lg-0 mb-2 align-items-lg-start align-items-center"
+                      >
+                        <img
+                          src="/CareForCook/assets/avatar-7-f6522556.svg"
+                          alt="avatar-1"
+                          class="mb-lg-1 me-lg-0 me-2"
+                        />
+                        <p class="fw-bold text-nowrap fs-5">王小姐 / 35歲</p>
+                        <span class="badge rounded-pill ms-auto d-lg-none d-block"
+                          >健身蛋白質補充需求</span
+                        >
+                      </div>
+                      <div class="wording">
+                        <div
+                          class="d-lg-flex d-none justify-content-between align-items-center mb-4"
+                        >
+                          <span class="badge rounded-pill">健身蛋白質補充需求</span>
+                          <button type="button" class="btn btn-link">瞭解更多</button>
+                        </div>
+                        <p class="truncate">
+                          管體中資程！子，強法娥縷回，蛇目作嘶黨何三台飾思中退反次三了這臺風向。想又長說跳資國，由盡美井鐵爛蜻肩怡情誰裡供機的芯啊音告國凶中；聽清比城亢，到找應？外先的向我藹徒外讓網話絕籲的用了友第了拾我的原
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 d-lg-flex flex-column align-items-center d-none position-relative">
+            <div class="swipe-button position-relative mt-5">
+              <span class="material-symbols-rounded swiper-button-prev fs-2 p-6">
+                arrow_upward
+              </span>
+              <span class="material-symbols-rounded swiper-button-next fs-2 p-6">
+                arrow_downward
+              </span>
+            </div>
+            <img src="/CareForCook/assets/其他人怎麼說＿插圖-8b5c6b3d.svg" alt="comment illustration" class="illustration position-absolute start-50 translate-middle-x">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home_slogan pt-lg-9 pt-8 mb-lg-10 mb-6">
+      <div class="container">
+        <div class="row">
+          <div class="col-8 mx-auto wording text-center d-flex flex-column align-items-center">
+            <h2 class="fw-bold text-primary mb-1 fs-lg-2 fs-3 position-relative">
+              照料理，用心照料你
+            </h2>
+            <subtitle class="fw-bold fs-lg-4 fs-5 mb-lg-6 mb-4">
+              忽略的平淡，料理你日常的不簡單
+            </subtitle>
+          <p class="fs-lg-5 fs-6 mb-lg-8 mb-6">我們傳遞專業美味，引領健康生活。快速輕鬆了解我們的優質服務</p>
+          <div class="d-flex align-items-center">
+            <a href="../pages/others/process.html" class="btn btn-outline-primary me-lg-6 me-4">懶人購物包</a>
+            <a href="../pages/shopping/mall.html" class="btn btn-primary">線上購物
+            </a>
+          </div>
+          </div>
+        </div>  
       </div>
     </section>
 
