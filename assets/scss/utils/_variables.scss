@@ -846,7 +846,7 @@ $input-padding-y-lg:                    $input-btn-padding-y-lg !default;
 $input-padding-x-lg:                    $input-btn-padding-x-lg !default;
 $input-font-size-lg:                    $input-btn-font-size-lg !default;
 
-$input-bg:                              $body-bg !default;
+$input-bg:                              transparent; //$body-bg !default;
 $input-disabled-color:                  null !default;
 $input-disabled-bg:                     #EBEBEB; //$gray-200 !default;
 $input-disabled-border-color:           $dark; //null !default;

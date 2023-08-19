@@ -12,3 +12,19 @@ $(function () {
     $(this).children('a').addClass("active");
   });
 });
+
+$(function () {
+  // to forget password page
+  $(".forget").click(function (event) {
+    event.preventDefault();
+    $(".forgetPassword").removeClass("disabled").addClass('active');
+    $(".login").removeClass('active').addClass("disabled");
+  });
+
+  // return to login page
+  $(".retun_login").click(function (event) {
+    event.preventDefault();
+    $(".forgetPassword").removeClass('active').addClass("disabled");
+    $(".login").removeClass("disabled").addClass('active');
+  });
+});

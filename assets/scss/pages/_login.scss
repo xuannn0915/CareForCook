@@ -1,0 +1,38 @@
+.member_login{
+  @include page_margintop;
+  padding: 80px 0 252px 0;
+  background: linear-gradient(180deg, #FFFCF9 0%, #FFF 100%);
+  @include bg_wave(64px, 16px);
+
+  .login{
+    &.active{
+      opacity: 1;
+      transition: 1.5s;
+      transform: translateX(0%);
+    }
+    &.disabled{
+      opacity: 0;
+      transition: 1.5s;
+      transform: translateX(-80%);
+    }
+  }
+
+  .forgetPassword{
+    transform: translateX(80%);
+    opacity: 0;
+    &.active{
+      opacity: 1;
+      transition: 1.5s;
+      transform: translateX(-50%);
+    }
+    &.disabled{
+      opacity: 0;
+      transition: 1.5s;
+      transform: translateX(80%);
+    }
+  }
+
+  @media (max-width:992px) {
+    padding: 40px 0 105px 0;
+  }
+}

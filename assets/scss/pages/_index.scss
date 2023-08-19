@@ -1,5 +1,5 @@
-main {
-  margin-top: 86px;
+.index_banner{
+  @include page_margintop;
   @include secondary_bg;
 
   .swiper {
@@ -36,7 +36,6 @@ main {
   }
 
   @media (max-width: 992px) {
-    margin-top: 62px;
     .swiper {
       width: 100%;
       &::after {
@@ -230,15 +229,10 @@ main {
     height: 35px;
   }
 
-    background-image: url('https://raw.githubusercontent.com/xuannn0915/CareForCook/e4ca5a23e7f99ecbc70a5224b65522239e92a972/assets/images/home/bottom_lineargrdient-1.svg'),url('https://raw.githubusercontent.com/xuannn0915/CareForCook/e4ca5a23e7f99ecbc70a5224b65522239e92a972/assets/images/home/bottom_lineargrdient-2.svg');
-    display: block;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom center, bottom 64px center;
+  @include bg_wave(64px, 16px);
 
     @media (max-width:992px) {
       padding-bottom: 96px;
-      background-position: bottom center, bottom 16px center;
 
       .wording::before{
         margin-bottom: 32px;
