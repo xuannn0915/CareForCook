@@ -219,14 +219,31 @@ main {
 }
 
 .home_slogan{
-
-  h2::before{
+  padding-bottom: 124px;
+  .wording::before{
     content: '';
-    
+    background-image: url('https://raw.githubusercontent.com/xuannn0915/CareForCook/32bb4620627ff5d81609d364c60615df4a545b62/assets/images/home/drop.svg');
+    display: block;
+    background-size: contain;
+    margin-bottom: 40px;
+    width: 24px;
+    height: 35px;
   }
-  padding-bottom: 123px;
-  background-image: url('https://raw.githubusercontent.com/xuannn0915/CareForCook/e4ca5a23e7f99ecbc70a5224b65522239e92a972/assets/images/home/bottom_lineargrdient-1.svg') , url('https://raw.githubusercontent.com/xuannn0915/CareForCook/e4ca5a23e7f99ecbc70a5224b65522239e92a972/assets/images/home/bottom_lineargrdient-2.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom -48px center, bottom -12px center;
+
+    background-image: url('https://raw.githubusercontent.com/xuannn0915/CareForCook/e4ca5a23e7f99ecbc70a5224b65522239e92a972/assets/images/home/bottom_lineargrdient-1.svg'),url('https://raw.githubusercontent.com/xuannn0915/CareForCook/e4ca5a23e7f99ecbc70a5224b65522239e92a972/assets/images/home/bottom_lineargrdient-2.svg');
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center, bottom 64px center;
+
+    @media (max-width:992px) {
+      padding-bottom: 96px;
+      background-position: bottom center, bottom 16px center;
+
+      .wording::before{
+        margin-bottom: 32px;
+        width: 16px;
+        height: 24px;
+      }
+    }
 }
