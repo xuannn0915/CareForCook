@@ -219,5 +219,14 @@ main {
 }
 
 .home_slogan{
-  background-image: url();
+
+  h2::before{
+    content: '';
+    
+  }
+  padding-bottom: 123px;
+  background-image: url('https://raw.githubusercontent.com/xuannn0915/CareForCook/e4ca5a23e7f99ecbc70a5224b65522239e92a972/assets/images/home/bottom_lineargrdient-1.svg') , url('https://raw.githubusercontent.com/xuannn0915/CareForCook/e4ca5a23e7f99ecbc70a5224b65522239e92a972/assets/images/home/bottom_lineargrdient-2.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom -48px center, bottom -12px center;
 }
