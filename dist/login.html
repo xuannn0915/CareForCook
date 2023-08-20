@@ -16,8 +16,8 @@
 <!-- swiper -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-<title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/tabs-a8ecadb6.js"></script>
-    <link rel="stylesheet" href="/CareForCook/assets/tabs-c0acfe84.css">
+<title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/tabs-b1d3b4f5.js"></script>
+    <link rel="stylesheet" href="/CareForCook/assets/tabs-d7921471.css">
   </head>
   <body>
     <nav
@@ -283,18 +283,19 @@
     <main class="member_login mb-lg-10 mb-6">
       <div class="container">
         <div class="row position-relative">
+          <!-- login -->
           <div class="col-lg-4 col-11 mx-auto login">
             <h3 class="text-primary text-center fw-bold mb-lg-10 mb-8">
               會員登入
             </h3>
             <form action="#" class="mb-lg-10 mb-8">
               <div class="mb-6">
-                <label for="#account" class="form-label">帳號</label>
-                <input type="text" class="form-control" id="account" placeholder="請輸入信箱">
+                <label for="login_account" class="form-label">帳號</label>
+                <input type="text" class="form-control" id="login_account" placeholder="請輸入信箱">
               </div>
               <div >
-                <label for="#password" class="form-label">密碼</label>
-                <input type="password" class="form-control" id="password" placeholder="請輸入密碼">
+                <label for="login_password" class="form-label">密碼</label>
+                <input type="password" class="form-control" id="login_password" placeholder="請輸入密碼">
               </div>
             </form>
             <div class="login_button d-flex flex-column align-items-center mb-lg-10 mb-8">
@@ -305,29 +306,160 @@
             </div>
             <div class="d-flex align-items-center justify-content-center fs-6">
               還不是會員嗎？快來加入吧！
-              <a href="#" class="btn btn-outline-dark ms-2">註冊會員</a>
+              <a href="#" class="btn btn-outline-dark ms-2 signUp">註冊會員</a>
             </div>
           </div>
+          <!-- forget password -->
           <div class="col-lg-4 col-11 mx-auto forgetPassword position-absolute top-0 start-50 ">
             <h3 class="text-primary text-center fw-bold mb-lg-10 mb-8">
               忘記密碼
             </h3>
             <form action="#" class="mb-lg-10 mb-8">
               <div>
-                <label for="#account" class="form-label">帳號</label>
-                <input type="text" class="form-control" id="account" placeholder="請輸入信箱">
+                <label for="forget_account" class="form-label">帳號</label>
+                <input type="text" class="form-control" id="forget_account" placeholder="請輸入信箱">
               </div>
             </form>
             <div class="login_button d-flex flex-column align-items-center mb-lg-10 mb-8">
-              <a href="#" class="btn btn-outline-primary mb-3">
+              <button type="button" class="btn btn-outline-primary mb-3" data-bs-toggle="modal" data-bs-target="#resetPassword">
                 重設密碼
-              </a>
-              <a href="#" class="retun_login fs-6 d-flex align-items-center">
+              </button>
+              <a href="#" class="return_login fs-6 d-flex align-items-center">
                 返回至會員登入
                 <span class="material-symbols-rounded ms-2">
                   keyboard_return
                   </span>
               </a>
+            </div>
+          </div>
+          <!-- signup -->
+          <div class="col-lg-4 col-11 mx-auto register position-absolute top-0 start-50 ">
+            <h3 class="text-primary text-center fw-bold mb-lg-10 mb-8">
+              註冊會員
+            </h3>
+            <form action="#" class="mb-lg-10 mb-8">
+              <div class="mb-6">
+                <label for="name" class="form-label">姓名</label>
+                <input type="text" class="form-control" id="name" placeholder="請輸入用戶姓名">
+              </div>
+              <div class="mb-6">
+                <label for="email" class="form-label">信箱</label>
+                <input type="text" class="form-control" id="email" placeholder="請輸入信箱">
+              </div>
+              <div class="mb-6">
+                <label for="signup_password" class="form-label">密碼</label>
+                <input type="password" class="form-control" id="signup_password" placeholder="請輸入密碼">
+              </div>
+              <div class="d-flex flex-column mb-6">
+                <label for="birthday" class="form-label">生日</label>
+                <div class="d-flex justify-content-between">
+                  <select class="form-select me-4" aria-label="Default select example">
+                    <option value="">年</option>
+                    <option value="2005">2005</option>
+                    <option value="2004">2004</option>
+                    <option value="2003">2003</option>
+                    <option value="2002">2002</option>
+                    <option value="2001">2001</option>
+                    <option value="2000">2000</option>
+                  </select>
+                  <select class="form-select me-4" aria-label="Default select example">
+                    <option value="">月</option>
+                    <option value="12">12</option>
+                    <option value="11">11</option>
+                    <option value="10">10</option>
+                    <option value="09">09</option>
+                    <option value="08">08</option>
+                    <option value="07">07</option>
+                    <option value="06">06</option>
+                    <option value="05">05</option>
+                    <option value="04">04</option>
+                    <option value="03">03</option>
+                    <option value="02">02</option>
+                    <option value="01">01</option>
+                  </select>
+                  <select class="form-select" aria-label="Default select example">
+                    <option value="">日</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                </div>
+                
+              </div>
+              <div class="mb-6">
+                <div class="form-check mb-1">
+                  <input class="form-check-input" type="checkbox" value="" id="acceptNews">
+                  <label class="form-check-label" for="acceptNews">
+                    我願意接受照料理最新優惠及服務推廣相關消息
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="acceptNews">
+                  <label class="form-check-label" for="acceptNews">
+                    我同意本站 
+                    <span class="text-danger">
+                      使用規劃
+                    </span>  
+                    與 
+                    <span class="text-danger">
+                      隱私權政策
+                    </span>  
+                  </label>
+                </div>
+              </div>
+            </form>
+            <div class="signUp_button d-flex flex-column align-items-center mb-lg-10 mb-8">
+              <a href="../pages/index.html" class="btn btn-primary mb-3">
+                立即加入！
+              </a>
+              <a href="#" class="return_login fs-6 d-flex align-items-center">
+                返回至會員登入
+                <span class="material-symbols-rounded ms-2">
+                  keyboard_return
+                  </span>
+              </a>
+            </div>
+          </div>
+          <!-- reset password modal -->
+          <div class="modal fade" id="resetPassword" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="exampleModalLabel">設定新密碼</h3>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form action="#" class="mb-lg-10 mb-8">
+                    <div class="mb-6">
+                      <label for="#newPassword" class="form-label">新密碼</label>
+                      <input type="password" class="form-control mb-1" id="newPassword" placeholder="請輸入文字">
+                      <div class="fs-6 d-flex align-items-center justify-content-end text-light">
+                        <span class="material-symbols-rounded me-1 fs-4">
+                          info
+                          </span>
+                        密碼須符合英數混合，總長度8碼以上
+                      </div>
+                    </div>
+                    <div >
+                      <label for="#confirmPassword" class="form-label">確認新密碼</label>
+                      <input type="password" class="form-control" id="confirmPassword" placeholder="請再次輸入密碼">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">取消</button>
+                  <a href="../pages/login.html" class="btn btn-primary">確定</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
