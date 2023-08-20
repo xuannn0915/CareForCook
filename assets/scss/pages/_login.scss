@@ -18,7 +18,7 @@
   }
 
   .forgetPassword{
-    transform: translateX(80%);
+    transform: translateX(70%);
     opacity: 0;
     &.active{
       opacity: 1;
@@ -28,7 +28,26 @@
     &.disabled{
       opacity: 0;
       transition: 1.5s;
-      transform: translateX(80%);
+      transform: translateX(70%);
+    }
+  }
+
+  .register{
+    transform: translateX(70%);
+    opacity: 0;
+    &.active{
+      opacity: 1;
+      transition: 1.5s;
+      transform: translateX(-50%);
+    }
+    &.disabled{
+      opacity: 0;
+      transition: 1.5s;
+      transform: translateX(70%);
+    }
+    #birthday{
+      display: inline-block;
+      width: 33%;
     }
   }
 
