@@ -53,4 +53,9 @@
   }
 }
 
+@mixin fadeInOut ($x, $y, $opacity){
+  opacity: $opacity;
+  transition: 1.5s;
+  transform: translate($x, $y);
+}
 
