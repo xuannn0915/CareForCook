@@ -1,10 +1,15 @@
-.about_team{
   .page-title{
-    background-image: url();
+    background-image: url('https://github.com/xuannn0915/CareForCook/blob/main/assets/images/about/banner2-desktop.png?raw=true');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
 
-    .breadcrumb-item::before{
-      content: '';
+    li.breadcrumb-item::after{
+      content: '/';
       color: white;
     }
+    li.breadcrumb-item::before{
+      content: '';
+    }
+    $breadcrumb-divider: none;
   }
-}
