@@ -1,4 +1,6 @@
-footer{
+.footer{
+  z-index: 100;
+  background: $white;
   img{
     max-width: 144px;
   }

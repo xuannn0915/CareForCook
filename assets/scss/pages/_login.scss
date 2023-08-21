@@ -1,6 +1,6 @@
 .member_login{
   padding: 64px 0 100px 0;
-  background: linear-gradient(180deg, #FFFCF9 0%, #FFF 100%);
+  @include secondary_bg;
   @include bg_wave(64px, 16px);
 
   .login{

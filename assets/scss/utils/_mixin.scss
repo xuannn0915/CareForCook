@@ -18,12 +18,7 @@
 }
 
 @mixin secondary_bg {
-  background: linear-gradient(
-      0deg,
-      rgba(254, 227, 197, 0.1) 0%,
-      rgba(254, 227, 197, 0.1) 100%
-    ),
-    #fff;
+  background: #FFFDFA;
 }
 
 @mixin multiline-ellipsis($line) {
@@ -46,9 +41,26 @@
   }
 }
 
-@mixin fadeInOut ($x, $y, $opacity){
+@mixin fadeInOut ($x, $y, $opacity, $duration:1s){
   opacity: $opacity;
-  transition: 1.5s;
+  transition: $duration ease-in-out;
   transform: translate($x, $y);
 }
 
+@mixin page_title($desktop_link, $mobile_link){
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.30) 100%), url($desktop_link);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+
+  li.breadcrumb-item::before{
+    color: white;
+  } 
+
+  @media (max-width:992px) {
+    background:linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.30) 100%), url($mobile_link);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+  }
+}
