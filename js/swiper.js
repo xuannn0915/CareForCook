@@ -59,3 +59,26 @@ var commentSwiper = new Swiper(".commentSwiper", {
     forceToAxis: true,
   },
 });
+
+// foodlist swiper
+var foodlistSwiper = new Swiper(".foodlistSwiper", {
+  slidesPerView: 3.5,
+  spaceBetween:24,
+  centeredSlides: true,
+  effect: "coverflow",
+  grabCursor: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+    mousewheel: {
+    forceToAxis: true,
+  },
+  coverflowEffect: {
+    rotate: 30,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: false,
+  },
+});
