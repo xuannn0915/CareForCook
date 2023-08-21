@@ -1,0 +1,31 @@
+.page-title {
+  @include page_title(
+    "https://github.com/xuannn0915/CareForCook/blob/main/assets/images/about/banner1-desktop.png?raw=true",
+    "https://github.com/xuannn0915/CareForCook/blob/main/assets/images/about/banner1-mobile.png?raw=true"
+  );
+}
+
+.about_food {
+  .cardList {
+    background-image: url('');
+  }
+  .card {
+    border-radius: 24px;
+    border: 1px solid white;
+    background: linear-gradient(223deg, #fff 0%, rgba(255, 255, 255, 0.2) 100%);
+    backdrop-filter: blur(10px);
+    max-width: 368px;
+    img {
+      width: 56px;
+      height: 56px;
+    }
+    .food-name::after {
+      content: "";
+      width: 100px;
+      height: 6px;
+      background-color: $primary;
+      border-radius: 10px;
+      margin: 16px 0;
+    }
+  }
+}
