@@ -61,8 +61,7 @@ var commentSwiper = new Swiper(".commentSwiper", {
 });
 
 // foodlist swiper
-var foodlistSwiper = new Swiper(".foodlistSwiper", {
-  slidesPerView: 3.5,
+var coverflowSwiper = new Swiper(".coverflowSwiper", {
   spaceBetween:24,
   centeredSlides: true,
   effect: "coverflow",
@@ -80,5 +79,19 @@ var foodlistSwiper = new Swiper(".foodlistSwiper", {
     depth: 100,
     modifier: 1,
     slideShadows: false,
+  },
+  breakpoints: {
+    // when window width is >= 375px
+    375: {
+      slidesPerView: 1.5,
+    },
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 2.5,
+    },
+    // when window width is >= 992px
+    992: {
+      slidesPerView: 3.5,
+    },
   },
 });

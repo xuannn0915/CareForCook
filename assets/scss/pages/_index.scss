@@ -1,5 +1,5 @@
 .index_banner{
-  @include secondary_bg;
+  @include bg_secondary;
 
   .swiper {
     z-index: 1;
@@ -54,11 +54,11 @@
 }
 
 .painPoint {
-  @include secondary_bg;
+  @include bg_secondary;
 }
 
 .service {
-  @include secondary_bg;
+  @include bg_secondary;
 
   h2::after {
     @include red_comma;
@@ -148,7 +148,8 @@
 }
 
 .comment {
-  @include secondary_bg;
+  @include bg_secondary;
+  @include swiper-buttons;
 
   h2::after {
     @include red_comma;
@@ -183,22 +184,6 @@
         border: 0px solid transparent;
       }
     }
-  }
-
-  .swiper-button-prev::after, .swiper-button-next::after{
-    content: '';
-  }
-
-  .swiper-button-prev, .swiper-button-next {
-    border: 1px solid $primary;
-    border-radius: 50%;
-    color: $primary;
-  }
-
-  .swiper-button-disabled{
-    opacity: 1;
-    border: 1px solid $dark;
-    color: $dark;
   }
 
   .illustration{
