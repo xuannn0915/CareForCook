@@ -59,6 +59,7 @@
 
 .service {
   @include bg_secondary;
+  @include red_drop;
 
   h2::after {
     @include red_comma;
@@ -123,17 +124,6 @@
         padding: 0 48px;
       }
     }
-  }
-
-  .active::after {
-    content: "";
-    background-image: url("https://raw.githubusercontent.com/xuannn0915/CareForCook/3ee479ba97444004513a11eb97cdddf7401af98f/assets/images/red_drop.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: inline-block;
-    width: 11px;
-    height: 16px;
-    margin-left: 8px;
   }
 
   .swiper-pagination {

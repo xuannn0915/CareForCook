@@ -1,5 +1,6 @@
 *,*::before,*::after{
   box-sizing: border-box;
+  vertical-align: middle;
 }
 
 body{
@@ -12,11 +13,6 @@ body{
 img{
   width: 100%;
   height: auto;
-  vertical-align: middle;
-}
-
-.material-symbols-rounded{
-  vertical-align: middle;
 }
 
 ul,ol,li{
