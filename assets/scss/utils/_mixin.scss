@@ -132,20 +132,22 @@
 }
 
 @mixin page_title($desktop_link, $mobile_link){
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.30) 100%), url($desktop_link);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 250px;
-
-  li.breadcrumb-item::before{
-    color: white;
-  } 
-
-  @media (max-width:992px) {
-    background:linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.30) 100%), url($mobile_link);
+  .page-title{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.30) 100%), url($desktop_link);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200px;
+    height: 250px;
+  
+    li.breadcrumb-item::before{
+      color: white;
+    } 
+  
+    @media (max-width:992px) {
+      background:linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.30) 100%), url($mobile_link);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 200px;
+    }
   }
 }
 

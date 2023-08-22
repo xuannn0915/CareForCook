@@ -1,9 +1,7 @@
-.page-title {
-  @include page_title(
-    "https://github.com/xuannn0915/CareForCook/blob/main/assets/images/about/banner1-desktop.png?raw=true",
-    "https://github.com/xuannn0915/CareForCook/blob/main/assets/images/about/banner1-mobile.png?raw=true"
-  );
-}
+@include page_title(
+  "https://github.com/xuannn0915/CareForCook/blob/main/assets/images/about/banner1-desktop.png?raw=true",
+  "https://github.com/xuannn0915/CareForCook/blob/main/assets/images/about/banner1-mobile.png?raw=true"
+);
 
 .food-intro {
   @include swiper-buttons;
@@ -28,8 +26,7 @@
     background-image: url("https://raw.githubusercontent.com/xuannn0915/CareForCook/70215c4eab80e09f06675b703cb72369902d297c/assets/images/about/thumbUp.svg");
     background-repeat: no-repeat;
     display: block;
-    background-size: cover;
-    width: 24px;
+    width: 32px;
     height: 24px;
     margin-right: 8px;
   }

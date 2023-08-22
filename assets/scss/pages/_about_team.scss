@@ -1,9 +1,7 @@
-.page-title {
-  @include page_title(
-    "https://github.com/xuannn0915/CareForCook/blob/main/assets/images/about/banner2-desktop.png?raw=true",
-    "https://github.com/xuannn0915/CareForCook/blob/main/assets/images/about/banner2-mobile.png?raw=true"
-  );
-}
+@include page_title(
+  "https://github.com/xuannn0915/CareForCook/blob/main/assets/images/about/banner2-desktop.png?raw=true",
+  "https://github.com/xuannn0915/CareForCook/blob/main/assets/images/about/banner2-mobile.png?raw=true"
+);
 
 .about_team {
   .about-intro {
@@ -19,13 +17,15 @@
     }
     &-slogan {
       width: 73%;
-      @include fadeInOut(48px, -370px, 0, .5s);
+      top: 0;
+      left: 50%;
+      @include fadeInOut(-50%, -40%, 0, 0.5s);
     }
     span {
       color: $dark;
     }
     &-content {
-      @include fadeInOut(0%, 10%, 0, .5s);
+      @include fadeInOut(0%, 10%, 0, 0.5s);
     }
   }
 
@@ -36,13 +36,13 @@
       height: 300px;
     }
     .card-slogan {
-      @include fadeInOut(48px, -380px, 1, .5s);
+      @include fadeInOut(-50%, -40%, 1, 0.5s);
     }
     span {
       color: $primary;
     }
     .card-content {
-      @include fadeInOut(0%, 0%, 1, .5s);
+      @include fadeInOut(0%, 0%, 1, 0.5s);
     }
   }
 
@@ -51,32 +51,17 @@
       margin-bottom: 72px;
     }
     .card {
-      margin-bottom: -100px;
       &-slogan {
-        transition: 0.5s;
-        @include fadeInOut(32px, -340px, 0, .5s);
         width: 80%;
       }
-    }
-    .card:hover {
-      margin-bottom: 24px;
-      .card-slogan {
-        transition: 0.5s;
-        @include fadeInOut(32px, -350px, 1, .5s);
-      }
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .card{
-      margin-bottom: -80px;
-      &-slogan {
-        @include fadeInOut(32px, -380px, 0, .5s);
+      &-content {
+        display: none;
       }
     }
     .card:hover {
-      .card-slogan {
-        @include fadeInOut(32px, -390px, 1, .5s);
+      margin-top: 24px;
+      .card-content {
+        display: block;
       }
     }
   }
