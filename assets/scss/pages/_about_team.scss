@@ -1,7 +1,9 @@
-@include page_title(
-  "https://github.com/xuannn0915/CareForCook/blob/main/assets/images/about/banner2-desktop.png?raw=true",
-  "https://github.com/xuannn0915/CareForCook/blob/main/assets/images/about/banner2-mobile.png?raw=true"
-);
+.about-team-pageTitle{
+  @include page_title(
+    "https://github.com/xuannn0915/CareForCook/blob/main/assets/images/about/banner2-desktop.png?raw=true",
+    "https://github.com/xuannn0915/CareForCook/blob/main/assets/images/about/banner2-mobile.png?raw=true"
+  );
+}
 
 .about_team {
   .about-intro {

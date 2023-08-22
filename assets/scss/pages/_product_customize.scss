@@ -1,4 +1,69 @@
-@include page_title(
-  "https://github.com/xuannn0915/CareForCook/blob/main/assets/images/product/banner1-desktop.png?raw=true",
-  "https://github.com/xuannn0915/CareForCook/blob/main/assets/images/product/banner1-mobile.png?raw=true"
-);
+.product-customize-page-title {
+  @include page_title(
+    "https://github.com/xuannn0915/CareForCook/blob/main/assets/images/product/banner1-desktop.png?raw=true",
+    "https://github.com/xuannn0915/CareForCook/blob/main/assets/images/product/banner1-mobile.png?raw=true"
+  );
+}
+
+.product-customize {
+  .nav-lg {
+    box-shadow: 0px 0px 50px 30px rgba($warning, 20%);
+    .nav-link:hover {
+      border-bottom: 5px solid $primary;
+    }
+    .active {
+      border-bottom: 5px solid $primary;
+    }
+  }
+
+  .foreword {
+    border-radius: 10px;
+    img {
+      width: 209px;
+      margin-right: 96px;
+    }
+    h3 {
+      &::before {
+        @include red_drop;
+        margin: 0 8px 0 0;
+      }
+      &::after {
+        @include red_drop;
+      }
+    }
+  }
+
+  .steps ol {
+    margin-right: 123px;
+  }
+
+  .custom-menu{
+    @include bg_secondary;
+    .active:after{
+      @include red_drop;
+    }
+  }
+
+
+
+  @media (max-width: 992px) {
+    .foreword {
+      img {
+        width: 83px;
+        margin-right: 16px;
+      }
+      h3::before,
+      h3::after {
+        display: none;
+      }
+    }
+    .steps {
+      ol {
+        margin-right: 0px;
+      }
+      img {
+        width: 343px;
+      }
+    }
+  }
+}

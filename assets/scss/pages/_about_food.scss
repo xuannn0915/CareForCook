@@ -1,7 +1,9 @@
-@include page_title(
-  "https://github.com/xuannn0915/CareForCook/blob/main/assets/images/about/banner1-desktop.png?raw=true",
-  "https://github.com/xuannn0915/CareForCook/blob/main/assets/images/about/banner1-mobile.png?raw=true"
-);
+.about-food-pageTitle{
+  @include page_title(
+    "https://github.com/xuannn0915/CareForCook/blob/main/assets/images/about/banner1-desktop.png?raw=true",
+    "https://github.com/xuannn0915/CareForCook/blob/main/assets/images/about/banner1-mobile.png?raw=true"
+  );
+}
 
 .food-intro {
   @include swiper-buttons;
@@ -14,11 +16,12 @@
 
 .proccess {
   padding-top: 88px;
-  @include red_drop;
+  .active::after{
+    @include red_drop;
+  }
 
   span {
     width: 40px;
-    height: 40px;
   }
 
   .row li::before {
@@ -34,7 +37,6 @@
   @media (max-width: 992px) {
     span {
       width: 32px;
-      height: 32px;
     }
     .row li::before {
       width: 18px;

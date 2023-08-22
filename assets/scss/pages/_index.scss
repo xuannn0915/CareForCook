@@ -59,7 +59,9 @@
 
 .service {
   @include bg_secondary;
-  @include red_drop;
+  .active::after{
+    @include red_drop;
+  }
 
   h2::after {
     @include red_comma;
