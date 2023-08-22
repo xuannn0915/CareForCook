@@ -81,18 +81,20 @@
         display: none;
       }
     }
-    .btn{
-      @include fadeInOut(-50%,0%,1,0.5s)
-    }
-    .menu-name{
-      @include fadeInOut(0%,0%,1,0.5s)
-    }
-    .card:hover {
-      .btn{
-        @include fadeInOut(-50%,-100%,1,0.5s)
+    .custom-menu{
+      .btn, .menu-name{
+        @include fadeInOut(-50%,-240%,0,0.5s)
       }
       .menu-name{
-        @include fadeInOut(0%,-50%,1,0.5s)
+        @include fadeInOut(0%,-240%,0,0.5s)
+      }
+      .card:hover {
+        .btn{
+          @include fadeInOut(-50%,-250%,1,0.5s)
+        }
+        .menu-name{
+          @include fadeInOut(0%,-250%,1,0.5s)
+        }
       }
     }
   }

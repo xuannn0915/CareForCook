@@ -25,21 +25,21 @@
     </main>
 
     <section class="product-customize mb-10 position-relative">
-      <div id="tabs" class="overflow-hidden">
-        <!-- tabs-lg -->
+      <!-- tabs-lg -->
+      <div id="tabs-lg" class="overflow-hidden">
         <ul class="nav-lg nav nav-tabs border-0 d-flex align-items-center">
-          <li class="nav-item w-50">
+          <li class="nav-item-lg w-50">
             <a
-              class="nav-link active text-center fw-bold py-4 fs-lg-3 fs-4"
+              class="nav-link-lg d-block active text-center fw-bold py-4 fs-lg-3 fs-4"
               aria-current="page"
               href="#surgery"
             >
               術後照護餐
             </a>
           </li>
-          <li class="nav-item w-50">
+          <li class="nav-item-lg w-50">
             <a
-              class="nav-link text-center fw-bold py-4 fs-lg-3 fs-4"
+              class="nav-link-lg d-block text-center fw-bold py-4 fs-lg-3 fs-4"
               aria-current="page"
               href="#Chemotherapy"
             >
@@ -174,13 +174,65 @@
                       </div>
 
                       <!-- custom product -->
-                      <div id="surgery-menu-1" class="card border-0">
+                      <div id="surgery-menu-1" class="card border-0 bg-transparent">
                         <a href="shopping_mall.html" class="card-pic overflow-hidden mb-4 position-relative">
                           <img
                           src="../assets/images/product/custom01-d.png"
                           alt="product" class="d-lg-block d-none"
                           />
                           <img src="../assets/images/product/custom01-m.png" alt="product" class="d-lg-none">
+                          <a href="shopping_mall.html" class="btn btn-primary position-absolute top-50 start-50">
+                            線上購物
+                          </a>
+                          <div class="menu-name position-absolute p-lg-7 p-4 bottom-0 start-0">
+                            <div class="fw-bold text-white fs-lg-2 fs-4 mb-lg-2">
+                              膽囊切除的飲食計畫
+                            </div>
+                            <p class="text-white fs-7">
+                              此為餐點示意圖，餐點內容依照購買需求調整
+                            </p>
+                          </div>
+                        </a>
+                        <ul class="card-body p-0 d-flex flex-wrap">
+                          <li
+                            class="d-flex align-items-start me-8 mb-lg-0 mb-3"
+                          >
+                            <div class="d-flex flex-column">
+                              <div class="fw-bold fs-lg-4 fs-5">
+                                漸進式油脂量調整
+                              </div>
+                              <div class="fs-lg-5 fs-6">避免術後腹瀉不適</div>
+                            </div>
+                          </li>
+                          <li
+                            class="d-flex align-items-start me-8 mb-lg-0 mb-3"
+                          >
+                            <div class="d-flex flex-column">
+                              <div class="fw-bold fs-lg-4 fs-5">
+                                避免產氣食材
+                              </div>
+                              <div class="fs-lg-5 fs-6">降低腹脹不適</div>
+                            </div>
+                          </li>
+                          <li
+                            class="d-flex align-items-start me-8 mb-lg-0 mb-3"
+                          >
+                            <div class="d-flex flex-column">
+                              <div class="fw-bold fs-lg-4 fs-5">
+                                適量纖維
+                              </div>
+                              <div class="fs-lg-5 fs-6">促進腸胃恢復正常蠕動</div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div id="surgery-menu-2" class="card border-0 bg-transparent">
+                        <a href="shopping_mall.html" class="card-pic overflow-hidden mb-4 position-relative">
+                          <img
+                          src="../assets/images/product/custom02-d.png"
+                          alt="product" class="d-lg-block d-none"
+                          />
+                          <img src="../assets/images/product/custom02-m.png" alt="product" class="d-lg-none">
                           <a href="shopping_mall.html" class="btn btn-primary position-absolute top-50 start-50">
                             線上購物
                           </a>
@@ -193,7 +245,7 @@
                             </p>
                           </div>
                         </a>
-                        <ul class="card-body p-0 d-flex flex-lg-row flex-column">
+                        <ul class="card-body p-0 d-flex flex-wrap">
                           <li
                             class="d-flex align-items-start me-lg-8 mb-lg-0 mb-3"
                           >
@@ -226,8 +278,58 @@
                           </li>
                         </ul>
                       </div>
-                      <div class="row" id="surgery-menu-2"></div>
-                      <div class="row" id="surgery-menu-3"></div>
+                      <div id="surgery-menu-3" class="card border-0 bg-transparent">
+                        <a href="shopping_mall.html" class="card-pic overflow-hidden mb-4 position-relative">
+                          <img
+                          src="../assets/images/product/custom03-d.png"
+                          alt="product" class="d-lg-block d-none"
+                          />
+                          <img src="../assets/images/product/custom03-m.png" alt="product" class="d-lg-none">
+                          <a href="shopping_mall.html" class="btn btn-primary position-absolute top-50 start-50">
+                            線上購物
+                          </a>
+                          <div class="menu-name position-absolute p-7 bottom-0 start-0">
+                            <div class="fw-bold text-white fs-lg-2 fs-4 mb-lg-2">
+                              膽囊切除的飲食計畫
+                            </div>
+                            <p class="text-white fs-7">
+                              此為餐點示意圖，餐點內容依照購買需求調整
+                            </p>
+                          </div>
+                        </a>
+                        <ul class="card-body p-0 d-flex flex-wrap">
+                          <li
+                            class="d-flex align-items-start me-lg-8 mb-lg-0 mb-3"
+                          >
+                            <div class="d-flex flex-column">
+                              <div class="fw-bold fs-lg-4 fs-5">
+                                漸進式油脂量調整
+                              </div>
+                              <div class="fs-lg-5 fs-6">避免術後腹瀉不適</div>
+                            </div>
+                          </li>
+                          <li
+                            class="d-flex align-items-start me-lg-8 mb-lg-0 mb-3"
+                          >
+                            <div class="d-flex flex-column">
+                              <div class="fw-bold fs-lg-4 fs-5">
+                                避免產氣食材
+                              </div>
+                              <div class="fs-lg-5 fs-6">降低腹脹不適</div>
+                            </div>
+                          </li>
+                          <li
+                            class="d-flex align-items-start me-lg-8 mb-lg-0 mb-3"
+                          >
+                            <div class="d-flex flex-column">
+                              <div class="fw-bold fs-lg-4 fs-5">
+                                適量纖維
+                              </div>
+                              <div class="fs-lg-5 fs-6">促進腸胃恢復正常蠕動</div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                 </div>
               </div>

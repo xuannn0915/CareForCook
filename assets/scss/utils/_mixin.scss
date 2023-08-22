@@ -146,7 +146,8 @@
   background-image: url("https://raw.githubusercontent.com/xuannn0915/CareForCook/70215c4eab80e09f06675b703cb72369902d297c/assets/images/about/thumbUp.svg");
   background-repeat: no-repeat;
   display: inline-block;
-  width: 32px;
+  background-size: cover;
+  width: 24px;
   height: 24px;
   margin-right: 8px;
   @media (max-width:992px) {
