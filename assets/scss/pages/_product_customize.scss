@@ -37,14 +37,37 @@
     margin-right: 123px;
   }
 
-  .custom-menu{
+  .custom-menu {
     @include bg_secondary;
-    .active:after{
+
+    .active:after {
       @include red_drop;
     }
+
+    .pic-box{
+      border-radius: 10px;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0) 0%,
+          #fee3c5 100%
+        );
+      }
+    }
+
+    .pros {
+      li::before {
+        @include thumsUp;
+      }
+    }
   }
-
-
 
   @media (max-width: 992px) {
     .foreword {
