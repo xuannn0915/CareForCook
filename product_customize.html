@@ -16,8 +16,8 @@
 <!-- swiper -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-<title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/tabs-257dee87.js"></script>
-    <link rel="stylesheet" href="/CareForCook/assets/tabs-95082a68.css">
+<title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/tabs-697dc396.js"></script>
+    <link rel="stylesheet" href="/CareForCook/assets/tabs-9307c23f.css">
   </head>
   <body>
     <nav
@@ -323,7 +323,7 @@
         <div id="surgery" class="py-lg-9 py-6">
           <div class="container">
             <div class="row">
-              <div class="col-lg-10 col-11 mx-auto">
+              <div class="col-lg-10 mx-lg-auto">
                 <div
                   class="foreword d-flex align-items-center justify-content-center p-lg-6 p-4 border border-primary"
                 >
@@ -349,14 +349,15 @@
                 </div>
               </div>
               <div
-                class="steps col-lg-10 col-11 mx-auto d-flex flex-lg-row flex-column-reverse py-lg-10 py-8"
+                class="steps col-lg-10 mx-lg-auto py-lg-10 py-8"
               >
+              <div class="row flex-lg-row flex-column-reverse">
                 <img
                   src="/CareForCook/assets/illustration-2-fd1ccc28.svg"
                   alt="illustration"
-                  class="d-lg-none d-block mx-auto"
+                  class="col-10 d-lg-none d-block mx-auto"
                 />
-                <ol class="mb-lg-0 mb-8">
+                <ol class="col-lg-5  mb-lg-0 mb-8">
                   <li class="mb-lg-8 mb-6">
                     <div class="fw-bold fs-lg-1 fs-3 text-primary">01</div>
                     <div class="text-black fw-bold fs-lg-3 fs-5">
@@ -386,9 +387,9 @@
                   </li>
                 </ol>
                 <div
-                  class="d-flex flex-column align-items-center justify-content-between"
+                  class="col-lg-5 ms-lg-auto d-flex flex-column align-items-center justify-content-between"
                 >
-                  <div class="text-center">
+                  <div class="text-center mb-lg-0 mb-6">
                     <div class="text-black fw-bold fs-lg-1 fs-4 mb-lg-4 mb-0">
                       營養需求，量身打造
                     </div>
@@ -407,14 +408,14 @@
           <div class="custom-menu py-lg-9 py-7">
             <div class="container">
               <div class="row">
-                <div class="col-lg-10 mx-auto">
-                  <div class="d-flex flex-column align-items-center">
-                    <div class="text-black fw-bold fs-lg-1 fs-4 mb-lg-4 mb-0">
+                <div class="col-lg-10 mx-lg-auto">
+                    <div class="text-black fw-bold fs-lg-1 fs-4 mb-lg-4 mb-0 text-center">
                       怎麼吃？我們幫你處理！
                     </div>
-                    <p class="fs-lg-3 mb-6">術後照護餐介紹</p>
+                    <p class="fs-lg-3 mb-6 text-center">術後照護餐介紹</p>
+
+                    <!-- custom menu tabs -->
                     <div id="tabs">
-                      <!-- custom menu tabs -->
                       <div class="d-flex justify-content-center mb-lg-7 mb-6">
                         <ul class="nav nav-tabs">
                           <li class="nav-item fs-lg-5 fs-6">
@@ -444,14 +445,26 @@
                       </div>
 
                       <!-- custom product -->
-                      <div id="surgery-menu-1">
-                        <div class="pic-box overflow-hidden mb-4 position-relative">
+                      <div id="surgery-menu-1" class="card border-0">
+                        <a href="shopping_mall.html" class="card-pic overflow-hidden mb-4 position-relative">
                           <img
-                            src="/CareForCook/assets/custom01-d-e19c9600.png"
-                            alt="product"
+                          src="/CareForCook/assets/custom01-d-e19c9600.png"
+                          alt="product" class="d-lg-block d-none"
                           />
-                        </div>
-                        <ul class="pros d-flex flex-lg-row flex-column">
+                          <img src="/CareForCook/assets/custom01-m-97933088.png" alt="product" class="d-lg-none">
+                          <a href="shopping_mall.html" class="btn btn-primary position-absolute top-50 start-50">
+                            線上購物
+                          </a>
+                          <div class="menu-name position-absolute p-7 bottom-0 start-0">
+                            <div class="fw-bold text-white fs-lg-2 fs-4 mb-lg-2">
+                              膽囊切除的飲食計畫
+                            </div>
+                            <p class="text-white fs-7">
+                              此為餐點示意圖，餐點內容依照購買需求調整
+                            </p>
+                          </div>
+                        </a>
+                        <ul class="card-body p-0 d-flex flex-lg-row flex-column">
                           <li
                             class="d-flex align-items-start me-lg-8 mb-lg-0 mb-3"
                           >
@@ -467,9 +480,9 @@
                           >
                             <div class="d-flex flex-column">
                               <div class="fw-bold fs-lg-4 fs-5">
-                                漸進式油脂量調整
+                                避免產氣食材
                               </div>
-                              <div class="fs-lg-5 fs-6">避免術後腹瀉不適</div>
+                              <div class="fs-lg-5 fs-6">降低腹脹不適</div>
                             </div>
                           </li>
                           <li
@@ -477,9 +490,9 @@
                           >
                             <div class="d-flex flex-column">
                               <div class="fw-bold fs-lg-4 fs-5">
-                                漸進式油脂量調整
+                                適量纖維
                               </div>
-                              <div class="fs-lg-5 fs-6">避免術後腹瀉不適</div>
+                              <div class="fs-lg-5 fs-6">促進腸胃恢復正常蠕動</div>
                             </div>
                           </li>
                         </ul>
@@ -487,7 +500,6 @@
                       <div class="row" id="surgery-menu-2"></div>
                       <div class="row" id="surgery-menu-3"></div>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
