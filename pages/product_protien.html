@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <%- include('./layout/head'); -%>
+  </head>
+  <body>
+    <%- include('./layout/header') -%>
+
+    <main
+      class="product-protein-page-title d-flex flex-column justify-content-center"
+    >
+      <div class="container">
+        <h1 class="fw-bold text-white mb-lg-4 fs-lg-1 fs-3">高蛋白燉飲</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb text-white fs-lg-6 fs-7 mb-0">
+            <li class="breadcrumb-item">首頁</li>
+            <li class="breadcrumb-item">好料報你知</li>
+            <li class="breadcrumb-item" aria-current="page">高蛋白燉飲</li>
+          </ol>
+        </nav>
+      </div>
+    </main>
+
+    <section class="product-customize position-relative">
+      <!-- tabs-lg -->
+      <div id="tabs-lg" class="overflow-hidden">
+        <ul class="nav-lg nav nav-tabs border-0 d-flex align-items-center">
+          <li class="nav-item-lg w-50">
+            <a
+              class="nav-link-lg d-block active text-center fw-bold py-4 fs-lg-3 fs-4"
+              aria-current="page"
+              href="#surgery"
+            >
+              術後照護餐
+            </a>
+          </li>
+          <li class="nav-item-lg w-50">
+            <a
+              class="nav-link-lg d-block text-center fw-bold py-4 fs-lg-3 fs-4"
+              aria-current="page"
+              href="#Chemotherapy"
+            >
+              化療照護餐
+            </a>
+          </li>
+        </ul>
+
+        <!-- page surgery -->
+        <div id="surgery" class="pt-lg-9">
+          <div class="container">
+            <div class="row">
+              <div class=" col-lg-10 mx-lg-auto d-lg-block d-none">
+                <div
+                  class="foreword d-flex align-items-center justify-content-evenly p-lg-6 p-4 border border-primary"
+                >
+                  <img
+                    src="../assets/images/product/illustration-1.svg"
+                    alt="illustration"
+                  />
+                  <div class="d-flex flex-column align-items-center">
+                    <title
+                      class="text-black fw-bold fs-4 d-lg-block mb-2 d-none"
+                    >
+                    手術後的代謝大不同！
+                    </title>
+                    <p class="mb-8 d-lg-block d-none text-center">
+                      術後因身體代謝改變，營養調理不只是滿足身體基本需求，<br>更提供傷口修復營養、促進傷口癒合與減少併發症！
+                    </p>
+                    <h3
+                      class="fw-bold fs-lg-3 fs-5 text-primary d-flex align-items-center"
+                    >
+                    術後吃的好，恢復沒煩惱!
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="steps col-lg-10 mx-lg-auto py-lg-10 py-8"
+              >
+                <div class="row flex-lg-row flex-column-reverse">
+                  <img
+                    src="../assets/images/product/illustration-2.svg"
+                    alt="illustration"
+                    class="col-10 d-lg-none d-block mx-auto"
+                  />
+                  <ol class="col-lg-5  mb-lg-0 mb-8">
+                    <li class="mb-lg-8 mb-6">
+                      <div class="fw-bold fs-lg-1 fs-3 text-primary">01</div>
+                      <div class="text-black fw-bold fs-lg-3 fs-5">
+                        專業營養諮詢
+                      </div>
+                      <p>
+                        提供表單讓客戶諮詢營養師餐點相關提問，並提供餐點購買選擇。
+                      </p>
+                    </li>
+                    <li class="mb-lg-8 mb-6">
+                      <div class="fw-bold fs-lg-1 fs-3 text-primary">02</div>
+                      <div class="text-black fw-bold fs-lg-3 fs-5">
+                        營養餐食規劃
+                      </div>
+                      <p>
+                        依據不同需求，設計合適的餐點，讓正確的營養加速您的療程。
+                      </p>
+                    </li>
+                    <li>
+                      <div class="fw-bold fs-lg-1 fs-3 text-primary">03</div>
+                      <div class="text-black fw-bold fs-lg-3 fs-5">
+                        定期追蹤與關心
+                      </div>
+                      <p>
+                        服務期間，定期關心用餐狀況，並根據用餐回饋適時調整菜色
+                      </p>
+                    </li>
+                  </ol>
+                  <div
+                    class="col-lg-5 ms-lg-auto d-flex flex-column align-items-center justify-content-between"
+                  >
+                    <div class="text-center mb-lg-0 mb-6">
+                      <div class="text-black fw-bold fs-lg-1 fs-4 mb-lg-4 mb-0">
+                        營養需求，量身打造
+                      </div>
+                      <p class="fs-lg-3">客製照護餐的三大流程</p>
+                    </div>
+                    <img
+                      src="../assets/images/product/illustration-2.svg"
+                      alt="illustration"
+                      class="d-lg-block d-none"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="custom-menu py-lg-9 py-7">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-10 mx-lg-auto">
+                    <div class="text-black fw-bold fs-lg-1 fs-4 mb-lg-4 mb-0 text-center">
+                      怎麼吃？我們幫你處理！
+                    </div>
+                    <p class="fs-lg-3 mb-6 text-center">術後照護餐介紹</p>
+
+                    <!-- custom menu tabs -->
+                    <div id="tabs-surgery">
+                      <div class="d-flex justify-content-center mb-lg-7 mb-6">
+                        <ul class="nav nav-tabs">
+                          <li class="nav-item fs-lg-5 fs-6">
+                            <a
+                              class="nav-link active d-flex align-items-center px-lg-6 px-5 py-3"
+                              aria-current="page"
+                              href="#surgery-menu-1"
+                            >
+                              膽囊切除
+                            </a>
+                          </li>
+                          <li class="nav-item fs-lg-5 fs-6">
+                            <a
+                              class="nav-link d-flex align-items-center px-lg-6 px-5 py-3"
+                              href="#surgery-menu-2"
+                              >婦科術後</a
+                            >
+                          </li>
+                          <li class="nav-item fs-lg-5 fs-6">
+                            <a
+                              class="nav-link d-flex align-items-center px-lg-6 px-5 py-3"
+                              href="#surgery-menu-3"
+                              >人工關節置換</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+
+                      <!-- custom product -->
+                      <div id="surgery-menu-1" class="card border-0 bg-transparent">
+                        <div class="card-pic overflow-hidden mb-4 position-relative">
+                          <img
+                          src="../assets/images/product/custom01-d.png"
+                          alt="product" class="d-lg-block d-none"
+                          />
+                          <img src="../assets/images/product/custom01-m.png" alt="product" class="d-lg-none">
+                          <a href="shopping_mall.html" class="btn btn-primary position-absolute top-50 start-50 z-1">
+                            線上購物
+                          </a>
+                          <div class="menu-name position-absolute p-lg-7 p-6 bottom-0 start-0 z-1">
+                            <div class="fw-bold text-white fs-lg-2 fs-4 mb-lg-2">
+                              膽囊切除的飲食計畫
+                            </div>
+                            <p class="text-white fs-7">
+                              此為餐點示意圖，餐點內容依照購買需求調整
+                            </p>
+                          </div>
+                        </div>
+                        <ul class="card-body p-0 d-flex flex-wrap">
+                          <li
+                            class="d-flex align-items-start me-8 mb-3"
+                          >
+                            <div class="d-flex flex-column">
+                              <div class="fw-bold fs-lg-4 fs-5">
+                                漸進式油脂量調整
+                              </div>
+                              <div class="fs-lg-5 fs-6">避免術後腹瀉不適</div>
+                            </div>
+                          </li>
+                          <li
+                            class="d-flex align-items-start me-8 mb-3"
+                          >
+                            <div class="d-flex flex-column">
+                              <div class="fw-bold fs-lg-4 fs-5">
+                                避免產氣食材
+                              </div>
+                              <div class="fs-lg-5 fs-6">降低腹脹不適</div>
+                            </div>
+                          </li>
+                          <li
+                            class="d-flex align-items-start me-8 mb-3"
+                          >
+                            <div class="d-flex flex-column">
+                              <div class="fw-bold fs-lg-4 fs-5">
+                                適量纖維
+                              </div>
+                              <div class="fs-lg-5 fs-6">促進腸胃恢復正常蠕動</div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div id="surgery-menu-2" class="card border-0 bg-transparent">
+                        <div class="card-pic overflow-hidden mb-4 position-relative">
+                          <img
+                          src="../assets/images/product/custom02-d.png"
+                          alt="product" class="d-lg-block d-none"
+                          />
+                          <img src="../assets/images/product/custom02-m.png" alt="product" class="d-lg-none">
+                          <a href="shopping_mall.html" class="btn btn-primary position-absolute top-50 start-50 z-1">
+                            線上購物
+                          </a>
+                          <div class="menu-name position-absolute p-lg-7 p-6 bottom-0 start-0 z-1">
+                            <div class="fw-bold text-white fs-lg-2 fs-4 mb-lg-2">
+                              婦科術後的飲食計畫
+                            </div>
+                            <p class="text-white fs-7">
+                              此為餐點示意圖，餐點內容依照購買需求調整
+                            </p>
+                          </div>
+                        </div>
+                        <ul class="card-body p-0 d-flex flex-wrap">
+                          <li
+                            class="d-flex align-items-start me-8 mb-3"
+                          >
+                            <div class="d-flex flex-column">
+                              <div class="fw-bold fs-lg-4 fs-5">
+                                避開活血食材助修復
+                              </div>
+                              <div class="fs-lg-5 fs-6">避免活血調味與中藥，利於傷口恢復</div>
+                            </div>
+                          </li>
+                          <li
+                            class="d-flex align-items-start me-8 mb-3"
+                          >
+                            <div class="d-flex flex-column">
+                              <div class="fw-bold fs-lg-4 fs-5">
+                                腹脹問題別擔心
+                              </div>
+                              <div class="fs-lg-5 fs-6">避免使用產氣食材，降低腹脹問題</div>
+                            </div>
+                          </li>
+                          <li
+                            class="d-flex align-items-start me-8 mb-3"
+                          >
+                            <div class="d-flex flex-column">
+                              <div class="fw-bold fs-lg-4 fs-5">
+                                腸胃蠕動無負擔
+                              </div>
+                              <div class="fs-lg-5 fs-6">加入適量纖維，促進腸胃運動</div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div id="surgery-menu-3" class="card border-0 bg-transparent">
+                        <div class="card-pic overflow-hidden mb-4 position-relative">
+                          <img
+                          src="../assets/images/product/custom03-d.png"
+                          alt="product" class="d-lg-block d-none"
+                          />
+                          <img src="../assets/images/product/custom03-m.png" alt="product" class="d-lg-none">
+                          <a href="shopping_mall.html" class="btn btn-primary position-absolute top-50 start-50 z-1">
+                            線上購物
+                          </a>
+                          <div class="menu-name position-absolute p-lg-7 p-6 bottom-0 start-0 z-1">
+                            <div class="fw-bold text-white fs-lg-2 fs-4 mb-lg-2">
+                              人工關節置換的飲食計畫
+                            </div>
+                            <p class="text-white fs-7">
+                              此為餐點示意圖，餐點內容依照購買需求調整
+                            </p>
+                          </div>
+                        </div>
+                        <ul class="card-body p-0 d-flex flex-wrap">
+                          <li
+                            class="d-flex align-items-start me-8 mb-3"
+                          >
+                            <div class="d-flex flex-column">
+                              <div class="fw-bold fs-lg-4 fs-5">
+                                促進傷口癒合的蛋白質
+                              </div>
+                              <div class="fs-lg-5 fs-6">提供足够熱量蛋白質提供身體修復</div>
+                            </div>
+                          </li>
+                          <li
+                            class="d-flex align-items-start me-8 mb-3"
+                          >
+                            <div class="d-flex flex-column">
+                              <div class="fw-bold fs-lg-4 fs-5">
+                                腸胃蠕動無負擔
+                              </div>
+                              <div class="fs-lg-5 fs-6">適量纖維預防便祕，促進腸胃運動</div>
+                            </div>
+                          </li>
+                          <li
+                            class="d-flex align-items-start me-8 mb-3"
+                          >
+                            <div class="d-flex flex-column">
+                              <div class="fw-bold fs-lg-4 fs-5">
+                                多色食材與維生素
+                              </div>
+                              <div class="fs-lg-5 fs-6">多樣食材，提供身體微量營養素</div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Chemotherapy" class="pt-lg-9">
+          <div class="container">
+            <div class="row">
+              <div class=" col-lg-10 mx-lg-auto d-lg-block d-none">
+                <div
+                  class="foreword d-flex align-items-center justify-content-evenly p-lg-6 p-4 border border-primary"
+                >
+                  <img
+                    src="../assets/images/product/illustration-3.svg"
+                    alt="illustration"
+                  />
+                  <div class="d-flex flex-column align-items-center">
+                    <title
+                      class="text-black fw-bold fs-4 d-lg-block mb-2 d-none"
+                    >
+                      治療期間，約有80%的病患會發生營養不良的狀況
+                    </title>
+                    <p class="mb-8 d-lg-block d-none text-center">
+                      缺乏正確的營養介入，不只造成體力下滑影響生活品質，<br />嚴重甚至必須得中斷治療。
+                    </p>
+                    <h3
+                      class="fw-bold fs-lg-3 fs-5 text-primary d-flex align-items-center"
+                    >
+                      吃得正確，治療有力氣，日常有活力
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="steps col-lg-10 mx-lg-auto py-lg-10 py-8"
+              >
+                <div class="row flex-lg-row flex-column-reverse">
+                  <img
+                    src="../assets/images/product/illustration-2.svg"
+                    alt="illustration"
+                    class="col-10 d-lg-none d-block mx-auto"
+                  />
+                  <ol class="col-lg-5  mb-lg-0 mb-8">
+                    <li class="mb-lg-8 mb-6">
+                      <div class="fw-bold fs-lg-1 fs-3 text-primary">01</div>
+                      <div class="text-black fw-bold fs-lg-3 fs-5">
+                        專業營養諮詢
+                      </div>
+                      <p>
+                        提供表單讓客戶諮詢營養師餐點相關提問，並提供餐點購買選擇。
+                      </p>
+                    </li>
+                    <li class="mb-lg-8 mb-6">
+                      <div class="fw-bold fs-lg-1 fs-3 text-primary">02</div>
+                      <div class="text-black fw-bold fs-lg-3 fs-5">
+                        營養餐食規劃
+                      </div>
+                      <p>
+                        依據不同需求，設計合適的餐點，讓正確的營養加速您的療程。
+                      </p>
+                    </li>
+                    <li>
+                      <div class="fw-bold fs-lg-1 fs-3 text-primary">03</div>
+                      <div class="text-black fw-bold fs-lg-3 fs-5">
+                        定期追蹤與關心
+                      </div>
+                      <p>
+                        服務期間，定期關心用餐狀況，並根據用餐回饋適時調整菜色
+                      </p>
+                    </li>
+                  </ol>
+                  <div
+                    class="col-lg-5 ms-lg-auto d-flex flex-column align-items-center justify-content-between"
+                  >
+                    <div class="text-center mb-lg-0 mb-6">
+                      <div class="text-black fw-bold fs-lg-1 fs-4 mb-lg-4 mb-0">
+                        營養需求，量身打造
+                      </div>
+                      <p class="fs-lg-3">客製照護餐的三大流程</p>
+                    </div>
+                    <img
+                      src="../assets/images/product/illustration-2.svg"
+                      alt="illustration"
+                      class="d-lg-block d-none"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="custom-menu py-lg-9 py-7">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-10 mx-lg-auto">
+                    <div class="text-black fw-bold fs-lg-1 fs-4 mb-lg-4 mb-0 text-center">
+                      怎麼吃？我們幫你處理！
+                    </div>
+                    <p class="fs-lg-3 mb-6 text-center">化療照護餐介紹</p>
+
+                    <!-- custom menu tabs -->
+                    <div id="tabs-chemotherapy">
+                      <div class="d-flex justify-content-center mb-lg-7 mb-6">
+                        <ul class="nav nav-tabs">
+                          <li class="nav-item fs-lg-5 fs-6">
+                            <a
+                              class="nav-link active d-flex align-items-center px-lg-6 px-5 py-3"
+                              aria-current="page"
+                              href="#Chemotherapy-menu-1"
+                            >
+                              乳癌
+                            </a>
+                          </li>
+                          <li class="nav-item fs-lg-5 fs-6">
+                            <a
+                              class="nav-link d-flex align-items-center px-lg-6 px-5 py-3"
+                              href="#Chemotherapy-menu-2"
+                              >肺癌</a
+                            >
+                          </li>
+                          <li class="nav-item fs-lg-5 fs-6">
+                            <a
+                              class="nav-link d-flex align-items-center px-lg-6 px-5 py-3"
+                              href="#Chemotherapy-menu-3"
+                              >大腸癌</a
+                            >
+                          </li>
+                          <li class="nav-item fs-lg-5 fs-6">
+                            <a
+                              class="nav-link d-flex align-items-center px-lg-6 px-5 py-3"
+                              href="#Chemotherapy-menu-4"
+                              >胰臟癌</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+
+                      <!-- custom product -->
+                      <div id="Chemotherapy-menu-1" class="card border-0 bg-transparent">
+                        <div class="card-pic overflow-hidden mb-4 position-relative">
+                          <img
+                          src="../assets/images/product/custom04-d.png"
+                          alt="product" class="d-lg-block d-none"
+                          />
+                          <img src="../assets/images/product/custom04-m.png" alt="product" class="d-lg-none">
+                          <a href="shopping_mall.html" class="btn btn-primary position-absolute top-50 start-50 z-1">
+                            線上購物
+                          </a>
+                          <div class="menu-name position-absolute p-lg-7 p-6 bottom-0 start-0 z-1">
+                            <div class="fw-bold text-white fs-lg-2 fs-4 mb-lg-2">
+                              乳癌的飲食計畫
+                            </div>
+                            <p class="text-white fs-7">
+                              此為餐點示意圖，餐點內容依照購買需求調整
+                            </p>
+                          </div>
+                        </div>
+                        <ul class="card-body p-0 d-flex flex-wrap">
+                          <li
+                            class="d-flex align-items-start me-8 mb-3"
+                          >
+                            <div class="d-flex flex-column">
+                              <div class="fw-bold fs-lg-4 fs-5">
+                                提升食慾與天然開胃食材
+                              </div>
+                              <div class="fs-lg-5 fs-6">增加胃口，把好的營養吃光光!</div>
+                            </div>
+                          </li>
+                          <li
+                            class="d-flex align-items-start me-8 mb-3"
+                          >
+                            <div class="d-flex flex-column">
+                              <div class="fw-bold fs-lg-4 fs-5">
+                                天然的止吐劑
+                              </div>
+                              <div class="fs-lg-5 fs-6">老薑、嫩薑，緩解噁心嘔吐的不適</div>
+                            </div>
+                          </li>
+                          <li
+                            class="d-flex align-items-start me-8 mb-3"
+                          >
+                            <div class="d-flex flex-column">
+                              <div class="fw-bold fs-lg-4 fs-5">
+                                減少賀爾蒙食材使用率
+                              </div>
+                              <div class="fs-lg-5 fs-6">降低賀爾蒙刺激細胞，減緩心理壓力</div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div id="Chemotherapy-menu-2" class="card border-0 bg-transparent">
+                        <div class="card-pic overflow-hidden mb-4 position-relative">
+                          <img
+                          src="../assets/images/product/custom05-d.png"
+                          alt="product" class="d-lg-block d-none"
+                          />
+                          <img src="../assets/images/product/custom05-m.png" alt="product" class="d-lg-none">
+                          <a href="shopping_mall.html" class="btn btn-primary position-absolute top-50 start-50 z-1">
+                            線上購物
+                          </a>
+                          <div class="menu-name position-absolute p-lg-7 p-6 bottom-0 start-0 z-1">
+                            <div class="fw-bold text-white fs-lg-2 fs-4 mb-lg-2">
+                              肺癌的飲食計畫
+                            </div>
+                            <p class="text-white fs-7">
+                              此為餐點示意圖，餐點內容依照購買需求調整
+                            </p>
+                          </div>
+                        </div>
+                        <ul class="card-body p-0 d-flex flex-wrap">
+                          <li
+                            class="d-flex align-items-start me-8 mb-3"
+                          >
+                            <div class="d-flex flex-column">
+                              <div class="fw-bold fs-lg-4 fs-5">
+                                喘咳時飲食也不費力
+                              </div>
+                              <div class="fs-lg-5 fs-6">軟質的食物，減少咀嚼的負擔</div>
+                            </div>
+                          </li>
+                          <li
+                            class="d-flex align-items-start me-8 mb-3"
+                          >
+                            <div class="d-flex flex-column">
+                              <div class="fw-bold fs-lg-4 fs-5">
+                                穩定血球數値
+                              </div>
+                              <div class="fs-lg-5 fs-6">足够熱量與蛋白質穩定血球，維持體力</div>
+                            </div>
+                          </li>
+                          <li
+                            class="d-flex align-items-start me-8 mb-3"
+                          >
+                            <div class="d-flex flex-column">
+                              <div class="fw-bold fs-lg-4 fs-5">
+                                滿足不同質地需要的你
+                              </div>
+                              <div class="fs-lg-5 fs-6">調整餐點狀態，讓用餐更順利</div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div id="Chemotherapy-menu-3" class="card border-0 bg-transparent">
+                        <div class="card-pic overflow-hidden mb-4 position-relative">
+                          <img
+                          src="../assets/images/product/custom06-d.png"
+                          alt="product" class="d-lg-block d-none"
+                          />
+                          <img src="../assets/images/product/custom06-m.png" alt="product" class="d-lg-none">
+                          <a href="shopping_mall.html" class="btn btn-primary position-absolute top-50 start-50 z-1">
+                            線上購物
+                          </a>
+                          <div class="menu-name position-absolute p-lg-7 p-6 bottom-0 start-0 z-1">
+                            <div class="fw-bold text-white fs-lg-2 fs-4 mb-lg-2">
+                              大腸癌的飲食計畫
+                            </div>
+                            <p class="text-white fs-7">
+                              此為餐點示意圖，餐點內容依照購買需求調整
+                            </p>
+                          </div>
+                        </div>
+                        <ul class="card-body p-0 d-flex flex-wrap">
+                          <li
+                            class="d-flex align-items-start me-8 mb-3"
+                          >
+                            <div class="d-flex flex-column">
+                              <div class="fw-bold fs-lg-4 fs-5">
+                                漸進式低渣飲食
+                              </div>
+                              <div class="fs-lg-5 fs-6">避免纖維摩擦影響傷口恢復</div>
+                            </div>
+                          </li>
+                          <li
+                            class="d-flex align-items-start me-8 mb-3"
+                          >
+                            <div class="d-flex flex-column">
+                              <div class="fw-bold fs-lg-4 fs-5">
+                                低油飲食防腹瀉
+                              </div>
+                              <div class="fs-lg-5 fs-6">降低餐點油脂量，減少消化道刺激</div>
+                            </div>
+                          </li>
+                          <li
+                            class="d-flex align-items-start me-8 mb-3"
+                          >
+                            <div class="d-flex flex-column">
+                              <div class="fw-bold fs-lg-4 fs-5">
+                                把關產氣食材避免脹氣
+                              </div>
+                              <div class="fs-lg-5 fs-6">降低腹脹機率，減輕不適感</div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div id="Chemotherapy-menu-4" class="card border-0 bg-transparent">
+                        <div class="card-pic overflow-hidden mb-4 position-relative">
+                          <img
+                          src="../assets/images/product/custom07-d.png"
+                          alt="product" class="d-lg-block d-none"
+                          />
+                          <img src="../assets/images/product/custom07-m.png" alt="product" class="d-lg-none">
+                          <a href="shopping_mall.html" class="btn btn-primary position-absolute top-50 start-50 z-1">
+                            線上購物
+                          </a>
+                          <div class="menu-name position-absolute p-lg-7 p-6 bottom-0 start-0 z-1">
+                            <div class="fw-bold text-white fs-lg-2 fs-4 mb-lg-2">
+                              胰臟癌的飲食計畫
+                            </div>
+                            <p class="text-white fs-7">
+                              此為餐點示意圖，餐點內容依照購買需求調整
+                            </p>
+                          </div>
+                        </div>
+                        <ul class="card-body p-0 d-flex flex-wrap">
+                          <li
+                            class="d-flex align-items-start me-8 mb-3"
+                          >
+                            <div class="d-flex flex-column">
+                              <div class="fw-bold fs-lg-4 fs-5">
+                                低油飲食防腹瀉
+                              </div>
+                              <div class="fs-lg-5 fs-6">降低餐點油脂量，減少消化道刺激</div>
+                            </div>
+                          </li>
+                          <li
+                            class="d-flex align-items-start me-8 mb-3"
+                          >
+                            <div class="d-flex flex-column">
+                              <div class="fw-bold fs-lg-4 fs-5">
+                                增添好胃口的辛香料
+                              </div>
+                              <div class="fs-lg-5 fs-6">低刺激性的辛香料，提振食慾！</div>
+                            </div>
+                          </li>
+                          <li
+                            class="d-flex align-items-start me-8 mb-3"
+                          >
+                            <div class="d-flex flex-column">
+                              <div class="fw-bold fs-lg-4 fs-5">
+                                軟質食材，腸道無負擔
+                              </div>
+                              <div class="fs-lg-5 fs-6">使用軟質食物，降低腸道負擔</div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="everyoneSays py-lg-9 py-7">
+      <div class="text-center mb-lg-8 mb-7">
+        <h2 class="fw-bold fs-lg-2 fs-4 mb-lg-2">大家怎麼說</h2>
+        <subtitle class="fs-lg-3 fs-5">他們這樣吃，熱情推薦你</subtitle>
+      </div>
+      <div class="swiper coverflowSwiper mb-lg-9 mb-6">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card p-6">
+              <div class="card-title m-0 d-flex flex-column">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="food-name fw-bold text-primary fs-lg-1 fs-3 d-flex flex-column">膽囊切除</div>
+                  <img src="../assets/images/home/avatar-1.svg" alt="avatar">
+                </div>
+              </div>
+              <div class="fw-bold fs-lg-3 fs-5 mb-2">50歲 / 吳先生</div>
+              <p class="text-light fs-lg-5 fs-6">
+                膽囊切除後需要低油飲食控制，術後有腹瀉問題。後來透過照料理積極飲控，讓身體已恢復原本狀態，偶而能吃一點垃圾食物，但消化都是相當正常且順利...
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card p-6">
+              <div class="card-title m-0 d-flex flex-column">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="food-name fw-bold text-primary fs-lg-1 fs-3 d-flex flex-column">婦科手術</div>
+                  <img src="../assets/images/home/avatar-2.svg" alt="avatar">
+                </div>
+              </div>
+              <div class="fw-bold fs-lg-3 fs-5 mb-2">77歲 / 張小姐</div>
+              <p class="text-light fs-lg-5 fs-6">
+                77歲的張媽媽，107年因為舌頭潰瘍一直無法痊癒，就醫後確認為舌癌。手術後因切除右側一小部分舌頭初期只能吃流質，但天天喝營養品讓張媽媽非常的害怕...
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card p-6">
+              <div class="card-title m-0 d-flex flex-column">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="food-name fw-bold text-primary fs-lg-2 fs-3 d-flex flex-column">肝臟移植手術</div>
+                  <img src="../assets/images/home/avatar-3.svg" alt="avatar">
+                </div>
+              </div>
+              <div class="fw-bold fs-lg-3 fs-5 mb-2">77歲 / 蔡先生</div>
+              <p class="text-light fs-lg-5 fs-6">
+                膽囊切除後需要低油飲食控制，術後有腹瀉問題。後來透過照料理積極飲控，讓身體已恢復原本狀態，偶而能吃一點垃圾食物，但消化都是相當正常且順利...
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card p-6">
+              <div class="card-title m-0 d-flex flex-column">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="food-name fw-bold text-primary fs-lg-2 fs-3 d-flex flex-column">人工關節換置</div>
+                  <img src="../assets/images/home/avatar-4.svg" alt="avatar">
+                </div>
+              </div>
+              <div class="fw-bold fs-lg-3 fs-5 mb-2">87歲 / 陳小姐</div>
+              <p class="text-light fs-lg-5 fs-6">
+                術後有腹脹和排便困擾，照料理規劃忌產氣食物且需足夠熱量與蛋白質。原本靠自煮，但總是無法達到需要的營養熱量，術後恢復相當緩慢，幸好遇到了照料理...
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card p-6">
+              <div class="card-title m-0 d-flex flex-column">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="food-name fw-bold text-primary fs-lg-2 fs-3 d-flex flex-column">膽囊切除手術</div>
+                  <img src="../assets/images/home/avatar-5.svg" alt="avatar">
+                </div>
+              </div>
+              <div class="fw-bold fs-lg-3 fs-5 mb-2">吳小姐 / 65歲</div>
+              <p class="text-light fs-lg-5 fs-6">
+                管體中資程！子，強法娥縷回，蛇目作嘶黨何三台飾思中退反次三了這臺風向。想又長說跳資國，由盡美井鐵爛蜻肩怡情誰裡供機的芯啊音告國凶中；聽清比城亢，，到找應？外先的向我藹徒外讓網話絕籲的用了友第了拾我的原
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card p-6">
+              <div class="card-title m-0 d-flex flex-column">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="food-name fw-bold text-primary fs-lg-1 fs-3 d-flex flex-column">婦科手術</div>
+                  <img src="../assets/images/home/avatar-6.svg" alt="avatar">
+                </div>
+              </div>
+              <div class="fw-bold fs-lg-3 fs-5 mb-2">48歲 / 謝小姐</div>
+              <p class="text-light fs-lg-5 fs-6">
+                管體中資程！子，強法娥縷回，蛇目作嘶黨何三台飾思中退反次三了這臺風向。想又長說跳資國，由盡美井鐵爛蜻肩怡情誰裡供機的芯啊音告國凶中；聽清比城亢，，到找應？外先的向我藹徒外讓網話絕籲的用了友第了拾我的原
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card p-6">
+              <div class="card-title m-0 d-flex flex-column">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="food-name fw-bold text-primary fs-lg-2 fs-3 d-flex flex-column">胰臟移除手術</div>
+                  <img src="../assets/images/home/avatar-7.svg" alt="avatar">
+                </div>
+              </div>
+              <div class="fw-bold fs-lg-3 fs-5 mb-2">31歲 / 林小姐</div>
+              <p class="text-light fs-lg-5 fs-6">
+                管體中資程！子，強法娥縷回，蛇目作嘶黨何三台飾思中退反次三了這臺風向。想又長說跳資國，由盡美井鐵爛蜻肩怡情誰裡供機的芯啊音告國凶中；聽清比城亢，，到找應？外先的向我藹徒外讓網話絕籲的用了友第了拾我的原
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <%- include('./layout/swiper-buttons') -%>
+    </section>
+
+    <%- include('./layout/cta-manual') -%>
+
+    <%- include('./layout/footer') -%> <%- include('./layout/body_bottom') -%>
+  </body>
+</html>
