@@ -1,14 +1,16 @@
 // tabs
 $(function () {
   $("#tabs").tabs();
-  $("#tabs-lg").tabs();  
+  $("#tabs-lg").tabs();
+  $("#tabs-chemotherapy").tabs();
+  $("#tabs-surgery").tabs();
 });
 
 
 $(function () {
   $(".nav-item").click(function () {
     // remove classes from all
-    $(".nav-link").removeClass("active");
+    $(this).siblings().children(".nav-link").removeClass("active");
     // add class to the one we clicked
     $(this).children('a').addClass("active");
   });
@@ -23,6 +25,9 @@ $(function () {
   });
 });
 
+
+
+// login page
 $(function () {
     // sign up an account
     $(".signUp").click(function (event) {

@@ -19,8 +19,7 @@
   .foreword {
     border-radius: 10px;
     img {
-      width: 209px;
-      margin-right: 96px;
+      width: 200px;
     }
     h3 {
       &::before {
@@ -44,12 +43,12 @@
       &::after{
         @include mask(0%,0);
       }
-    }
-    .btn{
-      @include fadeInOut(-50%,-90%,0,0.5s)
-    }
-    .menu-name{
-      @include fadeInOut(0%,-40%,0,0.5s)
+      .btn{
+        @include fadeInOut(-50%,-40%,0,0.5s)
+      }
+      .menu-name{
+        @include fadeInOut(0%,10%,0,0.5s)
+      }
     }
     .card-body {
       li::before {
@@ -62,40 +61,23 @@
         @include mask(100%,1);
       }
       .btn{
-        @include fadeInOut(-50%,-100%,1,0.5s)
+        @include fadeInOut(-50%,-50%,1,0.5s)
       }
       .menu-name{
-        @include fadeInOut(0%,-50%,1,0.5s)
+        @include fadeInOut(0%,0%,1,0.5s)
       }
     }
   }
+}
 
-  @media (max-width: 992px) {
-    .foreword {
-      img {
-        width: 83px;
-        margin-right: 16px;
-      }
-      h3::before,
-      h3::after {
-        display: none;
-      }
-    }
-    .custom-menu{
-      .btn, .menu-name{
-        @include fadeInOut(-50%,-240%,0,0.5s)
-      }
-      .menu-name{
-        @include fadeInOut(0%,-240%,0,0.5s)
-      }
-      .card:hover {
-        .btn{
-          @include fadeInOut(-50%,-250%,1,0.5s)
-        }
-        .menu-name{
-          @include fadeInOut(0%,-250%,1,0.5s)
-        }
-      }
+.everyoneSays{
+  @include swiper-buttons;
+  @include bg_blur(center, top 40px, center, top 20px);
+
+  .card {
+    @include swiper-card-coverflow;
+    p{
+      @include multiline-ellipsis(3);
     }
   }
 }
