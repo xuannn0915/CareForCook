@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <%- include('./layout/head'); -%>
+  </head>
+  <body>
+    <%- include('./layout/header') -%>
+
+    <main
+      class="product-lunchBox-page-title d-flex flex-column justify-content-center"
+    >
+      <div class="container">
+        <h1 class="fw-bold text-white mb-lg-4 fs-lg-1 fs-3">機能調理餐</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb text-white fs-lg-6 fs-7 mb-0">
+            <li class="breadcrumb-item">首頁</li>
+            <li class="breadcrumb-item">好料報你知</li>
+            <li class="breadcrumb-item" aria-current="page">機能調理餐</li>
+          </ol>
+        </nav>
+      </div>
+    </main>
+
+    <section class="product-customize pt-lg-9">
+          <div class="container">
+            <div class="row">
+              <div class=" col-lg-10 mx-lg-auto d-lg-block d-none">
+                <div
+                  class="foreword d-flex align-items-center justify-content-evenly p-lg-6 p-4 border border-primary"
+                >
+                  <img
+                    src="../assets/images/product/illustration-7.svg"
+                    alt="illustration"
+                  />
+                  <div class="d-flex flex-column align-items-center">
+                    <title
+                      class="text-black fw-bold fs-4 d-lg-block mb-2 d-none"
+                    >
+                    總是在想下一餐要吃什麼嗎？
+                    </title>
+                    <p class="mb-8 d-lg-block d-none text-center">
+                      多樣化的餐點，選擇自己需要的健康標的<br>給予專業以及便利的管道，成就每位追求理想健康狀態的你。
+                    </p>
+                    <h3
+                      class="fw-bold fs-lg-3 fs-5 text-primary d-flex align-items-center"
+                    >
+                    理解不同需求，成就你理想的健康方向
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="steps col-lg-10 mx-lg-auto py-lg-10 py-8"
+              >
+                <div class="row flex-lg-row flex-column-reverse">
+                  <img
+                    src="../assets/images/product/illustration-8.svg"
+                    alt="illustration"
+                    class="col-10 d-lg-none d-block mx-auto"
+                  />
+                  <ol class="col-lg-5  mb-lg-0 mb-8">
+                    <li class="mb-lg-8 mb-6">
+                      <div class="fw-bold fs-lg-1 fs-3 text-primary">01</div>
+                      <div class="text-black fw-bold fs-lg-3 fs-5">
+                        營養師與廚師的協作
+                      </div>
+                      <p>
+                        結合兩方的專業共同研發，兼顧各種營養比例的同時也不失美味。
+                      </p>
+                    </li>
+                    <li class="mb-lg-8 mb-6">
+                      <div class="fw-bold fs-lg-1 fs-3 text-primary">02</div>
+                      <div class="text-black fw-bold fs-lg-3 fs-5">
+                        豐富食材，多元不膩
+                      </div>
+                      <p>
+                        機能調理餐為了兼顧美味與營養，特別搭配十種以上食材均衡調配你的每一餐
+                      </p>
+                    </li>
+                    <li>
+                      <div class="fw-bold fs-lg-1 fs-3 text-primary">03</div>
+                      <div class="text-black fw-bold fs-lg-3 fs-5">
+                        機能功能，皆予滿足
+                      </div>
+                      <p>
+                        為不同需求考量，無論營養熱量或是色香味，都能從我們的餐點中找到最適合你的一款！
+                      </p>
+                    </li>
+                  </ol>
+                  <div
+                    class="col-lg-5 ms-lg-auto d-flex flex-column align-items-center justify-content-between"
+                  >
+                    <div class="text-center mb-lg-0 mb-6">
+                      <div class="text-black fw-bold fs-lg-1 fs-4 mb-lg-4 mb-0">
+                        餐餐吃出新花樣
+                      </div>
+                      <p class="fs-lg-3">機能調理餐的三大特色</p>
+                    </div>
+                    <img
+                      src="../assets/images/product/illustration-8.svg"
+                      alt="illustration"
+                      class="d-lg-block d-none"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="custom-menu py-9">
+            <div class="container">
+              <div class="row">
+                <div class="col mx-lg-auto">
+                    <div class="text-black fw-bold fs-lg-1 fs-4 mb-lg-2 mb-0 text-center">
+                      機能調理餐介紹
+                    </div>
+                    <p class="fs-lg-3 mb-6 text-center">為不同的需求，準備不同的方向</p>
+
+                    <!-- custom menu tabs -->
+                    <div id="tabs">
+                      <div class="d-flex justify-content-center mb-lg-7 mb-6">
+                        <ul class="nav nav-tabs">
+                          <li class="nav-item fs-lg-5 fs-6">
+                            <a
+                              class="nav-link active d-flex align-items-center px-lg-6 px-5 py-3"
+                              aria-current="page"
+                              href="#lunchBox-menu-1"
+                            >
+                            簡單均衡
+                            </a>
+                          </li>
+                          <li class="nav-item fs-lg-5 fs-6">
+                            <a
+                              class="nav-link d-flex align-items-center px-lg-6 px-5 py-3"
+                              href="#lunchBox-menu-2"
+                              >流行飲食</a
+                            >
+                          </li>
+                          <li class="nav-item fs-lg-5 fs-6">
+                            <a
+                              class="nav-link d-flex align-items-center px-lg-6 px-5 py-3"
+                              href="#lunchBox-menu-3"
+                              >特殊飲控</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+
+                      <!-- custom product -->
+                      <div id="lunchBox-menu-1">
+                        <div class="d-flex flex-lg-row flex-column">
+                          <div class="card border-0 bg-transparent me-lg-6 mb-lg-0 mb-6 w-100">
+                            <div class="card-pic overflow-hidden mb-4 position-relative">
+                              <img
+                              src="../assets/images/product/lunch01-d.png"
+                              alt="product" class="d-lg-block d-none"
+                              />
+                              <img src="../assets/images/product/lunch01-m.png" alt="product" class="d-lg-none">
+                              <a href="shopping_mall.html" class="btn btn-primary position-absolute top-50 start-50 z-1">
+                                線上購物
+                              </a>
+                              <div class="menu-name position-absolute p-lg-7 p-6 bottom-0 start-0 z-1">
+                                <div class="fw-bold text-white fs-2 mb-lg-2">
+                                  低糖好新纖
+                                </div>
+                                <p class="text-white fs-5">
+                                  低糖、低鹽、優質蛋白
+                                </p>
+                              </div>
+                            </div>
+                            <div class="card-body p-0">
+                              <div
+                                class="content d-flex"
+                              >
+                                <div class="d-flex flex-column">
+                                  <div class="fw-bold fs-lg-4 fs-5">
+                                    花椰菜米取代白飯
+                                  </div>
+                                  <div class="fs-lg-5 fs-6">以舒肥雞胸為主減少澱粉攝取，提供低脂肉品優質蛋白質，控制在500大卡內。</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card border-0 bg-transparent w-100">
+                            <div class="card-pic overflow-hidden mb-4 position-relative">
+                              <img
+                              src="../assets/images/product/lunch02-d.png"
+                              alt="product" class="d-lg-block d-none"
+                              />
+                              <img src="../assets/images/product/lunch02-m.png" alt="product" class="d-lg-none">
+                              <a href="shopping_mall.html" class="btn btn-primary position-absolute top-50 start-50 z-1">
+                                線上購物
+                              </a>
+                              <div class="menu-name position-absolute p-lg-7 p-6 bottom-0 start-0 z-1">
+                                <div class="fw-bold text-white fs-2 mb-lg-2">
+                                  均衡好食多
+                                </div>
+                                <p class="text-white fs-5">
+                                  低GI、低鹽味、低油膩
+                                </p>
+                              </div>
+                            </div>
+                            <div class="card-body p-0">
+                              <div
+                                class="content d-flex"
+                              >
+                                <div class="d-flex flex-column">
+                                  <div class="fw-bold fs-lg-4 fs-5">
+                                    精算三大營養素黃金比例
+                                  </div>
+                                  <div class="fs-lg-5 fs-6">選用花東無毒黑米，蔬菜量高達200g，滿足成人每日所需，均衡飲食最佳選擇！</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                        <div id="lunchBox-menu-2">
+                          <div class="d-flex flex-lg-row flex-column">
+                            <div class="card border-0 bg-transparent me-lg-6 mb-lg-0 mb-6 w-100">
+                              <div class="card-pic overflow-hidden mb-4 position-relative">
+                                <img
+                                src="../assets/images/product/lunch03-d.png"
+                                alt="product" class="d-lg-block d-none"
+                                />
+                                <img src="../assets/images/product/lunch03-m.png" alt="product" class="d-lg-none">
+                                <a href="shopping_mall.html" class="btn btn-primary position-absolute top-50 start-50 z-1">
+                                  線上購物
+                                </a>
+                                <div class="menu-name position-absolute p-lg-7 p-6 bottom-0 start-0 z-1">
+                                  <div class="fw-bold text-white fs-2 mb-lg-2">
+                                    多多好蛋白
+                                  </div>
+                                  <p class="text-white fs-5">
+                                    五份蛋白、低GI、低鹽味
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="card-body p-0">
+                                <div
+                                  class="content d-flex"
+                                >
+                                  <div class="d-flex flex-column">
+                                    <div class="fw-bold fs-lg-4 fs-5">
+                                      餐盒高達35g蛋白質
+                                    </div>
+                                    <div class="fs-lg-5 fs-6">80%蛋豆魚肉優質蛋白質，是增肌減脂人士正餐的優質選擇！</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card border-0 bg-transparent w-100">
+                              <div class="card-pic overflow-hidden mb-4 position-relative">
+                                <img
+                                src="../assets/images/product/lunch04-d.png"
+                                alt="product" class="d-lg-block d-none"
+                                />
+                                <img src="../assets/images/product/lunch04-m.png" alt="product" class="d-lg-none">
+                                <a href="shopping_mall.html" class="btn btn-primary position-absolute top-50 start-50 z-1">
+                                  線上購物
+                                </a>
+                                <div class="menu-name position-absolute p-lg-7 p-6 bottom-0 start-0 z-1">
+                                  <div class="fw-bold text-white fs-2 mb-lg-2">
+                                    田園好蔬適
+                                  </div>
+                                  <p class="text-white fs-5">
+                                    植物蛋白、低油、低鹽
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="card-body p-0">
+                                <div
+                                  class="content d-flex"
+                                >
+                                  <div class="d-flex flex-column">
+                                    <div class="fw-bold fs-lg-4 fs-5">
+                                      富含高纖維的全素餐盒
+                                    </div>
+                                    <div class="fs-lg-5 fs-6">高達200g多樣蔬果，供素食者豐富纖維及植化素，同時攝取足量蛋白、降低膽固醇。</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="lunchBox-menu-3">
+                          <div class="d-flex flex-lg-row flex-column">
+                            <div class="card border-0 bg-transparent me-lg-6 mb-lg-0 mb-6 w-100">
+                              <div class="card-pic overflow-hidden mb-4 position-relative">
+                                <img
+                                src="../assets/images/product/lunch05-d.png"
+                                alt="product" class="d-lg-block d-none"
+                                />
+                                <img src="../assets/images/product/lunch05-m.png" alt="product" class="d-lg-none">
+                                <a href="shopping_mall.html" class="btn btn-primary position-absolute top-50 start-50 z-1">
+                                  線上購物
+                                </a>
+                                <div class="menu-name position-absolute p-lg-7 p-6 bottom-0 start-0 z-1">
+                                  <div class="fw-bold text-white fs-2 mb-lg-2">
+                                    咀嚼好輕鬆
+                                  </div>
+                                  <p class="text-white fs-5">
+                                    低咀嚼、低鹽味、低油膩
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="card-body p-0">
+                                <div
+                                  class="content d-flex"
+                                >
+                                  <div class="d-flex flex-column">
+                                    <div class="fw-bold fs-lg-4 fs-5">
+                                      解決牙口不佳、咀嚼的困擾
+                                    </div>
+                                    <div class="fs-lg-5 fs-6">添加日本介護飲食使用的食物軟化劑，保留食材營養，讓長輩吃的安心開心！</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card border-0 bg-transparent w-100">
+                              <div class="card-pic overflow-hidden mb-4 position-relative">
+                                <img
+                                src="../assets/images/product/lunch06-d.png"
+                                alt="product" class="d-lg-block d-none"
+                                />
+                                <img src="../assets/images/product/lunch06-m.png" alt="product" class="d-lg-none">
+                                <a href="shopping_mall.html" class="btn btn-primary position-absolute top-50 start-50 z-1">
+                                  線上購物
+                                </a>
+                                <div class="menu-name position-absolute p-lg-7 p-6 bottom-0 start-0 z-1">
+                                  <div class="fw-bold text-white fs-2 mb-lg-2">
+                                    少鹽好鉀在
+                                  </div>
+                                  <p class="text-white fs-5">
+                                    2份蛋白、少磷鉀、低鹽味
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="card-body p-0">
+                                <div
+                                  class="content d-flex"
+                                >
+                                  <div class="d-flex flex-column">
+                                    <div class="fw-bold fs-lg-4 fs-5">
+                                      減少高磷食材添加
+                                    </div>
+                                    <div class="fs-lg-5 fs-6">蛋白質控制在14g內，搭配日本低蛋白真粒米，適合限制磷、鉀離子的特殊飲食族群！</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section class="everyoneSays py-lg-9 py-7">
+      <div class="text-center mb-lg-8 mb-7">
+        <h2 class="fw-bold fs-lg-2 fs-4 mb-lg-2">大家怎麼說</h2>
+        <subtitle class="fs-lg-3 fs-5">他們這樣吃，熱情推薦你</subtitle>
+      </div>
+      <div class="swiper coverflowSwiper mb-lg-9 mb-6">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card p-6">
+              <div class="card-title m-0 d-flex flex-column">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="food-name fw-bold text-primary fs-lg-2 fs-3 d-flex flex-column">低糖好新纖</div>
+                  <img src="../assets/images/home/avatar-1.svg" alt="avatar">
+                </div>
+              </div>
+              <div class="fw-bold fs-lg-3 fs-5 mb-2">50歲 / 吳先生</div>
+              <p class="text-light fs-lg-5 fs-6">
+                膽囊切除後需要低油飲食控制，術後有腹瀉問題。後來透過照料理積極飲控，讓身體已恢復原本狀態，偶而能吃一點垃圾食物，但消化都是相當正常且順利...
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card p-6">
+              <div class="card-title m-0 d-flex flex-column">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="food-name fw-bold text-primary fs-lg-2 fs-3 d-flex flex-column">田園好蔬適</div>
+                  <img src="../assets/images/home/avatar-2.svg" alt="avatar">
+                </div>
+              </div>
+              <div class="fw-bold fs-lg-3 fs-5 mb-2">77歲 / 張小姐</div>
+              <p class="text-light fs-lg-5 fs-6">
+                77歲的張媽媽，107年因為舌頭潰瘍一直無法痊癒，就醫後確認為舌癌。手術後因切除右側一小部分舌頭初期只能吃流質，但天天喝營養品讓張媽媽非常的害怕...
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card p-6">
+              <div class="card-title m-0 d-flex flex-column">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="food-name fw-bold text-primary fs-lg-2 fs-3 d-flex flex-column">均衡好食多</div>
+                  <img src="../assets/images/home/avatar-3.svg" alt="avatar">
+                </div>
+              </div>
+              <div class="fw-bold fs-lg-3 fs-5 mb-2">77歲 / 蔡先生</div>
+              <p class="text-light fs-lg-5 fs-6">
+                膽囊切除後需要低油飲食控制，術後有腹瀉問題。後來透過照料理積極飲控，讓身體已恢復原本狀態，偶而能吃一點垃圾食物，但消化都是相當正常且順利...
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card p-6">
+              <div class="card-title m-0 d-flex flex-column">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="food-name fw-bold text-primary fs-lg-2 fs-3 d-flex flex-column">咀嚼好輕鬆</div>
+                  <img src="../assets/images/home/avatar-4.svg" alt="avatar">
+                </div>
+              </div>
+              <div class="fw-bold fs-lg-3 fs-5 mb-2">87歲 / 陳小姐</div>
+              <p class="text-light fs-lg-5 fs-6">
+                術後有腹脹和排便困擾，照料理規劃忌產氣食物且需足夠熱量與蛋白質。原本靠自煮，但總是無法達到需要的營養熱量，術後恢復相當緩慢，幸好遇到了照料理...
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card p-6">
+              <div class="card-title m-0 d-flex flex-column">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="food-name fw-bold text-primary fs-lg-2 fs-3 d-flex flex-column">少鹽好鉀在</div>
+                  <img src="../assets/images/home/avatar-5.svg" alt="avatar">
+                </div>
+              </div>
+              <div class="fw-bold fs-lg-3 fs-5 mb-2">吳小姐 / 65歲</div>
+              <p class="text-light fs-lg-5 fs-6">
+                管體中資程！子，強法娥縷回，蛇目作嘶黨何三台飾思中退反次三了這臺風向。想又長說跳資國，由盡美井鐵爛蜻肩怡情誰裡供機的芯啊音告國凶中；聽清比城亢，，到找應？外先的向我藹徒外讓網話絕籲的用了友第了拾我的原
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card p-6">
+              <div class="card-title m-0 d-flex flex-column">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="food-name fw-bold text-primary fs-lg-2 fs-3 d-flex flex-column">咀嚼好輕鬆</div>
+                  <img src="../assets/images/home/avatar-6.svg" alt="avatar">
+                </div>
+              </div>
+              <div class="fw-bold fs-lg-3 fs-5 mb-2">48歲 / 謝小姐</div>
+              <p class="text-light fs-lg-5 fs-6">
+                管體中資程！子，強法娥縷回，蛇目作嘶黨何三台飾思中退反次三了這臺風向。想又長說跳資國，由盡美井鐵爛蜻肩怡情誰裡供機的芯啊音告國凶中；聽清比城亢，，到找應？外先的向我藹徒外讓網話絕籲的用了友第了拾我的原
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card p-6">
+              <div class="card-title m-0 d-flex flex-column">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="food-name fw-bold text-primary fs-lg-2 fs-3 d-flex flex-column">多多好蛋白</div>
+                  <img src="../assets/images/home/avatar-7.svg" alt="avatar">
+                </div>
+              </div>
+              <div class="fw-bold fs-lg-3 fs-5 mb-2">31歲 / 林小姐</div>
+              <p class="text-light fs-lg-5 fs-6">
+                管體中資程！子，強法娥縷回，蛇目作嘶黨何三台飾思中退反次三了這臺風向。想又長說跳資國，由盡美井鐵爛蜻肩怡情誰裡供機的芯啊音告國凶中；聽清比城亢，，到找應？外先的向我藹徒外讓網話絕籲的用了友第了拾我的原
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card p-6">
+              <div class="card-title m-0 d-flex flex-column">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="food-name fw-bold text-primary fs-lg-2 fs-3 d-flex flex-column">多多好蛋白</div>
+                  <img src="../assets/images/home/avatar-7.svg" alt="avatar">
+                </div>
+              </div>
+              <div class="fw-bold fs-lg-3 fs-5 mb-2">31歲 / 林小姐</div>
+              <p class="text-light fs-lg-5 fs-6">
+                管體中資程！子，強法娥縷回，蛇目作嘶黨何三台飾思中退反次三了這臺風向。想又長說跳資國，由盡美井鐵爛蜻肩怡情誰裡供機的芯啊音告國凶中；聽清比城亢，，到找應？外先的向我藹徒外讓網話絕籲的用了友第了拾我的原
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <%- include('./layout/swiper-buttons') -%>
+    </section>
+
+    <%- include('./layout/cta-manual') -%>
+
+    <%- include('./layout/footer') -%> <%- include('./layout/body_bottom') -%>
+  </body>
+</html>

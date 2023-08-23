@@ -2,8 +2,7 @@
 $(function () {
   $("#tabs").tabs();
   $("#tabs-lg").tabs();
-  $("#tabs-chemotherapy").tabs();
-  $("#tabs-surgery").tabs();
+  $("#tabs-2").tabs();
 });
 
 

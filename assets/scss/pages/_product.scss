@@ -12,6 +12,13 @@
   );
 }
 
+.product-lunchBox-page-title {
+  @include page_title(
+    "https://github.com/xuannn0915/CareForCook/blob/main/assets/images/product/banner3-desktop.png?raw=true",
+    "https://github.com/xuannn0915/CareForCook/blob/main/assets/images/product/banner3-mobile.png?raw=true"
+  );
+}
+
 .product-customize {
   .nav-lg {
     box-shadow: 0px 0px 50px 30px rgba($warning, 20%);
@@ -58,7 +65,7 @@
       }
     }
     .card-body {
-      li::before {
+      li::before, .content::before {
         @include thumbsUp;
       }
     }
