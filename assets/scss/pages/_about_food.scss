@@ -5,15 +5,6 @@
   );
 }
 
-.food-intro {
-  @include swiper-buttons;
-  @include bg_blur(center, top 40px, center, top 20px);
-
-  .card {
-    @include swiper-card-coverflow;
-  }
-}
-
 .process {
   padding-top: 88px;
   .active::after{

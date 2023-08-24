@@ -1,0 +1,6 @@
+.article-feedback-page-title {
+  @include page_title(
+    'https://github.com/xuannn0915/CareForCook/blob/main/assets/images/article/banner1-d.png?raw=true',
+    'https://github.com/xuannn0915/CareForCook/blob/main/assets/images/article/banner1-m.png?raw=true'
+  )
+}

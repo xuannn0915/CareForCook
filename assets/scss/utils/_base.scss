@@ -36,6 +36,15 @@ ul,ol,li{
   }
 }
 
+.btn-warning{
+  border-radius: 5px;
+  border: 0;
+  &:hover{
+    background-color: lighten($warning, 20%);
+    color: $black;
+  }
+}
+
 .btn-outline-warning{
   border-radius: 5px;
   &:hover{
