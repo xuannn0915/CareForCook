@@ -1,6 +1,11 @@
 .cta-product{
   a::after{
     content: '';
-    background-image: url('');
+    background-image: url('https://raw.githubusercontent.com/xuannn0915/CareForCook/3decaf3392f34ce88f48d5be9f21533b2371baa2/assets/images/article/white-drop.svg');
+    background-repeat:space ;
+    display: block;
+    width: 40px;
+    height: 16px;
+    margin-top: 8px;
   }
 } 
