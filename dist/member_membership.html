@@ -16,8 +16,8 @@
 <!-- swiper -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-<title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/collapse-355f3875.js"></script>
-    <link rel="stylesheet" href="/CareForCook/assets/collapse-ce61526e.css">
+<title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/collapse-138878be.js"></script>
+    <link rel="stylesheet" href="/CareForCook/assets/collapse-40e73677.css">
   </head>
   <body>
     <nav
@@ -279,17 +279,16 @@
     </div>
   </div>
 </nav>
-    <div class="membership container fs-6">
-      <nav aria-label="breadcrumb" class="pt-4 pb-6">
-        <ol class="breadcrumb m-0">
-          <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
-          <li class="breadcrumb-item"><a href="#">會員中心</a></li>
-          <li class="breadcrumb-item" aria-current="page">編輯資料</li>
-        </ol>
-      </nav>
-      <div class="row" id="tabs">
-        <div class="col-lg-2 sidebar">
-          <ul class="nav nav-tabs border-0 d-flex flex-column">
+    <div class="membership pt-4 pb-9">
+      <div class="container">
+        <nav aria-label="breadcrumb" class="pb-lg-6 pb-4">
+          <ol class="breadcrumb m-0">
+            <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+            <li class="breadcrumb-item"><a href="#">會員中心</a></li>
+          </ol>
+        </nav>
+        <div class="row" id="tabs">
+          <ul class="nav nav-tabs border-0 d-flex flex-lg-column justify-content-evenly d-lg-none d-block mb-6">
             <li class="nav-item fs-lg-5 fs-6">
               <a
                 class="nav-link border-0 active d-flex align-items-center px-lg-0 px-5 py-3"
@@ -314,177 +313,252 @@
               >
             </li>
           </ul>
-        </div>
-
-        <div class="col-lg-10">
-          <!-- 編輯資料 -->
-          <div id="editProfile">
-            <div class="pagetitle mb-lg-7 mb-6">
-              <h3 class="fw-bold fs-lg-3 fs-4">編輯資料</h3>
-              <p class="text-primary fs-lg-5 fs-6">
-                管理你的檔案以保護你的帳戶
-              </p>
-            </div>
-            <div class="basicInfo">
-              <div class="row">
-                <div class="col">
-                  <h4 class="fw-bold fs-lg-4 fs-5 mb-4">基本資料</h4>
-                  <div class="d-flex align-items-center mb-9">
-                    <span
-                      class="material-symbols-rounded fs-lg-1 fs-2 userPic rounded-circle d-flex align-items-center justify-content-center me-6"
-                    >
-                      person
-                    </span>
-                    <div>
-                      <p class="text-light fs-6 mb-4">
-                        檔案大小：最大1MB <br />
-                        檔案限制：JPEG / PNG
-                      </p>
-                      <label for="uploadPic">
-                        <div
-                          class="btn btn-outline-dark d-flex align-items-center"
-                        >
-                          選擇圖片
-                          <span class="material-symbols-rounded ms-2">
-                            upload
-                          </span>
-                        </div>
-                        <input class="d-none" type="file" id="uploadPic" />
-                      </label>
-                    </div>
-                  </div>
-                  <form action="#">
-                    <form>
-                      <div class="mb-6">
-                        <label for="userName" class="form-label fs-5"
-                          >姓名</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="userName"
-                          aria-describedby="emailHelp"
-                          value="王小明"
-                        />
-                      </div>
-                      <div class="mb-6">
-                        <label for="email" class="form-label fs-5">信箱</label>
-                        <input
-                          type="email"
-                          class="form-control"
-                          id="email"
-                          value="xuannn0915@gmail.com"
-                          aria-describedby="emailHelp"
-                        />
-                      </div>
-                      <div class="mb-6">
-                        <div class="d-flex justify-content-between align-items-center">
-                          <label for="password" class="form-label fs-5"
-                            >密碼</label
-                          >
-                          <a
-                            class="link-warning d-inline-flex align-items-center"
-                            data-bs-toggle="modal"
-                            href="#setNewPassword"
-                          >
-                            設定新密碼
-                            <span class="material-symbols-rounded ms-2 fs-4">
-                              autorenew
-                            </span>
-                          </a>
-                        </div>
-                        <input
-                          type="password"
-                          class="form-control mb-2"
-                          id="password"
-                          value="123456"
-                          disabled
-                        />
-                      </div>
-                      <div class="d-flex flex-column mb-6">
-                        <label for="birthday" class="form-label fs-5">生日</label>
-                        <div class="d-flex justify-content-between">
-                          <select class="form-select me-4" aria-label="Default select example">
-                            <option value="">年</option>
-                            <option value="2005">2005</option>
-                            <option value="2004">2004</option>
-                            <option value="2003">2003</option>
-                            <option value="2002">2002</option>
-                            <option value="2001">2001</option>
-                            <option value="2000">2000</option>
-                          </select>
-                          <select class="form-select me-4" aria-label="Default select example">
-                            <option value="">月</option>
-                            <option value="12">12</option>
-                            <option value="11">11</option>
-                            <option value="10">10</option>
-                            <option value="09">09</option>
-                            <option value="08">08</option>
-                            <option value="07">07</option>
-                            <option value="06">06</option>
-                            <option value="05">05</option>
-                            <option value="04">04</option>
-                            <option value="03">03</option>
-                            <option value="02">02</option>
-                            <option value="01">01</option>
-                          </select>
-                          <select class="form-select" aria-label="Default select example">
-                            <option value="">日</option>
-                            <option value="01">01</option>
-                            <option value="02">02</option>
-                            <option value="03">03</option>
-                            <option value="04">04</option>
-                            <option value="05">05</option>
-                            <option value="06">06</option>
-                            <option value="07">07</option>
-                            <option value="08">08</option>
-                            <option value="09">09</option>
-                            <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12</option>
-                          </select>
-                        </div>
-                      </div>
-                      <button type="submit" class="btn btn-primary">
-                        儲存變更
-                      </button>
-                    </form>
-                  </form>
-                </div>
-                <div class="col">
-                  <div class="creditCard mb-lg-11 mb-9">
-                    <div class="d-flex justify-content-between align-items-center mb-4">
-                      <h4 class="fw-bold fs-lg-4 fs-5">信用卡</h4>
-                      <a class="link-warning d-flex align-items-center" href="#addCrediCard"
-                      data-bs-toggle="modal" >
-                        新增常用信用卡
-                        <span class="material-symbols-rounded ms-2"> add </span>
-                      </a>
-                    </div>
-                    <div class="card mb-1">
-                      <div class="card-body d-flex justify-content-between align-items-center">
-                        <p>
-                          <img src="/CareForCook/assets/visa-b3fb3035.svg" alt="visa" class="me-2">
-                          ****0403
+          <div class="col-lg-2 sidebar mb-lg-0 mb-3 d-lg-block d-none">
+            <ul class="nav nav-tabs border-0 d-flex flex-lg-column justify-content-evenly">
+              <li class="nav-item fs-lg-5 fs-6">
+                <a
+                  class="nav-link border-0 active d-flex align-items-center px-lg-0 px-5 py-3"
+                  aria-current="page"
+                  href="#editProfile"
+                >
+                  編輯資料
+                </a>
+              </li>
+              <li class="nav-item fs-lg-5 fs-6">
+                <a
+                  class="nav-link border-0 d-flex align-items-center px-lg-0 px-5 py-3"
+                  href="#followOrder"
+                  >追蹤訂單</a
+                >
+              </li>
+              <li class="nav-item fs-lg-5 fs-6">
+                <a
+                  class="nav-link border-0 d-flex align-items-center px-lg-0 px-5 py-3"
+                  href="#commentFeedback"
+                  >留言回饋</a
+                >
+              </li>
+            </ul>
+          </div>
+  
+          <div class="col-lg-10">
+            <!-- 編輯資料 -->
+            <div id="editProfile">
+              <div class="pagetitle mb-lg-7 mb-6">
+                <h3 class="fw-bold fs-lg-3 fs-4">編輯資料</h3>
+                <p class="text-primary fs-lg-5 fs-6">
+                  管理你的檔案以保護你的帳戶
+                </p>
+              </div>
+              <div class="basicInfo">
+                <div class="row gx-lg-11">
+                  <div class="col-lg-6 mb-lg-0 mb-9">
+                    <h4 class="fw-bold fs-lg-4 fs-5 mb-4">基本資料</h4>
+                    <div class="d-flex align-items-center mb-9">
+                      <span
+                        class="material-symbols-rounded fs-lg-1 fs-2 userPic rounded-circle d-flex align-items-center justify-content-center me-6"
+                      >
+                        person
+                      </span>
+                      <div>
+                        <p class="text-light fs-6 mb-4">
+                          檔案大小：最大1MB <br />
+                          檔案限制：JPEG / PNG
                         </p>
-                        <a href="#" class="material-symbols-rounded"> delete </a>
+                        <label for="uploadPic">
+                          <div
+                            class="btn btn-outline-dark d-flex align-items-center"
+                          >
+                            選擇圖片
+                            <span class="material-symbols-rounded ms-2">
+                              upload
+                            </span>
+                          </div>
+                          <input class="d-none" type="file" id="uploadPic" />
+                        </label>
                       </div>
                     </div>
-                    <p class="fs-6 text-light">
-                      最多新增三張信用卡
-                    </p>
+                    <form action="#">
+                      <form>
+                        <div class="mb-6">
+                          <label for="userName" class="form-label fs-5"
+                            >姓名</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="userName"
+                            aria-describedby="emailHelp"
+                            value="王小明"
+                          />
+                        </div>
+                        <div class="mb-6">
+                          <label for="email" class="form-label fs-5">信箱</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            value="xuannn0915@gmail.com"
+                            aria-describedby="emailHelp"
+                          />
+                        </div>
+                        <div class="mb-6">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <label for="password" class="form-label fs-5"
+                              >密碼</label
+                            >
+                            <a
+                              class="link-warning d-inline-flex align-items-center"
+                              data-bs-toggle="modal"
+                              href="#setNewPassword"
+                            >
+                              設定新密碼
+                              <span class="material-symbols-rounded ms-2 fs-4">
+                                autorenew
+                              </span>
+                            </a>
+                          </div>
+                          <input
+                            type="password"
+                            class="form-control mb-2"
+                            id="password"
+                            value="123456"
+                            disabled
+                          />
+                        </div>
+                        <div class="d-flex flex-column mb-6">
+                          <label for="birthday" class="form-label fs-5">生日</label>
+                          <div class="d-flex justify-content-between">
+                            <select class="form-select me-4" aria-label="Default select example">
+                              <option value="">年</option>
+                              <option value="2005">2005</option>
+                              <option value="2004">2004</option>
+                              <option value="2003">2003</option>
+                              <option value="2002">2002</option>
+                              <option value="2001">2001</option>
+                              <option value="2000">2000</option>
+                            </select>
+                            <select class="form-select me-4" aria-label="Default select example">
+                              <option value="">月</option>
+                              <option value="12">12</option>
+                              <option value="11">11</option>
+                              <option value="10">10</option>
+                              <option value="09">09</option>
+                              <option value="08">08</option>
+                              <option value="07">07</option>
+                              <option value="06">06</option>
+                              <option value="05">05</option>
+                              <option value="04">04</option>
+                              <option value="03">03</option>
+                              <option value="02">02</option>
+                              <option value="01">01</option>
+                            </select>
+                            <select class="form-select" aria-label="Default select example">
+                              <option value="">日</option>
+                              <option value="01">01</option>
+                              <option value="02">02</option>
+                              <option value="03">03</option>
+                              <option value="04">04</option>
+                              <option value="05">05</option>
+                              <option value="06">06</option>
+                              <option value="07">07</option>
+                              <option value="08">08</option>
+                              <option value="09">09</option>
+                              <option value="10">10</option>
+                              <option value="11">11</option>
+                              <option value="12">12</option>
+                            </select>
+                          </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                          儲存變更
+                        </button>
+                      </form>
+                    </form>
                   </div>
-                  
+                  <div class="col-lg-6">
+                    <div class="creditCard mb-lg-11 mb-9">
+                      <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h4 class="fw-bold fs-lg-4 fs-5">信用卡</h4>
+                        <a class="link-warning d-flex align-items-center" href="#addCreditCard"
+                        data-bs-toggle="modal" >
+                          新增常用信用卡
+                          <span class="material-symbols-rounded ms-2"> add </span>
+                        </a>
+                      </div>
+                      <div class="card-list mb-1">
+                        <div class="card mb-2">
+                          <div class="card-body d-flex justify-content-between align-items-center">
+                            <p>
+                              <img src="/CareForCook/assets/visa-b3fb3035.svg" alt="visa" class="me-2">
+                              ****0403
+                            </p>
+                            <a href="#" class="material-symbols-rounded"> delete </a>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-body d-flex justify-content-between align-items-center">
+                            <p>
+                              <img src="/CareForCook/assets/visa-b3fb3035.svg" alt="visa" class="me-2">
+                              ****5566
+                            </p>
+                            <a href="#" class="material-symbols-rounded"> delete </a>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="fs-6 text-light">
+                        最多新增三張信用卡
+                      </p>
+                    </div>
+                    <div class="
+                    recipientAddress">
+                      <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h4 class="fw-bold fs-lg-4 fs-5">收件地</h4>
+                        <a class="link-warning d-flex align-items-center" href="#addAddress"
+                        data-bs-toggle="modal" >
+                        新增常用收件地
+                          <span class="material-symbols-rounded ms-2"> add </span>
+                        </a>
+                      </div>
+                      <div class="card-list mb-1">
+                        <div class="card border-0 border-bottom bg-transparent">
+                          <div class="card-body d-flex justify-content-between align-items-center">
+                            <div>
+                              <p class="fw-bold text-primary">
+                                公司
+                              </p>
+                              新北市新店區北新路二段225號13樓
+                            </div>
+                            <a href="#" class="material-symbols-rounded"> delete </a>
+                          </div>
+                        </div>
+                        <div class="card border-0 border-bottom bg-transparent">
+                          <div class="card-body d-flex justify-content-between align-items-center">
+                            <div>
+                              <p class="fw-bold text-primary">
+                                我的家
+                              </p>
+                              雲林縣斗六市中正路一段33巷458號15樓
+                            </div>
+                            <a href="#" class="material-symbols-rounded"> delete </a>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="fs-6 text-light">
+                        最多新增三個收件地
+                      </p>
+                    </div>                  
+                  </div>
                 </div>
               </div>
             </div>
+  
+            <!-- 追蹤訂單 -->
+            <div id="followOrder">123</div>
+  
+            <!-- 留言回饋 -->
+            <div id="commentFeedback">321</div>
           </div>
-
-          <!-- 追蹤訂單 -->
-          <div id="followOrder">123</div>
-
-          <!-- 留言回饋 -->
-          <div id="commentFeedback">321</div>
         </div>
       </div>
     </div>
@@ -500,7 +574,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="exampleModalLabel">設定新密碼</h5>
             <button
               type="button"
               class="btn-close"
@@ -512,50 +586,84 @@
           <div class="modal-footer">
             <button
               type="button"
-              class="btn btn-secondary"
+              class="btn btn-outline-dark"
               data-bs-dismiss="modal"
             >
-              Close
+              取消
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-primary d-block">更新</button>
           </div>
         </div>
       </div>
     </div>
 
-        <!-- add credit card modal -->
-        <div
-        class="modal fade"
-        id="addCreditCard"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">...</div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
+    <!-- add credit card modal -->
+    <div
+    class="modal fade"
+    id="addCreditCard"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">...</div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+          <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
+    </div>
+    </div>
+
+    <!-- add address modal -->
+    <div
+    class="modal fade"
+    id="addAddress"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">...</div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+    </div>
 
     <footer class="footer">
   <div class="container">

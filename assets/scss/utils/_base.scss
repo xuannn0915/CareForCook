@@ -99,3 +99,15 @@ ul,ol,li{
     border-bottom: 2px solid $light;
   }
 }
+
+// modal
+.modal{
+  &-footer{
+    .btn{
+      width: 128px;
+    }
+  }
+  &-title{
+    font-size: 20px;
+  }
+}
