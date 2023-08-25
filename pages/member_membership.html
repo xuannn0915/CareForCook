@@ -290,7 +290,7 @@
           </div>
         </div>
       </div>
-    </div>
+
 
     <!-- reset password modal -->
     <div
@@ -311,7 +311,28 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">...</div>
+          <div class="modal-body">
+            <form action="#">
+              <div class="mb-3">
+                <label for="oldPassword" class="form-label d-flex">舊密碼
+                  <span class="text-danger ms-1">*</span>
+                </label>
+                <input type="text" class="form-control" id="oldPassword" placeholder="請輸入舊密碼">
+              </div>
+              <div class="mb-3">
+                <label for="newPassword" class="form-label d-flex">新密碼
+                  <span class="text-danger ms-1">*</span>
+                </label>
+                <input type="password" class="form-control" id="newPassword" placeholder="請輸入新密碼(至少8個字元)">
+              </div>
+              <div class="mb-3">
+                <label for="confirmNewPassword" class="form-label d-flex">新密碼
+                  <span class="text-danger ms-1">*</span>
+                </label>
+                <input type="password" class="form-control" id="confirmNewPassword" placeholder="請再次輸入新密碼">
+              </div>
+            </form>
+          </div>
           <div class="modal-footer">
             <button
               type="button"
@@ -334,10 +355,10 @@
     aria-labelledby="exampleModalLabel"
     aria-hidden="true"
   >
-    <div class="modal-dialog">
+    <div class="modal-dialog  modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <h5 class="modal-title" id="addCreditCard">新增信用卡</h5>
           <button
             type="button"
             class="btn-close"
@@ -345,16 +366,61 @@
             aria-label="Close"
           ></button>
         </div>
-        <div class="modal-body">...</div>
+        <div class="modal-body">
+          <div class="hints rounded p-4 mb-6 rounded">
+            <div class="fw-bold text-success">
+              您的信用卡資訊將會被嚴格保護。
+            </div>
+            <p class="text-light">
+              照料理並不會留存您的信用卡完整資訊，合作服務商符合PCI-DSS國際安全認證，致力提供安全且便捷的交易環境。
+            </p>
+          </div>
+          <h4 class="fw-bold mb-3">
+            卡片詳情
+          </h4>
+          <form action="#" class="mb-7 border rounded p-4">
+            <div class="mb-3">
+              <label for="cardNum" class="form-label">信用卡號碼</label>
+              <input type="text" class="form-control" id="cardNum" aria-describedby="emailHelp" placeholder="請輸入信用卡號">
+            </div>
+            <div class="d-flex flex-lg-row flex-column mb-3">
+              <div class=" me-lg-2 mb-lg-0 mb-3 w-lg-50 w-100">
+                <label for="cardDate" class="form-label">卡片到期日</label>
+                <input type="text" class="form-control" id="cardDate" aria-describedby="emailHelp" placeholder="請輸入到期日(MM/YY)">
+              </div>
+              <div class="w-lg-50 w-100">
+                <label for="cardVerification" class="form-label">驗證碼</label>
+                <input type="text" class="form-control" id="cardVerification" aria-describedby="emailHelp" placeholder="請輸入安全驗證碼">
+              </div>
+            </div>
+            <div>
+              <label for="cardName" class="form-label">持卡者姓名</label>
+              <input type="text" class="form-control" id="cardName" aria-describedby="emailHelp" placeholder="請輸入持卡者姓名">
+            </div>
+          </form>
+          <h4 class="fw-bold mb-3">
+            帳單地址
+          </h4>
+          <form action="#" class="mb-7 border rounded p-4">
+            <div class="mb-3">
+              <label for="billAddress" class="form-label">帳單地址</label>
+              <input type="text" class="form-control" id="billAddress" aria-describedby="emailHelp" placeholder="請輸入信用卡帳單地址">
+            </div>
+            <div>
+              <label for="Postal code" class="form-label">郵遞區號</label>
+              <input type="text" class="form-control" id="Postal code" aria-describedby="emailHelp" placeholder="請輸入郵遞區號">
+            </div>
+          </form>
+        </div>
         <div class="modal-footer">
           <button
             type="button"
-            class="btn btn-secondary"
+            class="btn btn-outline-dark"
             data-bs-dismiss="modal"
           >
-            Close
+            取消
           </button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-primary">新增</button>
         </div>
       </div>
     </div>
@@ -371,7 +437,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <h5 class="modal-title" id="addAddress">新增地址</h5>
           <button
             type="button"
             class="btn-close"
@@ -379,20 +445,52 @@
             aria-label="Close"
           ></button>
         </div>
-        <div class="modal-body">...</div>
+        <div class="modal-body">
+          <form action="#">
+            <div class="mb-3">
+              <label for="noteName" class="form-label">標註名稱</label>
+              <input type="text" class="form-control" id="noteName" aria-describedby="emailHelp" placeholder="請輸入標注名稱">
+            </div>
+            <div class="d-flex flex-lg-row flex-column mb-3">
+              <div class="me-lg-2 mb-lg-0 mb-3 w-lg-50 w-100">
+                <label for="county" class="form-label">縣市</label>
+                <select class="form-select" aria-label="Default select example" id="county">
+                  <option selected>請選擇縣市</option>
+                  <option value="1">台北市</option>
+                  <option value="2">新北市</option>
+                  <option value="3">桃園市</option>
+                </select>
+              </div>
+              <div class="w-lg-50 w-100">
+                <label for="district" class="form-label">區域</label>
+                <select class="form-select" aria-label="Default select example" id="district">
+                  <option selected>請選擇區域</option>
+                  <option value="1">新店區</option>
+                  <option value="2">大安區</option>
+                  <option value="3">中正區</option>
+                </select>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="street" class="form-label">地址</label>
+              <input type="text" class="form-control" id="street" aria-describedby="emailHelp" placeholder="請輸入完整地址">
+            </div>
+          </form>
+        </div>
         <div class="modal-footer">
           <button
             type="button"
-            class="btn btn-secondary"
+            class="btn btn-outline-dark"
             data-bs-dismiss="modal"
           >
-            Close
+            取消
           </button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-primary">新增</button>
         </div>
       </div>
     </div>
     </div>
+  </div>
 
     <%- include('./layout/footer') -%> <%- include('./layout/body_bottom') -%>
   </body>
