@@ -1,3 +1,19 @@
 .membership{
-  
+  .active:after {
+    @include red_drop;
+  }
+
+  #editProfile{
+
+    .userPic{
+      width: 120px;
+      height: 120px;
+      background: rgba($light, 20%);
+    }
+    .card{
+      img{
+        width: 56px;
+      }
+    }
+  }
 }
