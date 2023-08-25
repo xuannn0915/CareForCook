@@ -1,7 +1,10 @@
 .membership{
+  @include bg_secondary;
+
   .active:after {
     @include red_drop;
   }
+  
 
   #editProfile{
 
@@ -14,6 +17,12 @@
       img{
         width: 56px;
       }
+    }
+  }
+
+  @media (max-width:992px) {
+    .nav{
+      background: rgba($secondary, 30%);
     }
   }
 }
