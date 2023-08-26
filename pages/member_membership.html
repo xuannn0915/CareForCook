@@ -265,35 +265,63 @@
                   追蹤你的訂單以領取你的餐點
                 </p>
               </div>
-              <table class="table bg-white border rounded">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                  </tr>
-                </tbody>
-              </table>
+              <!-- desktop table -->
+              <div class="border rounded bg-white d-lg-block d-none">
+                <table class="table table-hover table-borderless">
+                  <thead>
+                    <tr>
+                      <th scope="col">訂單編號</th>
+                      <th scope="col">餐點</th>
+                      <th scope="col">價錢</th>
+                      <th scope="col">訂購時間</th>
+                      <th scope="col">狀態</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      <tr data-bs-target="#viewOrder"  data-bs-toggle="modal">
+                        <td class="td-124">A123456789</td>
+                        <td>化療照護餐01 / 術後照護餐03 / 苷醇雙雞燉飲</td>
+                        <td class="td-124">$1,150</td>
+                        <td class="td-124">2023/04/05</td>
+                        <td class="td-88">待出貨</td>
+                      </tr>
+                      <tr data-bs-target="#viewOrder"  data-bs-toggle="modal">
+                        <td class="td-124">A578962345</td>
+                        <td>化療照護餐01 / 術後照護餐03 / 苷醇雙雞燉飲 / 化療照護餐04 / 術後照護餐01 / 控醣好穀粒</td>
+                        <td class="td-124">$1,000</td>
+                        <td class="td-124">2023/05/10</td>
+                        <td class="td-80">待出貨</td>
+                      </tr>
+                      <tr data-bs-target="#viewOrder"  data-bs-toggle="modal">
+                        <td class="td-124">A578962345</td>
+                        <td>化療照護餐01 / 術後照護餐03 / 苷醇雙雞燉飲 / 化療照護餐04 / 術後照護餐01 / 控醣好穀粒</td>
+                        <td class="td-124">$1,000</td>
+                        <td class="td-124">2023/05/10</td>
+                        <td class="td-80">待出貨</td>
+                      </tr>
+                      <tr data-bs-target="#viewOrder"  data-bs-toggle="modal">
+                        <td class="td-124">A578962345</td>
+                        <td>化療照護餐01 / 術後照護餐03 / 苷醇雙雞燉飲</td>
+                        <td class="td-124">$1,000</td>
+                        <td class="td-124">2023/05/10</td>
+                        <td class="td-80">待出貨</td>
+                      </tr>
+                      <tr data-bs-target="#viewOrder"  data-bs-toggle="modal">
+                        <td class="td-124">A578962345</td>
+                        <td>化療照護餐01 / 術後照護餐03 / 苷醇雙雞燉飲 / 化療照護餐04 / 術後照護餐01 / 控醣好穀粒</td>
+                        <td class="td-124">$1,000</td>
+                        <td class="td-124">2023/05/10</td>
+                        <td class="td-80">待出貨</td>
+                      </tr>
+                  </tbody>
+                </table>
+                <%- include('./layout/table-pagination') -%>
+              </div>
+
+              <!-- mobile card -->
+              <div class="border rounded bg-white d-lg-none d-blcok">
+
+              </div>
             </div>
   
             <!-- 留言回饋 -->
@@ -508,6 +536,79 @@
       </div>
     </div>
     </div>
+
+      <!-- View Order modal -->
+      <div
+      class="modal fade"
+      id="viewOrder"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="addAddress">訂單明細</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="fw-bold text-primary">
+                編號：A123456789
+              </div>
+              2023/04/05
+            </div>
+            <ul>
+              <li class="py-4 px-lg-4 px-2 border-bottom d-flex flex-lg-row flex-column justify-content-between align-items-lg-center">
+                <div class="d-flex flex-column mb-lg-0 mb-4">
+                  <p class="fw-bold ">化療照護餐01</p>
+                  <p class=" mb-2">紫米飯/三杯雞/清炒高麗菜/金沙四季豆/柴魚蒸蛋/蘿蔔排骨/燕巢芭樂</p>
+                  <p class="fs-6 text-light">備註：不要加香菜</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class=" me-lg-6">1份</p>
+                  <p class="">NT$350</p>
+                </div>
+              </li>
+              <li class="py-4 px-lg-4 px-2 border-bottom d-flex flex-lg-row flex-column justify-content-between align-items-lg-center">
+                <div class="d-flex flex-column mb-lg-0 mb-4">
+                  <p class="fw-bold ">化療照護餐01</p>
+                  <p class=" mb-2">紫米飯/三杯雞/清炒高麗菜/金沙四季豆/柴魚蒸蛋/蘿蔔排骨/燕巢芭樂</p>
+                  <p class="fs-6 text-light">備註：不要加香菜</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class=" me-lg-6">1份</p>
+                  <p class="">NT$350</p>
+                </div>
+              </li>
+              <li class="py-4 px-lg-4 px-2 border-bottom d-flex flex-lg-row flex-column justify-content-between align-items-lg-center">
+                <div class="d-flex flex-column mb-lg-0 mb-4">
+                  <p class="fw-bold ">苷醇雙雞燉飲</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class=" me-lg-6">1份</p>
+                  <p class="">NT$350</p>
+                </div>
+              </li>            
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-dark"
+              data-bs-dismiss="modal"
+            >
+              關閉
+            </button>
+          </div>
+        </div>
+      </div>
+      </div>
   </div>
 
     <%- include('./layout/footer') -%> <%- include('./layout/body_bottom') -%>

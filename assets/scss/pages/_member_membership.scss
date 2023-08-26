@@ -1,8 +1,10 @@
 .membership{
   @include bg_secondary;
 
-  .active:after {
-    @include red_drop;
+  .sidebar {
+    .active:after {
+      @include red_drop;
+    }
   }
 
   .hints{
@@ -22,7 +24,12 @@
     }
   }
 
-  
+  #followOrder{
+    td{
+      cursor: pointer;
+    }
+  }
+
   @media (max-width:992px) {
     .nav{
       background: rgba($secondary, 30%);

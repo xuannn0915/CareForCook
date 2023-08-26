@@ -156,6 +156,8 @@
   }
 }
 
+
+// others
 @mixin page_title($desktop_link, $mobile_link){
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.30) 100%), url($desktop_link);
     background-repeat: no-repeat;
@@ -173,7 +175,6 @@
       height: 200px;
     }
   }
-
 
 @mixin multiline-ellipsis($line) {
   display: -webkit-box;

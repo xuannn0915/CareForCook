@@ -64,6 +64,8 @@ ul,ol,li{
   }
 }
 
+
+// badge
 .badge{
   border: 1px solid $light ;
   color: $light;
@@ -109,5 +111,25 @@ ul,ol,li{
   }
   &-title{
     font-size: 20px;
+  }
+}
+
+
+// table
+.td-124{
+  width: 124px;
+}
+
+.td-88{
+  width: 88px;
+}
+
+.td-56{
+  width: 56px;
+}
+
+.table-pagination{
+  .pagination-select{
+    width: 88px;
   }
 }
