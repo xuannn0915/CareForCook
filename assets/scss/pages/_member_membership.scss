@@ -28,6 +28,9 @@
     td{
       cursor: pointer;
     }
+    .orderContent{
+      @include multiline-ellipsis(2);
+    }
   }
 
   @media (max-width:992px) {

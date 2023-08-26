@@ -275,43 +275,69 @@
                       <th scope="col">價錢</th>
                       <th scope="col">訂購時間</th>
                       <th scope="col">狀態</th>
+                      <th scope="col">查看</th>
                     </tr>
                   </thead>
                   <tbody>
-                      <tr data-bs-target="#viewOrder"  data-bs-toggle="modal">
+                      <tr data-bs-target="#viewOrder"  data-bs-toggle="modal" >
                         <td class="td-124">A123456789</td>
-                        <td>化療照護餐01 / 術後照護餐03 / 苷醇雙雞燉飲</td>
+                        <td class="orderContent">化療照護餐01 / 術後照護餐03 / 苷醇雙雞燉飲</td>
                         <td class="td-124">$1,150</td>
                         <td class="td-124">2023/04/05</td>
                         <td class="td-88">待出貨</td>
+                        <td class="td-88">
+                          <div class="btn btn-outline-warning" data-bs-target="#viewOrder">
+                            <span class="material-symbols-rounded"> visibility </span>
+                          </div>
+                        </td>
                       </tr>
                       <tr data-bs-target="#viewOrder"  data-bs-toggle="modal">
                         <td class="td-124">A578962345</td>
-                        <td>化療照護餐01 / 術後照護餐03 / 苷醇雙雞燉飲 / 化療照護餐04 / 術後照護餐01 / 控醣好穀粒</td>
+                        <td class="orderContent">化療照護餐01 / 術後照護餐03 / 苷醇雙雞燉飲 / 化療照護餐04 / 術後照護餐01 / 控醣好穀粒</td>
                         <td class="td-124">$1,000</td>
                         <td class="td-124">2023/05/10</td>
                         <td class="td-80">待出貨</td>
+                        <td class="td-88">
+                          <div class="btn btn-outline-warning" data-bs-target="#viewOrder">
+                            <span class="material-symbols-rounded"> visibility </span>
+                          </div>
+                        </td>
                       </tr>
                       <tr data-bs-target="#viewOrder"  data-bs-toggle="modal">
                         <td class="td-124">A578962345</td>
-                        <td>化療照護餐01 / 術後照護餐03 / 苷醇雙雞燉飲 / 化療照護餐04 / 術後照護餐01 / 控醣好穀粒</td>
+                        <td class="orderContent">化療照護餐01 / 術後照護餐03 / 苷醇雙雞燉飲 / 化療照護餐04 / 術後照護餐01 / 控醣好穀粒</td>
                         <td class="td-124">$1,000</td>
                         <td class="td-124">2023/05/10</td>
                         <td class="td-80">待出貨</td>
+                        <td class="td-88">
+                          <div class="btn btn-outline-warning" data-bs-target="#viewOrder">
+                            <span class="material-symbols-rounded"> visibility </span>
+                          </div>
+                        </td>
                       </tr>
                       <tr data-bs-target="#viewOrder"  data-bs-toggle="modal">
                         <td class="td-124">A578962345</td>
-                        <td>化療照護餐01 / 術後照護餐03 / 苷醇雙雞燉飲</td>
+                        <td class="orderContent">化療照護餐01 / 術後照護餐03 / 苷醇雙雞燉飲</td>
                         <td class="td-124">$1,000</td>
                         <td class="td-124">2023/05/10</td>
                         <td class="td-80">待出貨</td>
+                        <td class="td-88">
+                          <div class="btn btn-outline-warning" data-bs-target="#viewOrder">
+                            <span class="material-symbols-rounded"> visibility </span>
+                          </div>
+                        </td>
                       </tr>
                       <tr data-bs-target="#viewOrder"  data-bs-toggle="modal">
                         <td class="td-124">A578962345</td>
-                        <td>化療照護餐01 / 術後照護餐03 / 苷醇雙雞燉飲 / 化療照護餐04 / 術後照護餐01 / 控醣好穀粒</td>
+                        <td class="orderContent">化療照護餐01 / 術後照護餐03 / 苷醇雙雞燉飲 / 化療照護餐04 / 術後照護餐01 / 控醣好穀粒</td>
                         <td class="td-124">$1,000</td>
                         <td class="td-124">2023/05/10</td>
                         <td class="td-80">待出貨</td>
+                        <td class="td-88">
+                          <div class="btn btn-outline-warning" data-bs-target="#viewOrder">
+                            <span class="material-symbols-rounded"> visibility </span>
+                          </div>
+                        </td>
                       </tr>
                   </tbody>
                 </table>
@@ -320,7 +346,135 @@
 
               <!-- mobile card -->
               <div class="border rounded bg-white d-lg-none d-blcok">
+                <div class="p-4 border-bottom">
+                  <div class="d-flex align-items-center justify-content-between mb-4">
+                    <p>2023/04/05</p>
+                    <p>
+                      待出貨
+                      <span class="btn btn-outline-warning ms-4" data-bs-target="#viewOrder">
+                        <span class="material-symbols-rounded"> visibility </span>
+                      </span>
+                    </p>
+                  </div>
+                  <div class="mb-4">
+                    <p class="fw-bold">餐點</p>
+                    <p class="orderContent">化療照護餐01 / 術後照護餐03 / 苷醇雙雞燉飲</p>
+                  </div>
+                  <div class="d-flex align-items-center mb-4">
+                    <div class="w-50">
+                      <p class="fw-bold">價錢</p>
+                      <p>$1,150</p>
+                    </div>
+                    <div class="w-50">
+                      <p class="fw-bold">編號</p>
+                      <p>A123456789</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-4 border-bottom">
+                  <div class="d-flex align-items-center justify-content-between mb-4">
+                    <p>2023/04/05</p>
+                    <p>
+                      待出貨
+                      <span class="btn btn-outline-warning ms-4" data-bs-target="#viewOrder">
+                        <span class="material-symbols-rounded"> visibility </span>
+                      </span>
+                    </p>
+                  </div>
+                  <div class="mb-4">
+                    <p class="fw-bold">餐點</p>
+                    <p class="orderContent">化療照護餐01 / 術後照護餐03 / 苷醇雙雞燉飲 / 化療照護餐01 / 術後照護餐03 / 苷醇雙雞燉飲 / 化療照護餐01 / 術後照護餐03 / 苷醇雙雞燉飲</p>
+                  </div>
+                  <div class="d-flex align-items-center mb-4">
+                    <div class="w-50">
+                      <p class="fw-bold">價錢</p>
+                      <p>$1,150</p>
+                    </div>
+                    <div class="w-50">
+                      <p class="fw-bold">編號</p>
+                      <p>A123456789</p>
+                    </div>
+                  </div>
 
+                </div>
+                <div class="p-4 border-bottom">
+                  <div class="d-flex align-items-center justify-content-between mb-4">
+                    <p>2023/04/05</p>
+                    <p>
+                      待出貨
+                      <span class="btn btn-outline-warning ms-4" data-bs-target="#viewOrder">
+                        <span class="material-symbols-rounded"> visibility </span>
+                      </span>
+                    </p>
+                  </div>
+                  <div class="mb-4">
+                    <p class="fw-bold">餐點</p>
+                    <p class="orderContent">化療照護餐01 / 術後照護餐03 / 苷醇雙雞燉飲</p>
+                  </div>
+                  <div class="d-flex align-items-center mb-4">
+                    <div class="w-50">
+                      <p class="fw-bold">價錢</p>
+                      <p>$1,150</p>
+                    </div>
+                    <div class="w-50">
+                      <p class="fw-bold">編號</p>
+                      <p>A123456789</p>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="p-4 border-bottom">
+                  <div class="d-flex align-items-center justify-content-between mb-4">
+                    <p>2023/04/05</p>
+                    <p>
+                      待出貨
+                      <span class="btn btn-outline-warning ms-4" data-bs-target="#viewOrder">
+                        <span class="material-symbols-rounded"> visibility </span>
+                      </span>
+                    </p>
+                  </div>
+                  <div class="mb-4">
+                    <p class="fw-bold">餐點</p>
+                    <p class="orderContent">化療照護餐01 / 術後照護餐03 / 苷醇雙雞燉飲 / 化療照護餐01</p>
+                  </div>
+                  <div class="d-flex align-items-center mb-4">
+                    <div class="w-50">
+                      <p class="fw-bold">價錢</p>
+                      <p>$1,150</p>
+                    </div>
+                    <div class="w-50">
+                      <p class="fw-bold">編號</p>
+                      <p>A123456789</p>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="p-4">
+                  <div class="d-flex align-items-center justify-content-between mb-4">
+                    <p>2023/04/05</p>
+                    <p>
+                      待出貨
+                      <span class="btn btn-outline-warning ms-4" data-bs-target="#viewOrder">
+                        <span class="material-symbols-rounded"> visibility </span>
+                      </span>
+                    </p>
+                  </div>
+                  <div class="mb-4">
+                    <p class="fw-bold">餐點</p>
+                    <p class="orderContent">化療照護餐01 / 術後照護餐03 / 苷醇雙雞燉飲 / 化療照護餐01 / 術後照護餐03 / 苷醇雙雞燉飲 / 化療照護餐01 / 術後照護餐03 / 苷醇雙雞燉飲</p>
+                  </div>
+                  <div class="d-flex align-items-center mb-4">
+                    <div class="w-50">
+                      <p class="fw-bold">價錢</p>
+                      <p>$1,150</p>
+                    </div>
+                    <div class="w-50">
+                      <p class="fw-bold">編號</p>
+                      <p>A123456789</p>
+                    </div>
+                  </div>
+
+                </div>
               </div>
             </div>
   

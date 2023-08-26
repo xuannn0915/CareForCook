@@ -31,7 +31,7 @@ ul,ol,li{
 
 .btn-outline-primary{
   &:hover{
-    background-color: #F4DEDB;
+    background-color: rgba($primary, 20%);
     color: $primary;
   }
 }
@@ -46,9 +46,10 @@ ul,ol,li{
 }
 
 .btn-outline-warning{
+  padding: 8px;
   border-radius: 5px;
   &:hover{
-    background-color: #FFF9F3;
+    background-color: rgba($warning, 20%);
     color: $warning;
   }
 }
@@ -59,7 +60,7 @@ ul,ol,li{
 
 .btn-outline-dark{
   &:hover{
-    background-color: #E0E0E0;
+    background-color: rgba($light, 20%);
     color: $dark;
   }
 }
@@ -117,15 +118,17 @@ ul,ol,li{
 
 // table
 .td-124{
-  width: 124px;
+  max-width: 124px;
+  min-width: 116px;
 }
 
 .td-88{
-  width: 88px;
+  max-width: 88px;
+  min-width: 80px;
 }
 
 .td-56{
-  width: 56px;
+  max-width: 56px;
 }
 
 .table-pagination{
