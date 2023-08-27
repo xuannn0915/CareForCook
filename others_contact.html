@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/CareForCook/assets/logo-1af07373.ico" type="image/x-icon" />
+<!-- material icon -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+<!-- material font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+<!-- swiper -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+<title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/collapse-be200ddb.js"></script>
+    <link rel="stylesheet" href="/CareForCook/assets/collapse-494f8f8e.css">
+  </head>
+  <body>
+    <nav
+  class="navbar px-lg-5 py-lg-6 px-4 py-3 position-fixed top-0 start-0 end-0"
+>
+  <div class="container-fluid align-items-center px-lg-3 px-0">
+    <!-- logo -->
+    <a class="navbar-brand d-lg-inline-block d-none" href="index.html">
+      <img src="/CareForCook/assets/log_wording-9a45e14d.png" alt="logo" />
+    </a>
+    <a class="navbar-brand d-lg-none d-inline-block" href="index.html">
+      <img src="data:image/png;base64,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" alt="logo" />
+    </a>
+
+    <!-- menu -->
+
+    <ul class="d-lg-flex d-none">
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link px-4"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          關於照料理
+        </a>
+        <ul class="dropdown-menu mt-4" aria-labelledby="navbarDropdown">
+          <li>
+            <a class="dropdown-item" href="about_team.html"
+              >品牌秉初心</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="about_food.html"
+              >品質好安心</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link px-4"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          好料報你知
+        </a>
+        <ul class="dropdown-menu mt-4" aria-labelledby="navbarDropdown">
+          <li>
+            <a class="dropdown-item" href="product_customize.html"
+              >客制照護餐</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="product_protien.html"
+              >高蛋白燉飲</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="product_lunchbox.html"
+              >機能調理餐</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a href="shopping_mall.html" class="nav-link px-4"
+          >線上買好料</a
+        >
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link px-4"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          大家怎麼說
+        </a>
+        <ul
+          class="dropdown-menu text-center mt-4"
+          aria-labelledby="navbarDropdown"
+        >
+          <li>
+            <a class="dropdown-item" href="article_healthNews.html"
+              >健康專欄</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="article_feedback.html"
+              >成功案例</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a href="others_manual.html" class="nav-link px-4"
+          >料理怎麼買</a
+        >
+      </li>
+    </ul>
+
+    <!-- icon -->
+    <ul class="icons d-flex align-items-center">
+      <li>
+        <a href="others_contact.html" class="px-4">
+          <span class="material-symbols-rounded"> maps_ugc </span>
+        </a>
+      </li>
+      <li>
+        <a href="shopping_shoppingBag.html" class="px-4">
+          <span class="material-symbols-rounded"> local_mall </span>
+        </a>
+      </li>
+      <li>
+        <a href="member_login.html" class="px-4">
+          <span class="material-symbols-rounded"> person </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="navbar-toggler border-0 d-lg-none d-inline-block py-0 px-4"
+          href="#"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="material-symbols-rounded"> menu </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- mobile menu -->
+
+  <div
+    class="mobile-menu collapse d-lg-none position-absolute top-100 end-0 start-0"
+    id="navbarNav"
+  >
+    <div class="container vh-100">
+      <ul class="navbar-nav mt-4 text-center">
+        <li class="mobile-nav-item nav-item dropdown border-bottom">
+          <a
+            class="nav-link fs-4 py-4"
+            href="#about"
+            data-bs-toggle="collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            關於照料理
+          </a>
+          <div class="collapse" id="about">
+            <ul class="d-flex justify-content-center mb-4">
+              <li class="rounded me-2">
+                <a
+                  class="dropdown-item py-1 px-3"
+                  href="about_team.html"
+                  >品牌秉初心</a
+                >
+              </li>
+              <li class="rounded">
+                <a
+                  class="dropdown-item py-1 px-3"
+                  href="about_food.html"
+                  >品質好安心</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="mobile-nav-item nav-item dropdown border-bottom">
+          <a
+            class="nav-link fs-4 py-4"
+            href="#product"
+            data-bs-toggle="collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            好料報你知
+          </a>
+          <div class="collapse" id="product">
+            <ul class="d-flex justify-content-center mb-4">
+              <li class="me-2 rounded">
+                <a
+                  class="dropdown-item py-1 px-3"
+                  href="product_customize.html"
+                  >客制照護餐</a
+                >
+              </li>
+              <li class="me-2 rounded">
+                <a
+                  class="dropdown-item py-1 px-3"
+                  href="product_protien.html"
+                  >高蛋白燉飲</a
+                >
+              </li>
+              <li class="rounded">
+                <a
+                  class="dropdown-item py-1 px-3"
+                  href="product_lunchbox.html"
+                  >機能調理餐</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item border-bottom">
+          <a href="shopping_mall.html" class="nav-link fs-4 py-4"
+            >線上買好料</a
+          >
+        </li>
+        <li class="mobile-nav-item nav-item dropdown border-bottom">
+          <a
+            class="nav-link fs-4 py-4"
+            href="#article"
+            data-bs-toggle="collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            大家怎麼說
+          </a>
+          <div class="collapse" id="article">
+            <ul class="d-flex justify-content-center mb-4">
+              <li class="me-2 rounded">
+                <a
+                  class="dropdown-item py-1 px-3"
+                  href="article_healthNews.html"
+                  >健康專欄</a
+                >
+              </li>
+              <li class="rounded">
+                <a
+                  class="dropdown-item py-1 px-3"
+                  href="article_feedback.html"
+                  >成功案例</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="others_process.html" class="nav-link fs-4 py-4"
+            >料理怎麼買</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <main class="other-contact-pageTitle  d-flex flex-column justify-content-center">
+      <div class="container">
+        <h1 class="fw-bold text-white mb-lg-4 fs-lg-1 fs-3">聯絡我們</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb text-white fs-lg-6 fs-7 mb-0">
+            <li class="breadcrumb-item">
+              首頁
+            </li>
+            <li class="breadcrumb-item">
+              聯絡我們
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </main>
+
+    <section class="py-lg-9 py-6  other-contact">
+      <div class="container">
+        <div class="text-center mb-lg-8 mb-6">
+          <div class="fw-bold text-black fs-lg-1 fs-3 mb-lg-2">
+            如何與我們聯繫
+          </div>
+          <p class="fs-lg-3 fs-5">如有任何疑惑，我們樂於協助您了解與服務</p>
+        </div>
+        <div class="row flex-lg-row flex-column-reverse">
+          <div class="col-lg-4">
+            <div class="p-4 border border-primary rounded-4 mb-6">
+              <h3 class="fw-bold d-flex align-items-center justify-content-between mb-4 fs-lg-3 fs-4">
+                服務專線
+              </h3>
+              <p class="mb-2 fs-lg-4">服務時間：08:30～17:30</p>
+              <p class="fs-lg-4">聯絡電話：02-6637-5712</p>
+            </div>
+            <div class="p-4 border border-primary rounded-4">
+              <h3 class="fw-bold d-flex align-items-center justify-content-between mb-4 fs-lg-3 fs-4">
+                Line ID資訊
+              </h3>
+              <div class="d-flex flex-column align-items-center">
+                <div class="fw-bold text-black fs-lg-4 mb-4">@care4cook</div>
+                <img src="/CareForCook/assets/qrcode-84aec25f.svg" alt="line qrcode" class="qrcode mb-4">
+                <p class="text-primary fs-lg-4 mb-2">掃描或點擊Qrcode加入</p>
+                <p class="fs-lg-4">加入官方，即時回覆零距離</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="p-4 border border-primary rounded-4 mb-lg-0 mb-6 h-100">
+              <h3 class="fw-bold d-flex align-items-center justify-content-between mb-4 fs-lg-3 fs-4">
+                填寫表格
+              </h3>
+              <form action="#">
+                <div class="d-flex flex-lg-row flex-column align-items-center mb-4">
+                  <div class="me-lg-4 w-lg-50 w-100 mb-lg-0 mb-4">
+                    <label for="contact-name" class="form-label">聯絡人姓名</label>
+                    <input type="text" class="form-control" id="contact-name" aria-describedby="emailHelp" placeholder="請輸入聯絡人姓名">
+                  </div>
+                  <div class="w-lg-50 w-100">
+                    <label for="contact-project" class="form-label">詢問項目</label>
+                    <select class="form-select" aria-label="Default select example" id="contact-project">
+                      <option selected>請選擇項目</option>
+                      <option value="1">購物流程</option>
+                      <option value="2">網頁操作</option>
+                      <option value="3">商品內容</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="d-flex flex-lg-row flex-column align-items-center mb-4">
+                  <div class="me-lg-4 w-lg-50 w-100 mb-lg-0 mb-4">
+                    <label for="contact-phone" class="form-label">聯絡電話</label>
+                    <input type="text" class="form-control" id="contact-phone" aria-describedby="emailHelp" placeholder="請輸入可聯絡之電話">
+                  </div>
+                  <div class="w-lg-50 w-100">
+                    <label for="contact-email" class="form-label">聯絡信箱</label>
+                    <input type="text" class="form-control" id="contact-email" aria-describedby="emailHelp" placeholder="請輸入可聯絡之信箱">
+                  </div>
+                </div>
+                <div class="mb-4 w-100">
+                  <label for="contact-content" class="form-label">內容敘述</label>
+                  <textarea class="form-control" placeholder="請告訴我們你的需求" id="contact-content" style="height: 127px"></textarea>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <button type="submit" class="btn btn-primary ">確認送出</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+  <div class="container">
+    <div class="row pt-7 pb-lg-9 pb-6">
+      <a href="index.html" class="col-2 me-auto d-lg-inline-block d-none">
+        <img src="data:image/png;base64,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" alt="logo" />
+      </a>
+      <ul class="footer-nav col-lg-2 col-12 d-lg-block d-flex mb-lg-0 mb-4">
+        <li class="mb-lg-4 mb-0">
+          <a href="about_team.html" class="nav-link px-lg-0 pe-4">關於照料理</a>
+        </li>
+        <li class="mb-lg-4 mb-0">
+          <a href="others_process.html" class="nav-link px-lg-0 px-4">料理怎麼買</a>
+        </li>
+        <li>
+          <a href="others_faq.html" class="nav-link px-lg-0 px-4">常見問題</a>
+        </li>
+      </ul>
+      <div class="contact-info col-lg-3 col-12">
+        <p class="mb-2">
+          聯絡電話：
+          <a href="tel:02-6637-5712">02-6637-5712</a>
+        </p>
+        <p class="mb-4">服務時間 ：08：30 ~ 17：30</p>
+        <ul class="d-flex">
+          <li class="me-4">
+            <a href="http://line.me/ti/p/@care4cook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48ZM24.0002 11.2974C31.9374 11.2974 38.4002 16.5418 38.4002 22.9869C38.4002 25.5649 37.4026 27.8869 35.3189 30.1825C32.2906 33.6611 25.5365 37.899 24.0002 38.5435C22.5106 39.1684 22.6812 38.1913 22.7493 37.8014L22.7553 37.7665C22.7739 37.6559 22.7919 37.5492 22.8094 37.4462C23.1495 35.4378 23.247 34.8618 21.6429 34.5175C14.721 33.5993 9.60022 28.761 9.60022 22.9869C9.60022 16.5418 16.063 11.2974 24.0002 11.2974ZM18.6407 25.1321H15.8949V20.1525C15.8949 19.9936 15.7713 19.87 15.6124 19.87H14.6059C14.447 19.87 14.3234 19.9936 14.3234 20.1525V26.4299C14.3234 26.5094 14.3499 26.5712 14.4028 26.6242C14.4558 26.6683 14.5176 26.7036 14.5971 26.7036H18.6319C18.7908 26.7036 18.9144 26.58 18.9144 26.4211V25.4146C18.9144 25.2645 18.7908 25.1321 18.6407 25.1321ZM20.0622 19.87H21.0687C21.2276 19.87 21.3512 20.0025 21.3512 20.1525V26.4299C21.3512 26.5888 21.2276 26.7125 21.0687 26.7125H20.0622C19.9033 26.7125 19.7796 26.5888 19.7796 26.4299V20.1525C19.7796 19.9936 19.9033 19.87 20.0622 19.87ZM28.3084 26.4299V20.1525C28.3084 20.0025 28.176 19.87 28.017 19.8789H27.0105C26.8516 19.8789 26.728 20.0025 26.728 20.1614V23.8872L23.8498 20.0025C23.8056 19.923 23.7085 19.8789 23.6202 19.8789H22.6226C22.4636 19.8789 22.34 20.0025 22.34 20.1614V26.4388C22.34 26.5977 22.4636 26.7213 22.6226 26.7213H23.6291C23.788 26.7213 23.9116 26.5977 23.9116 26.4388V22.7129L26.7898 26.5977C26.834 26.6595 26.9223 26.7125 27.0194 26.7125H28.0259C28.1848 26.7125 28.3084 26.5888 28.3084 26.4299ZM29.5709 19.87H33.6058C33.7559 19.87 33.8795 20.0025 33.8883 20.1525V21.159C33.8883 21.318 33.7647 21.4416 33.6058 21.4416H30.86V22.501H33.6058C33.7647 22.501 33.8883 22.6247 33.8883 22.7836V23.7989C33.8883 23.9578 33.7647 24.0814 33.6058 24.0814H30.86V25.1409H33.6058C33.7647 25.1409 33.8883 25.2645 33.8883 25.4234V26.4299C33.8883 26.5888 33.7647 26.7125 33.6058 26.7125H29.5709C29.412 26.7125 29.2884 26.58 29.2884 26.4299V20.1525C29.2884 19.9936 29.4208 19.87 29.5709 19.87Z"/>
+              </svg>
+            </a>
+          </li>
+          <li class="me-4">
+            <a href="https://www.facebook.com/care4cook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <path d="M24 0C10.745 0 0 10.745 0 24C0 37.255 10.745 48 24 48C37.255 48 48 37.255 48 24C48 10.745 37.255 0 24 0ZM29.685 16.585H26.0775C25.65 16.585 25.175 17.1475 25.175 17.895V20.5H29.6875L29.005 24.215H25.175V35.3675H20.9175V24.215H17.055V20.5H20.9175V18.315C20.9175 15.18 23.0925 12.6325 26.0775 12.6325H29.685V16.585Z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/careforcook_2010/">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <path d="M31.5 24C31.5 25.9891 30.7098 27.8968 29.3033 29.3033C27.8968 30.7098 25.9891 31.5 24 31.5C22.0109 31.5 20.1032 30.7098 18.6967 29.3033C17.2902 27.8968 16.5 25.9891 16.5 24C16.5 23.5725 16.545 23.155 16.6225 22.75H14V32.7425C14 33.4375 14.5625 34 15.2575 34H32.745C33.0781 33.9993 33.3973 33.8666 33.6326 33.6308C33.8679 33.3951 34 33.0756 34 32.7425V22.75H31.3775C31.455 23.155 31.5 23.5725 31.5 24ZM24 29C24.6568 28.9998 25.3071 28.8703 25.9138 28.6188C26.5205 28.3673 27.0718 27.9988 27.5361 27.5343C28.0003 27.0698 28.3686 26.5183 28.6198 25.9115C28.871 25.3046 29.0002 24.6543 29 23.9975C28.9998 23.3407 28.8703 22.6904 28.6188 22.0837C28.3673 21.477 27.9988 20.9257 27.5343 20.4614C27.0698 19.9972 26.5183 19.6289 25.9115 19.3777C25.3046 19.1265 24.6543 18.9973 23.9975 18.9975C22.6711 18.9978 21.3991 19.5251 20.4614 20.4632C19.5238 21.4014 18.9972 22.6736 18.9975 24C18.9978 25.3264 19.5251 26.5984 20.4632 27.5361C21.4014 28.4737 22.6736 29.0003 24 29ZM30 18.75H32.9975C33.1966 18.75 33.3877 18.6711 33.5287 18.5305C33.6698 18.3899 33.7493 18.1991 33.75 18V15.0025C33.75 14.8029 33.6707 14.6115 33.5296 14.4704C33.3885 14.3293 33.1971 14.25 32.9975 14.25H30C29.8004 14.25 29.609 14.3293 29.4679 14.4704C29.3268 14.6115 29.2475 14.8029 29.2475 15.0025V18C29.25 18.4125 29.5875 18.75 30 18.75ZM24 0C17.6348 0 11.5303 2.52856 7.02944 7.02944C2.52856 11.5303 0 17.6348 0 24C0 30.3652 2.52856 36.4697 7.02944 40.9706C11.5303 45.4714 17.6348 48 24 48C27.1517 48 30.2726 47.3792 33.1844 46.1731C36.0962 44.967 38.742 43.1992 40.9706 40.9706C43.1992 38.742 44.967 36.0962 46.1731 33.1844C47.3792 30.2726 48 27.1517 48 24C48 20.8483 47.3792 17.7274 46.1731 14.8156C44.967 11.9038 43.1992 9.25804 40.9706 7.02944C38.742 4.80083 36.0962 3.033 33.1844 1.82689C30.2726 0.620778 27.1517 0 24 0ZM36.5 33.7225C36.5 35.25 35.25 36.5 33.7225 36.5H14.2775C12.75 36.5 11.5 35.25 11.5 33.7225V14.2775C11.5 12.75 12.75 11.5 14.2775 11.5H33.7225C35.25 11.5 36.5 12.75 36.5 14.2775V33.7225Z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+ 
+    <!-- main js -->
+
+<!-- Swiper JS  -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<!-- tabs -->
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  </body>
+</html>
