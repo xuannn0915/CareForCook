@@ -25,7 +25,79 @@
       </div>
     </main>
 
-    <%- include('./layout/cta-mall') -%> 
+    <section class="py-lg-9 py-6  other-contact">
+      <div class="container">
+        <div class="text-center mb-lg-8 mb-6">
+          <div class="fw-bold text-black fs-lg-1 fs-3 mb-lg-2">
+            如何與我們聯繫
+          </div>
+          <p class="fs-lg-3 fs-5">如有任何疑惑，我們樂於協助您了解與服務</p>
+        </div>
+        <div class="row flex-lg-row flex-column-reverse">
+          <div class="col-lg-4">
+            <div class="p-4 border border-primary rounded-4 mb-6">
+              <h3 class="fw-bold d-flex align-items-center justify-content-between mb-4 fs-lg-3 fs-4">
+                服務專線
+              </h3>
+              <p class="mb-2 fs-lg-4">服務時間：08:30～17:30</p>
+              <p class="fs-lg-4">聯絡電話：02-6637-5712</p>
+            </div>
+            <div class="p-4 border border-primary rounded-4">
+              <h3 class="fw-bold d-flex align-items-center justify-content-between mb-4 fs-lg-3 fs-4">
+                Line ID資訊
+              </h3>
+              <div class="d-flex flex-column align-items-center">
+                <div class="fw-bold text-black fs-lg-4 mb-4">@care4cook</div>
+                <img src="../assets/images/other/qrcode.svg" alt="line qrcode" class="qrcode mb-4">
+                <p class="text-primary fs-lg-4 mb-2">掃描或點擊Qrcode加入</p>
+                <p class="fs-lg-4">加入官方，即時回覆零距離</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="p-4 border border-primary rounded-4 mb-lg-0 mb-6 h-100">
+              <h3 class="fw-bold d-flex align-items-center justify-content-between mb-4 fs-lg-3 fs-4">
+                填寫表格
+              </h3>
+              <form action="#">
+                <div class="d-flex flex-lg-row flex-column align-items-center mb-4">
+                  <div class="me-lg-4 w-lg-50 w-100 mb-lg-0 mb-4">
+                    <label for="contact-name" class="form-label">聯絡人姓名</label>
+                    <input type="text" class="form-control" id="contact-name" aria-describedby="emailHelp" placeholder="請輸入聯絡人姓名">
+                  </div>
+                  <div class="w-lg-50 w-100">
+                    <label for="contact-project" class="form-label">詢問項目</label>
+                    <select class="form-select" aria-label="Default select example" id="contact-project">
+                      <option selected>請選擇項目</option>
+                      <option value="1">購物流程</option>
+                      <option value="2">網頁操作</option>
+                      <option value="3">商品內容</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="d-flex flex-lg-row flex-column align-items-center mb-4">
+                  <div class="me-lg-4 w-lg-50 w-100 mb-lg-0 mb-4">
+                    <label for="contact-phone" class="form-label">聯絡電話</label>
+                    <input type="text" class="form-control" id="contact-phone" aria-describedby="emailHelp" placeholder="請輸入可聯絡之電話">
+                  </div>
+                  <div class="w-lg-50 w-100">
+                    <label for="contact-email" class="form-label">聯絡信箱</label>
+                    <input type="text" class="form-control" id="contact-email" aria-describedby="emailHelp" placeholder="請輸入可聯絡之信箱">
+                  </div>
+                </div>
+                <div class="mb-4 w-100">
+                  <label for="contact-content" class="form-label">內容敘述</label>
+                  <textarea class="form-control" placeholder="請告訴我們你的需求" id="contact-content" style="height: 127px"></textarea>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <button type="submit" class="btn btn-primary ">確認送出</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <%- include('./layout/footer') -%> 
     <%- include('./layout/body_bottom') -%>
   </body>

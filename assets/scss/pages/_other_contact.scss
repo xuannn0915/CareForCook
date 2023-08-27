@@ -1,3 +1,14 @@
 .other-contact-pageTitle{
-  @include page_title('')
+  @include page_title('https://github.com/xuannn0915/CareForCook/blob/main/assets/images/other/banner3-d.png?raw=true', 'https://github.com/xuannn0915/CareForCook/blob/main/assets/images/other/banner3-m.png?raw=true')
+}
+
+
+.other-contact{
+  h3::after{
+    @include red_comma;
+    margin: 0;
+  }
+  .qrcode{
+    width: 141px;
+  }
 }
