@@ -16,8 +16,11 @@
 <!-- swiper -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-<title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/collapse-be200ddb.js"></script>
-    <link rel="stylesheet" href="/CareForCook/assets/collapse-494f8f8e.css">
+<!-- aos -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/validation-93108f8c.js"></script>
+    <link rel="stylesheet" href="/CareForCook/assets/validation-595523c1.css">
   </head>
   <body>
     <nav
@@ -290,27 +293,34 @@
             <h3 class="text-primary text-center fw-bold mb-lg-10 mb-8">
               會員登入
             </h3>
-            <form action="#" class="mb-lg-10 mb-8">
+            <form action="#" class="needs-validation mb-lg-10 mb-8" novalidate>
               <div class="mb-6">
                 <label for="login_account" class="form-label">帳號</label>
-                <input type="text" class="form-control" id="login_account" placeholder="請輸入信箱">
+                <input type="text" class="form-control" id="login_account" placeholder="請輸入信箱" required>
+                <div class="invalid-feedback">
+                  請輸入帳號
+                </div>
               </div>
-              <div >
+              <div class="mb-lg-10 mb-8">
                 <label for="login_password" class="form-label">密碼</label>
-                <input type="password" class="form-control" id="login_password" placeholder="請輸入密碼">
+                <input type="password" class="form-control" id="login_password" placeholder="請輸入密碼" required>
+                <div class="invalid-feedback">
+                  請輸入密碼
+                </div>
+              </div>
+              <div class="login_button d-flex flex-column align-items-center ">
+                <button type="submit" class="btn btn-outline-primary mb-3">
+                    開始購物吧！
+                  </button>
+                <a href="#" class="fs-6 forget">忘記密碼？</a>
               </div>
             </form>
-            <div class="login_button d-flex flex-column align-items-center mb-lg-10 mb-8">
-              <a href="index.html" class="btn btn-outline-primary mb-3">
-                開始購物吧！
-              </a>
-              <a href="#" class="fs-6 forget">忘記密碼？</a>
-            </div>
             <div class="d-flex align-items-center justify-content-center fs-6">
               還不是會員嗎？快來加入吧！
               <a href="#" class="btn btn-outline-dark ms-2 signUp">註冊會員</a>
             </div>
           </div>
+          
 
 
           <!-- forget password -->
@@ -410,7 +420,7 @@
                 </div>
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="" id="acceptPolicy">
-                  <label class="form-check-label" for="acceptPolicy">
+                  <label class="form-check-label d-flex align-items-center" for="acceptPolicy">
                     我同意本站 
                     <span class="text-danger">
                       使用規劃
@@ -531,5 +541,7 @@
 <!-- tabs -->
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-  </body>
+
+<!-- aos -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  </body>
 </html>
