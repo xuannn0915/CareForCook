@@ -1,0 +1,28 @@
+.others-manual-page-title{
+  @include page_title('https://github.com/xuannn0915/CareForCook/blob/main/assets/images/other/banner1-d.png?raw=true','https://github.com/xuannn0915/CareForCook/blob/main/assets/images/other/banner1-m.png?raw=true')
+}
+
+.order-proccess{
+    img{
+      max-height: 180px;
+      object-fit: contain;
+      transition: 0.5s;
+    }
+    
+    h3::after{
+      content: "";
+      display: block;
+      width: 100px;
+      height: 6px;
+      background-color: $primary;
+      border-radius: 10px;
+      margin: 16px 0;
+    }
+
+    .item:hover{
+      img{
+        max-height: 200px;
+        transition: 0.5s;
+      }
+    }
+  }

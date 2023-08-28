@@ -1,4 +1,4 @@
 .cta-mall{
   padding-top: 88px;
-  @include bg_blur(center, top 100px, center, bottom);
+  @include bg_blur(center, top 100px, center, top 100px);
 }

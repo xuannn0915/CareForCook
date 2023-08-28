@@ -22,7 +22,7 @@
 @import "../../node_modules/bootstrap/scss/nav";
 @import "../../node_modules/bootstrap/scss/navbar";
 @import "../../node_modules/bootstrap/scss/card";
-// @import "../node_modules/bootstrap/scss/accordion";
+@import "../node_modules/bootstrap/scss/accordion";
 @import "../../node_modules/bootstrap/scss/breadcrumb";
 @import "../../node_modules/bootstrap/scss/pagination";
 @import "../node_modules/bootstrap/scss/badge";
@@ -67,3 +67,4 @@
 @import './pages/article_feedback';
 @import './pages/article_feedback_page';
 @import './pages/other_contact';
+@import './pages/other_manual';

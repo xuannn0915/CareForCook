@@ -22,3 +22,6 @@ $(".return_login").click(function (event) {
   $(".login").removeClass("disabled").addClass('active');
 });
 });
+
+// AOS
+AOS.init();
