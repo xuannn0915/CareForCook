@@ -16,6 +16,7 @@
   }
 
   .row li::before {
+    flex-shrink: 0;
     @include thumbsUp;
   }
 
