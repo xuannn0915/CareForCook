@@ -139,4 +139,10 @@ textarea{
   .pagination-select{
     width: 88px;
   }
+  .page-link{
+    background-color: transparent;
+  }
+  .active{
+    background-color: $primary;
+  }
 }
