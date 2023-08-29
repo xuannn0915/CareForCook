@@ -754,7 +754,12 @@
                   <p class="text-primary">婦科癌症適用</p>
                 </div>
                 <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#customProductContent" aria-expanded="false" aria-controls="collapseExample">
-                  關閉餐點內容
+                  <p class="open">
+                    開啟餐點內容
+                  </p>
+                  <p class="close">
+                    關閉餐點內容
+                  </p>
                 </button>
               </div>
               <div class="collapse" id="customProductContent">
@@ -781,74 +786,144 @@
           </div>
           <div class="accordion" id="accordionExample">
             <div class="accordion-item border border-1 rounded mb-3">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Accordion Item #1
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <button class="accordion-button accordion-header" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-expanded="true" aria-controls="collapseOne">
+                <div class="
+                item-name fw-bold">
+                  主食
+                </div>
+                <p class="ms-4">白米飯</p>
+              </button>
+              <div id="main" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body d-flex align-items-center justify-content-between">
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="rice01" checked>
+                    <label class="form-check-label" for="rice01">
+                      白米飯
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="rice02">
+                    <label class="form-check-label" for="rice02">
+                      紫米飯
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="rice03">
+                    <label class="form-check-label" for="rice03">
+                      五穀米
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="accordion-item border border-1 rounded mb-3">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <button class="accordion-button accordion-header" type="button" data-bs-toggle="collapse" data-bs-target="#meat" aria-expanded="true" aria-controls="collapseOne">
+                <div class="
+                item-name fw-bold">
+                主餐
+                </div>
+                <p class="ms-4">椒鹽雞腿排</p>
+              </button>
+              <div id="meat" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body d-flex align-items-center justify-content-between">
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="meat01" checked>
+                    <label class="form-check-label" for="meat01">
+                      椒鹽雞腿排
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="meat02">
+                    <label class="form-check-label" for="meat02">
+                      三杯雞
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="meat03">
+                    <label class="form-check-label" for="meat03">
+                      滷排骨
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="accordion-item border border-1 rounded mb-3">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <button class="accordion-button accordion-header" type="button" data-bs-toggle="collapse" data-bs-target="#veg" aria-expanded="true" aria-controls="collapseOne">
+                <div class="
+                item-name fw-bold">
+                配菜(選擇三樣)
+                </div>
+                <p class="ms-4">柴魚風味蒸蛋 / 清炒花椰菜 / 蒜香四季豆</p>
+              </button>
+              <div id="veg" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body d-flex flex-wrap justify-content-between">
+                  <div class="form-check d-flex align-items-center mb-2">
+                    <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg01" checked>
+                    <label class="form-check-label" for="veg01">
+                      柴魚風味蒸蛋
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center mb-2">
+                    <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg02" checked>
+                    <label class="form-check-label" for="veg02">
+                      清炒花椰菜
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center mb-2">
+                    <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg03" checked>
+                    <label class="form-check-label" for="veg03">
+                      蒜香四季豆
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg04">
+                    <label class="form-check-label" for="veg04">
+                      竹筍炒肉絲
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg05">
+                    <label class="form-check-label" for="veg05">
+                      涼拌木耳黃瓜
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg06">
+                    <label class="form-check-label" for="veg06">
+                      玉米三色豆
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="accordion-item border border-1 rounded mb-3">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <button class="accordion-button accordion-header" type="button" data-bs-toggle="collapse" data-bs-target="#soup" aria-expanded="true" aria-controls="collapseOne">
+                <div class="
+                item-name fw-bold">
+                  湯品
                 </div>
-              </div>
-            </div>
-            <div class="accordion-item border border-1 rounded mb-3">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item border border-1 rounded">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <p class="ms-4">薑絲蛤蠣湯</p>
+              </button>
+              <div id="soup" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body d-flex flex-wrap justify-content-between">
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup01" checked>
+                    <label class="form-check-label" for="soup01">
+                      薑絲蛤蠣湯
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup02">
+                    <label class="form-check-label" for="soup02">
+                      蘿蔔排骨湯
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup03">
+                    <label class="form-check-label" for="soup03">
+                      紫菜蛋花湯
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>

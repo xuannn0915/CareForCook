@@ -50,6 +50,29 @@
     .card-body{
       background-color: rgba($light, 10%);
     }
+
+    .close{
+      display: block;
+    }
+    .open{
+      display: none;
+    }
+    .collapsed{
+      .open{
+        display: block;
+      }
+      .close{
+        display: none;
+      }
+    }
+    .item-name::after{
+      content: '*';
+      vertical-align: top;
+      color: $danger;
+    }
+    .form-check{
+      width: 33%;
+    }
   }
 
   @media (max-width:992px) {
