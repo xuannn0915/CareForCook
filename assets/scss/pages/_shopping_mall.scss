@@ -9,6 +9,36 @@
     }
   }
 
+  .card-box{
+    .card-pic{
+      height: 250px;
+      object-fit: cover;
+      object-position: center center;
+      transition: 1s;
+    }
+    &::after{
+      transition: 0.5s;
+      @include mask(0%,0);
+    }
+    .btn{
+      @include fadeInOut(-50%, -40%,0, 0.5s);
+    }
+  }
+
+  .card:hover{
+    .card-box::after{
+      transition: 0.5s;
+      @include mask(100%,1);
+    }
+    .card-pic{
+      transition: 1s;
+      transform: scale(1.1);
+    }
+    .btn{
+      @include fadeInOut(-50%, -50%,1,0.5s);
+    }
+  }
+
 
   @media (max-width:992px) {
     .sidebar{
