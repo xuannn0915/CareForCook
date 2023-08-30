@@ -73,6 +73,28 @@
     .form-check{
       width: 33%;
     }
+
+    .incrementer{
+      width: 30%;
+      button{
+        width: 40px;
+        height: 40px;
+        border-radius: 0;
+        border: 0;
+        color: $dark;
+        font-size: 20px;
+        strong{
+          display: none;
+        }
+        :hover{
+          background-color: transparent;
+        }
+      }
+
+      .btn-plus{
+        background-image: url('');
+      }
+    }
   }
 
   @media (max-width:992px) {
