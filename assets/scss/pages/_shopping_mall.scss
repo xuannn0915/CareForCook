@@ -1,4 +1,4 @@
-.mall{
+.mall {
   @include bg_secondary;
 
   .sidebar {
@@ -9,88 +9,91 @@
     }
   }
 
-  .card-box{
-    .card-pic{
+  .card-box {
+    .card-pic {
       height: 250px;
       object-fit: cover;
       object-position: center center;
       transition: 1s;
     }
-    &::after{
+    &::after {
       transition: 0.5s;
-      @include mask(0%,0);
+      @include mask(0%, 0);
     }
-    .btn{
-      @include fadeInOut(-50%, -40%,0, 0.5s);
+    .btn {
+      @include fadeInOut(-50%, -40%, 0, 0.5s);
     }
   }
 
-  .card:hover{
-    .card-box::after{
+  .card:hover {
+    .card-box::after {
       transition: 0.5s;
-      @include mask(100%,1);
+      @include mask(100%, 1);
     }
-    .card-pic{
+    .card-pic {
       transition: 1s;
       transform: scale(1.1);
     }
-    .btn{
+    .btn {
       z-index: 1;
-      @include fadeInOut(-50%, -50%,1,0.5s);
+      @include fadeInOut(-50%, -50%, 1, 0.5s);
     }
   }
 
-  .modal{
-    .modal-pic{
+  .modal {
+    .modal-pic {
       height: 200px;
       object-fit: cover;
       object-position: center center;
     }
 
-    .card-body{
+    .card-body {
       background-color: rgba($light, 10%);
     }
 
-    .close{
+    .close {
+      display: block;
+    }
+    .open {
       display: none;
     }
-    .open{
-      display: none;
-    }
-    .collapsed{
-      .open{
+    .collapsed {
+      .open {
         display: block;
       }
-      .close{
+      .close {
         display: none;
       }
     }
-    .item-name::after{
-      content: '*';
+    .item-name::after {
+      content: "*";
       vertical-align: top;
       color: $danger;
     }
-    .form-check{
+    .form-check {
       width: 33%;
     }
   }
 
-  @media (max-width:992px) {
-    .sidebar{
+  @media (max-width: 992px) {
+    .sidebar {
+      overflow-x: scroll;
+      overflow-y: hidden;
       position: fixed;
       top: 0px;
       left: 0px;
       right: 0;
-      background: #FFF0DA;
+      background: #fff0da;
     }
-    .card-box{
-      .card-pic{
+
+    .card-box {
+      .card-pic {
         height: 200px;
       }
     }
 
-    .modal{
-      .form-check{
+    .modal {
+      .form-check {
         width: 100%;
       }
     }

@@ -180,3 +180,14 @@ ul,ol,li{
     width: 50%;
   }
 }
+
+// scrollBar
+    //捲軸底色
+    #scrollBar::-webkit-scrollbar-track {
+      background-color:transparent;
+    }
+    //捲軸寬度
+    #scrollBar::-webkit-scrollbar {
+      height: 0px;
+      background-color: transparent;
+    }
