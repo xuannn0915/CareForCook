@@ -3,7 +3,7 @@
   z-index: 999;
 
   img{
-    height: 38px;
+    width: 163px;
   }
 
   .nav-item:hover{
@@ -32,6 +32,9 @@
   }
 
   @media (max-width:992px) {
+    img{
+      width: 48px;
+    }
     .icons{
       li:nth-child(3){
         border-right: 1px solid rgba(0,0,0,0.1);

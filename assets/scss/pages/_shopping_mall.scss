@@ -86,6 +86,11 @@
       background: #fff0da;
     }
 
+    .card:hover{
+      .btn {
+        @include fadeInOut(0%, 0%, 1, 0);
+      }
+    }
     .card-box {
       .card-pic {
         height: 200px;
