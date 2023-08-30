@@ -145,6 +145,7 @@ ul,ol,li{
 
 // incrementer
 .incrementer{
+  width: 25%;
   input{
     border: 0;
     font-size: 20px;
@@ -174,5 +175,8 @@ ul,ol,li{
     &:hover{
       background-color: rgba($primary, 10%);
     }
+  }
+  @media (max-width:992px) {
+    width: 50%;
   }
 }
