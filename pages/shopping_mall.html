@@ -10,9 +10,9 @@
     <%- include('./layout/header') -%>
   <div class="mall pt-lg-4 pt-11 pb-9 position-relative" id="tabs">      
     <div class="container">
-      <div class="sidebar position-absolute mb-lg-0 mb-5">
-        <ul class="nav nav-tabs border-0 d-flex flex-lg-column justify-content-lg-start justify-content-evenly">
-          <li class="nav-item fs-lg-5 fs-6">
+      <div class="sidebar position-absolute mb-lg-0 mb-5 ">
+        <ul class="nav nav-tabs border-0 d-flex flex-lg-column flex-row flex-nowrap overflow-x-scroll">
+          <li class="nav-item text-nowrap fs-lg-5 fs-6">
             <a
               class="nav-link border-0 active d-flex align-items-center justify-content-lg-start justify-content-center px-lg-0 px-5 py-3"
               aria-current="page"
@@ -21,21 +21,21 @@
             全部商品
             </a>
           </li>
-          <li class="nav-item fs-lg-5 fs-6">
+          <li class="nav-item text-nowrap fs-lg-5 fs-6">
             <a
               class="nav-link border-0 d-flex align-items-center justify-content-lg-start justify-content-center px-lg-0 px-5 py-3"
               href="#custom"
               >客製照護餐</a
             >
           </li>
-          <li class="nav-item fs-lg-5 fs-6">
+          <li class="nav-item text-nowrap fs-lg-5 fs-6">
             <a
               class="nav-link border-0 d-flex align-items-center justify-content-lg-start justify-content-center px-lg-0 px-5 py-3"
               href="#protein"
               >高蛋白燉飲</a
             >
           </li>
-          <li class="nav-item fs-lg-5 fs-6">
+          <li class="nav-item text-nowrap fs-lg-5 fs-6">
             <a
               class="nav-link border-0 d-flex align-items-center justify-content-lg-start justify-content-center px-lg-0 px-5 py-3"
               href="#lunchBox"
@@ -743,11 +743,11 @@
           ></button>
         </div>
         <div class="modal-body">
-          <div class="row gx-4 mb-6">
-            <div class="col-6">
+          <div class="row gx-4 mb-6 flex-lg-row flex-column">
+            <div class="col-lg-6 mb-lg-0 mb-4">
                 <img src="../assets/images/product/custom01-d.png" alt="product" class="modal-pic rounded">
             </div>
-            <div class="col-6">
+            <div class="col-lg-6">
               <div class="d-flex align-items-center justify-content-between mb-2">
                 <div>
                   <h3 class="fs-lg-3">化療照護餐01</h3>
@@ -795,20 +795,20 @@
               </button>
               <div id="main" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#customItemSelect">
                 <div class="accordion-body">
-                  <form action="#" class="d-flex align-items-center justify-content-between">
-                    <div class="form-check d-flex align-items-center">
+                  <form action="#" class="d-flex flex-wrap align-items-center justify-content-between">
+                    <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
                       <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="rice01" checked>
                       <label class="form-check-label" for="rice01">
                         白米飯
                       </label>
                     </div>
-                    <div class="form-check d-flex align-items-center">
+                    <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
                       <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="rice02">
                       <label class="form-check-label" for="rice02">
                         紫米飯
                       </label>
                     </div>
-                    <div class="form-check d-flex align-items-center">
+                    <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
                       <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="rice03">
                       <label class="form-check-label" for="rice03">
                         五穀米
@@ -828,20 +828,20 @@
               </button>
               <div id="meat" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#customItemSelect">
                 <div class="accordion-body">
-                  <form action="#" class="d-flex align-items-center justify-content-between">
-                    <div class="form-check d-flex align-items-center">
+                  <form action="#" class="d-flex align-items-lg-center flex-wrap justify-content-lg-between">
+                    <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
                       <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="meat01" checked>
                       <label class="form-check-label" for="meat01">
                         椒鹽雞腿排
                       </label>
                     </div>
-                    <div class="form-check d-flex align-items-center">
+                    <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
                       <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="meat02">
                       <label class="form-check-label" for="meat02">
                         三杯雞
                       </label>
                     </div>
-                    <div class="form-check d-flex align-items-center">
+                    <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
                       <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="meat03">
                       <label class="form-check-label" for="meat03">
                         滷排骨
@@ -854,39 +854,39 @@
             <div class="accordion-item border border-1 rounded mb-3">
               <button class="accordion-button accordion-header" type="button" data-bs-toggle="collapse" data-bs-target="#veg" aria-expanded="true" aria-controls="collapseOne">
                 <div class="
-                item-name fw-bold">
-                配菜(選擇三樣)
+                item-name fw-bold text-nowrap">
+                配菜
                 </div>
                 <p class="ms-4">柴魚風味蒸蛋 / 清炒花椰菜 / 蒜香四季豆</p>
               </button>
               <div id="veg" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#customItemSelect">
                 <div class="accordion-body">
                   <form action="#" class=" d-flex flex-wrap justify-content-between">
-                    <div class="form-check d-flex align-items-center mb-2">
+                    <div class="form-check d-flex align-items-center mb-1">
                       <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg01" checked>
                       <label class="form-check-label" for="veg01">
                         柴魚風味蒸蛋
                       </label>
                     </div>
-                    <div class="form-check d-flex align-items-center mb-2">
+                    <div class="form-check d-flex align-items-center mb-1">
                       <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg02" checked>
                       <label class="form-check-label" for="veg02">
                         清炒花椰菜
                       </label>
                     </div>
-                    <div class="form-check d-flex align-items-center mb-2">
+                    <div class="form-check d-flex align-items-center mb-1">
                       <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg03" checked>
                       <label class="form-check-label" for="veg03">
                         蒜香四季豆
                       </label>
                     </div>
-                    <div class="form-check d-flex align-items-center">
+                    <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
                       <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg04">
                       <label class="form-check-label" for="veg04">
                         竹筍炒肉絲
                       </label>
                     </div>
-                    <div class="form-check d-flex align-items-center">
+                    <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
                       <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg05">
                       <label class="form-check-label" for="veg05">
                         涼拌木耳黃瓜
@@ -912,19 +912,19 @@
               </button>
               <div id="soup" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#customItemSelect">
                 <div class="accordion-body">
-                  <form action="#" class="d-flex align-items-center justify-content-between">              <div class="form-check d-flex align-items-center">
+                  <form action="#" class="d-flex flex-wrap align-items-center justify-content-between">              <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
                       <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup01" checked>
                       <label class="form-check-label" for="soup01">
                         薑絲蛤蠣湯
                       </label>
                     </div>
-                    <div class="form-check d-flex align-items-center">
+                    <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
                       <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup02">
                       <label class="form-check-label" for="soup02">
                         蘿蔔排骨湯
                       </label>
                     </div>
-                    <div class="form-check d-flex align-items-center">
+                    <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
                       <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup03">
                       <label class="form-check-label" for="soup03">
                         紫菜蛋花湯
@@ -944,20 +944,20 @@
               </button>
               <div id="fruit" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#customItemSelect">
                 <div class="accordion-body">
-                  <form action="#" class="d-flex align-items-center justify-content-between">
-                    <div class="form-check d-flex align-items-center">
+                  <form action="#" class="d-flex flex-wrap align-items-center justify-content-between">
+                    <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
                       <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup01" checked>
                       <label class="form-check-label" for="soup01">
                         燕巢芭樂
                       </label>
                     </div>
-                    <div class="form-check d-flex align-items-center">
+                    <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
                       <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup02">
                       <label class="form-check-label" for="soup02">
                         旗山香蕉
                       </label>
                     </div>
-                    <div class="form-check d-flex align-items-center">
+                    <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
                       <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup03">
                       <label class="form-check-label" for="soup03">
                         古坑柳丁
@@ -972,10 +972,16 @@
                 <textarea class="form-control" id="note" rows="1" placeholder="新增備註"></textarea>
             </div>
           </div>
-          <div class="incrementer">
-            <input type="number" value="0" min="0" max="100" step="1"/>
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="incrementer w-lg-25 w-50">
+              <input type="number" value="0" min="0" max="100" step="1"/>
+            </div>
+            <h3 class="fw-bold d-flex align-items-center">
+              <p class="fs-5 me-2">單價</p>
+              NT$350
+            </h3>
           </div>
-        </div>
+          </div>
         <div class="modal-footer">
           <button
             type="button"

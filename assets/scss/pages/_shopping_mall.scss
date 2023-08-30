@@ -74,31 +74,7 @@
       width: 33%;
     }
 
-    .incrementer{
-      width: 30%;
-      button{
-        width: 40px;
-        height: 40px;
-        border-radius: 0;
-        border: 0;
-        color: $dark;
-        font-size: 20px;
-        strong{
-          display: none;
-        }
-        :hover{
-          background-color: transparent;
-        }
-      }
 
-      .btn-plus{
-        background-image: url('https://raw.githubusercontent.com/xuannn0915/CareForCook/74b045d5be4b0bbd4bff1087dbf8f1f0068869d8/assets/images/shopping/add.svg');
-        display: block;
-        background-repeat: no-repeat;
-        width: 32px;
-        height: 32px;
-      }
-    }
   }
 
   @media (max-width:992px) {
@@ -112,6 +88,12 @@
     .card-box{
       .card-pic{
         height: 200px;
+      }
+    }
+
+    .modal{
+      .form-check{
+        width: 100%;
       }
     }
   }

@@ -142,3 +142,37 @@ ul,ol,li{
     background-color: $primary;
   }
 }
+
+// incrementer
+.incrementer{
+  input{
+    border: 0;
+    font-size: 20px;
+  }
+  button{
+    padding: 4px;
+    border-radius: 0;
+    color: $dark;
+    font-size: 20px;
+    border: 0;
+    strong{
+      display: none;
+    }
+  }
+  .btn-minus{
+    background-image: url('https://raw.githubusercontent.com/xuannn0915/CareForCook/3c163f374ceeeca7c279887e587b9a285182246a/assets/images/shopping/remove.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    &:hover{
+      background-color: rgba($light, 10%);
+    }
+  }
+  .btn-plus{
+    background-image: url('https://raw.githubusercontent.com/xuannn0915/CareForCook/3c163f374ceeeca7c279887e587b9a285182246a/assets/images/shopping/add.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    &:hover{
+      background-color: rgba($primary, 10%);
+    }
+  }
+}
