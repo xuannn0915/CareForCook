@@ -8,7 +8,7 @@
   </head>
   <body>
     <%- include('./layout/header') -%>
-  <main class="productInfo pt-lg-4 pt-11 pb-lg-9 pb-7 position-relative">      
+  <main class="productInfo pt-4 pb-lg-9 pb-7 position-relative">      
     <div class="container">
       <nav aria-label="breadcrumb" class="mb-lg-6 mb-4 fs-lg-5 fs-6">
         <ol class="breadcrumb m-0">
@@ -19,11 +19,96 @@
         </ol>
       </nav>
       <div class="row">
-        <div class="col-lg-7">
-          <img src="../assets/images/shopping/custom01-m.png" alt="product" class="rounded">
+        <div class="col-lg-7 mb-lg-0 mb-6">
+          <img src="../assets/images/shopping/custom01-m.png" alt="product" class="rounded mb-lg-6 mb-2">
+          <div class="d-flex align-items-center justify-content-between mb-4 d-lg-none">
+            <div>
+              <h3 class="fw-bold fs-lg-3 fs-4">
+                化療照護餐01
+              </h3>
+              <p class="text-primary fs-lg-4">
+                婦科癌症適用
+              </p>
+            </div>
+            <button class="btn btn-outline-dark d-inline-flex align-items-center" data-bs-toggle="modal" data-bs-target="#productAdjust">
+              客製餐點
+              <span class="material-symbols-rounded ms-2"> discover_tune </span>
+            </button>
+          </div>
+          <div id="tabs">
+            <div class="d-flex mb-4">
+              <ul class="nav nav-tabs">
+                <li class="nav-item fs-lg-5 fs-6">
+                  <a
+                    class="nav-link active d-flex align-items-center justify-content-center px-lg-6 px-5 py-3"
+                    aria-current="page"
+                    href="#mealContent"
+                  >
+                  餐點內容
+                  </a>
+                </li>
+                <li class="nav-item fs-lg-5 fs-6">
+                  <a
+                    class="nav-link d-flex align-items-center justify-content-center  px-lg-6 px-5 py-3"
+                    href="#nutritionLabel"
+                    >營養標示</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- tab Content -->
+            <div id="mealContent">
+              <div class="mb-4">
+                <h5 class="fw-bld">三菜一湯一水果</h5>
+                <p>餐點包含一份主食肉類、三份高纖青菜、一份湯品以及一份飯後水果</p>
+              </div>
+              <div class="mb-4">
+                <h5 class="fw-bld">避開含賀爾蒙類成分食材</h5>
+                <p>餐點不添加含大豆異黃酮及其他類賀爾蒙成分之食材，如：當歸、黃豆、山藥、牛蒡等。</p>
+              </div>
+              <div class="mb-4">
+                <h5 class="fw-bld">抗氧化植物化學營養素</h5>
+                <p>每餐含有10種以上多元鮮蔬搭配，幫助腸胃蠕動幫助消化外，也獲得滿滿抗氧化植物營養素。</p>
+              </div>
+              <div>
+                <h5 class="fw-bld">婦科癌症專屬設計</h5>
+                <p>給予充足的蛋白質與熱量，選用低脂肉類，以降低飽和脂肪酸攝取量。</p>
+              </div>
+            </div>
+            <div id="nutritionLabel">
+              <h5 class="fw-bold mb-4">因應客製化餐點的不同，熱量會有些微差異，以下標示為大約的數值。</h5>
+              <div class="nutrition">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <h5 class="fw-bld">熱量</h5>
+                  <p>580大卡</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <h5 class="fw-bld">蛋白質</h5>
+                  <p>30.2公克</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <h5 class="fw-bld">脂質</h5>
+                  <p>5公克</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <h5 class="fw-bld">碳水化合物</h5>
+                  <p>56.5公克</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <h5 class="fw-bld">膳食纖維</h5>
+                  <p>7.3公克</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <h5 class="fw-bld">鈉</h5>
+                  <p>200毫克</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-lg-5">
-          <div class="d-flex align-items-center justify-content-between mb-lg-6 mb-4">
+          <div class="d-lg-flex align-items-center justify-content-between mb-6 d-none">
             <div>
               <h3 class="fw-bold fs-lg-3 fs-4">
                 化療照護餐01
@@ -39,32 +124,32 @@
           </div>
           <form action="#" class="mb-6">
             <div class="mb-3 row bg-white rounded">
-              <label for="staticEmail" class="col-2 col-form-label fw-bold">主食</label>
-              <div class="col-10">
+              <label for="staticEmail" class="col-lg-2 col-3 col-form-label fw-bold">主食</label>
+              <div class="col-lg-10 col-9">
                 <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="白米飯">
               </div>
             </div>
             <div class="mb-3 row bg-white rounded">
-              <label for="staticEmail" class="col-2 col-form-label fw-bold">主餐</label>
-              <div class="col-10">
+              <label for="staticEmail" class="col-lg-2 col-3  col-form-label fw-bold">主餐</label>
+              <div class="col-lg-10 col-9">
                 <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="椒鹽雞腿排">
               </div>
             </div>
             <div class="mb-3 row bg-white rounded">
-              <label for="staticEmail" class="col-2 col-form-label fw-bold">配菜</label>
-              <div class="col-10">
+              <label for="staticEmail" class="col-lg-2 col-3 col-form-label fw-bold">配菜</label>
+              <div class="col-lg-10 col-9">
                 <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="清炒花椰菜 / 蒜香四季豆 / 柴魚風味蒸蛋">
               </div>
             </div>
             <div class="mb-3 row bg-white rounded">
-              <label for="staticEmail" class="col-2 col-form-label fw-bold">湯品</label>
-              <div class="col-10">
+              <label for="staticEmail" class="col-lg-2 col-3  col-form-label fw-bold">湯品</label>
+              <div class="col-lg-10 col-9">
                 <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="薑絲蛤蠣湯">
               </div>
             </div>
             <div class="mb-3 row bg-white rounded">
-              <label for="staticEmail" class="col-2 col-form-label fw-bold">水果</label>
-              <div class="col-10">
+              <label for="staticEmail" class="col-lg-2 col-3  col-form-label fw-bold">水果</label>
+              <div class="col-lg-10 col-9">
                 <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="燕巢芭樂">
               </div>
             </div>
@@ -114,7 +199,95 @@
       </div>
     </div>
 </main>
-
-    <%- include('./layout/footer') -%> <%- include('./layout/body_bottom') -%>
+<section class="recommend py-9">
+  <div class="container">
+    <h4 class="fw-bold mb-4">推薦商品</h4>
+    <div class="row gx-5 flex-nowrap overflow-x-scroll" id="scrollBar">
+      <div class="col-lg-3 col-9">
+        <a href="shopping_mall.html" class="card border-0 bg-transparent ">
+          <div class="card-box overflow-hidden rounded position-relative">
+            <img src="../assets/images/product/custom01-m.png" alt="product" class="card-pic">
+          </div>
+          <div class="card-body px-0 py-2">
+            <div class="d-flex flex-lg-row flex-column align-items-lg-start justify-content-between">
+                <h5 class="fs-lg-4 mb-lg-0 mb-2">
+                  術後照護餐01
+                  <p class="fs-5">
+                    NT$350
+                  </p>
+                </h5>
+                <div class="badge badge-secondary align-self-start">
+                  膽囊切除
+                </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-9">
+        <a href="shopping_mall.html" class="card border-0 bg-transparent ">
+          <div class="card-box overflow-hidden rounded position-relative">
+            <img src="../assets/images/product/soup01-m.png" alt="product" class="card-pic">
+          </div>
+          <div class="card-body px-0 py-2">
+            <div class="d-flex flex-lg-row flex-column align-items-lg-start justify-content-between">
+                <h5 class="fs-lg-4 mb-lg-0 mb-2">
+                  高蛋白燉飲01
+                  <p class="fs-5">
+                    NT$350
+                  </p>
+                </h5>
+                <div class="badge badge-secondary align-self-start">
+                  苷醇雙雞
+                </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-9">
+        <a href="shopping_mall.html" class="card border-0 bg-transparent ">
+          <div class="card-box overflow-hidden rounded position-relative">
+            <img src="../assets/images/product/lunch01-m.png" alt="product" class="card-pic">
+          </div>
+          <div class="card-body px-0 py-2">
+            <div class="d-flex flex-lg-row flex-column align-items-lg-start justify-content-between">
+                <h5 class="fs-lg-4 mb-lg-0 mb-2">
+                  機能調理餐01
+                  <p class="fs-5">
+                    NT$350
+                  </p>
+                </h5>
+                <div class="badge badge-secondary align-self-start">
+                  低糖好新纖
+                </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-9">
+        <a href="shopping_mall.html" class="card border-0 bg-transparent ">
+          <div class="card-box overflow-hidden rounded position-relative">
+            <img src="../assets/images/product/custom02-m.png" alt="product" class="card-pic">
+          </div>
+          <div class="card-body px-0 py-2">
+            <div class="d-flex flex-lg-row flex-column align-items-lg-start justify-content-between">
+                <h5 class="fs-lg-4 mb-lg-0 mb-2">
+                  術後照護餐02
+                  <p class="fs-5">
+                    NT$350
+                  </p>
+                </h5>
+                <div class="badge badge-secondary align-self-start">
+                  婦科術後
+                </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+    <%- include('./layout/cta-product') -%> 
+    <%- include('./layout/footer') -%> 
+    <%- include('./layout/body_bottom') -%>
   </body>
 </html>
