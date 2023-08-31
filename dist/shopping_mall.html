@@ -19,8 +19,8 @@
 <!-- aos -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-<title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/validation-e996dba9.js"></script>
-    <link rel="stylesheet" href="/CareForCook/assets/validation-6fec0e09.css">
+<title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/validation-a11acedc.js"></script>
+    <link rel="stylesheet" href="/CareForCook/assets/validation-0e158dcd.css">
   </head>
   <body>
     <nav
@@ -282,7 +282,7 @@
     </div>
   </div>
 </nav>
-  <div class="mall pt-lg-4 pt-11 pb-lg-9 pb-7 position-relative" id="tabs">      
+  <main class="mall pt-lg-4 pt-11 pb-lg-9 pb-7 position-relative" id="tabs">      
     <div class="container">
       <div class="sidebar position-absolute mb-lg-0 mb-5" id="scrollBar">
         <ul class="nav nav-tabs border-0 d-flex flex-lg-column flex-row flex-nowrap">
@@ -1224,10 +1224,283 @@
     </div>
 
 
-  <!-- custom modal -->
-  <div
-    class="modal fade "
-    id="customModal"
+    <!-- custom modal -->
+    <section
+      class="modal fade "
+      id="customModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">加入購物車</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row gx-4 mb-6 flex-lg-row flex-column">
+              <div class="col-lg-6 mb-lg-0 mb-4">
+                  <img src="/CareForCook/assets/custom01-d-e19c9600.png" alt="product" class="modal-pic rounded">
+              </div>
+              <div class="col-lg-6">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <div>
+                    <h3 class="fs-lg-3 fs-4">化療照護餐01</h3>
+                    <p class="text-primary fs-lg-4">膽能切除適用</p>
+                  </div>
+                  <button class="btn btn-outline-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#customProductContent" aria-expanded="false" aria-controls="collapseExample">
+                    <span class="open">
+                      開啟內容
+                    </span>
+                    <span class="close">
+                      關閉內容
+                    </span>
+                  </button>
+                </div>
+                <div class="collapse" id="customProductContent">
+                  <div class=" card-body p-4 border-0">
+                    <div class="mb-4">
+                      <h5 class="fw-bld">三菜一湯一水果</h5>
+                      <p>餐點包含一份主食肉類、三份高纖青菜、一份湯品以及一份飯後水果</p>
+                    </div>
+                    <div class="mb-4">
+                      <h5 class="fw-bld">避開含賀爾蒙類成分食材</h5>
+                      <p>餐點不添加含大豆異黃酮及其他類賀爾蒙成分之食材，如：當歸、黃豆、山藥、牛蒡等。</p>
+                    </div>
+                    <div class="mb-4">
+                      <h5 class="fw-bld">抗氧化植物化學營養素</h5>
+                      <p>每餐含有10種以上多元鮮蔬搭配，幫助腸胃蠕動幫助消化外，也獲得滿滿抗氧化植物營養素。</p>
+                    </div>
+                    <div>
+                      <h5 class="fw-bld">婦科癌症專屬設計</h5>
+                      <p>給予充足的蛋白質與熱量，選用低脂肉類，以降低飽和脂肪酸攝取量。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion mb-4" id="customItemSelect">
+              <div class="accordion-item border border-1 rounded mb-3">
+                <button class="accordion-button accordion-header" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-expanded="true" aria-controls="collapseOne">
+                  <div class="
+                  item-name fw-bold">
+                    主食
+                  </div>
+                  <p class="ms-4">白米飯</p>
+                </button>
+                <div id="main" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#customItemSelect">
+                  <div class="accordion-body">
+                    <form action="#" class="d-flex flex-wrap align-items-center justify-content-between">
+                      <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                        <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="rice01" checked>
+                        <label class="form-check-label" for="rice01">
+                          白米飯
+                        </label>
+                      </div>
+                      <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                        <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="rice02">
+                        <label class="form-check-label" for="rice02">
+                          紫米飯
+                        </label>
+                      </div>
+                      <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                        <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="rice03">
+                        <label class="form-check-label" for="rice03">
+                          五穀米
+                        </label>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border border-1 rounded mb-3">
+                <button class="accordion-button accordion-header" type="button" data-bs-toggle="collapse" data-bs-target="#meat" aria-expanded="true" aria-controls="collapseOne">
+                  <div class="
+                  item-name fw-bold">
+                  主餐
+                  </div>
+                  <p class="ms-4">椒鹽雞腿排</p>
+                </button>
+                <div id="meat" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#customItemSelect">
+                  <div class="accordion-body">
+                    <form action="#" class="d-flex align-items-lg-center flex-wrap justify-content-lg-between">
+                      <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                        <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="meat01" checked>
+                        <label class="form-check-label" for="meat01">
+                          椒鹽雞腿排
+                        </label>
+                      </div>
+                      <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                        <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="meat02">
+                        <label class="form-check-label" for="meat02">
+                          三杯雞
+                        </label>
+                      </div>
+                      <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                        <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="meat03">
+                        <label class="form-check-label" for="meat03">
+                          滷排骨
+                        </label>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border border-1 rounded mb-3">
+                <button class="accordion-button accordion-header" type="button" data-bs-toggle="collapse" data-bs-target="#veg" aria-expanded="true" aria-controls="collapseOne">
+                  <div class="
+                  item-name fw-bold text-nowrap">
+                  配菜
+                  </div>
+                  <p class="ms-4">柴魚風味蒸蛋 / 清炒花椰菜 / 蒜香四季豆</p>
+                </button>
+                <div id="veg" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#customItemSelect">
+                  <div class="accordion-body">
+                    <form action="#" class=" d-flex flex-wrap justify-content-between">
+                      <div class="form-check d-flex align-items-center mb-1">
+                        <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg01" checked>
+                        <label class="form-check-label" for="veg01">
+                          柴魚風味蒸蛋
+                        </label>
+                      </div>
+                      <div class="form-check d-flex align-items-center mb-1">
+                        <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg02" checked>
+                        <label class="form-check-label" for="veg02">
+                          清炒花椰菜
+                        </label>
+                      </div>
+                      <div class="form-check d-flex align-items-center mb-1">
+                        <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg03" checked>
+                        <label class="form-check-label" for="veg03">
+                          蒜香四季豆
+                        </label>
+                      </div>
+                      <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                        <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg04">
+                        <label class="form-check-label" for="veg04">
+                          竹筍炒肉絲
+                        </label>
+                      </div>
+                      <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                        <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg05">
+                        <label class="form-check-label" for="veg05">
+                          涼拌木耳黃瓜
+                        </label>
+                      </div>
+                      <div class="form-check d-flex align-items-center">
+                        <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg06">
+                        <label class="form-check-label" for="veg06">
+                          玉米三色豆
+                        </label>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border border-1 rounded mb-3">
+                <button class="accordion-button accordion-header" type="button" data-bs-toggle="collapse" data-bs-target="#soup" aria-expanded="true" aria-controls="collapseOne">
+                  <div class="
+                  item-name fw-bold">
+                    湯品
+                  </div>
+                  <p class="ms-4">薑絲蛤蠣湯</p>
+                </button>
+                <div id="soup" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#customItemSelect">
+                  <div class="accordion-body">
+                    <form action="#" class="d-flex flex-wrap align-items-center justify-content-between">              <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                        <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup01" checked>
+                        <label class="form-check-label" for="soup01">
+                          薑絲蛤蠣湯
+                        </label>
+                      </div>
+                      <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                        <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup02">
+                        <label class="form-check-label" for="soup02">
+                          蘿蔔排骨湯
+                        </label>
+                      </div>
+                      <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                        <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup03">
+                        <label class="form-check-label" for="soup03">
+                          紫菜蛋花湯
+                        </label>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border border-1 rounded mb-3">
+                <button class="accordion-button accordion-header" type="button" data-bs-toggle="collapse" data-bs-target="#fruit" aria-expanded="true" aria-controls="collapseOne">
+                  <div class="
+                  item-name fw-bold">
+                    水果
+                  </div>
+                  <p class="ms-4">燕巢芭樂</p>
+                </button>
+                <div id="fruit" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#customItemSelect">
+                  <div class="accordion-body">
+                    <form action="#" class="d-flex flex-wrap align-items-center justify-content-between">
+                      <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                        <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup01" checked>
+                        <label class="form-check-label" for="soup01">
+                          燕巢芭樂
+                        </label>
+                      </div>
+                      <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                        <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup02">
+                        <label class="form-check-label" for="soup02">
+                          旗山香蕉
+                        </label>
+                      </div>
+                      <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                        <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup03">
+                        <label class="form-check-label" for="soup03">
+                          古坑柳丁
+                        </label>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border border-1 rounded px-4 py-2">
+                  <label for="note" class="form-label fw-bold">備註</label>
+                  <textarea class="form-control" id="note" rows="1" placeholder="新增備註"></textarea>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="incrementer">
+                <input type="number" value="0" min="0" max="100" step="1"/>
+              </div>
+              <h3 class="fw-bold d-flex align-items-center">
+                <p class="fs-5 me-2">單價</p>
+                NT$350
+              </h3>
+            </div>
+            </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-dark"
+              data-bs-dismiss="modal"
+            >
+              取消
+            </button>
+            <button type="button" class="btn btn-primary d-block text-nowrap">加入購物車</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- other modal -->
+    <section
+    class="modal fade"
+    id="otherModal"
     tabindex="-1"
     aria-labelledby="exampleModalLabel"
     aria-hidden="true"
@@ -1235,7 +1508,7 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">加入購物車</h5>
+          <h5 class="modal-title" id="addCreditCard">加入購物車</h5>
           <button
             type="button"
             class="btn-close"
@@ -1246,231 +1519,28 @@
         <div class="modal-body">
           <div class="row gx-4 mb-6 flex-lg-row flex-column">
             <div class="col-lg-6 mb-lg-0 mb-4">
-                <img src="/CareForCook/assets/custom01-d-e19c9600.png" alt="product" class="modal-pic rounded">
+                <img src="/CareForCook/assets/lunch01-d-bdfb4b33.png" alt="product" class="modal-pic rounded">
             </div>
             <div class="col-lg-6">
               <div class="d-flex align-items-center justify-content-between mb-2">
                 <div>
-                  <h3 class="fs-lg-3 fs-4">化療照護餐01</h3>
-                  <p class="text-primary fs-lg-4">膽能切除適用</p>
+                  <h3 class="fs-lg-3 fs-4">機能調理餐01</h3>
+                  <p class="text-primary fs-lg-4">低醣好新纖</p>
                 </div>
-                <button class="btn btn-outline-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#customProductContent" aria-expanded="false" aria-controls="collapseExample">
-                  <span class="open">
+                <button class="btn btn-outline-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#otherProductContent" aria-expanded="false" aria-controls="collapseExample">
+                  <p class="open">
                     開啟內容
-                  </span>
-                  <span class="close">
+                  </p>
+                  <p class="close">
                     關閉內容
-                  </span>
+                  </p>
                 </button>
               </div>
-              <div class="collapse" id="customProductContent">
-                <div class=" card-body p-4 border-0">
-                  <div class="mb-4">
-                    <h5 class="fw-bld">三菜一湯一水果</h5>
-                    <p>餐點包含一份主食肉類、三份高纖青菜、一份湯品以及一份飯後水果</p>
-                  </div>
-                  <div class="mb-4">
-                    <h5 class="fw-bld">避開含賀爾蒙類成分食材</h5>
-                    <p>餐點不添加含大豆異黃酮及其他類賀爾蒙成分之食材，如：當歸、黃豆、山藥、牛蒡等。</p>
-                  </div>
-                  <div class="mb-4">
-                    <h5 class="fw-bld">抗氧化植物化學營養素</h5>
-                    <p>每餐含有10種以上多元鮮蔬搭配，幫助腸胃蠕動幫助消化外，也獲得滿滿抗氧化植物營養素。</p>
-                  </div>
-                  <div>
-                    <h5 class="fw-bld">婦科癌症專屬設計</h5>
-                    <p>給予充足的蛋白質與熱量，選用低脂肉類，以降低飽和脂肪酸攝取量。</p>
-                  </div>
+              <div class="collapse" id="otherProductContent">
+                <div class="card card-body p-4 border-0">
+                  使用花椰菜米取代白飯，並搭配少油Q軟的舒肥雞胸，餐盒控制在450大卡內，卻含有豐富蛋白質跟少油的優點，大口吃完輕食無負擔，清爽窈窕就吃這一味！
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="accordion mb-4" id="customItemSelect">
-            <div class="accordion-item border border-1 rounded mb-3">
-              <button class="accordion-button accordion-header" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-expanded="true" aria-controls="collapseOne">
-                <div class="
-                item-name fw-bold">
-                  主食
-                </div>
-                <p class="ms-4">白米飯</p>
-              </button>
-              <div id="main" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#customItemSelect">
-                <div class="accordion-body">
-                  <form action="#" class="d-flex flex-wrap align-items-center justify-content-between">
-                    <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
-                      <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="rice01" checked>
-                      <label class="form-check-label" for="rice01">
-                        白米飯
-                      </label>
-                    </div>
-                    <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
-                      <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="rice02">
-                      <label class="form-check-label" for="rice02">
-                        紫米飯
-                      </label>
-                    </div>
-                    <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
-                      <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="rice03">
-                      <label class="form-check-label" for="rice03">
-                        五穀米
-                      </label>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item border border-1 rounded mb-3">
-              <button class="accordion-button accordion-header" type="button" data-bs-toggle="collapse" data-bs-target="#meat" aria-expanded="true" aria-controls="collapseOne">
-                <div class="
-                item-name fw-bold">
-                主餐
-                </div>
-                <p class="ms-4">椒鹽雞腿排</p>
-              </button>
-              <div id="meat" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#customItemSelect">
-                <div class="accordion-body">
-                  <form action="#" class="d-flex align-items-lg-center flex-wrap justify-content-lg-between">
-                    <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
-                      <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="meat01" checked>
-                      <label class="form-check-label" for="meat01">
-                        椒鹽雞腿排
-                      </label>
-                    </div>
-                    <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
-                      <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="meat02">
-                      <label class="form-check-label" for="meat02">
-                        三杯雞
-                      </label>
-                    </div>
-                    <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
-                      <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="meat03">
-                      <label class="form-check-label" for="meat03">
-                        滷排骨
-                      </label>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item border border-1 rounded mb-3">
-              <button class="accordion-button accordion-header" type="button" data-bs-toggle="collapse" data-bs-target="#veg" aria-expanded="true" aria-controls="collapseOne">
-                <div class="
-                item-name fw-bold text-nowrap">
-                配菜
-                </div>
-                <p class="ms-4">柴魚風味蒸蛋 / 清炒花椰菜 / 蒜香四季豆</p>
-              </button>
-              <div id="veg" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#customItemSelect">
-                <div class="accordion-body">
-                  <form action="#" class=" d-flex flex-wrap justify-content-between">
-                    <div class="form-check d-flex align-items-center mb-1">
-                      <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg01" checked>
-                      <label class="form-check-label" for="veg01">
-                        柴魚風味蒸蛋
-                      </label>
-                    </div>
-                    <div class="form-check d-flex align-items-center mb-1">
-                      <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg02" checked>
-                      <label class="form-check-label" for="veg02">
-                        清炒花椰菜
-                      </label>
-                    </div>
-                    <div class="form-check d-flex align-items-center mb-1">
-                      <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg03" checked>
-                      <label class="form-check-label" for="veg03">
-                        蒜香四季豆
-                      </label>
-                    </div>
-                    <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
-                      <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg04">
-                      <label class="form-check-label" for="veg04">
-                        竹筍炒肉絲
-                      </label>
-                    </div>
-                    <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
-                      <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg05">
-                      <label class="form-check-label" for="veg05">
-                        涼拌木耳黃瓜
-                      </label>
-                    </div>
-                    <div class="form-check d-flex align-items-center">
-                      <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg06">
-                      <label class="form-check-label" for="veg06">
-                        玉米三色豆
-                      </label>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item border border-1 rounded mb-3">
-              <button class="accordion-button accordion-header" type="button" data-bs-toggle="collapse" data-bs-target="#soup" aria-expanded="true" aria-controls="collapseOne">
-                <div class="
-                item-name fw-bold">
-                  湯品
-                </div>
-                <p class="ms-4">薑絲蛤蠣湯</p>
-              </button>
-              <div id="soup" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#customItemSelect">
-                <div class="accordion-body">
-                  <form action="#" class="d-flex flex-wrap align-items-center justify-content-between">              <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
-                      <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup01" checked>
-                      <label class="form-check-label" for="soup01">
-                        薑絲蛤蠣湯
-                      </label>
-                    </div>
-                    <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
-                      <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup02">
-                      <label class="form-check-label" for="soup02">
-                        蘿蔔排骨湯
-                      </label>
-                    </div>
-                    <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
-                      <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup03">
-                      <label class="form-check-label" for="soup03">
-                        紫菜蛋花湯
-                      </label>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item border border-1 rounded mb-3">
-              <button class="accordion-button accordion-header" type="button" data-bs-toggle="collapse" data-bs-target="#fruit" aria-expanded="true" aria-controls="collapseOne">
-                <div class="
-                item-name fw-bold">
-                  水果
-                </div>
-                <p class="ms-4">燕巢芭樂</p>
-              </button>
-              <div id="fruit" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#customItemSelect">
-                <div class="accordion-body">
-                  <form action="#" class="d-flex flex-wrap align-items-center justify-content-between">
-                    <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
-                      <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup01" checked>
-                      <label class="form-check-label" for="soup01">
-                        燕巢芭樂
-                      </label>
-                    </div>
-                    <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
-                      <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup02">
-                      <label class="form-check-label" for="soup02">
-                        旗山香蕉
-                      </label>
-                    </div>
-                    <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
-                      <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup03">
-                      <label class="form-check-label" for="soup03">
-                        古坑柳丁
-                      </label>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item border border-1 rounded px-4 py-2">
-                <label for="note" class="form-label fw-bold">備註</label>
-                <textarea class="form-control" id="note" rows="1" placeholder="新增備註"></textarea>
             </div>
           </div>
           <div class="d-flex align-items-center justify-content-between">
@@ -1482,7 +1552,7 @@
               NT$350
             </h3>
           </div>
-          </div>
+        </div>
         <div class="modal-footer">
           <button
             type="button"
@@ -1491,82 +1561,12 @@
           >
             取消
           </button>
-          <button type="button" class="btn btn-primary d-block text-nowrap">加入購物車</button>
+          <button type="button" class="btn btn-primary text-nowrap">加入購物車</button>
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- other modal -->
-  <div
-  class="modal fade"
-  id="otherModal"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="addCreditCard">加入購物車</h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="modal-body">
-        <div class="row gx-4 mb-6 flex-lg-row flex-column">
-          <div class="col-lg-6 mb-lg-0 mb-4">
-              <img src="/CareForCook/assets/lunch01-d-bdfb4b33.png" alt="product" class="modal-pic rounded">
-          </div>
-          <div class="col-lg-6">
-            <div class="d-flex align-items-center justify-content-between mb-2">
-              <div>
-                <h3 class="fs-lg-3 fs-4">機能調理餐01</h3>
-                <p class="text-primary fs-lg-4">低醣好新纖</p>
-              </div>
-              <button class="btn btn-outline-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#otherProductContent" aria-expanded="false" aria-controls="collapseExample">
-                <p class="open">
-                  開啟內容
-                </p>
-                <p class="close">
-                  關閉內容
-                </p>
-              </button>
-            </div>
-            <div class="collapse" id="otherProductContent">
-              <div class="card card-body p-4 border-0">
-                使用花椰菜米取代白飯，並搭配少油Q軟的舒肥雞胸，餐盒控制在450大卡內，卻含有豐富蛋白質跟少油的優點，大口吃完輕食無負擔，清爽窈窕就吃這一味！
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="d-flex align-items-center justify-content-between">
-          <div class="incrementer">
-            <input type="number" value="0" min="0" max="100" step="1"/>
-          </div>
-          <h3 class="fw-bold d-flex align-items-center">
-            <p class="fs-5 me-2">單價</p>
-            NT$350
-          </h3>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button
-          type="button"
-          class="btn btn-outline-dark"
-          data-bs-dismiss="modal"
-        >
-          取消
-        </button>
-        <button type="button" class="btn btn-primary text-nowrap">加入購物車</button>
-      </div>
-    </div>
-  </div>
-  </div>
-</div>
+    </section>
+</main>
 
     <footer class="footer">
   <div class="container">
