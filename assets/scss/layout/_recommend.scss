@@ -1,0 +1,22 @@
+.recommend {
+  .card-box::after {
+    @include mask(0, 0);
+  }
+  img{
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .card:hover{
+    .card-box::after{
+      @include mask(100%,1);
+      content:'瞭解更多';
+      color: white;
+      font-weight: bold;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
