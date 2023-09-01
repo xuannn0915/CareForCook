@@ -19,8 +19,8 @@
 <!-- aos -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-<title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/validation-be23813f.js"></script>
-    <link rel="stylesheet" href="/CareForCook/assets/validation-271c6093.css">
+<title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/validation-890dbf1a.js"></script>
+    <link rel="stylesheet" href="/CareForCook/assets/validation-2371aa8b.css">
   </head>
   <body>
     <nav
@@ -397,42 +397,30 @@
             </button>
           </div>
           <form action="#" class="mb-6">
-            <div class="mb-3 row bg-white rounded">
-              <label for="staticEmail" class="col-lg-2 col-3 col-form-label fw-bold">主食</label>
-              <div class="col-lg-10 col-9">
-                <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="白米飯">
-              </div>
+            <div class="mb-3 d-flex align-items-center bg-white rounded px-4 py-2">
+              <label for="main" class="form-label fw-bold text-nowrap mb-0 me-4">主食</label>
+                <input type="text" readonly class="form-control-plaintext" id="main" value="白米飯">
             </div>
-            <div class="mb-3 row bg-white rounded">
-              <label for="staticEmail" class="col-lg-2 col-3  col-form-label fw-bold">主餐</label>
-              <div class="col-lg-10 col-9">
-                <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="椒鹽雞腿排">
-              </div>
+            <div class="mb-3 d-flex align-items-center bg-white rounded px-4 py-2">
+              <label for="meat" class="form-label fw-bold text-nowrap mb-0 me-4">主餐</label>
+                <input type="text" readonly class="form-control-plaintext" id="meat" value="椒鹽雞腿排">
             </div>
-            <div class="mb-3 row bg-white rounded">
-              <label for="staticEmail" class="col-lg-2 col-3 col-form-label fw-bold">配菜</label>
-              <div class="col-lg-10 col-9">
-                <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="清炒花椰菜 / 蒜香四季豆 / 柴魚風味蒸蛋">
-              </div>
+            <div class="mb-3 d-flex align-items-center bg-white rounded px-4 py-2">
+              <label for="veg" class="form-label fw-bold text-nowrap mb-0 me-4">配菜</label>
+                <input type="text" readonly class="form-control-plaintext" id="veg" value="清炒花椰菜 / 蒜香四季豆 / 柴魚風味蒸蛋">
             </div>
-            <div class="mb-3 row bg-white rounded">
-              <label for="staticEmail" class="col-lg-2 col-3  col-form-label fw-bold">湯品</label>
-              <div class="col-lg-10 col-9">
-                <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="薑絲蛤蠣湯">
-              </div>
+            <div class="mb-3 d-flex align-items-center bg-white rounded px-4 py-2">
+              <label for="soup" class="form-label fw-bold text-nowrap mb-0 me-4">湯品</label>
+                <input type="text" readonly class="form-control-plaintext" id="soup" value="薑絲蛤蠣湯">
             </div>
-            <div class="mb-3 row bg-white rounded">
-              <label for="staticEmail" class="col-lg-2 col-3  col-form-label fw-bold">水果</label>
-              <div class="col-lg-10 col-9">
-                <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="燕巢芭樂">
-              </div>
+            <div class="mb-3 d-flex align-items-center bg-white rounded px-4 py-2">
+              <label for="fruit" class="form-label fw-bold text-nowrap mb-0 me-4">水果</label>
+                <input type="text" readonly class="form-control-plaintext" id="fruit" value="燕巢芭樂">
             </div>
-            <div class="mb-3 row bg-white rounded">
-              <div class="col-12 col-form-label">
-                <label for="note" class=" fw-bold">備註</label>
+            <div class="mb-3 bg-white rounded  px-4 py-2">
+                <label for="note" class="form-label fw-bold">備註</label>
                   <textarea class="form-control" placeholder="新增備註" id="note" rows="2"></textarea>
-              </div>
-              </div>
+            </div>
           </form>
           <div class="d-flex align-items-center justify-content-between mb-6">
             <div class="incrementer">
@@ -443,7 +431,7 @@
               NT$350
             </h3>
           </div>
-          <button class="btn btn-primary d-flex align-items-center text-nowrap ms-auto">
+          <button class="btn btn-primary d-flex align-items-center justify-content-center text-nowrap w-100">
             加入購物車
             <span class="material-symbols-rounded ms-2"> shopping_cart </span>
           </button>
@@ -454,7 +442,7 @@
 
 
 
-    <!-- productAdjust Modal -->
+    <!-- product Adjust Modal -->
     <div class="modal fade" id="productAdjust" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -463,7 +451,151 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            ...
+            <form action="#">
+              <div class="mb-6">
+                <h5 class="item-name fw-bold">
+                  主餐
+                </h5>
+                <form action="#" class="d-flex flex-wrap align-items-center justify-content-between">
+                  <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="rice01" checked>
+                    <label class="form-check-label" for="rice01">
+                      白米飯
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="rice02">
+                    <label class="form-check-label" for="rice02">
+                      紫米飯
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="rice03">
+                    <label class="form-check-label" for="rice03">
+                      五穀米
+                    </label>
+                  </div>
+                </form>
+              </div>
+              <div class="mb-6">
+                <h5 class="item-name fw-bold">
+                  主食
+                </h5>
+                <form action="#" class="d-flex align-items-lg-center flex-wrap justify-content-lg-between">
+                  <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="meat01" checked>
+                    <label class="form-check-label" for="meat01">
+                      椒鹽雞腿排
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="meat02">
+                    <label class="form-check-label" for="meat02">
+                      三杯雞
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="meat03">
+                    <label class="form-check-label" for="meat03">
+                      滷排骨
+                    </label>
+                  </div>
+                </form>
+              </div>
+              <div class="mb-6">
+                <h5 class="item-name fw-bold">
+                  配菜(選擇三樣)
+                </h5>
+                <form action="#" class=" d-flex flex-wrap justify-content-between">
+                  <div class="form-check d-flex align-items-center mb-1">
+                    <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg01" checked>
+                    <label class="form-check-label" for="veg01">
+                      柴魚風味蒸蛋
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center mb-1">
+                    <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg02" checked>
+                    <label class="form-check-label" for="veg02">
+                      清炒花椰菜
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center mb-1">
+                    <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg03" checked>
+                    <label class="form-check-label" for="veg03">
+                      蒜香四季豆
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                    <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg04">
+                    <label class="form-check-label" for="veg04">
+                      竹筍炒肉絲
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                    <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg05">
+                    <label class="form-check-label" for="veg05">
+                      涼拌木耳黃瓜
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg06">
+                    <label class="form-check-label" for="veg06">
+                      玉米三色豆
+                    </label>
+                  </div>
+                </form>
+              </div>
+              <div class="mb-6">
+                <h5 class="item-name fw-bold">
+                  湯品
+                </h5>
+                <form action="#" class="d-flex flex-wrap align-items-center justify-content-between">            
+                  <div class="form-check d-flex  align-items-center mb-lg-0 mb-1">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup01" checked>
+                    <label class="form-check-label" for="soup01">
+                      薑絲蛤蠣湯
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup02">
+                    <label class="form-check-label" for="soup02">
+                      蘿蔔排骨湯
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup03">
+                    <label class="form-check-label" for="soup03">
+                      紫菜蛋花湯
+                    </label>
+                  </div>
+              </form>
+              </div>
+              <div>
+                <h5 class="item-name fw-bold">
+                  水果
+                </h5>
+                <form action="#" class="d-flex flex-wrap align-items-center justify-content-between">
+                  <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup01" checked>
+                    <label class="form-check-label" for="soup01">
+                      燕巢芭樂
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup02">
+                    <label class="form-check-label" for="soup02">
+                      旗山香蕉
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup03">
+                    <label class="form-check-label" for="soup03">
+                      古坑柳丁
+                    </label>
+                  </div>
+                </form>
+              </div>
+            </form>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">取消</button>
@@ -559,7 +691,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> 
     <section class="cta-product pt-lg-9 pt-11">
   <div class="container">
     <div class="row align-items-center flex-lg-row flex-column-reverse">
