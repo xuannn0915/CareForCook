@@ -19,8 +19,8 @@
 <!-- aos -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-<title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/validation-890dbf1a.js"></script>
-    <link rel="stylesheet" href="/CareForCook/assets/validation-2371aa8b.css">
+<title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/validation-7035b885.js"></script>
+    <link rel="stylesheet" href="/CareForCook/assets/validation-42ce43ce.css">
   </head>
   <body>
     <nav
@@ -397,27 +397,27 @@
             </button>
           </div>
           <form action="#" class="mb-6">
-            <div class="mb-3 d-flex align-items-center bg-white rounded px-4 py-2">
+            <div class="mb-3 border d-flex align-items-center bg-white rounded px-4 py-2">
               <label for="main" class="form-label fw-bold text-nowrap mb-0 me-4">主食</label>
                 <input type="text" readonly class="form-control-plaintext" id="main" value="白米飯">
             </div>
-            <div class="mb-3 d-flex align-items-center bg-white rounded px-4 py-2">
+            <div class="mb-3 border d-flex align-items-center bg-white rounded px-4 py-2">
               <label for="meat" class="form-label fw-bold text-nowrap mb-0 me-4">主餐</label>
                 <input type="text" readonly class="form-control-plaintext" id="meat" value="椒鹽雞腿排">
             </div>
-            <div class="mb-3 d-flex align-items-center bg-white rounded px-4 py-2">
+            <div class="mb-3 border d-flex align-items-center bg-white rounded px-4 py-2">
               <label for="veg" class="form-label fw-bold text-nowrap mb-0 me-4">配菜</label>
                 <input type="text" readonly class="form-control-plaintext" id="veg" value="清炒花椰菜 / 蒜香四季豆 / 柴魚風味蒸蛋">
             </div>
-            <div class="mb-3 d-flex align-items-center bg-white rounded px-4 py-2">
+            <div class="mb-3 border d-flex align-items-center bg-white rounded px-4 py-2">
               <label for="soup" class="form-label fw-bold text-nowrap mb-0 me-4">湯品</label>
                 <input type="text" readonly class="form-control-plaintext" id="soup" value="薑絲蛤蠣湯">
             </div>
-            <div class="mb-3 d-flex align-items-center bg-white rounded px-4 py-2">
+            <div class="mb-3 border d-flex align-items-center bg-white rounded px-4 py-2">
               <label for="fruit" class="form-label fw-bold text-nowrap mb-0 me-4">水果</label>
                 <input type="text" readonly class="form-control-plaintext" id="fruit" value="燕巢芭樂">
             </div>
-            <div class="mb-3 bg-white rounded  px-4 py-2">
+            <div class="mb-3 border bg-white rounded  px-4 py-2">
                 <label for="note" class="form-label fw-bold">備註</label>
                   <textarea class="form-control" placeholder="新增備註" id="note" rows="2"></textarea>
             </div>
@@ -451,27 +451,26 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <form action="#">
               <div class="mb-6">
                 <h5 class="item-name fw-bold">
                   主餐
                 </h5>
-                <form action="#" class="d-flex flex-wrap align-items-center justify-content-between">
+                <form action="#" class="d-flex align-items-lg-center flex-wrap justify-content-lg-between">
                   <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
-                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="rice01" checked>
-                    <label class="form-check-label" for="rice01">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="main01" checked>
+                    <label class="form-check-label" for="main01">
                       白米飯
                     </label>
                   </div>
                   <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
-                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="rice02">
-                    <label class="form-check-label" for="rice02">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="main02">
+                    <label class="form-check-label" for="main02">
                       紫米飯
                     </label>
                   </div>
                   <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
-                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="rice03">
-                    <label class="form-check-label" for="rice03">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="main03">
+                    <label class="form-check-label" for="main03">
                       五穀米
                     </label>
                   </div>
@@ -595,7 +594,6 @@
                   </div>
                 </form>
               </div>
-            </form>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">取消</button>
@@ -610,7 +608,7 @@
     <h4 class="fw-bold mb-4">推薦商品</h4>
     <div class="row gx-5 flex-nowrap overflow-x-scroll" id="scrollBar">
       <div class="col-lg-3 col-9">
-        <a href="shopping_mall.html" class="card border-0 bg-transparent ">
+        <a href="shopping_customInfo.html" class="card border-0 bg-transparent ">
           <div class="card-box overflow-hidden rounded position-relative">
             <img src="/CareForCook/assets/custom01-m-97933088.png" alt="product" class="card-pic">
           </div>
@@ -630,7 +628,7 @@
         </a>
       </div>
       <div class="col-lg-3 col-9">
-        <a href="shopping_mall.html" class="card border-0 bg-transparent ">
+        <a href="shopping_soupInfo.html" class="card border-0 bg-transparent ">
           <div class="card-box overflow-hidden rounded position-relative">
             <img src="/CareForCook/assets/soup01-m-3829ba36.png" alt="product" class="card-pic">
           </div>
@@ -650,7 +648,7 @@
         </a>
       </div>
       <div class="col-lg-3 col-9">
-        <a href="shopping_mall.html" class="card border-0 bg-transparent ">
+        <a href="shopping_lunchInfo.html" class="card border-0 bg-transparent ">
           <div class="card-box overflow-hidden rounded position-relative">
             <img src="/CareForCook/assets/lunch01-m-67c4dd18.png" alt="product" class="card-pic">
           </div>
@@ -670,7 +668,7 @@
         </a>
       </div>
       <div class="col-lg-3 col-9">
-        <a href="shopping_mall.html" class="card border-0 bg-transparent ">
+        <a href="shopping_customInfo.html" class="card border-0 bg-transparent ">
           <div class="card-box overflow-hidden rounded position-relative">
             <img src="/CareForCook/assets/custom02-m-6261e21d.png" alt="product" class="card-pic">
           </div>
@@ -785,6 +783,5 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <!-- incrementer -->
-<script src="../node_modules/bootstrap-input-spinner/src/bootstrap-input-spinner.js"></script>
-  </body>
+<script src="../node_modules/bootstrap-input-spinner/src/bootstrap-input-spinner.js"></script>  </body>
 </html>
