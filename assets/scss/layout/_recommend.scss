@@ -1,6 +1,6 @@
 .recommend {
   .card-box::after {
-    @include mask(0, 0);
+    @include mask(80%, 0);
   }
   img{
     height: 250px;

@@ -29,3 +29,4 @@ AOS.init();
 // incrementer
 $("input[type='number']").inputSpinner();
 
+// shopping bag

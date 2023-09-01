@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <%- include('./layout/head'); -%>
+  </head>
+  <body>
+    <%- include('./layout/header') -%>
+  <main class="productInfo pt-4 pb-lg-9 pb-7 position-relative">      
+    <div class="container">
+      <nav aria-label="breadcrumb" class="mb-lg-6 mb-4 fs-lg-5 fs-6">
+        <ol class="breadcrumb m-0">
+          <li class="breadcrumb-item"><a href="#">首頁</a></li>
+          <li class="breadcrumb-item"><a href="#">線上買好料</a></li>
+          <li class="breadcrumb-item"><a href="#">全部商品</a></li>
+          <li class="breadcrumb-item"><a href="#"> 高蛋白燉飲01</a></li>
+        </ol>
+      </nav>
+      <div class="row">
+        <div class="col-lg-7 mb-lg-0 mb-2">
+          <img src="../assets/images/shopping/soup01-m.png" alt="product" class="rounded">
+        </div>
+        <div class="col-lg-5">
+            <div class="mb-lg-6 mb-4">
+              <h3 class="fw-bold fs-lg-3 fs-4">
+                高蛋白燉飲01
+              </h3>
+              <p class="text-primary fs-lg-4">
+                苷醇雙雞
+              </p>
+            </div>
+            <div id="tabs" class="border mb-6 p-4 pt-0 rounded bg-white">
+              <div class="d-flex mb-4">
+                <ul class="nav nav-tabs">
+                  <li class="nav-item fs-lg-5 fs-6">
+                    <a
+                      class="nav-link active d-flex align-items-center justify-content-center px-lg-6 px-5 py-3"
+                      aria-current="page"
+                      href="#mealContent"
+                    >
+                    餐點內容
+                    </a>
+                  </li>
+                  <li class="nav-item fs-lg-5 fs-6">
+                    <a
+                      class="nav-link d-flex align-items-center justify-content-center  px-lg-6 px-5 py-3"
+                      href="#nutritionLabel"
+                      >營養標示</a
+                    >
+                  </li>
+                </ul>
+              </div>
+  
+              <!-- tab Content -->
+              <div id="mealContent">
+                使用花椰菜米取代白飯，並搭配少油Q軟的舒肥雞胸，餐盒控制在450大卡內，卻含有豐富蛋白質跟少油的優點，大口吃完輕食無負擔，清爽窈窕就吃這一味！
+              </div>
+              <div id="nutritionLabel">
+                <h5 class="fw-bold mb-4">因應客製化餐點的不同，熱量會有些微差異，以下標示為大約的數值。</h5>
+                <div class="nutrition">
+                  <div class="d-flex align-items-center justify-content-between mb-2">
+                    <h5 class="fw-bld">熱量</h5>
+                    <p>580大卡</p>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between mb-2">
+                    <h5 class="fw-bld">蛋白質</h5>
+                    <p>30.2公克</p>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between mb-2">
+                    <h5 class="fw-bld">脂質</h5>
+                    <p>5公克</p>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between mb-2">
+                    <h5 class="fw-bld">碳水化合物</h5>
+                    <p>56.5公克</p>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between mb-2">
+                    <h5 class="fw-bld">膳食纖維</h5>
+                    <p>7.3公克</p>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between mb-2">
+                    <h5 class="fw-bld">鈉</h5>
+                    <p>200毫克</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <div class="d-flex align-items-center justify-content-between mb-6">
+            <div class="incrementer">
+              <input type="number" value="0" min="0" max="100" step="1"/>
+            </div>
+            <h3 class="fw-bold d-flex align-items-center">
+              <p class="fs-5 me-2">單價</p>
+              NT$350
+            </h3>
+          </div>
+          <button class="btn btn-primary d-flex align-items-center justify-content-center text-nowrap w-100">
+            加入購物車
+            <span class="material-symbols-rounded ms-2"> shopping_cart </span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <!-- product Adjust Modal -->
+    <div class="modal fade" id="productAdjust" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">客製選項</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <div class="mb-6">
+                <h5 class="item-name fw-bold">
+                  主餐
+                </h5>
+                <form action="#" class="d-flex align-items-lg-center flex-wrap justify-content-lg-between">
+                  <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="main01" checked>
+                    <label class="form-check-label" for="main01">
+                      白米飯
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="main02">
+                    <label class="form-check-label" for="main02">
+                      紫米飯
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="main03">
+                    <label class="form-check-label" for="main03">
+                      五穀米
+                    </label>
+                  </div>
+                </form>
+              </div>
+              <div class="mb-6">
+                <h5 class="item-name fw-bold">
+                  主食
+                </h5>
+                <form action="#" class="d-flex align-items-lg-center flex-wrap justify-content-lg-between">
+                  <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="meat01" checked>
+                    <label class="form-check-label" for="meat01">
+                      椒鹽雞腿排
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="meat02">
+                    <label class="form-check-label" for="meat02">
+                      三杯雞
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="meat03">
+                    <label class="form-check-label" for="meat03">
+                      滷排骨
+                    </label>
+                  </div>
+                </form>
+              </div>
+              <div class="mb-6">
+                <h5 class="item-name fw-bold">
+                  配菜(選擇三樣)
+                </h5>
+                <form action="#" class=" d-flex flex-wrap justify-content-between">
+                  <div class="form-check d-flex align-items-center mb-1">
+                    <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg01" checked>
+                    <label class="form-check-label" for="veg01">
+                      柴魚風味蒸蛋
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center mb-1">
+                    <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg02" checked>
+                    <label class="form-check-label" for="veg02">
+                      清炒花椰菜
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center mb-1">
+                    <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg03" checked>
+                    <label class="form-check-label" for="veg03">
+                      蒜香四季豆
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                    <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg04">
+                    <label class="form-check-label" for="veg04">
+                      竹筍炒肉絲
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                    <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg05">
+                    <label class="form-check-label" for="veg05">
+                      涼拌木耳黃瓜
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input me-2" type="checkbox" name="flexRadioDefault" id="veg06">
+                    <label class="form-check-label" for="veg06">
+                      玉米三色豆
+                    </label>
+                  </div>
+                </form>
+              </div>
+              <div class="mb-6">
+                <h5 class="item-name fw-bold">
+                  湯品
+                </h5>
+                <form action="#" class="d-flex flex-wrap align-items-center justify-content-between">            
+                  <div class="form-check d-flex  align-items-center mb-lg-0 mb-1">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup01" checked>
+                    <label class="form-check-label" for="soup01">
+                      薑絲蛤蠣湯
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup02">
+                    <label class="form-check-label" for="soup02">
+                      蘿蔔排骨湯
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup03">
+                    <label class="form-check-label" for="soup03">
+                      紫菜蛋花湯
+                    </label>
+                  </div>
+              </form>
+              </div>
+              <div>
+                <h5 class="item-name fw-bold">
+                  水果
+                </h5>
+                <form action="#" class="d-flex flex-wrap align-items-center justify-content-between">
+                  <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup01" checked>
+                    <label class="form-check-label" for="soup01">
+                      燕巢芭樂
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup02">
+                    <label class="form-check-label" for="soup02">
+                      旗山香蕉
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center mb-lg-0 mb-1">
+                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="soup03">
+                    <label class="form-check-label" for="soup03">
+                      古坑柳丁
+                    </label>
+                  </div>
+                </form>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary">確定</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</main>
+<%- include('./layout/recommend') -%> 
+    <%- include('./layout/cta-product') -%> 
+    <%- include('./layout/footer') -%> 
+    <%- include('./layout/body_bottom') -%>
+  </body>
+</html>
