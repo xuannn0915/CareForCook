@@ -19,8 +19,8 @@
 <!-- aos -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-<title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/validation-1ee57a81.js"></script>
-    <link rel="stylesheet" href="/CareForCook/assets/validation-b1d4e31f.css">
+<title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/validation-560cdb85.js"></script>
+    <link rel="stylesheet" href="/CareForCook/assets/validation-8d9d3777.css">
   </head>
   <body>
     <nav
@@ -282,121 +282,479 @@
     </div>
   </div>
 </nav>
-  <main class="shoppingBag pt-4 pb-lg-9 pb-7">      
-    <div class="container">
-      <nav aria-label="breadcrumb" class="mb-lg-6 mb-4 fs-lg-5 fs-6">
-        <ol class="breadcrumb m-0">
-          <li class="breadcrumb-item"><a href="#">首頁</a></li>
-          <li class="breadcrumb-item"><a href="#">購物袋</a></li>
-          <li class="breadcrumb-item"><a href="#">購物袋</a></li>
-        </ol>
-      </nav>
-      <div class="d-flex flex-lg-row flex-column align-items-center justify-content-between mb-lg-6 mb-4">
-        <h3 class="fw-bold mb-lg-0 mb-4 align-self-start">購物袋</h3>
-        <div class="wizard d-flex align-items-center">
-          <div class="d-flex flex-lg-row flex-column align-items-center active">
-            <h3 class="fw-bold rounded-circle me-lg-1 mb-lg-0 mb-1 text-center">
-              1
-            </h3>
-            購物袋
+  <main class="shoppingBag pt-4 pb-lg-9 pb-7" id="tabs">      
+    <div class="container position-relative">
+      <div class="row ">
+        <div class="
+        orderSummary col-lg-3 ms-auto position-absolute end-0">
+          <div class="card mb-4 overflow-hidden">
+            <div class="card-title px-4 py-2 bg-secondary">訂單摘要</div>
+            <div class="card-body">
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <p>小計</p>
+                <p>NT$1050</p>
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <p>運費</p>
+                <p>NT$100</p>
+              </div>
+              <hr>
+              <div class="d-flex align-items-center justify-content-between mb-4 fw-bold">
+                <p>合計</p>
+                <p>NT$1150</p>
+              </div>
+              <!-- tab button -->
+              <ul class="nav nav-tabs border-0 d-flex flex-lg-column">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="#bag"
+                  >
+                  返回購物袋
+                  <span class="material-symbols-rounded">
+                    keyboard_return
+                    </span>
+                  </a>
+                </li>
+                <li class="nav-item btn btn-primary">
+                  <a
+                    class="nav-link"
+                    href="#fillInfo"
+                    >前往結帳</a
+                  >
+                </li>
+                <li class="nav-item btn btn-primary">
+                  <a
+                    class="nav-link"
+                    href="#orderComplete"
+                    >完成訂單</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
-          <span class="material-symbols-rounded mx-2"> east </span>
-          <div class="d-flex flex-lg-row flex-column  align-items-center">
-            <h3 class="fw-bold rounded-circle me-lg-1 mb-lg-0 mb-1 text-center ">
-              2
-            </h3>
-            填寫資料
+          <div class="text-light d-flex mb-4">
+            <span class="material-symbols-rounded me-2"> error </span>
+            <p>
+              由於餐點皆為現作，為了保持餐點的風味，商品皆以宅配到府的方式送達
+            </p>
           </div>
-          <span class="material-symbols-rounded mx-2"> east </span>
-          <div class="d-flex flex-lg-row flex-column  align-items-center">
-            <h3 class="fw-bold rounded-circle me-lg-1 mb-lg-0 mb-1 text-center ">
-              3
-            </h3>
-            完成訂單
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-9 me-auto">
-          <div class="rounded border bg-white overflow-hidden">
-            <table class="table table-borderless table-hover mb-6">
-              <thead>
-                <tr>
-                  <th scope="col" colspan="4" class="pb-0">
-                    <p class="deliver px-4 text-primary">
-                      熱食配送
-                    </p>
-                  </th>
-                </tr>
-              </thead>
-              <thead>
-                <tr>
-                  <th scope="col" colspan="2">#</th>
-                  <th scope="col">First</th>
-                  <th scope="col">Last</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td colspan="2">Larry the Bird</td>
-                  <td>@twitter</td>
-                </tr>
-              </tbody>
-            </table>
-            <table class="table table-borderless table-hover">
-              <thead>
-                <tr>
-                  <th scope="col" colspan="4" class="pb-0">
-                    <p class="deliver px-4 text-primary">
-                      冷藏配送
-                    </p>
-                  </th>
-                </tr>
-              </thead>
-              <thead>
-                <tr>
-                  <th scope="col" colspan="2">#</th>
-                  <th scope="col">First</th>
-                  <th scope="col">Last</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td colspan="2">Larry the Bird</td>
-                  <td>@twitter</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="text-light d-flex">
+            <span class="material-symbols-rounded me-2"> error </span>
+            <p>
+              宅配僅限台灣本島，熱食配送僅限北北基地區，詳情請見「料理怎麼買」
+            </p>
           </div>
         </div>
       </div>
 
+
+      <!-- 購物袋 -->
+      <div id="bag">
+        <nav aria-label="breadcrumb" class="mb-lg-6 mb-4 fs-lg-5 fs-6">
+          <ol class="breadcrumb m-0">
+            <li class="breadcrumb-item"><a href="#">首頁</a></li>
+            <li class="breadcrumb-item"><a href="#">購物袋</a></li>
+            <li class="breadcrumb-item"><a href="#">購物袋</a></li>
+          </ol>
+        </nav>
+        <div class="d-flex flex-lg-row flex-column align-items-center justify-content-between mb-lg-6 mb-4">
+          <h3 class="fw-bold mb-lg-0 mb-4 align-self-start">購物袋</h3>
+          <div class="wizard d-flex align-items-center">
+            <div class="d-flex flex-lg-row flex-column align-items-center active">
+              <h3 class="fw-bold rounded-circle me-lg-1 mb-lg-0 mb-1 text-center">
+                1
+              </h3>
+              購物袋
+            </div>
+            <span class="material-symbols-rounded mx-2"> east </span>
+            <div class="d-flex flex-lg-row flex-column  align-items-center">
+              <h3 class="fw-bold rounded-circle me-lg-1 mb-lg-0 mb-1 text-center ">
+                2
+              </h3>
+              填寫資料
+            </div>
+            <span class="material-symbols-rounded mx-2"> east </span>
+            <div class="d-flex flex-lg-row flex-column  align-items-center">
+              <h3 class="fw-bold rounded-circle me-lg-1 mb-lg-0 mb-1 text-center ">
+                3
+              </h3>
+              完成訂單
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-9 me-auto">
+            <!-- desktop table -->
+            <div class="rounded border bg-white overflow-hidden d-lg-block d-none">
+              <table class="table table-borderless table-hover mb-6">
+                <thead>
+                  <tr>
+                    <th scope="col" colspan="4" class="pb-0">
+                      <p class=" px-4 border-5 border-start border-primary text-primary">
+                        熱食配送
+                      </p>
+                    </th>
+                  </tr>
+                </thead>
+                <thead>
+                  <tr>
+                    <th scope="col" colspan="2">品項/規格</th>
+                    <th scope="col">單價</th>
+                    <th scope="col">數量</th>
+                    <th scope="col">小計</th>
+                    <th scope="col">刪除</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="td-124">
+                      <img src="/CareForCook/assets/custom01-m-97933088.png" alt="product" class="flex-shrink-0 rounded object-fit-cover">
+                    </td>
+                    <td class="td-auto">
+                      <h5 class="fw-bold mb-2">術後照護餐01
+                        <span class="badge badge-secondary ms-2">
+                          膽囊切除
+                        </span>
+                      </h5>
+                      <p class="mb-2">紫米飯/三杯雞/清炒高麗菜/金沙四季豆/柴魚蒸蛋/蘿蔔排骨/燕巢芭樂</p>
+                      <p class="text-light">備註：不要加香菜</p>
+                    </td>
+                    <td class="td-88">$350</td>
+                    <td class="td-160">
+                      <div class="incrementer">
+                        <input type="number" value="0" min="0" max="100" step="1"/>
+                      </div>
+                    </td>
+                    <td class="td-88">$350</td>
+                    <td class="td-88"> 
+                      <div class="btn btn-outline-warning">
+                      <span class="material-symbols-rounded"> delete </span>
+                    </div>
+                  </td>
+                  </tr>
+                  <tr>
+                    <td class="td-124">
+                      <img src="/CareForCook/assets/custom02-m-6261e21d.png" alt="product" class="flex-shrink-0 rounded object-fit-cover">
+                    </td>
+                    <td class="td-auto">
+                      <h5 class="fw-bold mb-2">術後照護餐02
+                        <span class="badge badge-secondary ms-2">
+                          婦科術後
+                        </span>
+                      </h5>
+                      <p class="mb-2">紫米飯/三杯雞/清炒高麗菜/金沙四季豆/柴魚蒸蛋/蘿蔔排骨/燕巢芭樂</p>
+                      <p class="text-light">備註：不要加香菜</p>
+                    </td>
+                    <td class="td-88">$350</td>
+                    <td class="td-160">
+                      <div class="incrementer">
+                        <input type="number" value="0" min="0" max="100" step="1"/>
+                      </div>
+                    </td>
+                    <td class="td-88">$350</td>
+                    <td class="td-88"> 
+                      <div class="btn btn-outline-warning">
+                      <span class="material-symbols-rounded"> delete </span>
+                    </div>
+                  </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table table-borderless table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col" colspan="4" class="pb-0">
+                      <p class="px-4 border-5 border-start border-primary text-primary">
+                        冷藏配送
+                      </p>
+                    </th>
+                  </tr>
+                </thead>
+                <thead>
+                  <tr>
+                    <th scope="col" colspan="2">品項/規格</th>
+                    <th scope="col">單價</th>
+                    <th scope="col">數量</th>
+                    <th scope="col">小計</th>
+                    <th scope="col">刪除</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="td-124">
+                      <img src="/CareForCook/assets/soup01-m-3829ba36.png" alt="product" class="flex-shrink-0 rounded object-fit-cover">
+                    </td>
+                    <td class="td-auto">
+                      <h5 class="fw-bold">
+                        高蛋白燉飲01
+                        <span class="badge badge-secondary ms-2">
+                          苷醇雙雞
+                        </span>
+                      </h5>
+                    </td>
+                    <td class="td-88">$350</td>
+                    <td class="td-160">
+                      <div class="incrementer">
+                        <input type="number" value="0" min="0" max="100" step="1"/>
+                      </div>
+                    </td>
+                    <td class="td-88">$350</td>
+                    <td class="td-88"> 
+                      <div class="btn btn-outline-warning">
+                      <span class="material-symbols-rounded"> delete </span>
+                    </div>
+                  </td>
+                  </tr>
+                  <tr>
+                    <td class="td-124">
+                      <img src="/CareForCook/assets/lunch01-m-67c4dd18.png" alt="product" class="flex-shrink-0 rounded object-fit-cover">
+                    </td>
+                    <td class="td-auto">
+                      <h5 class="fw-bold">機能調理餐01
+                        <span class="badge badge-secondary ms-2">
+                          低糖好新纖
+                        </span>
+                      </h5>
+                    </td>
+                    <td class="td-88">$350</td>
+                    <td class="td-160">
+                      <div class="incrementer">
+                        <input type="number" value="0" min="0" max="100" step="1"/>
+                      </div>
+                    </td>
+                    <td class="td-88">$350</td>
+                    <td class="td-88"> 
+                      <div class="btn btn-outline-warning">
+                      <span class="material-symbols-rounded"> delete </span>
+                    </div>
+                  </td>
+                  </tr>
+                  <tr>
+                    <td class="td-124">
+                      <img src="/CareForCook/assets/lunch02-m-7a7cd139.png" alt="product" class="flex-shrink-0 rounded object-fit-cover">
+                    </td>
+                    <td class="td-auto">
+                      <h5 class="fw-bold">機能調理餐02
+                        <span class="badge badge-secondary ms-2">
+                          均衡好食多
+                        </span>
+                      </h5>
+                    </td>
+                    <td class="td-88">$350</td>
+                    <td class="td-160">
+                      <div class="incrementer">
+                        <input type="number" value="0" min="0" max="100" step="1"/>
+                      </div>
+                    </td>
+                    <td class="td-88">$350</td>
+                    <td class="td-88"> 
+                      <div class="btn btn-outline-warning">
+                      <span class="material-symbols-rounded"> delete </span>
+                    </div>
+                  </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- mobile card -->
+            <div class="mobile-card rounded border bg-white overflow-hidden d-lg-none">
+              <div class="p-4 border-bottom">
+                <h5 class="px-4 fw-bold border-5 border-start border-primary text-primary mb-4">熱食配送</h5>
+                <div class="mb-4 pb-4 border-bottom">
+                  <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h5 class="fw-bold">
+                      術後照護餐01
+                    </h5>
+                    <div>
+                      <span>
+                        NT$350
+                      </span>
+                      <span class="btn btn-outline-warning ms-4">
+                        <span class="material-symbols-rounded"> delete </span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <img src="/CareForCook/assets/custom01-m-97933088.png" alt="product" class="me-2 flex-shrink-0 rounded object-fit-cover">
+                    <div>
+                      <p class="badge badge-secondary mb-2">
+                        膽囊切除
+                      </p>
+                      <p class="mb-2 fs-6">紫米飯/三杯雞/清炒高麗菜/金沙四季豆/柴魚蒸蛋/蘿蔔排骨/燕巢芭樂</p>
+                      <p class="text-light mb-2 fs-6">備註：不要加香菜</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="incrementer">
+                          <input type="number" value="0" min="0" max="100" step="1"/>
+                        </div>
+                        <p>$350</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h5 class="fw-bold">
+                      術後照護餐01
+                    </h5>
+                    <div>
+                      <span>
+                        NT$350
+                      </span>
+                      <span class="btn btn-outline-warning ms-4">
+                        <span class="material-symbols-rounded"> delete </span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <img src="/CareForCook/assets/custom01-m-97933088.png" alt="product" class="me-2 flex-shrink-0 rounded object-fit-cover">
+                    <div>
+                      <p class="badge badge-secondary mb-2">
+                        膽囊切除
+                      </p>
+                      <p class="mb-2 fs-6">紫米飯/三杯雞/清炒高麗菜/金沙四季豆/柴魚蒸蛋/蘿蔔排骨/燕巢芭樂</p>
+                      <p class="text-light mb-2 fs-6">備註：不要加香菜</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="incrementer">
+                          <input type="number" value="0" min="0" max="100" step="1"/>
+                        </div>
+                        <p>$350</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-4">
+                <h5 class="px-4 fw-bold border-5 border-start border-primary text-primary mb-4">冷藏配送</h5>
+                <div class="mb-4 pb-4 border-bottom">
+                  <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h5 class="fw-bold">
+                      高蛋白燉飲01
+                    </h5>
+                    <div>
+                      <span>
+                        NT$350
+                      </span>
+                      <span class="btn btn-outline-warning ms-4">
+                        <span class="material-symbols-rounded"> delete </span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <img src="/CareForCook/assets/soup01-m-3829ba36.png" alt="product" class="me-2 flex-shrink-0 rounded object-fit-cover">
+                    <div class="w-100">
+                      <p class="badge badge-secondary mb-2">
+                        苷醇雙雞
+                      </p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="incrementer">
+                          <input type="number" value="0" min="0" max="100" step="1"/>
+                        </div>
+                        <p>$350</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-4 pb-4 border-bottom">
+                  <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h5 class="fw-bold">
+                      高蛋白燉飲01
+                    </h5>
+                    <div>
+                      <span>
+                        NT$350
+                      </span>
+                      <span class="btn btn-outline-warning ms-4">
+                        <span class="material-symbols-rounded"> delete </span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <img src="/CareForCook/assets/soup01-m-3829ba36.png" alt="product" class="me-2 flex-shrink-0 rounded object-fit-cover">
+                    <div class="w-100">
+                      <p class="badge badge-secondary mb-2">
+                        苷醇雙雞
+                      </p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="incrementer">
+                          <input type="number" value="0" min="0" max="100" step="1"/>
+                        </div>
+                        <p>$350</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h5 class="fw-bold">
+                      高蛋白燉飲01
+                    </h5>
+                    <div>
+                      <span>
+                        NT$350
+                      </span>
+                      <span class="btn btn-outline-warning ms-4">
+                        <span class="material-symbols-rounded"> delete </span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <img src="/CareForCook/assets/soup01-m-3829ba36.png" alt="product" class="me-2 flex-shrink-0 rounded object-fit-cover">
+                    <div class="w-100">
+                      <p class="badge badge-secondary mb-2">
+                        苷醇雙雞
+                      </p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="incrementer">
+                          <input type="number" value="0" min="0" max="100" step="1"/>
+                        </div>
+                        <p>$350</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 填寫資料 -->
+      <div id="fillInfo">
+        <nav aria-label="breadcrumb" class="mb-lg-6 mb-4 fs-lg-5 fs-6">
+          <ol class="breadcrumb m-0">
+            <li class="breadcrumb-item"><a href="#">首頁</a></li>
+            <li class="breadcrumb-item"><a href="#">購物袋</a></li>
+            <li class="breadcrumb-item"><a href="#">填寫資料</a></li>
+          </ol>
+        </nav>
+        <div class="d-flex flex-lg-row flex-column align-items-center justify-content-between mb-lg-6 mb-4">
+          <h3 class="fw-bold mb-lg-0 mb-4 align-self-start">填寫資料</h3>
+          <div class="wizard d-flex align-items-center">
+            <div class="d-flex flex-lg-row flex-column align-items-center">
+              <h3 class="fw-bold rounded-circle me-lg-1 mb-lg-0 mb-1 text-center">
+                1
+              </h3>
+              購物袋
+            </div>
+            <span class="material-symbols-rounded mx-2"> east </span>
+            <div class="d-flex flex-lg-row flex-column  align-items-center active">
+              <h3 class="fw-bold rounded-circle me-lg-1 mb-lg-0 mb-1 text-center ">
+                2
+              </h3>
+              填寫資料
+            </div>
+            <span class="material-symbols-rounded mx-2"> east </span>
+            <div class="d-flex flex-lg-row flex-column  align-items-center">
+              <h3 class="fw-bold rounded-circle me-lg-1 mb-lg-0 mb-1 text-center ">
+                3
+              </h3>
+              完成訂單
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 </main>
 
