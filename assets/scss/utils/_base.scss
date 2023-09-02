@@ -117,6 +117,15 @@ ul,ol,li{
 
 
 // table
+.td-auto{
+  width: 100%;
+}
+
+.td-160{
+  max-width: 160px;
+  min-width: 152px;
+}
+
 .td-124{
   max-width: 124px;
   min-width: 116px;
