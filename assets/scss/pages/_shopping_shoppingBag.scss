@@ -29,13 +29,6 @@
     position: absolute;
     top: 115px;
     right: 0;
-    .nav-link{
-      color: white;
-      border: 0;
-    }
-    .nav-link:hover{
-      border: 0;
-    }
     .nav-item:nth-child(odd){
       display: none;
     }

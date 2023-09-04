@@ -24,6 +24,8 @@ $(function () {
   });
 });
 
+
+// wizard-tab
 $(function () {
   $(".wizard-tab").click(function (e) {
     e.preventDefault();
@@ -49,5 +51,13 @@ $(function () {
     $('.orderSummary').css('display','none');
     $('.receiveOrder').css('display','block');
     $('.wizard-tab:nth-child(odd)').css('display','none')
+  });
+});
+
+// article-tab
+$(function () {
+  $(".article-tab").click(function () {
+    $(this).siblings(".nav-item").removeClass("active");
+    $(this).addClass("active");
   });
 });

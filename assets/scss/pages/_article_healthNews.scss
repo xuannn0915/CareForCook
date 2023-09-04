@@ -1,0 +1,46 @@
+.article-healthNews-page-title{
+  @include page_title('https://github.com/xuannn0915/CareForCook/blob/main/assets/images/article/banner2-d.png?raw=true','https://github.com/xuannn0915/CareForCook/blob/main/assets/images/article/banner2-m.png?raw=true');
+}
+
+.healthNews{
+  .nav{
+    top: 68px;
+    right:40px ;
+  }
+
+  .nav-item:hover{
+    border: 1px solid white;
+  }
+
+  .active{
+    background: $primary;
+    border-color: $primary;
+  }
+
+  .banner-title{
+    &::after{
+      content: '';
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.3));
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+    }
+    .wording{
+      padding: 80px 0 80px 100px;
+    }
+  }
+
+  .wording::before{
+    content: '';
+    background-image: url('');
+  }
+}
+
+#cancer{
+  .banner-title{
+    background-image: url('https://github.com/xuannn0915/CareForCook/blob/main/assets/images/article/articlebanner1-d.png?raw=true');
+    background-size: cover;
+  }
+}
