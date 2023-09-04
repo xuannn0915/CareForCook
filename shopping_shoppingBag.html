@@ -19,8 +19,8 @@
 <!-- aos -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-<title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/validation-f5b3b75c.js"></script>
-    <link rel="stylesheet" href="/CareForCook/assets/validation-6d37b9ba.css">
+<title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/validation-fddd71ab.js"></script>
+    <link rel="stylesheet" href="/CareForCook/assets/validation-929a34d8.css">
   </head>
   <body>
     <nav
@@ -307,7 +307,7 @@
               <ul class="nav nav-tabs border-0 d-flex flex-column-reverse">
                 <li class="nav-item  wizard-tab tab-3 hide text-center">
                   <a
-                    class="nav-link link-light"
+                    class="nav-link border-0 link-light"
                     aria-current="page"
                     href="#bag"
                   >
@@ -317,16 +317,16 @@
                     </span>
                   </a>
                 </li>
-                <li class="nav-item  wizard-tab tab-2 btn btn-primary open">
+                <li class="nav-item  wizard-tab tab-2 btn btn-primary open position-relative">
                   <a
-                    class="nav-link"
+                    class="nav-link border-0 stretched-link text-white"
                     href="#fillInfo"
                     >前往結帳</a
                   >
                 </li>
-                <li class="nav-item wizard-tab tab-1 btn btn-primary hide mb-2">
+                <li class="nav-item wizard-tab tab-1 btn btn-primary hide mb-2 position-relative">
                   <a
-                    class="nav-link"
+                    class="nav-link border-0 stretched-link text-white"
                     href="#orderComplete"
                     >完成訂單</a
                   >
@@ -899,7 +899,7 @@
                   <h5 class=" px-4 border-5 border-start border-primary text-primary">
                     付款方式
                   </h5>
-                  <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#creditCard">
+                  <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#payment">
                     常用信用卡
                   </button>
                 </div>
@@ -1212,6 +1212,81 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 常用收件地 -->
+    <div class="modal fade" id="receiveLocation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">選擇收件地址</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="#">
+              <div class="form-check mb-4">
+                <input class="form-check-input" type="radio" name="location" id="home">
+                <label class="form-check-label" for="home">
+                  <h5 class="fw-bold">我的家</h5>
+                  雲林縣斗六市中正路一段33巷458號15樓
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="location" id="company" checked>
+                <label class="form-check-label" for="company">
+                  <h5 class="fw-bold">公司</h5>
+                  新北市新店區北新路二段225號13樓
+                </label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary">確定</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 常用信用卡 -->
+    <div class="modal fade" id="payment" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">選擇信用卡</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="#">
+              <div class="form-check mb-4">
+                <input class="form-check-input" type="radio" name="creditcard" id="creditcard1">
+                <label class="form-check-label d-flex align-items-center justify-content-between" for="creditcard1">
+                  <h5 class="fw-bold">中國信託</h5>
+                  *0403
+                </label>
+              </div>
+              <div class="form-check mb-4">
+                <input class="form-check-input" type="radio" name="creditcard" id="creditcard2" checked>
+                <label class="form-check-label d-flex align-items-center justify-content-between" for="creditcard2">
+                  <h5 class="fw-bold">永豐商業銀行</h5>
+                  *8006
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="creditcard" id="creditcard3" checked>
+                <label class="form-check-label d-flex align-items-center justify-content-between" for="creditcard3">
+                  <h5 class="fw-bold">連線銀行</h5>
+                  *6508
+                </label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary">確定</button>
           </div>
         </div>
       </div>
