@@ -4,7 +4,7 @@
 
 .healthNews{
   .nav{
-    top: 68px;
+    top: 72px;
     right:40px ;
   }
 
@@ -34,7 +34,12 @@
 
   .wording::before{
     content: '';
-    background-image: url('');
+    background-image: url('https://raw.githubusercontent.com/xuannn0915/CareForCook/089f143bd2fc07c5396f0b3d9ef17e6cc9a7f38c/assets/images/article/dark-comma.svg');
+    display: block;
+    background-repeat: space no-repeat;
+    width: 34px;
+    height: 21px;
+    margin-bottom: 8px;
   }
 }
 
