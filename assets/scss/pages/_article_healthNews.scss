@@ -4,7 +4,7 @@
 
 .healthNews{
   .nav{
-    top: 72px;
+    top: 64px;
     right:40px ;
   }
 
@@ -19,9 +19,10 @@
 
   .banner-title{
     height: 300px;
+    
     &::after{
       content: '';
-      background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.3));
+      background: linear-gradient(90deg, rgba(0,0,0,0.15), rgba(0, 0, 0, 0.3));
       display: block;
       width: 100%;
       height: 100%;
@@ -29,7 +30,7 @@
       top: 0;
     }
     .wording{
-      padding-top: 80px;
+      width: 70%;
       padding-left: 100px;
     }
     .wording::before{
@@ -48,10 +49,11 @@
     .banner-title{
       height: 200px;
       &::after{
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.3));
+        background: linear-gradient(180deg, rgba(0,0,0,0.15), rgba(0, 0, 0, 0.3));
       }
       .wording{
-        padding-left: 16px;
+        width: 90%;
+        padding-left: 0px;
         padding-top: 16px;
       }
       
@@ -83,7 +85,45 @@
   @media (max-width:992px) {
     .banner-title{
       background-image: url('https://github.com/xuannn0915/CareForCook/blob/main/assets/images/article/articlebanner1-m.png?raw=true');
-      background-size: cover;
+    }
+  }
+}
+
+#special{
+  .banner-title{
+    background-image: url('https://github.com/xuannn0915/CareForCook/blob/main/assets/images/article/articlebanner2-d.png?raw=true');
+    background-size: cover;
+  }
+
+  @media (max-width:992px) {
+    .banner-title{
+      background-image: url('https://github.com/xuannn0915/CareForCook/blob/main/assets/images/article/articlebanner2-m.png?raw=true');
+    }
+  }
+}
+
+#knowledge{
+  .banner-title{
+    background-image: url('https://github.com/xuannn0915/CareForCook/blob/main/assets/images/article/articlebanner3-d.png?raw=true');
+    background-size: cover;
+  }
+
+  @media (max-width:992px) {
+    .banner-title{
+      background-image: url('https://github.com/xuannn0915/CareForCook/blob/main/assets/images/article/articlebanner3-m.png?raw=true');
+    }
+  }
+}
+
+#profession{
+  .banner-title{
+    background-image: url('https://github.com/xuannn0915/CareForCook/blob/main/assets/images/article/articlebanner4-d.png?raw=true');
+    background-size: cover;
+  }
+
+  @media (max-width:992px) {
+    .banner-title{
+      background-image: url('https://github.com/xuannn0915/CareForCook/blob/main/assets/images/article/articlebanner4-m.png?raw=true');
     }
   }
 }
