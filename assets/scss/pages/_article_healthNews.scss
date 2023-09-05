@@ -44,15 +44,17 @@
     }
   }
   
-  .article-content{
-    p{
+  .article-content p{
       @include multiline-ellipsis(2);
-    }
+  }
+
+  a:hover h4{
+      color: $primary;
   }
   
   @include swiper-buttons;
   .swiper-button-next, .swiper-button-prev{
-    left: 95%;
+    left: 90%;
   }
 
 
@@ -144,6 +146,42 @@
   @media (max-width:992px) {
     .banner-title{
       background-image: url('https://github.com/xuannn0915/CareForCook/blob/main/assets/images/article/articlebanner4-m.png?raw=true');
+    }
+  }
+}
+
+.furtherReading{
+  a{
+    &:hover{
+      h3{
+        color: $primary;
+      }
+    }
+    p{
+      @include multiline-ellipsis(2);
+    }
+    h3{
+      @include multiline-ellipsis(1);
+    }
+  }
+  @media (max-width:992px) {
+    img{
+      width: 343px;
+      
+    }
+  }
+}
+
+// health News Page
+.healthNews-page{
+  ol {
+    span {
+      width: 24px;
+      height: 24px;
+    }
+    p {
+      width: 90%;
+      @include multiline-ellipsis(2);
     }
   }
 }
