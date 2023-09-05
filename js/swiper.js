@@ -95,3 +95,24 @@ var coverflowSwiper = new Swiper(".coverflowSwiper", {
     },
   },
 });
+
+// article swiper
+var swiper = new Swiper(".articleSwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    // when window width is >= 768px
+    375: {
+      spaceBetween:12,
+      slidesPerView: 1,
+    },
+    
+    // when window width is >= 992px
+    992: {
+      spaceBetween:24,
+      slidesPerView: 2,
+    },
+  },
+});

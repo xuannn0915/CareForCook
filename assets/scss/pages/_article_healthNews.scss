@@ -43,6 +43,17 @@
       margin-bottom: 8px;
     }
   }
+  
+  .article-content{
+    p{
+      @include multiline-ellipsis(2);
+    }
+  }
+  
+  @include swiper-buttons;
+  .swiper-button-next, .swiper-button-prev{
+    left: 95%;
+  }
 
 
   @media (max-width:992px) {
@@ -72,7 +83,16 @@
     .nav-link::after{
       display: none;
     }
-  
+    .swiper{
+      img{
+        width: 120px;
+      object-fit: cover;
+      }
+      
+    }
+    .swiper-button-next, .swiper-button-prev{
+      left: 50%;
+    }
   }
 }
 

@@ -22,72 +22,75 @@ ul,ol,li{
 }
 
 // Buttons
-.btn-primary{
-  color: $white;
-  &:hover{
+.btn{
+  &-primary{
     color: $white;
+    &:hover{
+      color: $white;
+    }
+  }
+  
+  &-outline-primary{
+    &:hover{
+      background-color: rgba($primary, 20%);
+      color: $primary;
+    }
+  }
+  
+  &-warning{
+    border-radius: 5px;
+    border: 0;
+    &:hover{
+      background-color: lighten($warning, 20%);
+      color: $black;
+    }
+  }
+  
+  &-outline-warning{
+    padding: 8px;
+    border-radius: 5px;
+    &:hover{
+      background-color: rgba($warning, 20%);
+      color: $warning;
+    }
+  }
+  
+  &-link{
+    padding: 4px 0;
+  }
+  
+  &-outline-dark{
+    &:hover{
+      background-color: rgba($light, 20%);
+      color: $dark;
+    }
   }
 }
 
-.btn-outline-primary{
-  &:hover{
-    background-color: rgba($primary, 20%);
-    color: $primary;
-  }
-}
-
-.btn-warning{
-  border-radius: 5px;
-  border: 0;
-  &:hover{
-    background-color: lighten($warning, 20%);
-    color: $black;
-  }
-}
-
-.btn-outline-warning{
-  padding: 8px;
-  border-radius: 5px;
-  &:hover{
-    background-color: rgba($warning, 20%);
-    color: $warning;
-  }
-}
-
-.btn-link{
-  padding: 4px 0;
-}
-
-.btn-outline-dark{
-  &:hover{
-    background-color: rgba($light, 20%);
-    color: $dark;
-  }
-}
 
 
 // badge
 .badge{
   border: 1px solid $light ;
   color: $light;
+  &-primary{
+    border: 0;
+    color: $white;
+    background-color: $primary;
+  }
+  
+  &-secondary{
+    border: 0;
+    color: $dark;
+    background-color: $secondary;
+  }
+  
+  &-outline-primary{
+    border: 1px solid $primary;
+    color: $primary;
+  }
 }
 
-.badge-primary{
-  border: 0;
-  color: $white;
-  background-color: $primary;
-}
-
-.badge-secondary{
-  border: 0;
-  color: $dark;
-  background-color: $secondary;
-}
-
-.badge-outline-primary{
-  border: 1px solid $primary;
-  color: $primary;
-}
 
 
 // Form
@@ -117,28 +120,31 @@ ul,ol,li{
 
 
 // table
-.td-auto{
-  width: 100%;
+.td{
+  &-auto{
+    width: 100%;
+  }
+  
+  &-160{
+    max-width: 160px;
+    min-width: 152px;
+  }
+  
+  &-124{
+    max-width: 124px;
+    min-width: 116px;
+  }
+  
+  &-88{
+    max-width: 88px;
+    min-width: 80px;
+  }
+  
+  &-56{
+    max-width: 56px;
+  }
 }
 
-.td-160{
-  max-width: 160px;
-  min-width: 152px;
-}
-
-.td-124{
-  max-width: 124px;
-  min-width: 116px;
-}
-
-.td-88{
-  max-width: 88px;
-  min-width: 80px;
-}
-
-.td-56{
-  max-width: 56px;
-}
 
 .table-pagination{
   .pagination-select{
@@ -188,12 +194,14 @@ ul,ol,li{
 }
 
 // scrollBar
-    //捲軸底色
-    #scrollBar::-webkit-scrollbar-track {
-      background-color:transparent;
-    }
-    //捲軸寬度
-    #scrollBar::-webkit-scrollbar {
-      height: 0px;
-      background-color: transparent;
-    }
+#scrollBar{
+  //捲軸底色
+  &::-webkit-scrollbar-track {
+    background-color:transparent;
+  }
+  //捲軸寬度
+  ::-webkit-scrollbar {
+    height: 0px;
+    background-color: transparent;
+  }
+}
