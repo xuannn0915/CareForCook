@@ -1,0 +1,27 @@
+.others-faq-page-title{
+  @include page_title('https://github.com/xuannn0915/CareForCook/blob/main/assets/images/other/banner2-d.png?raw=true','https://github.com/xuannn0915/CareForCook/blob/main/assets/images/other/banner2-m.png?raw=true')
+}
+
+.faq{
+  .active:after {
+    @include red_drop;
+  }
+
+  .accordion{
+    &-bg{
+      background-color: rgba($secondary, 20%);
+    }
+    &-title{
+      font-weight: bold;
+      color: $primary;
+    }
+  }
+
+
+  .collapsed {
+      color: black;
+      font-weight: normal;
+      background-color: transparent;
+  }
+
+}

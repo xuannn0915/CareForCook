@@ -6,3 +6,10 @@ $(function () {
     $('ol').removeClass('show');
   });
 });
+
+$(function () {
+  $(".accordion-button").click(function () {
+    $('.accordion-collapse').addClass("accordion-bg");
+    $(this).addClass("accordion-title");
+  });
+});
