@@ -19,8 +19,8 @@
 <!-- aos -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-<title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/validation-39fada4e.js"></script>
-    <link rel="stylesheet" href="/CareForCook/assets/validation-466ebd7c.css">
+<title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/validation-6a778d59.js"></script>
+    <link rel="stylesheet" href="/CareForCook/assets/validation-2583f895.css">
   </head>
   <body>
     <nav
@@ -297,57 +297,57 @@
       </div>
     </main>
 
-    <section class="faq py-lg-9 py-4" id="tabs">
-      <div class="container">
-        <div class="sidebar position-absolute mb-lg-0 mb-5">
-          <ul
-            class="nav nav-tabs border-0 d-flex flex-lg-column flex-row flex-nowrap">
-            <li class="nav-item text-nowrap fs-lg-5 fs-6">
-              <a
-                class="nav-link border-0 active d-flex align-items-center justify-content-lg-start justify-content-center px-lg-0 px-5 py-3"
-                aria-current="page"
-                href="#allQuestion"
-              >
-                全部問題
-              </a>
-            </li>
-            <li class="nav-item text-nowrap fs-lg-5 fs-6">
-              <a
-                class="nav-link border-0 d-flex align-items-center justify-content-lg-start justify-content-center px-lg-0 px-5 py-3"
-                href="#manualQuestion"
-                >訂購流程問題</a
-              >
-            </li>
-            <li class="nav-item text-nowrap fs-lg-5 fs-6">
-              <a
-                class="nav-link border-0 d-flex align-items-center justify-content-lg-start justify-content-center px-lg-0 px-5 py-3"
-                href="#customQuestion"
-                >客製照護餐問題</a
-              >
-            </li>
-            <li class="nav-item text-nowrap fs-lg-5 fs-6">
-              <a
-                class="nav-link border-0 d-flex align-items-center justify-content-lg-start justify-content-center px-lg-0 px-5 py-3"
-                href="#proteinQuestion"
-                >高蛋白燉飲問題</a
-              >
-            </li>
-            <li class="nav-item text-nowrap fs-lg-5 fs-6">
-              <a
-                class="nav-link border-0 d-flex align-items-center justify-content-lg-start justify-content-center px-lg-0 px-5 py-3"
-                href="#lunchQuestion"
-                >機能調理餐問題</a
-              >
-            </li>
-            <li class="nav-item text-nowrap fs-lg-5 fs-6">
-              <a
-                class="nav-link border-0 d-flex align-items-center justify-content-lg-start justify-content-center px-lg-0 px-5 py-3"
-                href="#otherQuestion"
-                >其他問題</a
-              >
-            </li>
-          </ul>
-        </div>
+    <section class="faq position-relative" id="tabs">
+      <div class="sidebar position-absolute mb-lg-0 mb-5" id="scrollBar">
+        <ul
+          class="nav nav-tabs border-0 d-flex flex-lg-column flex-row flex-nowrap">
+          <li class="nav-item text-nowrap fs-lg-5 fs-6">
+            <a
+              class="nav-link border-0 active d-flex align-items-center justify-content-lg-start justify-content-center px-lg-0 px-5 py-3"
+              aria-current="page"
+              href="#allQuestion"
+            >
+              全部問題
+            </a>
+          </li>
+          <li class="nav-item text-nowrap fs-lg-5 fs-6">
+            <a
+              class="nav-link border-0 d-flex align-items-center justify-content-lg-start justify-content-center px-lg-0 px-5 py-3"
+              href="#manualQuestion"
+              >訂購流程</a
+            >
+          </li>
+          <li class="nav-item text-nowrap fs-lg-5 fs-6">
+            <a
+              class="nav-link border-0 d-flex align-items-center justify-content-lg-start justify-content-center px-lg-0 px-5 py-3"
+              href="#customQuestion"
+              >客製照護餐</a
+            >
+          </li>
+          <li class="nav-item text-nowrap fs-lg-5 fs-6">
+            <a
+              class="nav-link border-0 d-flex align-items-center justify-content-lg-start justify-content-center px-lg-0 px-5 py-3"
+              href="#proteinQuestion"
+              >高蛋白燉飲</a
+            >
+          </li>
+          <li class="nav-item text-nowrap fs-lg-5 fs-6">
+            <a
+              class="nav-link border-0 d-flex align-items-center justify-content-lg-start justify-content-center px-lg-0 px-5 py-3"
+              href="#lunchQuestion"
+              >機能調理餐</a
+            >
+          </li>
+          <li class="nav-item text-nowrap fs-lg-5 fs-6">
+            <a
+              class="nav-link border-0 d-flex align-items-center justify-content-lg-start justify-content-center px-lg-0 px-5 py-3"
+              href="#otherQuestion"
+              >其他問題</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="container py-lg-9 pb-4 pt-11">
 
         <!-- 全部問題 -->
         <div id="allQuestion">
@@ -370,14 +370,14 @@
                     </button>
                 </div>
               </div>
-              <div class="accordion accordion-flush" id="qq">
+              <div class="accordion accordion-flush" id="accordion-all">
                 <div class="accordion-item border-bottom py-4 ">
                   <h2 class="accordion-header" id="Q1">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Q1-1" aria-expanded="false" aria-controls="flush-collapseOne">
                       除了網路訂購之外有其他訂購的途徑嗎?
                     </button>
                   </h2>
-                  <div id="Q1-1" class="accordion-collapse collapse p-4" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div id="Q1-1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordion-all">
                     <div class="accordion-body">有的，除了網路訂購外可直接來電02-6637-5712直撥總機0或加入媽煮湯官方帳號@mazo712，會由我們媽煮湯服務人員替您下訂單喔!(但這個部分就沒辦法線上刷卡付款喔)</div>
                   </div>
                 </div>
@@ -387,7 +387,7 @@
                       除了網路訂購之外有其他訂購的途徑嗎?
                     </button>
                   </h2>
-                  <div id="Q1-2" class="accordion-collapse collapse p-4" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div id="Q1-2" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordion-all">
                     <div class="accordion-body">有的，除了網路訂購外可直接來電02-6637-5712直撥總機0或加入媽煮湯官方帳號@mazo712，會由我們媽煮湯服務人員替您下訂單喔!(但這個部分就沒辦法線上刷卡付款喔)</div>
                   </div>
                 </div>
@@ -397,7 +397,7 @@
                       除了網路訂購之外有其他訂購的途徑嗎?
                     </button>
                   </h2>
-                  <div id="Q1-3" class="accordion-collapse collapse p-4" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div id="Q1-3" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordion-all">
                     <div class="accordion-body">有的，除了網路訂購外可直接來電02-6637-5712直撥總機0或加入媽煮湯官方帳號@mazo712，會由我們媽煮湯服務人員替您下訂單喔!(但這個部分就沒辦法線上刷卡付款喔)</div>
                   </div>
                 </div>
@@ -407,7 +407,7 @@
                       除了網路訂購之外有其他訂購的途徑嗎?
                     </button>
                   </h2>
-                  <div id="Q1-4" class="accordion-collapse collapse p-4" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div id="Q1-4" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordion-all">
                     <div class="accordion-body">有的，除了網路訂購外可直接來電02-6637-5712直撥總機0或加入媽煮湯官方帳號@mazo712，會由我們媽煮湯服務人員替您下訂單喔!(但這個部分就沒辦法線上刷卡付款喔)</div>
                   </div>
                 </div>
@@ -417,7 +417,7 @@
                       除了網路訂購之外有其他訂購的途徑嗎?
                     </button>
                   </h2>
-                  <div id="Q1-5" class="accordion-collapse collapse p-4" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div id="Q1-5" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordion-all">
                     <div class="accordion-body">有的，除了網路訂購外可直接來電02-6637-5712直撥總機0或加入媽煮湯官方帳號@mazo712，會由我們媽煮湯服務人員替您下訂單喔!(但這個部分就沒辦法線上刷卡付款喔)</div>
                   </div>
                 </div>
@@ -433,7 +433,7 @@
               <div
                 class="pagetitle mb-lg-7 mb-6 d-flex justify-content-between align-items-center"
               >
-                <h3 class="fw-bold fs-lg-3 fs-4">訂購流程問題</h3>
+                <h3 class="fw-bold fs-lg-3 fs-4">訂購流程</h3>
                 <div class="search d-flex position-relative">
                   <input
                     class="form-control"
@@ -447,14 +447,14 @@
                     </button>
                 </div>
               </div>
-              <div class="accordion accordion-flush" id="Q2">
+              <div class="accordion accordion-flush" id="accordion-manual">
                 <div class="accordion-item border-bottom py-4 ">
                   <h2 class="accordion-header" id="flush-headingOne">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Q2-1" aria-expanded="false" aria-controls="flush-collapseOne">
                       除了網路訂購之外有其他訂購的途徑嗎?
                     </button>
                   </h2>
-                  <div id="Q2-1" class="accordion-collapse collapse p-4" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div id="Q2-1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordion-manual">
                     <div class="accordion-body">有的，除了網路訂購外可直接來電02-6637-5712直撥總機0或加入媽煮湯官方帳號@mazo712，會由我們媽煮湯服務人員替您下訂單喔!(但這個部分就沒辦法線上刷卡付款喔)</div>
                   </div>
                 </div>
@@ -464,7 +464,7 @@
                       除了網路訂購之外有其他訂購的途徑嗎?
                     </button>
                   </h2>
-                  <div id="Q2-2" class="accordion-collapse collapse p-4" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div id="Q2-2" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordion-manual">
                     <div class="accordion-body">有的，除了網路訂購外可直接來電02-6637-5712直撥總機0或加入媽煮湯官方帳號@mazo712，會由我們媽煮湯服務人員替您下訂單喔!(但這個部分就沒辦法線上刷卡付款喔)</div>
                   </div>
                 </div>
@@ -474,7 +474,7 @@
                       除了網路訂購之外有其他訂購的途徑嗎?
                     </button>
                   </h2>
-                  <div id="Q2-3" class="accordion-collapse collapse p-4" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div id="Q2-3" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordion-manual">
                     <div class="accordion-body">有的，除了網路訂購外可直接來電02-6637-5712直撥總機0或加入媽煮湯官方帳號@mazo712，會由我們媽煮湯服務人員替您下訂單喔!(但這個部分就沒辦法線上刷卡付款喔)</div>
                   </div>
                 </div>
@@ -484,7 +484,7 @@
                       除了網路訂購之外有其他訂購的途徑嗎?
                     </button>
                   </h2>
-                  <div id="Q2-4" class="accordion-collapse collapse p-4" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div id="Q2-4" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordion-manual">
                     <div class="accordion-body">有的，除了網路訂購外可直接來電02-6637-5712直撥總機0或加入媽煮湯官方帳號@mazo712，會由我們媽煮湯服務人員替您下訂單喔!(但這個部分就沒辦法線上刷卡付款喔)</div>
                   </div>
                 </div>
@@ -494,7 +494,17 @@
                       除了網路訂購之外有其他訂購的途徑嗎?
                     </button>
                   </h2>
-                  <div id="Q2-5" class="accordion-collapse collapse p-4" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div id="Q2-5" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordion-manual">
+                    <div class="accordion-body">有的，除了網路訂購外可直接來電02-6637-5712直撥總機0或加入媽煮湯官方帳號@mazo712，會由我們媽煮湯服務人員替您下訂單喔!(但這個部分就沒辦法線上刷卡付款喔)</div>
+                  </div>
+                </div>
+                <div class="accordion-item border-bottom py-4">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Q2-6" aria-expanded="false" aria-controls="flush-collapseOne">
+                      除了網路訂購之外有其他訂購的途徑嗎?
+                    </button>
+                  </h2>
+                  <div id="Q2-6" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordion-manual">
                     <div class="accordion-body">有的，除了網路訂購外可直接來電02-6637-5712直撥總機0或加入媽煮湯官方帳號@mazo712，會由我們媽煮湯服務人員替您下訂單喔!(但這個部分就沒辦法線上刷卡付款喔)</div>
                   </div>
                 </div>
@@ -510,7 +520,7 @@
               <div
                 class="pagetitle mb-lg-7 mb-6 d-flex justify-content-between align-items-center"
               >
-                <h3 class="fw-bold fs-lg-3 fs-4">客製照護餐問題</h3>
+                <h3 class="fw-bold fs-lg-3 fs-4">客製照護餐</h3>
                 <div class="search d-flex position-relative">
                   <input
                     class="form-control"
@@ -524,14 +534,14 @@
                     </button>
                 </div>
               </div>
-              <div class="accordion accordion-flush" id="Q3">
+              <div class="accordion accordion-flush" id="accordion-custom">
                 <div class="accordion-item border-bottom py-4 ">
                   <h2 class="accordion-header" id="flush-headingOne">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Q3-1" aria-expanded="false" aria-controls="flush-collapseOne">
                       除了網路訂購之外有其他訂購的途徑嗎?
                     </button>
                   </h2>
-                  <div id="Q3-1" class="accordion-collapse collapse p-4" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div id="Q3-1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordion-custom">
                     <div class="accordion-body">有的，除了網路訂購外可直接來電02-6637-5712直撥總機0或加入媽煮湯官方帳號@mazo712，會由我們媽煮湯服務人員替您下訂單喔!(但這個部分就沒辦法線上刷卡付款喔)</div>
                   </div>
                 </div>
@@ -541,7 +551,7 @@
                       除了網路訂購之外有其他訂購的途徑嗎?
                     </button>
                   </h2>
-                  <div id="Q3-2" class="accordion-collapse collapse p-4" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div id="Q3-2" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordion-custom">
                     <div class="accordion-body">有的，除了網路訂購外可直接來電02-6637-5712直撥總機0或加入媽煮湯官方帳號@mazo712，會由我們媽煮湯服務人員替您下訂單喔!(但這個部分就沒辦法線上刷卡付款喔)</div>
                   </div>
                 </div>
@@ -551,27 +561,7 @@
                       除了網路訂購之外有其他訂購的途徑嗎?
                     </button>
                   </h2>
-                  <div id="Q3-3" class="accordion-collapse collapse p-4" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">有的，除了網路訂購外可直接來電02-6637-5712直撥總機0或加入媽煮湯官方帳號@mazo712，會由我們媽煮湯服務人員替您下訂單喔!(但這個部分就沒辦法線上刷卡付款喔)</div>
-                  </div>
-                </div>
-                <div class="accordion-item border-bottom py-4">
-                  <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Q3-4" aria-expanded="false" aria-controls="flush-collapseOne">
-                      除了網路訂購之外有其他訂購的途徑嗎?
-                    </button>
-                  </h2>
-                  <div id="Q3-4" class="accordion-collapse collapse p-4" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">有的，除了網路訂購外可直接來電02-6637-5712直撥總機0或加入媽煮湯官方帳號@mazo712，會由我們媽煮湯服務人員替您下訂單喔!(但這個部分就沒辦法線上刷卡付款喔)</div>
-                  </div>
-                </div>
-                <div class="accordion-item border-bottom py-4">
-                  <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Q3-5" aria-expanded="false" aria-controls="flush-collapseOne">
-                      除了網路訂購之外有其他訂購的途徑嗎?
-                    </button>
-                  </h2>
-                  <div id="Q3-5" class="accordion-collapse collapse p-4" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div id="Q3-3" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordion-custom">
                     <div class="accordion-body">有的，除了網路訂購外可直接來電02-6637-5712直撥總機0或加入媽煮湯官方帳號@mazo712，會由我們媽煮湯服務人員替您下訂單喔!(但這個部分就沒辦法線上刷卡付款喔)</div>
                   </div>
                 </div>
@@ -587,7 +577,7 @@
               <div
                 class="pagetitle mb-lg-7 mb-6 d-flex justify-content-between align-items-center"
               >
-                <h3 class="fw-bold fs-lg-3 fs-4">高蛋白燉飲問題</h3>
+                <h3 class="fw-bold fs-lg-3 fs-4">高蛋白燉飲</h3>
                 <div class="search d-flex position-relative">
                   <input
                     class="form-control"
@@ -601,14 +591,14 @@
                     </button>
                 </div>
               </div>
-              <div class="accordion accordion-flush" id="Q4">
+              <div class="accordion accordion-flush" id="accordion-protein">
                 <div class="accordion-item border-bottom py-4 ">
                   <h2 class="accordion-header" id="flush-headingOne">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Q4-1" aria-expanded="false" aria-controls="flush-collapseOne">
                       除了網路訂購之外有其他訂購的途徑嗎?
                     </button>
                   </h2>
-                  <div id="Q4-1" class="accordion-collapse collapse p-4" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div id="Q4-1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="accordion-protein">
                     <div class="accordion-body">有的，除了網路訂購外可直接來電02-6637-5712直撥總機0或加入媽煮湯官方帳號@mazo712，會由我們媽煮湯服務人員替您下訂單喔!(但這個部分就沒辦法線上刷卡付款喔)</div>
                   </div>
                 </div>
@@ -618,7 +608,7 @@
                       除了網路訂購之外有其他訂購的途徑嗎?
                     </button>
                   </h2>
-                  <div id="Q4-2" class="accordion-collapse collapse p-4" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div id="Q4-2" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="accordion-protein">
                     <div class="accordion-body">有的，除了網路訂購外可直接來電02-6637-5712直撥總機0或加入媽煮湯官方帳號@mazo712，會由我們媽煮湯服務人員替您下訂單喔!(但這個部分就沒辦法線上刷卡付款喔)</div>
                   </div>
                 </div>
@@ -628,7 +618,7 @@
                       除了網路訂購之外有其他訂購的途徑嗎?
                     </button>
                   </h2>
-                  <div id="Q4-3" class="accordion-collapse collapse p-4" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div id="Q4-3" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="accordion-protein">
                     <div class="accordion-body">有的，除了網路訂購外可直接來電02-6637-5712直撥總機0或加入媽煮湯官方帳號@mazo712，會由我們媽煮湯服務人員替您下訂單喔!(但這個部分就沒辦法線上刷卡付款喔)</div>
                   </div>
                 </div>
@@ -638,17 +628,7 @@
                       除了網路訂購之外有其他訂購的途徑嗎?
                     </button>
                   </h2>
-                  <div id="Q4-4" class="accordion-collapse collapse p-4" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">有的，除了網路訂購外可直接來電02-6637-5712直撥總機0或加入媽煮湯官方帳號@mazo712，會由我們媽煮湯服務人員替您下訂單喔!(但這個部分就沒辦法線上刷卡付款喔)</div>
-                  </div>
-                </div>
-                <div class="accordion-item border-bottom py-4">
-                  <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Q4-5" aria-expanded="false" aria-controls="flush-collapseOne">
-                      除了網路訂購之外有其他訂購的途徑嗎?
-                    </button>
-                  </h2>
-                  <div id="Q4-5" class="accordion-collapse collapse p-4" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div id="Q4-4" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="accordion-protein">
                     <div class="accordion-body">有的，除了網路訂購外可直接來電02-6637-5712直撥總機0或加入媽煮湯官方帳號@mazo712，會由我們媽煮湯服務人員替您下訂單喔!(但這個部分就沒辦法線上刷卡付款喔)</div>
                   </div>
                 </div>
@@ -664,7 +644,7 @@
               <div
                 class="pagetitle mb-lg-7 mb-6 d-flex justify-content-between align-items-center"
               >
-                <h3 class="fw-bold fs-lg-3 fs-4">機能調理餐問題</h3>
+                <h3 class="fw-bold fs-lg-3 fs-4">機能調理餐</h3>
                 <div class="search d-flex position-relative">
                   <input
                     class="form-control"
@@ -678,14 +658,14 @@
                     </button>
                 </div>
               </div>
-              <div class="accordion accordion-flush" id="Q5">
+              <div class="accordion accordion-flush" id="accordion-lunch">
                 <div class="accordion-item border-bottom py-4 ">
                   <h2 class="accordion-header" id="flush-headingOne">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Q5-1" aria-expanded="false" aria-controls="flush-collapseOne">
                       除了網路訂購之外有其他訂購的途徑嗎?
                     </button>
                   </h2>
-                  <div id="Q5-1" class="accordion-collapse collapse p-4" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div id="Q5-1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordion-lunch">
                     <div class="accordion-body">有的，除了網路訂購外可直接來電02-6637-5712直撥總機0或加入媽煮湯官方帳號@mazo712，會由我們媽煮湯服務人員替您下訂單喔!(但這個部分就沒辦法線上刷卡付款喔)</div>
                   </div>
                 </div>
@@ -695,7 +675,7 @@
                       除了網路訂購之外有其他訂購的途徑嗎?
                     </button>
                   </h2>
-                  <div id="Q5-2" class="accordion-collapse collapse p-4" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div id="Q5-2" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordion-lunch">
                     <div class="accordion-body">有的，除了網路訂購外可直接來電02-6637-5712直撥總機0或加入媽煮湯官方帳號@mazo712，會由我們媽煮湯服務人員替您下訂單喔!(但這個部分就沒辦法線上刷卡付款喔)</div>
                   </div>
                 </div>
@@ -705,7 +685,7 @@
                       除了網路訂購之外有其他訂購的途徑嗎?
                     </button>
                   </h2>
-                  <div id="Q5-3" class="accordion-collapse collapse p-4" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div id="Q5-3" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordion-lunch">
                     <div class="accordion-body">有的，除了網路訂購外可直接來電02-6637-5712直撥總機0或加入媽煮湯官方帳號@mazo712，會由我們媽煮湯服務人員替您下訂單喔!(但這個部分就沒辦法線上刷卡付款喔)</div>
                   </div>
                 </div>
@@ -715,7 +695,7 @@
                       除了網路訂購之外有其他訂購的途徑嗎?
                     </button>
                   </h2>
-                  <div id="Q5-4" class="accordion-collapse collapse p-4" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div id="Q5-4" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordion-lunch">
                     <div class="accordion-body">有的，除了網路訂購外可直接來電02-6637-5712直撥總機0或加入媽煮湯官方帳號@mazo712，會由我們媽煮湯服務人員替您下訂單喔!(但這個部分就沒辦法線上刷卡付款喔)</div>
                   </div>
                 </div>
@@ -725,7 +705,7 @@
                       除了網路訂購之外有其他訂購的途徑嗎?
                     </button>
                   </h2>
-                  <div id="Q5-5" class="accordion-collapse collapse p-4" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div id="Q5-5" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordion-lunch">
                     <div class="accordion-body">有的，除了網路訂購外可直接來電02-6637-5712直撥總機0或加入媽煮湯官方帳號@mazo712，會由我們媽煮湯服務人員替您下訂單喔!(但這個部分就沒辦法線上刷卡付款喔)</div>
                   </div>
                 </div>
@@ -755,54 +735,14 @@
                     </button>
                 </div>
               </div>
-              <div class="accordion accordion-flush" id="Q6">
+              <div class="accordion accordion-flush" id="accordion-other">
                 <div class="accordion-item border-bottom py-4 ">
                   <h2 class="accordion-header" id="flush-headingOne">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Q6-1" aria-expanded="false" aria-controls="flush-collapseOne">
                       除了網路訂購之外有其他訂購的途徑嗎?
                     </button>
                   </h2>
-                  <div id="Q6-1" class="accordion-collapse collapse p-4" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">有的，除了網路訂購外可直接來電02-6637-5712直撥總機0或加入媽煮湯官方帳號@mazo712，會由我們媽煮湯服務人員替您下訂單喔!(但這個部分就沒辦法線上刷卡付款喔)</div>
-                  </div>
-                </div>
-                <div class="accordion-item border-bottom py-4">
-                  <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Q6-2" aria-expanded="false" aria-controls="flush-collapseOne">
-                      除了網路訂購之外有其他訂購的途徑嗎?
-                    </button>
-                  </h2>
-                  <div id="Q6-2" class="accordion-collapse collapse p-4" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">有的，除了網路訂購外可直接來電02-6637-5712直撥總機0或加入媽煮湯官方帳號@mazo712，會由我們媽煮湯服務人員替您下訂單喔!(但這個部分就沒辦法線上刷卡付款喔)</div>
-                  </div>
-                </div>
-                <div class="accordion-item border-bottom py-4">
-                  <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Q6-3" aria-expanded="false" aria-controls="flush-collapseOne">
-                      除了網路訂購之外有其他訂購的途徑嗎?
-                    </button>
-                  </h2>
-                  <div id="Q6-3" class="accordion-collapse collapse p-4" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">有的，除了網路訂購外可直接來電02-6637-5712直撥總機0或加入媽煮湯官方帳號@mazo712，會由我們媽煮湯服務人員替您下訂單喔!(但這個部分就沒辦法線上刷卡付款喔)</div>
-                  </div>
-                </div>
-                <div class="accordion-item border-bottom py-4">
-                  <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Q6-4" aria-expanded="false" aria-controls="flush-collapseOne">
-                      除了網路訂購之外有其他訂購的途徑嗎?
-                    </button>
-                  </h2>
-                  <div id="Q6-4" class="accordion-collapse collapse p-4" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">有的，除了網路訂購外可直接來電02-6637-5712直撥總機0或加入媽煮湯官方帳號@mazo712，會由我們媽煮湯服務人員替您下訂單喔!(但這個部分就沒辦法線上刷卡付款喔)</div>
-                  </div>
-                </div>
-                <div class="accordion-item border-bottom py-4">
-                  <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Q6-5" aria-expanded="false" aria-controls="flush-collapseOne">
-                      除了網路訂購之外有其他訂購的途徑嗎?
-                    </button>
-                  </h2>
-                  <div id="Q6-5" class="accordion-collapse collapse p-4" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div id="Q6-1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordion-other">
                     <div class="accordion-body">有的，除了網路訂購外可直接來電02-6637-5712直撥總機0或加入媽煮湯官方帳號@mazo712，會由我們媽煮湯服務人員替您下訂單喔!(但這個部分就沒辦法線上刷卡付款喔)</div>
                   </div>
                 </div>

@@ -3,6 +3,12 @@
 }
 
 .faq{
+  padding-bottom: 96px;
+.sidebar{
+  top: 48px;
+  left: 6%;
+}
+
   .active:after {
     @include red_drop;
   }
@@ -17,11 +23,21 @@
     }
   }
 
-
   .collapsed {
       color: black;
       font-weight: normal;
       background-color: transparent;
+  }
+
+  @media (max-width:992px) {
+    padding-bottom: 0;
+    .sidebar{
+      width: 100vw;
+      overflow-x: scroll;
+      background: rgba($warning, 20%);
+      left: 0;
+      top: 0;
+    }
   }
 
 }

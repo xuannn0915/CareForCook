@@ -194,14 +194,11 @@ ul,ol,li{
 }
 
 // scrollBar
-#scrollBar{
-  //捲軸底色
-  &::-webkit-scrollbar-track {
-    background-color:transparent;
-  }
+#scrollBar::-webkit-scrollbar-track {
+  background-color:transparent;
+}
   //捲軸寬度
-  ::-webkit-scrollbar {
+  #scrollBar::-webkit-scrollbar {
     height: 0px;
     background-color: transparent;
   }
-}
