@@ -81,8 +81,7 @@
                             </label>
                           </div>
                         </div>
-                        <form action="#">
-                          <form>
+                        <form action="#" class="needs-validation"  novalidate>
                             <div class="mb-6">
                               <label for="userName" class="form-label fs-5"
                                 >姓名</label
@@ -93,7 +92,10 @@
                                 id="userName"
                                 aria-describedby="emailHelp"
                                 value="王小明"
-                              />
+                                required>
+                                <div class="invalid-feedback">
+                                  請填寫名稱
+                                </div>
                             </div>
                             <div class="mb-6">
                               <label for="email" class="form-label fs-5">信箱</label>
@@ -102,8 +104,11 @@
                                 class="form-control"
                                 id="email"
                                 value="xuannn0915@gmail.com"
-                                aria-describedby="emailHelp"
-                              />
+                                aria-describedby="emailHelp" required
+                              >
+                              <div class="invalid-feedback">
+                                請填寫信箱
+                              </div>
                             </div>
                             <div class="mb-6">
                               <div class="d-flex justify-content-between align-items-center">
@@ -132,7 +137,7 @@
                             <div class="d-flex flex-column mb-6">
                               <label for="birthday" class="form-label fs-5">生日</label>
                               <div class="d-flex justify-content-between">
-                                <select class="form-select me-4" aria-label="Default select example">
+                                <select class="form-select me-4" aria-label="Default select example" required>
                                   <option value="">年</option>
                                   <option value="2005">2005</option>
                                   <option value="2004">2004</option>
@@ -141,7 +146,7 @@
                                   <option value="2001">2001</option>
                                   <option value="2000">2000</option>
                                 </select>
-                                <select class="form-select me-4" aria-label="Default select example">
+                                <select class="form-select me-4" aria-label="Default select example" required>
                                   <option value="">月</option>
                                   <option value="12">12</option>
                                   <option value="11">11</option>
@@ -156,7 +161,7 @@
                                   <option value="02">02</option>
                                   <option value="01">01</option>
                                 </select>
-                                <select class="form-select" aria-label="Default select example">
+                                <select class="form-select" aria-label="Default select example" required>
                                   <option value="">日</option>
                                   <option value="01">01</option>
                                   <option value="02">02</option>
@@ -176,7 +181,6 @@
                             <button type="submit" class="btn btn-primary">
                               儲存變更
                             </button>
-                          </form>
                         </form>
                       </div>
                       <div class="col-lg-6">
