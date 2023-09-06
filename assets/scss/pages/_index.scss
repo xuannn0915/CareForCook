@@ -55,6 +55,22 @@
 
 .painPoint {
   @include bg_secondary;
+  .character{
+    max-width: 448px;
+    margin-left: 72px;
+  }
+  .bubble{
+    max-width: 300px;
+  }
+  @media (max-width:992px) {
+    .character{
+      width: 233px;
+      margin-left: 40px;
+    }
+    .bubble{
+      width: 150px;
+    }
+  }
 }
 
 .service {

@@ -13,8 +13,7 @@
     margin: 0 8px;
   }
 
-  .collapse-item {
-    border: 1px solid rgba(black, 10%);
+  .accordion-body{
     ol {
       span {
         width: 24px;
@@ -24,9 +23,6 @@
         width: 90%;
         @include multiline-ellipsis(2);
       }
-    }
-    .less {
-      display: none;
     }
   }
   .open {
