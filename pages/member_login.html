@@ -54,14 +54,17 @@
             <h3 class="text-primary text-center fw-bold mb-lg-10 mb-8">
               忘記密碼
             </h3>
-            <form action="#" class="mb-lg-10 mb-8">
+            <form action="#" class="mb-lg-10 mb-8  needs-validation" novalidate>
               <div>
                 <label for="forget_account" class="form-label">帳號</label>
-                <input type="text" class="form-control" id="forget_account" placeholder="請輸入信箱">
+                <input type="text" class="form-control" id="forget_account" placeholder="請輸入信箱" required>
+                <div class="invalid-feedback">
+                  請輸入帳號
+                </div>
               </div>
             </form>
             <div class="login_button d-flex flex-column align-items-center mb-lg-10 mb-8">
-              <button type="button" class="btn btn-outline-primary mb-3" data-bs-toggle="modal" data-bs-target="#resetPassword">
+              <button type="submit" class="btn btn-outline-primary mb-3" data-bs-toggle="modal" data-bs-target="#resetPassword">
                 重設密碼
               </button>
               <a href="#" class="return_login fs-6 d-flex align-items-center">
