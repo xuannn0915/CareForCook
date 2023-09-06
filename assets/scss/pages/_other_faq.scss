@@ -4,13 +4,17 @@
 
 .faq{
   padding-bottom: 96px;
-.sidebar{
-  top: 48px;
-  left: 6%;
-}
+  .sidebar{
+    top: 48px;
+    left: 6%;
+  }
 
   .active:after {
     @include red_drop;
+  }
+
+  .search{
+    max-width: 200px;
   }
 
   .accordion{
