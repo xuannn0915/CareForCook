@@ -1,4 +1,56 @@
 .cta-mall{
   padding-top: 88px;
   @include bg_blur(center, top 100px, center, top 100px);
+
+  .heart{
+    animation: hearts 1s infinite;
+    &-sm{
+      width: 16px;
+    }
+    &-normal{
+      width: 24px;
+    }
+    &-lg{
+      width: 32px;
+    }
+    &-1{
+      top: 64px;
+      left: 0px;
+      animation-direction: alternate;
+      animation-delay: 1s;
+    }
+    &-2{
+      top: 96px;
+      right: 8px;
+      animation-direction: alternate;
+      animation-delay: 3s;
+    }
+    &-3{
+      top: -8px;
+      left: 56px;
+      animation-direction: alternate;
+      animation-delay: 2s;
+    }
+    &-4{
+      top: 72px;
+      right: 0px;
+      animation-direction: alternate;
+      animation-delay: 1.5s;
+    }
+    &-5{
+      top: 16px;
+      left: 80px;
+      animation-direction: alternate;
+      animation-delay: 2.5s;
+    }
+  }
+
+  @keyframes hearts{
+    0%{
+      transform: translateY(20%);
+    }
+    100%{
+      transform: translateY(-20%);
+    }
+  }
 }

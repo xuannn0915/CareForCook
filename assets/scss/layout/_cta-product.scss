@@ -9,3 +9,15 @@
     margin-top: 8px;
   }
 } 
+.stars{
+  animation: stars 1s infinite;
+}
+
+@keyframes stars {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

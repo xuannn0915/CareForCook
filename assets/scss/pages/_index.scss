@@ -34,6 +34,21 @@
     @include red_comma;
   }
 
+  span{
+    animation-duration:1.5s;
+    animation-name: arrow;
+    animation-iteration-count:infinite;
+  }
+  
+  @keyframes arrow {
+    0%{
+      margin-left: 8px;
+    }
+    100%{
+      margin-left: 24px;
+    }
+  }
+
   @media (max-width: 992px) {
     .swiper {
       width: 100%;
@@ -52,6 +67,8 @@
     }
   }
 }
+
+
 
 .painPoint {
   @include bg_secondary;
@@ -210,7 +227,22 @@
     margin-bottom: 40px;
     width: 24px;
     height: 35px;
+    animation-name: drop;
+    animation-duration:2s;
+    animation-iteration-count:infinite;
   }
+
+  @keyframes drop {
+    0%{
+      transform: translateY(-16px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
 
   @include bg_wave(64px, 16px);
 
