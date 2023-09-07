@@ -10,6 +10,13 @@ body{
   }
 }
 
+.wrap{
+  margin-top: -86px;
+  @media (max-width:992px) {
+    margin-top: -57px;
+  }
+}
+
 img{
   width: 100%;
   height: auto;

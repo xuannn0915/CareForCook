@@ -1,0 +1,22 @@
+.backstage_login{
+  .login-bg{
+    width: 50vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: top center;
+  }
+  .login{
+    width: 50vw;
+    padding: 0 193px;
+    .logo{
+      width: 188px;
+      margin-bottom: 80px;
+    }
+    .btn {
+      width: 124px;
+    }
+    .verifyPic{
+      width: 120px;
+    }
+  }
+}
