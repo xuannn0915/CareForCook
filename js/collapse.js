@@ -14,6 +14,8 @@ $(function () {
   });
 });
 
+
+// backstage sidebar
 $(function () {
   $(".menu-btn").click(function () {
     $('.logout').toggleClass('visible');

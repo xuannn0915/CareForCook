@@ -1,13 +1,28 @@
-.backstage-sidebar{
+.backstage-sidebar-desktop{
+  
+  .collapsing{
+    width: 24px;
+  }
+  .collapse{
+    width: 24px;
+    display: block;
+    overflow: hidden;
+  }
+  .show{
+    width: 114px;
+  }
+
   img{
     width: 40px;
   }
+  .menu-btn{
+    position: absolute;
+    top: 24px;
+    left: 24px;
+  }
 
   .sidebar-bottom{
-    bottom: 5%;
-  }
-  .collapse{
-    width: 0px;
+    bottom: 24px;
   }
   .logout, .account-info{
     display: none;
@@ -19,7 +34,23 @@
     padding-left: 24px;
     padding-right: 24px;
   }
-  .active{
-    color: $primary;
+
+  li:hover{
+    a{
+      color: $primary;
+    }
+  }
+}
+
+.backstage-sidebar-mobile{
+
+  img{
+    width: 40px;
+  }
+
+  li:hover{
+    a{
+      color: $primary;
+    }
   }
 }
