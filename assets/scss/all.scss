@@ -55,6 +55,7 @@
 @import './layout/cta-product';
 @import './layout/card-coverflow';
 @import './layout/recommend';
+@import './layout/backstage-sidebar';
 
 
 
@@ -76,3 +77,4 @@
 
 // backstage
 @import './pages/backstage-login';
+@import './pages/backstage-order';

@@ -13,3 +13,11 @@ $(function () {
     $(this).addClass("accordion-title");
   });
 });
+
+$(function () {
+  $(".menu-btn").click(function () {
+    $('.logout').toggleClass('visible');
+    $('.account-info').toggleClass('visible');
+    $('.logout-btn').toggleClass('px-6');
+  });
+});

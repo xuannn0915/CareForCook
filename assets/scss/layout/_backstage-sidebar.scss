@@ -1,0 +1,25 @@
+.backstage-sidebar{
+  img{
+    width: 40px;
+  }
+
+  .sidebar-bottom{
+    bottom: 5%;
+  }
+  .collapse{
+    width: 0px;
+  }
+  .logout, .account-info{
+    display: none;
+  }
+  .visible{
+    display: block;
+  }
+  .px-6{
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .active{
+    color: $primary;
+  }
+}
