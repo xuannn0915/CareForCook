@@ -13,13 +13,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
-<title>CareForCook-backStage</title>    <script type="module" crossorigin src="/CareForCook/assets/validation-2bc5da26.js"></script>
-    <link rel="stylesheet" href="/CareForCook/assets/validation-aeef7aa3.css">
+<title>CareForCook-backStage</title>    <script type="module" crossorigin src="/CareForCook/assets/validation-d8fc9974.js"></script>
+    <link rel="stylesheet" href="/CareForCook/assets/validation-3d5845dd.css">
   </head>
   <body>
-    <div class="wrap">
-      <main class="backstage_order">
-        <section class="backstage-sidebar-desktop d-lg-inline-flex d-none flex-column p-6 bg-white align-items-center vh-100 position-relative">
+    <div class="wrap d-flex flex-lg-row flex-column">
+      <section class="backstage-sidebar-desktop d-lg-inline-flex d-none flex-column p-6 bg-white align-items-center position-sticky top-0 vh-100">
       <button class="bg-white border-0 p-0 position-absolute menu-btn z-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
         <span class="material-symbols-rounded me-2"> menu </span>
       </button>
@@ -85,8 +84,8 @@
 </section>
 
 
-<section class="backstage-sidebar-mobile d-lg-none bg-transparent">
-  <div class="d-flex align-items-center justify-content-between bg-white px-4 py-2 z-1">
+<section class="backstage-sidebar-mobile d-lg-none bg-transparent position-fixed w-100 z-1">
+  <div class="d-flex align-items-center justify-content-between bg-white px-4 py-2">
     <button class="bg-white border-0 p-0" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
       <span class="material-symbols-rounded me-2"> menu </span>
     </button>
@@ -142,7 +141,438 @@
     <p class="fs-6">A4322 資訊單位</p>
 </div>
 </div>
-</section>      </main>
+</section>      <main class="backstage_order p-lg-6 p-4 w-100">
+          <div class="d-flex align-items-center justify-content-between mb-lg-6 mb-4">
+            <h3 class="fs-lg-3 fs-4 fw-bold">訂單管理</h3>
+            <div class="d-flex align-items-center">
+              <div class="btn btn-link me-4">匯出</div>
+              <div class="btn btn-primary">
+                出貨
+                <span class="material-symbols-rounded ms-2"> local_shipping </span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 進階搜尋 -->
+          <div class="accordion bg-white rounded border mb-6" id="accordionExample">
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="headingOne">
+                <button class="accordion-button fw-bold text-black fs-4 p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  進階搜尋
+                </button>
+              </h4>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body p-6 p-4">
+                  <form action="#" class="d-flex flex-wrap justify-content-between mb-lg-7 mb-6">
+                    <div class="mb-3 form-item">
+                      <label for="receiveName" class="form-label">收件名稱</label>
+                      <input type="text" class="form-control" id="receiveName" aria-describedby="receiveName" placeholder="請輸入名稱">
+                    </div>
+                    <div class="mb-4 form-item">
+                      <label for="receivePhone" class="form-label">收件電話</label>
+                      <input type="text" class="form-control" id="receivePhone" aria-describedby="receivePhone" placeholder="請輸入電話">
+                    </div>
+                    <div class="mb-4 form-item">
+                      <label for="receiveAddress" class="form-label">收件地址</label>
+                      <input type="text" class="form-control" id="receiveAddress" aria-describedby="receiveAddress" placeholder="請輸入地址">
+                    </div>
+                    <div class="mb-4 form-item">
+                      <label for="orderSerial" class="form-label">訂單編號</label>
+                      <input type="text" class="form-control" id="orderSerial" aria-describedby="orderSerial" placeholder="請輸入編號">
+                    </div>
+                    <div class="mb-4 form-item d-flex flex-column">
+                      <label for="orderDate" class="form-label">訂購日期</label>
+                      <input type="date" id="orderDate"  class="border-0 border-bottom border-dark py-2 px-3">
+                    </div>
+                    <div class="mb-4 form-item">
+                      <label for="orderMoney" class="form-label">訂購金額</label>
+                      <input type="text" class="form-control" id="orderMoney" aria-describedby="orderMoney" placeholder="請輸入金額">
+                    </div>
+                    <div class="mb-4 form-item">
+                      <label for="orderStatus" class="form-label">商品狀態</label>
+                      <div class="d-flex justify-content-between">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="orderStatus" id="notDeliver">
+                          <label class="form-check-label align-baseline" for="notDeliver">
+                            未出貨
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="orderStatus" id="delivering">
+                          <label class="form-check-label align-baseline" for="delivering">
+                            已出貨
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="orderStatus" id="arrive">
+                          <label class="form-check-label align-baseline" for="arrive">
+                            已送達
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-dark me-4">
+                      清除
+                      <span class="material-symbols-rounded align-top ms-2"> delete </span>
+                    </button>
+                    <button type="submit" class="btn btn-outline-primary">
+                      查詢
+                      <span class="material-symbols-rounded align-top ms-2"> search </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 列表 -->
+          <div class="bg-white rounded border overflow-hidden">
+            <div class="table-responsive">
+              <table class="table table-borderless table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">
+                      <input type="checkbox" name="checkbox" id="select">
+                    </th>
+                    <th scope="col">訂單日期</th>
+                    <th scope="col">訂單編號</th>
+                    <th scope="col">訂單金額</th>
+                    <th scope="col">收件名稱</th>
+                    <th scope="col">收件電話</th>
+                    <th scope="col">收件地址</th>
+                    <th scope="col">狀態</th>
+                    <th scope="col">查看</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr data-bs-target="#viewOrder"  data-bs-toggle="modal">
+                    <th scope="row" class="td-56">1</th>
+                    <td class="td-56">
+                      <input type="checkbox" name="checkbox" id="select">
+                    </td>
+                    <td class="td-124">2023/07/21</td>
+                    <td class="td-124">A123456789</td>
+                    <td class="td-124">$1,150</td>
+                    <td class="td-124">王小明</td>
+                    <td class="td-124">091234567</td>
+                    <td class="text-nowrap">新北市新店區北新路三段225號13樓</td>
+                    <td class="td-80 text-nowrap">待出貨</td>
+                    <td class="td-80">
+                      <div class="btn btn-outline-warning" data-bs-target="#viewOrder"  data-bs-toggle="modal">
+                        <span class="material-symbols-rounded"> visibility </span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="table-pagination d-flex flex-lg-row flex-column align-items-center justify-content-between p-4 border-top">
+  <div class="d-flex align-items-center mb-lg-0 mb-4">
+    <select class="form-select pagination-select me-4" aria-label="Default select example">
+      <option value="5" selected>5筆</option>
+      <option value="10">10筆</option>
+      <option value="15">15筆</option>
+      <option value="20">20筆</option>
+    </select>
+    <div class="text-light fs-lg-5 fs-6">顯示第 1 至 5 項結果，共 24 項</div>
+  </div>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span class="material-symbols-rounded">
+            navigate_before
+            </span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link active" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span class="material-symbols-rounded">
+            navigate_next
+            </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>          </div>
+          
+          
+          <!-- view Order -->
+          <div class="modal fade" id="viewOrder" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">出貨單明細</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="d-flex flex-lg-row flex-column mb-6">
+                    <div class="px-4 py-3 border rounded me-lg-2 mb-lg-0 mb-2 w-100">
+                      <h5 class="fw-bold mb-2">訂單資訊</h5>
+                      <div class="d-flex align-items-center justify-content-between mb-2">
+                        <p>編號</p>
+                        <p>A123456789</p>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between mb-2">
+                        <p>日期</p>
+                        <p>2023/07/21</p>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between mb-2">
+                        <p>金額</p>
+                        <p>$1,150</p>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p>狀態</p>
+                        <p>未出貨</p>
+                      </div>
+                    </div>
+                    <div class="px-4 py-3 border rounded align-self-stretch w-100">
+                      <h5 class="fw-bold mb-2">收件資訊</h5>
+                      <div class="d-flex align-items-center justify-content-between mb-2">
+                        <p>名稱</p>
+                        <p>王小明</p>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between mb-2">
+                        <p>電話</p>
+                        <p>0912345678</p>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p>地址</p>
+                        <p>台北市重慶南路一段77號12樓 </p>
+                      </div>
+                    </div>
+                  </div>
+                  <h5 class="fw-bold">商品明細</h5>
+                  <!-- desktop table -->
+                  <div class="d-lg-block d-none">
+                    <table class="table table-borderless">
+                      <thead>
+                        <tr>
+                          <th scope="col" colspan="4" class="pb-0">
+                            <p class=" px-4 border-5 border-start border-primary text-primary">
+                              熱食配送
+                            </p>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="td-124">
+                            <img src="/CareForCook/assets/custom01-m-97933088.png" alt="product" class="flex-shrink-0 rounded object-fit-cover">
+                          </td>
+                          <td class="td-auto">
+                            <h5 class="fw-bold mb-2">術後照護餐01
+                              <span class="badge badge-secondary ms-2">
+                                膽囊切除
+                              </span>
+                            </h5>
+                            <p class="mb-2">紫米飯/三杯雞/清炒高麗菜/金沙四季豆/柴魚蒸蛋/蘿蔔排骨/燕巢芭樂</p>
+                            <p class="text-light">備註：不要加香菜</p>
+                          </td>
+                          <td class="td-88">
+                            1份
+                          </td>
+                          <td class="td-88">$350</td>
+                        </tr>
+                        <tr>
+                          <td class="td-124">
+                            <img src="/CareForCook/assets/custom02-m-6261e21d.png" alt="product" class="flex-shrink-0 rounded object-fit-cover">
+                          </td>
+                          <td class="td-auto">
+                            <h5 class="fw-bold mb-2">術後照護餐02
+                              <span class="badge badge-secondary ms-2">
+                                婦科術後
+                              </span>
+                            </h5>
+                            <p class="mb-2">紫米飯/三杯雞/清炒高麗菜/金沙四季豆/柴魚蒸蛋/蘿蔔排骨/燕巢芭樂</p>
+                            <p class="text-light">備註：不要加香菜</p>
+                          </td>
+                          <td class="td-88">
+                            1份
+                          </td>
+                          <td class="td-88">$350</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="table table-borderless border-bottom mb-0">
+                      <thead>
+                        <tr>
+                          <th scope="col" colspan="4" class="pb-0">
+                            <p class="px-4 border-5 border-start border-primary text-primary">
+                              冷藏配送
+                            </p>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="td-124">
+                            <img src="/CareForCook/assets/soup01-m-3829ba36.png" alt="product" class="flex-shrink-0 rounded object-fit-cover">
+                          </td>
+                          <td class="td-auto">
+                            <h5 class="fw-bold">
+                              高蛋白燉飲01
+                              <span class="badge badge-secondary ms-2">
+                                苷醇雙雞
+                              </span>
+                            </h5>
+                          </td>
+                          <td class="td-88">
+                            1份
+                          </td>
+                          <td class="td-88">$350</td>
+                        </tr>
+                        <tr>
+                          <td class="td-124">
+                            <img src="/CareForCook/assets/lunch01-m-67c4dd18.png" alt="product" class="flex-shrink-0 rounded object-fit-cover">
+                          </td>
+                          <td class="td-auto">
+                            <h5 class="fw-bold">
+                              機能調理餐01
+                              <span class="badge badge-secondary ms-2">
+                                低糖好新纖
+                              </span>
+                            </h5>
+                          </td>
+                          <td class="td-88">
+                            1份
+                          </td>
+                          <td class="td-88">$350</td>
+                        </tr>
+                        <tr>
+                          <td class="td-124">
+                            <img src="/CareForCook/assets/lunch02-m-7a7cd139.png" alt="product" class="flex-shrink-0 rounded object-fit-cover">
+                          </td>
+                          <td class="td-auto">
+                            <h5 class="fw-bold">
+                              機能調理餐02
+                              <span class="badge badge-secondary ms-2">
+                                均衡好食多
+                              </span>
+                            </h5>
+                          </td>
+                          <td class="td-88">
+                            1份
+                          </td>
+                          <td class="td-88">$350</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- mobile card -->
+                  <div class="mobile-card d-lg-none">
+                    <div class="py-4 border-bottom">
+                      <h5 class="px-4 fw-bold border-5 border-start border-primary text-primary mb-4">熱食配送</h5>
+                      <div class="mb-4 pb-4 border-bottom d-flex">
+                          <img src="/CareForCook/assets/custom01-m-97933088.png" alt="product" class="me-2 flex-shrink-0 rounded object-fit-cover">
+                          <div>
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                              <h5 class="fw-bold">
+                                術後照護餐01
+                              </h5>
+                              <p class="badge badge-secondary">
+                                膽囊切除
+                              </p>
+                            </div>
+                            <p class="mb-2 fs-6">紫米飯/三杯雞/清炒高麗菜/金沙四季豆/柴魚蒸蛋/蘿蔔排骨/燕巢芭樂</p>
+                            <p class="text-light mb-2 fs-6">備註：不要加香菜</p>
+                            <div class="d-flex align-items-center justify-content-between">
+                              <p>1份</p>
+                              <p>$350</p>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="d-flex">
+                        <img src="/CareForCook/assets/custom02-m-6261e21d.png" alt="product" class="me-2 flex-shrink-0 rounded object-fit-cover">
+                        <div>
+                          <div class="d-flex align-items-center justify-content-between mb-2">
+                            <h5 class="fw-bold">
+                              術後照護餐02
+                            </h5>
+                            <p class="badge badge-secondary">
+                              婦科術後
+                            </p>
+                          </div>
+                          <p class="mb-2 fs-6">紫米飯/三杯雞/清炒高麗菜/金沙四季豆/柴魚蒸蛋/蘿蔔排骨/燕巢芭樂</p>
+                          <p class="text-light mb-2 fs-6">備註：不要加香菜</p>
+                          <div class="d-flex align-items-center justify-content-between">
+                            <p>1份</p>
+                            <p>$350</p>
+                          </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="py-4 border-bottom">
+                      <h5 class="px-4 fw-bold border-5 border-start border-primary text-primary mb-4">冷藏配送</h5>
+                      <div class="mb-4 pb-4 border-bottom d-flex">
+                          <img src="/CareForCook/assets/soup01-m-3829ba36.png" alt="product" class="me-2 flex-shrink-0 rounded object-fit-cover">
+                          <div class="w-100">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                              <h5 class="fw-bold">
+                                高蛋白燉飲01
+                              </h5>
+                              <p class="badge badge-secondary">
+                                苷醇雙雞
+                              </p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                              <p>1份</p>
+                              <p>$350</p>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="mb-4 pb-4 border-bottom d-flex">
+                        <img src="/CareForCook/assets/lunch01-m-67c4dd18.png" alt="product" class="me-2 flex-shrink-0 rounded object-fit-cover">
+                        <div class="w-100">
+                          <div class="d-flex align-items-center justify-content-between mb-2">
+                            <h5 class="fw-bold">
+                              機能調理餐01
+                            </h5>
+                            <p class="badge badge-secondary">
+                              低糖好新纖
+                            </p>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-between">
+                            <p>1份</p>
+                            <p>$350</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <img src="/CareForCook/assets/lunch02-m-7a7cd139.png" alt="product" class="me-2 flex-shrink-0 rounded object-fit-cover">
+                        <div class="w-100">
+                          <div class="d-flex align-items-center justify-content-between mb-2">
+                            <h5 class="fw-bold">
+                              機能調理餐02
+                            </h5>
+                            <p class="badge badge-secondary">
+                              均衡好食多
+                            </p>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-between">
+                            <p>1份</p>
+                            <p>$350</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">取消</button>
+                  <button type="button" class="btn btn-primary">出貨</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </main>
+
     </div>
     <!-- main js -->
 
@@ -156,5 +586,6 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <!-- incrementer -->
-<script src="../node_modules/bootstrap-input-spinner/src/bootstrap-input-spinner.js"></script>  </body>
+<script src="../node_modules/bootstrap-input-spinner/src/bootstrap-input-spinner.js"></script>
+  </body>
 </html>
