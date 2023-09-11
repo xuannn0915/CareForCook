@@ -9,7 +9,7 @@
   <body>
     <div class="wrap d-flex flex-lg-row flex-column">
       <%- include('./layout/backstage-sidebar') -%>
-      <main class="backstage_order p-lg-6 p-4 w-100">
+      <main class="backstage_order backstage-content p-lg-6 p-4 ms-auto h-100">
           <div class="d-flex align-items-center justify-content-between mb-lg-6 mb-4">
             <h3 class="fs-lg-3 fs-4 fw-bold">訂單管理</h3>
             <div class="d-flex align-items-center">
@@ -103,7 +103,7 @@
                   <tr>
                     <th scope="col">#</th>
                     <th scope="col">
-                      <input type="checkbox" name="checkbox" id="select">
+                      <input type="checkbox" name="checkbox" id="select" class="form-check-input">
                     </th>
                     <th scope="col">訂單日期</th>
                     <th scope="col">訂單編號</th>
@@ -116,10 +116,10 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr data-bs-target="#viewOrder"  data-bs-toggle="modal">
-                    <th scope="row" class="td-56">1</th>
+                  <tr>
+                    <td scope="row" class="td-56">1</td>
                     <td class="td-56">
-                      <input type="checkbox" name="checkbox" id="select">
+                      <input type="checkbox" class="form-check-input" name="checkbox" id="select">
                     </td>
                     <td class="td-124">2023/07/21</td>
                     <td class="td-124">A123456789</td>
@@ -134,10 +134,10 @@
                       </div>
                     </td>
                   </tr>
-                  <tr data-bs-target="#viewOrder"  data-bs-toggle="modal">
-                    <th scope="row" class="td-56">1</th>
+                  <tr>
+                    <td scope="row" class="td-56">1</td>
                     <td class="td-56">
-                      <input type="checkbox" name="checkbox" id="select">
+                      <input type="checkbox" class="form-check-input" name="checkbox" id="select">
                     </td>
                     <td class="td-124">2023/07/21</td>
                     <td class="td-124">A123456789</td>
@@ -152,10 +152,10 @@
                       </div>
                     </td>
                   </tr>
-                  <tr data-bs-target="#viewOrder"  data-bs-toggle="modal">
-                    <th scope="row" class="td-56">1</th>
+                  <tr>
+                    <td scope="row" class="td-56">1</td>
                     <td class="td-56">
-                      <input type="checkbox" name="checkbox" id="select">
+                      <input type="checkbox" class="form-check-input" name="checkbox" id="select">
                     </td>
                     <td class="td-124">2023/07/21</td>
                     <td class="td-124">A123456789</td>
@@ -170,10 +170,10 @@
                       </div>
                     </td>
                   </tr>
-                  <tr data-bs-target="#viewOrder"  data-bs-toggle="modal">
-                    <th scope="row" class="td-56">1</th>
+                  <tr>
+                    <td scope="row" class="td-56">1</td>
                     <td class="td-56">
-                      <input type="checkbox" name="checkbox" id="select">
+                      <input type="checkbox" class="form-check-input" name="checkbox" id="select">
                     </td>
                     <td class="td-124">2023/07/21</td>
                     <td class="td-124">A123456789</td>
@@ -188,28 +188,10 @@
                       </div>
                     </td>
                   </tr>
-                  <tr data-bs-target="#viewOrder"  data-bs-toggle="modal">
-                    <th scope="row" class="td-56">1</th>
+                  <tr>
+                    <td scope="row" class="td-56">1</td>
                     <td class="td-56">
-                      <input type="checkbox" name="checkbox" id="select">
-                    </td>
-                    <td class="td-124">2023/07/21</td>
-                    <td class="td-124">A123456789</td>
-                    <td class="td-124">$1,150</td>
-                    <td class="td-124">王小明</td>
-                    <td class="td-124">091234567</td>
-                    <td class="text-nowrap">新北市新店區北新路三段225號13樓</td>
-                    <td class="td-80 text-nowrap">待出貨</td>
-                    <td class="td-80">
-                      <div class="btn btn-outline-warning" data-bs-target="#viewOrder"  data-bs-toggle="modal">
-                        <span class="material-symbols-rounded"> visibility </span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr data-bs-target="#viewOrder"  data-bs-toggle="modal">
-                    <th scope="row" class="td-56">1</th>
-                    <td class="td-56">
-                      <input type="checkbox" name="checkbox" id="select">
+                      <input type="checkbox" class="form-check-input" name="checkbox" id="select">
                     </td>
                     <td class="td-124">2023/07/21</td>
                     <td class="td-124">A123456789</td>

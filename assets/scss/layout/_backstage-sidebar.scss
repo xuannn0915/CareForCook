@@ -1,14 +1,17 @@
 .backstage-sidebar-desktop{
   
   .collapsing{
+    transition: all 0.5s;
     width: 24px;
   }
   .collapse{
+    transition: all 0.5s;
     width: 24px;
     display: block;
     overflow: hidden;
   }
   .show{
+    transition: all 0.5s;
     width: 114px;
   }
 
@@ -21,16 +24,26 @@
     left: 24px;
   }
 
+  .logout-btn{
+    transition: all 0.1s;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
   .sidebar-bottom{
     bottom: 24px;
   }
   .logout, .account-info{
-    display: none;
+    width: 0;
+    overflow: hidden;
+    // transition: all 1s;
   }
   .visible{
-    display: block;
+    width: 100%;
+    transition: all 0.5s;
   }
   .px-6{
+    transition: all 0.5s;
     padding-left: 24px;
     padding-right: 24px;
   }

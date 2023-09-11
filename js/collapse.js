@@ -23,3 +23,9 @@ $(function () {
     $('.logout-btn').toggleClass('px-6');
   });
 });
+
+$(function () {
+  $(".menu-btn").click(function () {
+    $('.backstage-content').toggleClass('backstage-content-collapse');
+  });
+});
