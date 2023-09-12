@@ -23,7 +23,6 @@
 <link rel="stylesheet" href="dist/datepicker.min.css">
 
 <title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/validation-fa0abbcb.js"></script>
-    <script type="module" crossorigin src="/CareForCook/assets/increment-bec6d0d1.js"></script>
     <link rel="stylesheet" href="/CareForCook/assets/validation-9b3151e5.css">
   </head>
   <body>
@@ -1650,5 +1649,21 @@
 
 <!-- main js -->
 
-  </body>
+<script src="../js/increment.js"></script>  </body>
 </html>
+<script>
+  let count = document.querySelector("#counter-value");
+
+function decrement() {
+  if (count.value <= 1) {
+    count.value = 1;
+  } else {
+    count.value = parseInt(count.value) - 1;
+  }
+}
+
+function increment() {
+  count.value = parseInt(count.value) + 1;
+}
+
+</script>
