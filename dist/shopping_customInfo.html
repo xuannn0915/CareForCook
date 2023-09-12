@@ -22,9 +22,8 @@
 <!-- datepicker -->
 <link rel="stylesheet" href="dist/datepicker.min.css">
 
-
-<title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/validation-0c488316.js"></script>
-    <link rel="stylesheet" href="/CareForCook/assets/validation-dff82979.css">
+<title>CareForCook</title>    <script type="module" crossorigin src="/CareForCook/assets/validation-7463886a.js"></script>
+    <link rel="stylesheet" href="/CareForCook/assets/validation-235e422b.css">
   </head>
   <body>
     <nav
@@ -427,10 +426,15 @@
             </div>
           </form>
           <div class="d-flex align-items-center justify-content-between mb-6">
-            <div class="incrementer">
-              <input type="number" value="0" min="0" max="100" step="1"/>
-            </div>
-            <h3 class="fw-bold d-flex align-items-center">
+            <div class="incrementer d-flex">
+  <button type="button" class="btn-minus border-0 text-dark p-2" onclick="decrement()">
+    <span class="material-symbols-rounded fw-bold fs-2"> remove </span>
+  </button>
+  <input type="text" class="form-control text-center fs-4 border-0" value="1" id="counter-value">
+  <button type="button" class="btn-plus border-0 text-primary p-2" onclick="increment()">
+    <span class="material-symbols-rounded fw-bold fs-2"> add </span>
+  </button>
+</div>            <h3 class="fw-bold d-flex align-items-center">
               <p class="fs-5 me-2">單價</p>
               NT$350
             </h3>
@@ -786,9 +790,7 @@
   </div>
 </footer>
  
-    <!-- main js -->
-
-<!-- Swiper JS  -->
+    <!-- Swiper JS  -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <!-- tabs -->
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -797,7 +799,7 @@
 <!-- aos -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-<!-- incrementer -->
-<script src="../node_modules/bootstrap-input-spinner/src/bootstrap-input-spinner.js"></script>
-  </body>
+<!-- main js -->
+
+<script src="../js/increment.js"></script>  </body>
 </html>
