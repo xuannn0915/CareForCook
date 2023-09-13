@@ -5,3 +5,4 @@ import './js/tabs';
 import './js/pageAnimation';
 import './js/collapse';
 import './js/validation';
+import './js/incrementer';

@@ -25,8 +25,3 @@ $(".return_login").click(function (event) {
 
 // AOS
 AOS.init();
-
-// incrementer
-$("input[type='number']").inputSpinner();
-
-// shopping bag
