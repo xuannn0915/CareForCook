@@ -1,8 +1,8 @@
-.shoppingBag{
+.shoppingBag {
   @include bg_secondary;
-  
-  .wizard{
-    h3{
+
+  .wizard {
+    h3 {
       width: 40px;
       height: 40px;
       border: 1px solid $dark;
@@ -10,51 +10,65 @@
     }
   }
 
-  .active{
+  .active {
     color: $primary;
-    h3{
+    h3 {
       color: $primary;
       border: 1px solid $primary;
     }
   }
 
-  .table{
-    img{
-    width: 90px;
-    height: 90px;
+  .table {
+    img {
+      width: 90px;
+      height: 90px;
     }
   }
 
-  .orderSummary, .receiveOrder{
+  .orderSummary,
+  .receiveOrder {
     position: absolute;
     top: 115px;
     right: 0;
-    .nav-item:nth-child(odd){
+    .nav-item:nth-child(odd) {
       display: none;
     }
   }
 
-  .receiveOrder{
+  .receiveOrder {
     display: none;
   }
 
-  .form-label::after{
-    content: '*';
+  .form-label::after {
+    content: "*";
     color: $danger;
     vertical-align: top;
   }
 
-  @media (max-width:992px) {
-    .layout{
+  .btn-check:checked + .btn {
+    background-color: white;
+    border: 1px solid $primary;
+    color: $primary;
+  }
+
+  .modal{
+    img{
+      width: 100px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .layout {
       display: flex;
       flex-direction: column-reverse;
     }
-    .orderSummary, .receiveOrder{
+    .orderSummary,
+    .receiveOrder {
       position: relative;
       top: 0;
     }
-    .mobile-card{
-      img{
+    .mobile-card {
+      img {
         width: 70px;
         height: 70px;
       }
