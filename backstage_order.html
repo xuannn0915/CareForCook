@@ -13,12 +13,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
-<title>CareForCook-backStage</title>    <script type="module" crossorigin src="/CareForCook/assets/validation-cca0bdff.js"></script>
-    <link rel="stylesheet" href="/CareForCook/assets/validation-29ae2441.css">
+<title>CareForCook-backStage</title>    <script type="module" crossorigin src="/CareForCook/assets/incrementer-1daa1639.js"></script>
+    <link rel="stylesheet" href="/CareForCook/assets/incrementer-85eb99d5.css">
   </head>
   <body>
     <div class="wrap d-flex flex-lg-row flex-column">
-      <section class="backstage-sidebar-desktop d-lg-inline-flex d-none flex-column p-6 bg-white align-items-center position-sticky top-0 vh-100">
+      <section class="backstage-sidebar-desktop d-lg-inline-flex d-none flex-column p-6 bg-white align-items-center position-fixed top-0 vh-100">
       <button class="bg-white border-0 p-0 position-absolute menu-btn z-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
         <span class="material-symbols-rounded me-2"> menu </span>
       </button>
@@ -27,7 +27,7 @@
         <h5 class="mb-1">陳子瑄</h5>
         <p class="fs-6">A4322 資訊單位</p>
       </div>
-      <a href="backstage_login.html" class="btn btn-outline-primary d-flex align-items-center justify-content-center logout-btn px-1">
+      <a href="backstage_login.html" class="btn btn-outline-primary d-flex align-items-center justify-content-end logout-btn">
         <p class="logout text-nowrap">
           登出
         </p>
@@ -141,7 +141,7 @@
     <p class="fs-6">A4322 資訊單位</p>
 </div>
 </div>
-</section>      <main class="backstage_order p-lg-6 p-4 w-100">
+</section>      <main class="backstage_order backstage-content p-lg-6 p-4 ms-auto h-100">
           <div class="d-flex align-items-center justify-content-between mb-lg-6 mb-4">
             <h3 class="fs-lg-3 fs-4 fw-bold">訂單管理</h3>
             <div class="d-flex align-items-center">
@@ -235,7 +235,7 @@
                   <tr>
                     <th scope="col">#</th>
                     <th scope="col">
-                      <input type="checkbox" name="checkbox" id="select">
+                      <input type="checkbox" name="checkbox" id="select" class="form-check-input">
                     </th>
                     <th scope="col">訂單日期</th>
                     <th scope="col">訂單編號</th>
@@ -248,10 +248,10 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr data-bs-target="#viewOrder"  data-bs-toggle="modal">
-                    <th scope="row" class="td-56">1</th>
+                  <tr>
+                    <td scope="row" class="td-56">1</td>
                     <td class="td-56">
-                      <input type="checkbox" name="checkbox" id="select">
+                      <input type="checkbox" class="form-check-input" name="checkbox" id="select">
                     </td>
                     <td class="td-124">2023/07/21</td>
                     <td class="td-124">A123456789</td>
@@ -266,10 +266,10 @@
                       </div>
                     </td>
                   </tr>
-                  <tr data-bs-target="#viewOrder"  data-bs-toggle="modal">
-                    <th scope="row" class="td-56">1</th>
+                  <tr>
+                    <td scope="row" class="td-56">1</td>
                     <td class="td-56">
-                      <input type="checkbox" name="checkbox" id="select">
+                      <input type="checkbox" class="form-check-input" name="checkbox" id="select">
                     </td>
                     <td class="td-124">2023/07/21</td>
                     <td class="td-124">A123456789</td>
@@ -284,10 +284,10 @@
                       </div>
                     </td>
                   </tr>
-                  <tr data-bs-target="#viewOrder"  data-bs-toggle="modal">
-                    <th scope="row" class="td-56">1</th>
+                  <tr>
+                    <td scope="row" class="td-56">1</td>
                     <td class="td-56">
-                      <input type="checkbox" name="checkbox" id="select">
+                      <input type="checkbox" class="form-check-input" name="checkbox" id="select">
                     </td>
                     <td class="td-124">2023/07/21</td>
                     <td class="td-124">A123456789</td>
@@ -302,10 +302,10 @@
                       </div>
                     </td>
                   </tr>
-                  <tr data-bs-target="#viewOrder"  data-bs-toggle="modal">
-                    <th scope="row" class="td-56">1</th>
+                  <tr>
+                    <td scope="row" class="td-56">1</td>
                     <td class="td-56">
-                      <input type="checkbox" name="checkbox" id="select">
+                      <input type="checkbox" class="form-check-input" name="checkbox" id="select">
                     </td>
                     <td class="td-124">2023/07/21</td>
                     <td class="td-124">A123456789</td>
@@ -320,28 +320,10 @@
                       </div>
                     </td>
                   </tr>
-                  <tr data-bs-target="#viewOrder"  data-bs-toggle="modal">
-                    <th scope="row" class="td-56">1</th>
+                  <tr>
+                    <td scope="row" class="td-56">1</td>
                     <td class="td-56">
-                      <input type="checkbox" name="checkbox" id="select">
-                    </td>
-                    <td class="td-124">2023/07/21</td>
-                    <td class="td-124">A123456789</td>
-                    <td class="td-124">$1,150</td>
-                    <td class="td-124">王小明</td>
-                    <td class="td-124">091234567</td>
-                    <td class="text-nowrap">新北市新店區北新路三段225號13樓</td>
-                    <td class="td-80 text-nowrap">待出貨</td>
-                    <td class="td-80">
-                      <div class="btn btn-outline-warning" data-bs-target="#viewOrder"  data-bs-toggle="modal">
-                        <span class="material-symbols-rounded"> visibility </span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr data-bs-target="#viewOrder"  data-bs-toggle="modal">
-                    <th scope="row" class="td-56">1</th>
-                    <td class="td-56">
-                      <input type="checkbox" name="checkbox" id="select">
+                      <input type="checkbox" class="form-check-input" name="checkbox" id="select">
                     </td>
                     <td class="td-124">2023/07/21</td>
                     <td class="td-124">A123456789</td>
@@ -664,9 +646,7 @@
       </main>
 
     </div>
-    <!-- main js -->
-
-<!-- Swiper JS  -->
+    <!-- Swiper JS  -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <!-- tabs -->
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -675,7 +655,7 @@
 <!-- aos -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-<!-- incrementer -->
-<script src="../node_modules/bootstrap-input-spinner/src/bootstrap-input-spinner.js"></script>
+<!-- main js -->
+
   </body>
 </html>
