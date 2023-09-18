@@ -194,15 +194,3 @@ ul,ol,li{
     height: 0px;
     background-color: transparent;
   }
-
-// backstage content collapse
-.backstage-content{
-  width: calc(100% - 72px);
-  @media (max-width:992px) {
-    width: 100%;
-  }
-}
-.backstage-content-collapse{
-  transition: all 0.5s;
-  width: calc(100% - 162px);
-}

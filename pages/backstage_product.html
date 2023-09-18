@@ -7,10 +7,473 @@
     <%- include('./layout/backstage-head'); -%>
   </head>
   <body>
-    <div class="wrap">
-      <main class="backstage_order">
-        <%- include('./layout/backstage-sidebar') -%>
+    <div class="wrap d-flex flex-lg-row flex-column">
+      <%- include('./layout/backstage-sidebar') -%>
+      <main class="backstage backstage-content p-lg-6 p-4 ms-auto h-100">
+          <div class="d-flex align-items-center justify-content-between mb-lg-6 mb-4">
+            <h3 class="fs-lg-3 fs-4 fw-bold">商品管理</h3>
+            <div class="d-flex align-items-center">
+              <div class="btn btn-link me-4">刪除</div>
+              <div class="btn btn-primary">
+                新增商品
+                <span class="material-symbols-rounded ms-2"> add </span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 進階搜尋 -->
+          <div class="accordion bg-white rounded border mb-6" id="accordionExample">
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="headingOne">
+                <button class="accordion-button fw-bold text-black fs-4 p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  進階搜尋
+                </button>
+              </h4>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body p-6 p-4">
+                  <form action="#" class="d-flex flex-wrap justify-content-between mb-lg-7 mb-6">
+                    <div class="mb-4 form-item">
+                      <label for="productName" class="form-label">商品名稱</label>
+                      <input type="text" class="form-control" id="productName" aria-describedby="productName" placeholder="請輸入商品名稱">
+                    </div>
+                    <div class="mb-4 form-item">
+                      <label for="productClassification" class="form-label">商品分類</label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>請選擇分類</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="mb-4 form-item">
+                      <label for="productType" class="form-label">商品類型</label>
+                      <input type="text" class="form-control" id="productType" aria-describedby="productType" placeholder="請輸入適用類型">
+                    </div>
+                    <div class="mb-4 form-item">
+                      <label for="productPrice" class="form-label">商品單價</label>
+                      <input type="text" class="form-control" id="productPrice" aria-describedby="productPrice" placeholder="請輸入金額">
+                    </div>
+                    <div class="mb-4 form-item">
+                      <label for="orderStatus" class="form-label">商品狀態</label>
+                      <div class="d-flex justify-content-between">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="orderStatus" id="available">
+                          <label class="form-check-label align-baseline" for="available">
+                            啟用
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="orderStatus" id="unvailable">
+                          <label class="form-check-label align-baseline" for="unvailable">
+                            停用
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-dark me-4">
+                      清除
+                      <span class="material-symbols-rounded align-top ms-2"> delete </span>
+                    </button>
+                    <button type="submit" class="btn btn-outline-primary">
+                      查詢
+                      <span class="material-symbols-rounded align-top ms-2"> search </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 列表 -->
+          <div class="bg-white rounded border overflow-hidden">
+            <div class="table-responsive pt-4">
+              <table class="table table-borderless table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">
+                      <input type="checkbox" name="checkbox" id="select" class="form-check-input">
+                    </th>
+                    <th scope="col">訂單日期</th>
+                    <th scope="col">訂單編號</th>
+                    <th scope="col">訂單金額</th>
+                    <th scope="col">收件名稱</th>
+                    <th scope="col">收件電話</th>
+                    <th scope="col">收件地址</th>
+                    <th scope="col">狀態</th>
+                    <th scope="col">查看</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td scope="row" class="td-56">1</td>
+                    <td class="td-56">
+                      <input type="checkbox" class="form-check-input" name="checkbox" id="select">
+                    </td>
+                    <td class="td-124">2023/07/21</td>
+                    <td class="td-124">A123456789</td>
+                    <td class="td-124">$1,150</td>
+                    <td class="td-124">王小明</td>
+                    <td class="td-124">091234567</td>
+                    <td class="text-nowrap">新北市新店區北新路三段225號13樓</td>
+                    <td class="td-80 text-nowrap">待出貨</td>
+                    <td class="td-80">
+                      <div class="btn btn-outline-warning" data-bs-target="#viewOrder"  data-bs-toggle="modal">
+                        <span class="material-symbols-rounded"> visibility </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="row" class="td-56">1</td>
+                    <td class="td-56">
+                      <input type="checkbox" class="form-check-input" name="checkbox" id="select">
+                    </td>
+                    <td class="td-124">2023/07/21</td>
+                    <td class="td-124">A123456789</td>
+                    <td class="td-124">$1,150</td>
+                    <td class="td-124">王小明</td>
+                    <td class="td-124">091234567</td>
+                    <td class="text-nowrap">新北市新店區北新路三段225號13樓</td>
+                    <td class="td-80 text-nowrap">待出貨</td>
+                    <td class="td-80">
+                      <div class="btn btn-outline-warning" data-bs-target="#viewOrder"  data-bs-toggle="modal">
+                        <span class="material-symbols-rounded"> visibility </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="row" class="td-56">1</td>
+                    <td class="td-56">
+                      <input type="checkbox" class="form-check-input" name="checkbox" id="select">
+                    </td>
+                    <td class="td-124">2023/07/21</td>
+                    <td class="td-124">A123456789</td>
+                    <td class="td-124">$1,150</td>
+                    <td class="td-124">王小明</td>
+                    <td class="td-124">091234567</td>
+                    <td class="text-nowrap">新北市新店區北新路三段225號13樓</td>
+                    <td class="td-80 text-nowrap">待出貨</td>
+                    <td class="td-80">
+                      <div class="btn btn-outline-warning" data-bs-target="#viewOrder"  data-bs-toggle="modal">
+                        <span class="material-symbols-rounded"> visibility </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="row" class="td-56">1</td>
+                    <td class="td-56">
+                      <input type="checkbox" class="form-check-input" name="checkbox" id="select">
+                    </td>
+                    <td class="td-124">2023/07/21</td>
+                    <td class="td-124">A123456789</td>
+                    <td class="td-124">$1,150</td>
+                    <td class="td-124">王小明</td>
+                    <td class="td-124">091234567</td>
+                    <td class="text-nowrap">新北市新店區北新路三段225號13樓</td>
+                    <td class="td-80 text-nowrap">待出貨</td>
+                    <td class="td-80">
+                      <div class="btn btn-outline-warning" data-bs-target="#viewOrder"  data-bs-toggle="modal">
+                        <span class="material-symbols-rounded"> visibility </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="row" class="td-56">1</td>
+                    <td class="td-56">
+                      <input type="checkbox" class="form-check-input" name="checkbox" id="select">
+                    </td>
+                    <td class="td-124">2023/07/21</td>
+                    <td class="td-124">A123456789</td>
+                    <td class="td-124">$1,150</td>
+                    <td class="td-124">王小明</td>
+                    <td class="td-124">091234567</td>
+                    <td class="text-nowrap">新北市新店區北新路三段225號13樓</td>
+                    <td class="td-80 text-nowrap">待出貨</td>
+                    <td class="td-80">
+                      <div class="btn btn-outline-warning" data-bs-target="#viewOrder"  data-bs-toggle="modal">
+                        <span class="material-symbols-rounded"> visibility </span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <%- include('./layout/table-pagination') -%>
+          </div>
+          
+          
+          <!-- view Order -->
+          <div class="modal fade" id="viewOrder" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">出貨單明細</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="d-flex flex-lg-row flex-column mb-6">
+                    <div class="px-4 py-3 border rounded me-lg-2 mb-lg-0 mb-2 w-100">
+                      <h5 class="fw-bold mb-2">訂單資訊</h5>
+                      <div class="d-flex align-items-center justify-content-between mb-2">
+                        <p>編號</p>
+                        <p>A123456789</p>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between mb-2">
+                        <p>日期</p>
+                        <p>2023/07/21</p>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between mb-2">
+                        <p>金額</p>
+                        <p>$1,150</p>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p>狀態</p>
+                        <p>未出貨</p>
+                      </div>
+                    </div>
+                    <div class="px-4 py-3 border rounded align-self-stretch w-100">
+                      <h5 class="fw-bold mb-2">收件資訊</h5>
+                      <div class="d-flex align-items-center justify-content-between mb-2">
+                        <p>名稱</p>
+                        <p>王小明</p>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between mb-2">
+                        <p>電話</p>
+                        <p>0912345678</p>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p>地址</p>
+                        <p>台北市重慶南路一段77號12樓 </p>
+                      </div>
+                    </div>
+                  </div>
+                  <h5 class="fw-bold">商品明細</h5>
+                  <!-- desktop table -->
+                  <div class="d-lg-block d-none">
+                    <table class="table table-borderless">
+                      <thead>
+                        <tr>
+                          <th scope="col" colspan="4" class="pb-0">
+                            <p class=" px-4 border-5 border-start border-primary text-primary">
+                              熱食配送
+                            </p>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="td-124">
+                            <img src="../assets/images/product/custom01-m.png" alt="product" class="flex-shrink-0 rounded object-fit-cover">
+                          </td>
+                          <td class="td-auto">
+                            <h5 class="fw-bold mb-2">術後照護餐01
+                              <span class="badge badge-secondary ms-2">
+                                膽囊切除
+                              </span>
+                            </h5>
+                            <p class="mb-2">紫米飯/三杯雞/清炒高麗菜/金沙四季豆/柴魚蒸蛋/蘿蔔排骨/燕巢芭樂</p>
+                            <p class="text-light">備註：不要加香菜</p>
+                          </td>
+                          <td class="td-88">
+                            1份
+                          </td>
+                          <td class="td-88">$350</td>
+                        </tr>
+                        <tr>
+                          <td class="td-124">
+                            <img src="../assets/images/product/custom02-m.png" alt="product" class="flex-shrink-0 rounded object-fit-cover">
+                          </td>
+                          <td class="td-auto">
+                            <h5 class="fw-bold mb-2">術後照護餐02
+                              <span class="badge badge-secondary ms-2">
+                                婦科術後
+                              </span>
+                            </h5>
+                            <p class="mb-2">紫米飯/三杯雞/清炒高麗菜/金沙四季豆/柴魚蒸蛋/蘿蔔排骨/燕巢芭樂</p>
+                            <p class="text-light">備註：不要加香菜</p>
+                          </td>
+                          <td class="td-88">
+                            1份
+                          </td>
+                          <td class="td-88">$350</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="table table-borderless border-bottom mb-0">
+                      <thead>
+                        <tr>
+                          <th scope="col" colspan="4" class="pb-0">
+                            <p class="px-4 border-5 border-start border-primary text-primary">
+                              冷藏配送
+                            </p>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="td-124">
+                            <img src="../assets/images/product/soup01-m.png" alt="product" class="flex-shrink-0 rounded object-fit-cover">
+                          </td>
+                          <td class="td-auto">
+                            <h5 class="fw-bold">
+                              高蛋白燉飲01
+                              <span class="badge badge-secondary ms-2">
+                                苷醇雙雞
+                              </span>
+                            </h5>
+                          </td>
+                          <td class="td-88">
+                            1份
+                          </td>
+                          <td class="td-88">$350</td>
+                        </tr>
+                        <tr>
+                          <td class="td-124">
+                            <img src="../assets/images/product/lunch01-m.png" alt="product" class="flex-shrink-0 rounded object-fit-cover">
+                          </td>
+                          <td class="td-auto">
+                            <h5 class="fw-bold">
+                              機能調理餐01
+                              <span class="badge badge-secondary ms-2">
+                                低糖好新纖
+                              </span>
+                            </h5>
+                          </td>
+                          <td class="td-88">
+                            1份
+                          </td>
+                          <td class="td-88">$350</td>
+                        </tr>
+                        <tr>
+                          <td class="td-124">
+                            <img src="../assets/images/product/lunch02-m.png" alt="product" class="flex-shrink-0 rounded object-fit-cover">
+                          </td>
+                          <td class="td-auto">
+                            <h5 class="fw-bold">
+                              機能調理餐02
+                              <span class="badge badge-secondary ms-2">
+                                均衡好食多
+                              </span>
+                            </h5>
+                          </td>
+                          <td class="td-88">
+                            1份
+                          </td>
+                          <td class="td-88">$350</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- mobile card -->
+                  <div class="mobile-card d-lg-none">
+                    <div class="py-4 border-bottom">
+                      <h5 class="px-4 fw-bold border-5 border-start border-primary text-primary mb-4">熱食配送</h5>
+                      <div class="mb-4 pb-4 border-bottom d-flex">
+                          <img src="../assets/images/product/custom01-m.png" alt="product" class="me-2 flex-shrink-0 rounded object-fit-cover">
+                          <div>
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                              <h5 class="fw-bold">
+                                術後照護餐01
+                              </h5>
+                              <p class="badge badge-secondary">
+                                膽囊切除
+                              </p>
+                            </div>
+                            <p class="mb-2 fs-6">紫米飯/三杯雞/清炒高麗菜/金沙四季豆/柴魚蒸蛋/蘿蔔排骨/燕巢芭樂</p>
+                            <p class="text-light mb-2 fs-6">備註：不要加香菜</p>
+                            <div class="d-flex align-items-center justify-content-between">
+                              <p>1份</p>
+                              <p>$350</p>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="d-flex">
+                        <img src="../assets/images/product/custom02-m.png" alt="product" class="me-2 flex-shrink-0 rounded object-fit-cover">
+                        <div>
+                          <div class="d-flex align-items-center justify-content-between mb-2">
+                            <h5 class="fw-bold">
+                              術後照護餐02
+                            </h5>
+                            <p class="badge badge-secondary">
+                              婦科術後
+                            </p>
+                          </div>
+                          <p class="mb-2 fs-6">紫米飯/三杯雞/清炒高麗菜/金沙四季豆/柴魚蒸蛋/蘿蔔排骨/燕巢芭樂</p>
+                          <p class="text-light mb-2 fs-6">備註：不要加香菜</p>
+                          <div class="d-flex align-items-center justify-content-between">
+                            <p>1份</p>
+                            <p>$350</p>
+                          </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="py-4 border-bottom">
+                      <h5 class="px-4 fw-bold border-5 border-start border-primary text-primary mb-4">冷藏配送</h5>
+                      <div class="mb-4 pb-4 border-bottom d-flex">
+                          <img src="../assets/images/product/soup01-m.png" alt="product" class="me-2 flex-shrink-0 rounded object-fit-cover">
+                          <div class="w-100">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                              <h5 class="fw-bold">
+                                高蛋白燉飲01
+                              </h5>
+                              <p class="badge badge-secondary">
+                                苷醇雙雞
+                              </p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                              <p>1份</p>
+                              <p>$350</p>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="mb-4 pb-4 border-bottom d-flex">
+                        <img src="../assets/images/product/lunch01-m.png" alt="product" class="me-2 flex-shrink-0 rounded object-fit-cover">
+                        <div class="w-100">
+                          <div class="d-flex align-items-center justify-content-between mb-2">
+                            <h5 class="fw-bold">
+                              機能調理餐01
+                            </h5>
+                            <p class="badge badge-secondary">
+                              低糖好新纖
+                            </p>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-between">
+                            <p>1份</p>
+                            <p>$350</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <img src="../assets/images/product/lunch02-m.png" alt="product" class="me-2 flex-shrink-0 rounded object-fit-cover">
+                        <div class="w-100">
+                          <div class="d-flex align-items-center justify-content-between mb-2">
+                            <h5 class="fw-bold">
+                              機能調理餐02
+                            </h5>
+                            <p class="badge badge-secondary">
+                              均衡好食多
+                            </p>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-between">
+                            <p>1份</p>
+                            <p>$350</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">取消</button>
+                  <button type="button" class="btn btn-primary">出貨</button>
+                </div>
+              </div>
+            </div>
+          </div>
       </main>
+
     </div>
     <%- include('./layout/body_bottom') -%>
   </body>

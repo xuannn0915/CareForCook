@@ -1,4 +1,4 @@
-.backstage_order {
+.backstage {
   transition: all 0.5s;
   .accordion-header {
     background-color: rgba($secondary, 20%);
@@ -19,13 +19,18 @@
     .form-check {
       width: 100%;
     }
-
-    .mobile-card {
-      img {
-        width: 70px;
-        height: 70px;
-      }
-    }
   }
 }
+
+.backstage-content{
+  width: calc(100% - 72px);
+  @media (max-width:992px) {
+    width: 100%;
+  }
+}
+.backstage-content-collapse{
+  transition: all 0.5s;
+  width: calc(100% - 162px);
+}
+
 
