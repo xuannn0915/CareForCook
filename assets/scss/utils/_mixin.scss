@@ -18,6 +18,7 @@
 
 @mixin bg_blur($desktop-x, $desktop-y, $mobile-x, $mobile-y){
   background-image: url('https://raw.githubusercontent.com/xuannn0915/CareForCook/d8da4393b0ed6c3878c6a1837ceb2c3a1448d8a1/assets/images/bg_blurCircle.svg');
+  display: block;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: $desktop-x $desktop-y;
